@@ -12,10 +12,7 @@ library(readr)
 library(stringr)
 
 knitr::opts_chunk$set(echo = T,
-                      include = T,
-                      fig.width = 9,
-                      fig.height = 9 * 9 / 16,
-                      out.width = '50%')
+                      include = T)
 ```
 
 Podaci korišteni u ovom izvještaju dostupni su na Portalu otvorenih
@@ -51,9 +48,7 @@ d_visoko$spol <-
                      str_detect(d_visoko$celnik,
                                 'dekan|rektor|pročelnik') ~ 'm',
                      T ~ NA_character_)
-```
 
-```{r sex-table, echo = F}
 . <- table(d_visoko$spol)
 ```
 

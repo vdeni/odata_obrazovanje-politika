@@ -186,10 +186,7 @@ library(readr)
 library(stringr)
 
 knitr::opts_chunk$set(echo = T,
-                      include = T,
-                      fig.width = 9,
-                      fig.height = 9 * 9 / 16,
-                      out.width = &#39;50%&#39;)</code></pre>
+                      include = T)</code></pre>
 <p>Podaci korišteni u ovom izvještaju dostupni su na Portalu otvorenih podataka (<a href="https://data.gov.hr/ckan/dataset/ustanove-iz-sustava-visokog-obrazovanja">ovdje</a>) i na stranicama Ministarstva znanosti i obrazovanja (<a href="http://mzos.hr/dbApp/pregled.aspx?appName=ustanove_VU">ovdje</a>). Podaci korišteni u analizi preuzeti su 12. listopada 2021., u 15:43.</p>
 <pre class="r"><code>d_visoko &lt;- readr::read_csv2(here::here(&#39;data&#39;,
                                         &#39;popis_visoko-obrazovanje.csv&#39;)) %&gt;%
@@ -208,7 +205,9 @@ knitr::opts_chunk$set(echo = T,
                                          &#39;dekanica|rektorica|pročelnica&#39;) ~ &#39;z&#39;,
                      str_detect(d_visoko$celnik,
                                 &#39;dekan|rektor|pročelnik&#39;) ~ &#39;m&#39;,
-                     T ~ NA_character_)</code></pre>
+                     T ~ NA_character_)
+
+. &lt;- table(d_visoko$spol)</code></pre>
 <p>Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih institucija trenutno imamo 101 muškarca i 32 žene.</p>
 <p>U tablici je zabilježena i vrsta ustanove:</p>
 <pre class="r"><code>unique(d_visoko$vrsta_ustanove)</code></pre>
