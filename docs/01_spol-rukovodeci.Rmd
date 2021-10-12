@@ -1,0 +1,97 @@
+---
+output:
+    html_document:
+        code_folding: hide
+---
+
+```{r setup}
+library(here)
+library(magrittr)
+library(dplyr)
+library(readr)
+library(stringr)
+
+knitr::opts_chunk$set(echo = T,
+                      include = T,
+                      fig.width = 9,
+                      fig.height = 9 * 9 / 16,
+                      out.width = '50%')
+```
+
+Podaci korišteni u ovom izvještaju dostupni su na Portalu otvorenih
+podataka
+([ovdje](https://data.gov.hr/ckan/dataset/ustanove-iz-sustava-visokog-obrazovanja))
+i na stranicama Ministarstva znanosti i obrazovanja
+([ovdje](http://mzos.hr/dbApp/pregled.aspx?appName=ustanove_VU)). Podaci
+korišteni u analizi preuzeti su 12. listopada 2021., u 15:43.
+
+```{r load-data, message = F}
+d_visoko <- readr::read_csv2(here::here('data',
+                                        'popis_visoko-obrazovanje.csv')) %>%
+    janitor::clean_names(.)
+```
+
+Tablica s podacima o visokim učilištima sadrži stupac `Celnik`, u kojem su
+navedene čelne osobe institucija, s pripadajućim nazivom funkcije koju obnašaju
+(na primjer "dekanica" ili "dekan").
+
+```{r glimpse-managers}
+head(d_visoko$celnik)
+```
+
+Budući da se naziv funkcije mijenja ovisno o spolu rukovodeće osobe, na temelju
+te informacije možemo doznati kojeg su spola čelnici visokoobrazovnih institucija
+u Hrvatskoj. Funkcije koje se javljaju u ovom skupu podataka su `dekanica/dekan`,
+`pročelnica/pročelnik` i `rektorica/rektor`.
+
+```{r code-sex}
+d_visoko$spol <-
+    dplyr::case_when(stringr::str_detect(d_visoko$celnik,
+                                         'dekanica|rektorica|pročelnica') ~ 'z',
+                     str_detect(d_visoko$celnik,
+                                'dekan|rektor|pročelnik') ~ 'm',
+                     T ~ NA_character_)
+```
+
+```{r sex-table, echo = F}
+. <- table(d_visoko$spol)
+```
+
+Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih
+institucija trenutno imamo `r .[['m']]` muškarca i `r .[['z']]` žene.
+
+U tablici je zabilježena i vrsta ustanove:
+
+```{r vrsta-ustanove}
+unique(d_visoko$vrsta_ustanove)
+```
+
+Možemo, primjerice, pogledati kakvo je stanje po vrsti ustanove:
+
+```{r spol-po-vrsti-ustanove}
+. <- table(d_visoko$spol,
+           d_visoko$vrsta_ustanove)
+
+dimnames(.)[[1]] <- case_when(dimnames(.)[[1]] == 'z' ~ 'Ženski',
+                              dimnames(.)[[1]] == 'm' ~ 'Muški')
+
+knitr::kable(.)
+```
+
+Također, možemo vidjeti kakva je distribucija spolova po sastavnicama
+sveučilišta u Osijeku, Rijeci, Splitu i Zagrebu[^1]:
+
+```{r spol-po-sveucilistima}
+. <- dplyr::filter(d_visoko,
+                   str_detect(nadredjena_ustanova,
+                              'Sveučilište')) %$%
+    table(spol,
+          nadredjena_ustanova)
+
+dimnames(.)[[1]] <- case_when(dimnames(.)[[1]] == 'z' ~ 'Ženski',
+                              dimnames(.)[[1]] == 'm' ~ 'Muški')
+
+knitr::kable(.)
+```
+
+[^1]: Ovdje su isključene rektorice i rektori.
