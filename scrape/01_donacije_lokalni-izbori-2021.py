@@ -1,7 +1,4 @@
-# import time
-
-# import bs4
-# import html5lib
+import time
 
 from selenium import webdriver
 
@@ -20,9 +17,9 @@ elem_zupanije = driver.\
 for zup in elem_zupanije[0:3]:
     print(f'\n======>> Prikupljam podatke za: {zup.text}\n')
 
-    # time.sleep(5)
-
     zup.click()
+
+    time.sleep(2)
 
     # odabir gradova i opcina
     elem_grop = driver.\
@@ -34,6 +31,8 @@ for zup in elem_zupanije[0:3]:
 
         grop.click()
 
+        time.sleep(2)
+
         # odabir vrste izbora
         elem_izbori = driver.\
             find_elements(by='xpath',
@@ -41,9 +40,11 @@ for zup in elem_zupanije[0:3]:
                                    option[@label]''')
 
         for izbori in elem_izbori:
-            print(f'\t============>> Prikupljame podatke za: {izbori.text}')
+            print(f'\t======>> Prikupljam podatke za: {izbori.text}')
 
             izbori.click()
+
+            time.sleep(2)
 
             # odabir obveznika
             elem_obveznici = driver.\
@@ -52,6 +53,8 @@ for zup in elem_zupanije[0:3]:
                                        option[@label]''')
 
             for obveznik in elem_obveznici:
-                print(f'\t\t>>>>>>>>>> Prikupljam podatke za: {obveznik.text}')
+                print(f'\t\t>>> Prikupljam podatke za: {obveznik.text}')
 
                 obveznik.click()
+
+                time.sleep(2)
