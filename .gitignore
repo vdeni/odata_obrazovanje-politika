@@ -1,2 +1,7 @@
-data/*
+data/obrazovne-ustanove_popis
+data/2021-lokalni-izbori_donacije/*
+data/2021-lokalni-izbori_kandidature/*
+
+!data/2021-lokalni-izbori_donacije/zupanije_kodovi.json
+
 **/geckodriver.log
