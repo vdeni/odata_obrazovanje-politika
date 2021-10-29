@@ -2,18 +2,17 @@
 DIR_OB_USTANOVE=obrazovne-ustanove_popis
 DIR_KANDIDATURE=2021-lokalni-izbori_kandidature
 
-.PHONY: obrazovne_ustanove\
-	kandidature_lokalni\
-	dir_obrazovne\
-	dir_kandidature
+.PHONY:\
+	obrazovne_ustanove\
+	kandidature_lokalni
 
 # >>>>> recepti
 obrazovne_ustanove:\
-	popis_vrtici.csv\
-	popis_osnovne-skole.csv\
-	popis_srednje-skole.csv\
-	popis_visoko-obrazovanje.csv\
-	popis_znanost.csv
+	$(DIR_OB_USTANOVE)/popis_vrtici.csv\
+	$(DIR_OB_USTANOVE)/popis_osnovne-skole.csv\
+	$(DIR_OB_USTANOVE)/popis_srednje-skole.csv\
+	$(DIR_OB_USTANOVE)/popis_visoko-obrazovanje.csv\
+	$(DIR_OB_USTANOVE)/popis_znanost.csv
 
 kandidature_lokalni:\
 	$(DIR_KANDIDATURE)/kandidature_zamjenici.csv\
@@ -21,25 +20,30 @@ kandidature_lokalni:\
 	$(DIR_KANDIDATURE)/kandidature_nacelnici.csv
 
 # >>>>> obrazovne ustanove
-popis_vrtici.csv: dir_obrazovne
+$(DIR_OB_USTANOVE)/popis_vrtici.csv: 
 	wget http://52.178.158.152/api/file/vrtici.csv
-	mv vrtici.csv $(DIR_OB_USTANOVE)/$@
+	mkdir -p $(DIR_OB_USTANOVE)
+	mv vrtici.csv $@
 
-popis_osnovne-skole.csv: dir_obrazovne
+$(DIR_OB_USTANOVE)/popis_osnovne-skole.csv: 
 	wget http://52.178.158.152/api/file/skole_os.csv
-	mv skole_os.csv $(DIR_OB_USTANOVE)/$@
+	mkdir -p $(DIR_OB_USTANOVE)
+	mv skole_os.csv $@
 
-popis_srednje-skole.csv: dir_obrazovne
+$(DIR_OB_USTANOVE)/popis_srednje-skole.csv: 
 	wget http://52.178.158.152/api/file/srednje--skole.csv
-	mv srednje--skole.csv $(DIR_OB_USTANOVE)/$@
+	mkdir -p $(DIR_OB_USTANOVE)
+	mv srednje--skole.csv $@
 
-popis_visoko-obrazovanje.csv: dir_obrazovne
+$(DIR_OB_USTANOVE)/popis_visoko-obrazovanje.csv: 
 	wget http://52.178.158.152/api/file/ustanove_vu.csv
-	mv ustanove_vu.csv $(DIR_OB_USTANOVE)/$@
+	mkdir -p $(DIR_OB_USTANOVE)
+	mv ustanove_vu.csv $@
 
-popis_znanost.csv: dir_obrazovne
+$(DIR_OB_USTANOVE)/popis_znanost.csv: 
 	wget http://52.178.158.152/api/file/ustanove_z.csv
-	mv ustanove_z.csv $(DIR_OB_USTANOVE)/$@
+	mkdir -p $(DIR_OB_USTANOVE)
+	mv ustanove_z.csv $@
 
 # >>>>> kandidature na lokalnim izborima
 $(DIR_KANDIDATURE)/kandidature_skupstine.csv:
