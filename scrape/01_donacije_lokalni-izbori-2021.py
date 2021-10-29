@@ -6,6 +6,7 @@ import requests
 
 from selenium import webdriver
 
+# >>>>> setup
 # postavi path za spremanje podataka
 data_path = os.path.join('data',
                          '2021-lokalni-izbori_donacije')
@@ -30,7 +31,7 @@ kodovi_zupanije = zip(_,
 
 kodovi_zupanije = dict(list(kodovi_zupanije))
 
-# scrape
+# >>>>> scrape
 for zup_id, zup in enumerate(elem_zupanije[0:2]):
     print(f'\n===>> {zup_id} / 21 _ Prikupljam podatke za: {zup.text}\n')
 
