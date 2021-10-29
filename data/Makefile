@@ -12,7 +12,7 @@ obrazovne_ustanove: dir_obrazovne\
 
 kandidature_lokalni: dir_kandidature\
 	kandidature_zamjenici.csv\
-	kandidature_skusptine.csv\
+	kandidature_skupstine.csv\
 	kandidature_nacelnici.csv
 
 .PHONY: obrazovne_ustanove\
@@ -46,19 +46,23 @@ dir_obrazovne:
 	fi
 
 # >>>>> kandidature na lokalnim izborima
-kandidature_nacelnici.csv: dir_kandidature
+kandidature_skupstine.csv: dir_kandidature
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZS_GSGZ_GV_OV_03%2005%202021.xlsx
 	mv 'Kandidatura_Otvoreni podaci_ZS_GSGZ_GV_OV_03 05 2021.xlsx'\
 		$(DIR_KANDIDATURE)/$(basename $@).xlsx
-	# convert to semicolon delimited csv
-	libreoffice --convert-to csv:"Text - txt - csv (StarCalc)":59,34,33,1,1\
-		--outdir $(DIR_KANDIDATURE)\
+	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
+
+kandidature_nacelnici.csv: dir_kandidature
+	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZN_GNGZ_GN_ON_03%2005%202021.xlsx
+	mv 'Kandidatura_Otvoreni podaci_ZN_GNGZ_GN_ON_03 05 2021.xlsx'\
 		$(DIR_KANDIDATURE)/$(basename $@).xlsx
-	rm $(DIR_KANDIDATURE)/$(basename $@).xlsx
-	# convert to utf-8 encoding from WIN-1250
-	enconv -L hr -x utf-8 $(DIR_KANDIDATURE)/$@
-	# squash repeating whitespace, strip whitespace from ends
-	sed -E -i -e 's/\s{2,}/ /g' $(DIR_KANDIDATURE)/$@
+	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
+
+kandidature_zamjenici.csv: dir_kandidature
+	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZZN_ZGN_ZON_03%2005%202021.xlsx
+	mv 'Kandidatura_Otvoreni podaci_ZZN_ZGN_ZON_03 05 2021.xlsx'\
+		$(DIR_KANDIDATURE)/$(basename $@).xlsx
+	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
 
 dir_kandidature:
 	if [[ ! -d $(DIR_KANDIDATURE) ]];\
