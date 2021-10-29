@@ -35,12 +35,20 @@ with open(os.path.join(data_path,
 counter_zupanije = dict()
 
 # >>>>> scrape
-for zup_id, zup in enumerate(elem_zupanije[0:2]):
+for zup_id, zup in enumerate(elem_zupanije[0:1]):
     print(f'\n===>> {zup_id} / 21 _ Prikupljam podatke za: {zup.text}\n')
 
     zup.click()
 
     time.sleep(def_sleep)
+
+    # napravi folder za spremanje datoteka
+    folder_name = zup.text.lower().replace(' ',
+                                           '_')
+
+    os.makedirs(os.path.join(data_path,
+                             folder_name),
+                exist_ok=True)
 
     # odabir gradova i opcina
     elem_grop = driver.\
@@ -65,10 +73,11 @@ for zup_id, zup in enumerate(elem_zupanije[0:2]):
 
             if izbori.text.startswith('ŽUPAN'):
                 if zup.text in counter_zupanije and\
-                    izbori.text in counter_zupanije[zup.text]:
-                    break
+                        izbori.text in counter_zupanije[zup.text]:
+                    print('\nPreskačem.\n')
+                    continue
                 elif zup.text in counter_zupanije and\
-                    izbori.text not in counter_zupanije[zup.text]:
+                        izbori.text not in counter_zupanije[zup.text]:
                     counter_zupanije[zup.text] += [izbori.text]
                 elif zup.text not in counter_zupanije:
                     counter_zupanije[zup.text] = [izbori.text]
@@ -83,7 +92,7 @@ for zup_id, zup in enumerate(elem_zupanije[0:2]):
                               value='//select[@ng-model="obveznik"]/\
                                      option[@label]')
 
-            for obveznik in elem_obveznici:
+            for obveznik_id, obveznik in enumerate(elem_obveznici):
                 print(f'\t\t>>> Prikupljam podatke za: {obveznik.text}')
 
                 obveznik.click()
@@ -99,3 +108,20 @@ for zup_id, zup in enumerate(elem_zupanije[0:2]):
                     get_attribute('href')
 
                 donacije_json = requests.get(donacije_json).json()
+
+                donacije_json.update([('izbori', izbori.text),
+                                      ('mjesto', grop.text),
+                                      ('zupanija', zup.text)])
+
+                file_name = '_'.join([kodovi_zupanije[zup.text],
+                                      grop.text.lower().replace(' ',
+                                                                '_'),
+                                      izbori.text.lower()[0:7],
+                                      str(obveznik_id)]) + '.json'
+
+                with open(os.path.join(data_path,
+                                       folder_name,
+                                       file_name),
+                          'w+') as outfile:
+                    json.dump(donacije_json,
+                              outfile)
