@@ -5,6 +5,7 @@ import time
 import requests
 
 from selenium import webdriver
+from selenium import common
 
 # >>>>> setup
 # postavi path za spremanje podataka
@@ -100,12 +101,15 @@ for zup_id, zup in enumerate(elem_zupanije):
                 time.sleep(def_sleep)
 
                 # nadji JSON
-                donacije_json = driver.\
-                    find_element(by='xpath',
-                                 value='//div[contains(text(),\
-                                        "IZ-D-IP")]/a[contains(text(),\
-                                        "json")]').\
-                    get_attribute('href')
+                try:
+                    donacije_json = driver.\
+                        find_element(by='xpath',
+                                     value='//div[contains(text(),\
+                                            "IZ-D-IP")]/a[contains(text(),\
+                                            "json")]').\
+                        get_attribute('href')
+                except common.exceptions.NoSuchElementException:
+                    continue
 
                 donacije_json = requests.get(donacije_json).json()
 
