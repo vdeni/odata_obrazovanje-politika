@@ -56,6 +56,13 @@ d_visoko <- readr::read_csv2(here::here('data',
                                         'obrazovne-ustanove_popis',
                                         'popis_visoko-obrazovanje.csv')) %>%
     janitor::clean_names(.)
+
+d_infleks <- readr::read_csv(here('data',
+                                  'infleksijska-baza',
+                                  'infleksijska-baza.csv'),
+                             col_names = c('infleksijska_forma',
+                                           'lema',
+                                           'oznaka'))
 ```
 
 Tablica s podacima o visokim učilištima sadrži stupac `Celnik`, u kojem su
@@ -78,8 +85,6 @@ d_visoko$spol <-
                      str_detect(d_visoko$celnik,
                                 'dekan|rektor|pročelnik') ~ 'm',
                      T ~ NA_character_)
-
-. <- table(d_visoko$spol)
 ```
 
 Popisi osnovnih i srednjih škola u sebi ne sadrže eksplicitan podatak o spolu
@@ -91,19 +96,10 @@ pozicijama u osnovnim i srednjim školama.
 
 # Spolna struktura rukovodećih osoba u osnovnim i srednjim školama
 
-```{r load-infleksijka-baza}
-d_infleks <- readr::read_csv(here('data',
-                                  'infleksijska-baza',
-                                  'infleksijska-baza.csv'),
-                             col_names = c('infleksijska_forma',
-                                           'lema',
-                                           'oznaka'))
-```
-
 Infleksijska baza hrvatskih imena i prezimena sadrži tri stupca: infleksijske
 forme imena i prezimena, njihove leme, i leksičke oznake[^infleksija-doc]:
 
-```{r glimpse-infleksijska}
+```{r glimpse-infleksijska-baza}
 head(d_infleks)
 ```
 
@@ -112,6 +108,7 @@ popisa osnovnih i srednjih škola. Ti podaci nalaze se u varijabli `Ravnatelj`.
 
 ```{r glimpse-ravnatelji}
 head(d_osnovne$ravnatelj)
+
 head(d_srednje$ravnatelj)
 ```
 
@@ -138,9 +135,9 @@ d_srednje$ravnatelj_ime <- d_srednje$ravnatelj %>%
 ```
 
 Jednom kad imamo imena, možemo ih usporediti s infleksijskom bazom imena i
-prezimena. Iz infleksijske baze ću zadržati samo unose koji imaju tag
+prezimena. U infleksijskoj bazi ću zadržati samo unose koji imaju oznaku
 `Npfsn` ili `Npmsn` jer, ako dobro tumačim bazu, te oznake stoje uz osobne
-imenice u nominativu jednine, pri čemu `f` i `n` označavaju da je ime
+imenice u nominativu jednine, pri čemu `f` i `m` označavaju da je ime
 tradicionalno žensko odnosno muško.
 
 ```{r filter-imena}
@@ -170,6 +167,26 @@ nekog imena nema u bazi, kao oznaku spola stavit ću `NA`.
 d_osnovne$ravnatelj_spol <- apply(d_osnovne[, 'ravnatelj_ime'],
                                   MARGIN = 1,
                                   FUN = crossrefSpol)
+
+d_srednje$ravnatelj_spol <- apply(d_srednje[, 'ravnatelj_ime'],
+                                  MARGIN = 1,
+                                  FUN = crossrefSpol)
+```
+
+Nakon prvog povezivanja imena u infleksijskoj bazi i imena rukovodećih osoba
+u popisima škola, dobivamo poveći broj oznaka `nepoznato`.
+
+```{r oznake-nepoznato}
+table(d_osnovne$ravnatelj_spol,
+      useNA = 'always')
+
+table(d_srednje$ravnatelj_spol,
+      useNA = 'always')
+```
+
+```{r spol-visoko}
+. <- table(d_visoko$spol)
+
 ```
 
 Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih

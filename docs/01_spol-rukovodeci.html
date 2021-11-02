@@ -264,7 +264,24 @@ library(stringr)
 
 knitr::opts_chunk$set(echo = T,
                       message = F,
-                      include = T)</code></pre>
+                      include = T)
+
+# &gt;&gt;&gt;&gt;&gt; custom funkcije
+crossrefSpol &lt;- function(name,
+                         reference_list = d_infleks) {
+    .crossref &lt;- filter(reference_list,
+                        infleksijska_forma == name)
+
+    if (nrow(.crossref) &gt; 1) {
+        return(&#39;nepoznato&#39;)
+    }
+    else if (nrow(.crossref) == 0) {
+        return(NA_character_)
+    }
+    else {
+        return(.crossref$spol)
+    }
+}</code></pre>
 <p>Podaci korišteni u ovom izvještaju dostupni su na Portalu otvorenih podataka (<a href="https://data.gov.hr/ckan/organization/ministarstvo-znanosti-i-obrazovanja">ovdje</a>) Podaci korišteni u analizi preuzeti su 02. studenog 2021., u 13:48.</p>
 <pre class="r"><code>d_osnovne &lt;- readr::read_csv2(here::here(&#39;data&#39;,
                                          &#39;obrazovne-ustanove_popis&#39;,
@@ -279,7 +296,14 @@ d_srednje &lt;- readr::read_csv2(here::here(&#39;data&#39;,
 d_visoko &lt;- readr::read_csv2(here::here(&#39;data&#39;,
                                         &#39;obrazovne-ustanove_popis&#39;,
                                         &#39;popis_visoko-obrazovanje.csv&#39;)) %&gt;%
-    janitor::clean_names(.)</code></pre>
+    janitor::clean_names(.)
+
+d_infleks &lt;- readr::read_csv(here(&#39;data&#39;,
+                                  &#39;infleksijska-baza&#39;,
+                                  &#39;infleksijska-baza.csv&#39;),
+                             col_names = c(&#39;infleksijska_forma&#39;,
+                                           &#39;lema&#39;,
+                                           &#39;oznaka&#39;))</code></pre>
 <p>Tablica s podacima o visokim učilištima sadrži stupac <code>Celnik</code>, u kojem su navedene čelne osobe institucija, s pripadajućim nazivom funkcije koju obnašaju (na primjer “dekanica” ili “dekan”).</p>
 <pre class="r"><code>tail(d_visoko$celnik)</code></pre>
 <pre><code>## [1] &quot;privremena dekanica prof. dr. sc. Vesnica Mlinarević&quot;
@@ -294,18 +318,10 @@ d_visoko &lt;- readr::read_csv2(here::here(&#39;data&#39;,
                                          &#39;dekanica|rektorica|pročelnica&#39;) ~ &#39;z&#39;,
                      str_detect(d_visoko$celnik,
                                 &#39;dekan|rektor|pročelnik&#39;) ~ &#39;m&#39;,
-                     T ~ NA_character_)
-
-. &lt;- table(d_visoko$spol)</code></pre>
+                     T ~ NA_character_)</code></pre>
 <p>Popisi osnovnih i srednjih škola u sebi ne sadrže eksplicitan podatak o spolu ravnateljice odnosno ravnatelja. Međutim, budući da je na ovom području ime osobe snažan signal za njen spol, možemo iskoristiti <a href="http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/">infleksijsku bazu hrvatskih imena i prezimena</a> <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> da bismo dobili dobru procjenu spola osoba na rukovodećim pozicijama u osnovnim i srednjim školama.</p>
 <div id="spolna-struktura-rukovodećih-osoba-u-osnovnim-i-srednjim-školama" class="section level1">
 <h1>Spolna struktura rukovodećih osoba u osnovnim i srednjim školama</h1>
-<pre class="r"><code>d_infleks &lt;- readr::read_csv(here(&#39;data&#39;,
-                                  &#39;infleksijska-baza&#39;,
-                                  &#39;infleksijska-baza.csv&#39;),
-                             col_names = c(&#39;infleksijska_forma&#39;,
-                                           &#39;lema&#39;,
-                                           &#39;oznaka&#39;))</code></pre>
 <p>Infleksijska baza hrvatskih imena i prezimena sadrži tri stupca: infleksijske forme imena i prezimena, njihove leme, i leksičke oznake<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>:</p>
 <pre class="r"><code>head(d_infleks)</code></pre>
 <pre><code>## # A tibble: 6 × 3
@@ -333,7 +349,7 @@ d_visoko &lt;- readr::read_csv2(here::here(&#39;data&#39;,
 d_srednje$ravnatelj_ime &lt;- d_srednje$ravnatelj %&gt;%
     stringr::str_extract(.,
                          pattern = &#39;^\\w+&#39;)</code></pre>
-<p>Jednom kad imamo imena, možemo ih usporediti s infleksijskom bazom imena i prezimena. Iz infleksijske baze ću zadržati samo unose koji imaju tag <code>Npfsn</code> ili <code>Npmsn</code> jer, ako dobro tumačim bazu, te oznake stoje uz osobne imenice u nominativu jednine, pri čemu <code>f</code> i <code>n</code> označavaju da je ime tradicionalno žensko odnosno muško.</p>
+<p>Jednom kad imamo imena, možemo ih usporediti s infleksijskom bazom imena i prezimena. U infleksijskoj bazi ću zadržati samo unose koji imaju oznaku <code>Npfsn</code> ili <code>Npmsn</code> jer, ako dobro tumačim bazu, te oznake stoje uz osobne imenice u nominativu jednine, pri čemu <code>f</code> i <code>m</code> označavaju da je ime tradicionalno žensko odnosno muško.</p>
 <pre class="r"><code>d_infleks &lt;- dplyr::filter(d_infleks,
                            str_detect(oznaka,
                                       &#39;Np(f|m)sn&#39;))
@@ -350,191 +366,24 @@ d_infleks$spol &lt;- case_when(str_detect(d_infleks$oznaka,
 ##   &lt;chr&gt;              &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;
 ## 1 Vanja              Vanja Npfsn  z    
 ## 2 Vanja              Vanja Npmsn  m</code></pre>
-<pre class="r"><code>d_osnovne$ravnatelj_ime</code></pre>
-<pre><code>##   [1] &quot;Ivica&quot;      &quot;Lidija&quot;     &quot;Nada&quot;       &quot;Marin&quot;      &quot;Iva&quot;       
-##   [6] &quot;Mirela&quot;     &quot;Zorka&quot;      &quot;Marijo&quot;     &quot;Ivan&quot;       &quot;Frano&quot;     
-##  [11] &quot;Ante&quot;       &quot;Ante&quot;       &quot;Krešimir&quot;   &quot;Marija&quot;     &quot;Ana&quot;       
-##  [16] &quot;Tina&quot;       &quot;Mila&quot;       &quot;Jakov&quot;      &quot;Antonio&quot;    &quot;Ivana&quot;     
-##  [21] &quot;Ružica&quot;     &quot;Mirko&quot;      &quot;Miroslav&quot;   &quot;Tomislav&quot;   &quot;Dajana&quot;    
-##  [26] &quot;Neven&quot;      &quot;Željko&quot;     &quot;Dubravka&quot;   NA           &quot;Jasminka&quot;  
-##  [31] &quot;Nada&quot;       &quot;Davor&quot;      &quot;Mirjana&quot;    &quot;Melita&quot;     &quot;Tonći&quot;     
-##  [36] &quot;Josip&quot;      &quot;Dražen&quot;     &quot;Katia&quot;      &quot;Jadranka&quot;   &quot;Edi&quot;       
-##  [41] &quot;Miro&quot;       &quot;Martina&quot;    &quot;Zdenka&quot;     &quot;Marija&quot;     &quot;Andrea&quot;    
-##  [46] &quot;Ester&quot;      &quot;Alma&quot;       &quot;Zoran&quot;      &quot;Loreta&quot;     &quot;Susanna&quot;   
-##  [51] &quot;Kristijan&quot;  &quot;Nada&quot;       &quot;Predrag&quot;    &quot;Branka&quot;     &quot;Anita&quot;     
-##  [56] &quot;Ileana&quot;     &quot;Višnja&quot;     &quot;Tiziana&quot;    &quot;Bojan&quot;      &quot;Marin&quot;     
-##  [61] NA           &quot;Ivor&quot;       &quot;Mirela&quot;     &quot;Nada&quot;       &quot;Greis&quot;     
-##  [66] &quot;Mladen&quot;     &quot;Nensi&quot;      &quot;Romana&quot;     &quot;Emilijana&quot;  &quot;Emanuela&quot;  
-##  [71] &quot;Klara&quot;      &quot;Davorka&quot;    NA           &quot;Ljubica&quot;    &quot;Silvija&quot;   
-##  [76] &quot;Luciana&quot;    &quot;Sanja&quot;      &quot;Arden&quot;      &quot;Predrag&quot;    &quot;Barbara&quot;   
-##  [81] &quot;Marijana&quot;   &quot;Debora&quot;     &quot;Miranda&quot;    &quot;Silvana&quot;    &quot;Nikolina&quot;  
-##  [86] &quot;Zrinka&quot;     &quot;Vedrana&quot;    &quot;Roberta&quot;    &quot;Petra&quot;      &quot;Velebit&quot;   
-##  [91] &quot;Ivan&quot;       &quot;Vedrana&quot;    &quot;Božena&quot;     &quot;Žana&quot;       &quot;Tihana&quot;    
-##  [96] &quot;Boro&quot;       &quot;Marjan&quot;     &quot;Kate&quot;       &quot;Zdenka&quot;     &quot;Mirko&quot;     
-## [101] &quot;Marina&quot;     &quot;Nenad&quot;      &quot;Ana&quot;        &quot;Sanja&quot;      &quot;Tonći&quot;     
-## [106] &quot;Valentina&quot;  &quot;Josip&quot;      &quot;Duško&quot;      &quot;Lucijana&quot;   &quot;Emil&quot;      
-## [111] &quot;Ante&quot;       &quot;Zlatko&quot;     &quot;Lovro&quot;      &quot;Anton&quot;      &quot;Siniša&quot;    
-## [116] &quot;Vinko&quot;      &quot;Nataša&quot;     &quot;Bruno&quot;      &quot;Dragica&quot;    &quot;Ksenija&quot;   
-## [121] &quot;Marija&quot;     &quot;Maja&quot;       &quot;Antun&quot;      &quot;Mirjana&quot;    &quot;Damir&quot;     
-## [126] &quot;Zlatko&quot;     &quot;Željka&quot;     &quot;Branko&quot;     &quot;Elvis&quot;      &quot;Ivica&quot;     
-## [131] &quot;Božena&quot;     &quot;Marijana&quot;   &quot;Melita&quot;     &quot;Sandra&quot;     &quot;Margit&quot;    
-## [136] &quot;Mladen&quot;     &quot;Petra&quot;      &quot;Anica&quot;      &quot;Stanislav&quot;  &quot;Martina&quot;   
-## [141] &quot;Snježana&quot;   &quot;Karmen&quot;     &quot;Josip&quot;      &quot;Gorana&quot;     &quot;Vladimir&quot;  
-## [146] &quot;Zoran&quot;      &quot;Romana&quot;     &quot;Silvana&quot;    &quot;Ljubomir&quot;   &quot;Miroslav&quot;  
-## [151] &quot;Lidija&quot;     &quot;Mario&quot;      &quot;Nenad&quot;      &quot;Biserka&quot;    &quot;Gordana&quot;   
-## [156] &quot;Boris&quot;      &quot;Marija&quot;     &quot;Vesna&quot;      &quot;Mirjana&quot;    &quot;Beatrica&quot;  
-## [161] &quot;Jako&quot;       &quot;Veljko&quot;     &quot;Nikica&quot;     &quot;Marijan&quot;    &quot;Nikola&quot;    
-## [166] &quot;Alemka&quot;     &quot;Željko&quot;     &quot;Vesna&quot;      &quot;Žarko&quot;      &quot;Stanka&quot;    
-## [171] &quot;Ivica&quot;      &quot;Antonio&quot;    &quot;Tomislav&quot;   &quot;Mirjam&quot;     &quot;Gordana&quot;   
-## [176] &quot;Davor&quot;      &quot;Mirjana&quot;    &quot;Dalibor&quot;    &quot;Darko&quot;      &quot;Božidar&quot;   
-## [181] &quot;Jurica&quot;     &quot;Melita&quot;     &quot;Tina&quot;       &quot;Gordana&quot;    &quot;Margita&quot;   
-## [186] &quot;Jadranka&quot;   &quot;Tomislav&quot;   &quot;Denis&quot;      &quot;Renata&quot;     &quot;Petra&quot;     
-## [191] &quot;Zdravko&quot;    &quot;Valentina&quot;  &quot;Jadranka&quot;   &quot;Karmen&quot;     &quot;Mirjana&quot;   
-## [196] &quot;Jelena&quot;     &quot;Danica&quot;     &quot;Mirjana&quot;    &quot;Maja&quot;       &quot;Boro&quot;      
-## [201] &quot;Ivana&quot;      &quot;Biserka&quot;    &quot;Maja&quot;       &quot;Milivoj&quot;    &quot;Franjo&quot;    
-## [206] &quot;Milena&quot;     &quot;Jadranka&quot;   &quot;Ljiljana&quot;   &quot;Anđelka&quot;    &quot;Ksenija&quot;   
-## [211] &quot;Romana&quot;     &quot;Ani&quot;        &quot;Darka&quot;      &quot;Mislav&quot;     &quot;Nataša&quot;    
-## [216] &quot;Krešimir&quot;   &quot;Vlatka&quot;     &quot;Milan&quot;      &quot;Diana&quot;      &quot;Zvonimir&quot;  
-## [221] &quot;Darko&quot;      &quot;Nada&quot;       &quot;Matija&quot;     &quot;Darko&quot;      &quot;Darko&quot;     
-## [226] &quot;Pavo&quot;       &quot;Marija&quot;     &quot;Dubravka&quot;   &quot;Kristina&quot;   &quot;Ružica&quot;    
-## [231] &quot;Josip&quot;      &quot;Tajana&quot;     &quot;Mladen&quot;     &quot;Tatjana&quot;    &quot;Vatroslav&quot; 
-## [236] &quot;Slaven&quot;     &quot;Davorka&quot;    &quot;Maja&quot;       &quot;Vladimir&quot;   &quot;Leonida&quot;   
-## [241] &quot;Katica&quot;     &quot;Ivica&quot;      &quot;Željko&quot;     &quot;Žarka&quot;      &quot;Alma&quot;      
-## [246] &quot;Koraljka&quot;   &quot;Aleksandra&quot; &quot;Ivana&quot;      &quot;Jelena&quot;     &quot;Liliana&quot;   
-## [251] &quot;Martin&quot;     &quot;Ljiljana&quot;   &quot;Zrinka&quot;     &quot;Meri&quot;       &quot;Narcisa&quot;   
-## [256] &quot;Vladimir&quot;   &quot;Nikolina&quot;   &quot;Svjetlana&quot;  &quot;Adriana&quot;    &quot;Vesna&quot;     
-## [261] &quot;Branka&quot;     &quot;Filomena&quot;   &quot;Sanja&quot;      &quot;Jasna&quot;      &quot;Renata&quot;    
-## [266] &quot;Krunoslav&quot;  &quot;Antun&quot;      &quot;Gordana&quot;    &quot;Dijana&quot;     &quot;Darko&quot;     
-## [271] &quot;Nikolina&quot;   &quot;S&quot;          &quot;Brigitte&quot;   &quot;Frano&quot;      &quot;Nataša&quot;    
-## [276] &quot;Snježana&quot;   &quot;Željka&quot;     &quot;Ružica&quot;     &quot;Ljiljana&quot;   &quot;Branko&quot;    
-## [281] &quot;Mara&quot;       &quot;Tatjana&quot;    &quot;Margit&quot;     &quot;Vinko&quot;      &quot;Milena&quot;    
-## [286] &quot;Ankica&quot;     &quot;Katarina&quot;   &quot;Kristina&quot;   &quot;Majda&quot;      &quot;Mario&quot;     
-## [291] &quot;Ivan&quot;       &quot;Anita&quot;      &quot;Jasna&quot;      &quot;Ivan&quot;       &quot;Žarko&quot;     
-## [296] &quot;Antun&quot;      &quot;Sanja&quot;      &quot;Maryline&quot;   &quot;Marin&quot;      &quot;Nedeljka&quot;  
-## [301] &quot;Željko&quot;     &quot;Krunoslav&quot;  &quot;Monika&quot;     &quot;Ivica&quot;      &quot;Sandra&quot;    
-## [306] &quot;Anja&quot;       &quot;Roland&quot;     &quot;Zvjezdana&quot;  &quot;Anita&quot;      &quot;Martina&quot;   
-## [311] &quot;Vedrana&quot;    &quot;Dubravka&quot;   &quot;Željko&quot;     &quot;Bruna&quot;      &quot;Violeta&quot;   
-## [316] &quot;Jelena&quot;     &quot;Lucija&quot;     &quot;Ivana&quot;      &quot;Mileo&quot;      &quot;Vlatka&quot;    
-## [321] &quot;Martina&quot;    &quot;Renata&quot;     &quot;Sanja&quot;      &quot;Milena&quot;     &quot;Goran&quot;     
-## [326] &quot;Goran&quot;      &quot;Igor&quot;       &quot;Miroslav&quot;   &quot;Monika&quot;     &quot;Davor&quot;     
-## [331] &quot;Damir&quot;      &quot;Stjepan&quot;    &quot;Snježana&quot;   &quot;Zrinka&quot;     &quot;Nikola&quot;    
-## [336] &quot;Štefica&quot;    &quot;Mario&quot;      &quot;Nikolina&quot;   &quot;Žarko&quot;      &quot;Edina&quot;     
-## [341] &quot;Danijela&quot;   &quot;Andrej&quot;     &quot;Đurđica&quot;    &quot;Eduard&quot;     &quot;Gordana&quot;   
-## [346] &quot;Lidija&quot;     &quot;Vesna&quot;      &quot;Goran&quot;      &quot;Robert&quot;     &quot;Jure&quot;      
-## [351] &quot;Mihaela&quot;    &quot;Arsen&quot;      &quot;Anica&quot;      &quot;Ivo&quot;        &quot;Branka&quot;    
-## [356] &quot;Helena&quot;     &quot;Vlado&quot;      &quot;Marijana&quot;   &quot;Ljiljana&quot;   &quot;Tatjana&quot;   
-## [361] &quot;Zlatko&quot;     &quot;Sonja&quot;      &quot;Melita&quot;     &quot;Matilda&quot;    &quot;Vlatka&quot;    
-## [366] &quot;Tomislav&quot;   &quot;Jasna&quot;      &quot;Zdravka&quot;    &quot;Ivan&quot;       &quot;Zdenko&quot;    
-## [371] &quot;Renata&quot;     &quot;Denis&quot;      &quot;Anica&quot;      &quot;Krešimir&quot;   &quot;Sanja&quot;     
-## [376] &quot;Biserka&quot;    &quot;Ivana&quot;      &quot;Snježana&quot;   &quot;Zoran&quot;      &quot;Samson&quot;    
-## [381] &quot;Tamara&quot;     &quot;Vladimir&quot;   &quot;Dominik&quot;    &quot;Alen&quot;       &quot;Sanja&quot;     
-## [386] &quot;Andrijana&quot;  &quot;Dražen&quot;     NA           &quot;Diana&quot;      &quot;Marijan&quot;   
-## [391] &quot;Ljerka&quot;     &quot;Maja&quot;       &quot;Klara&quot;      &quot;Robertina&quot;  &quot;Medina&quot;    
-## [396] &quot;Sanja&quot;      &quot;Vedrana&quot;    &quot;Snježana&quot;   &quot;Ivica&quot;      &quot;Dario&quot;     
-## [401] &quot;Antonija&quot;   &quot;Damir&quot;      &quot;Robert&quot;     &quot;Ankica&quot;     &quot;Davor&quot;     
-## [406] &quot;Valentina&quot;  &quot;Nenad&quot;      &quot;Azra&quot;       &quot;Karolina&quot;   &quot;Vesna&quot;     
-## [411] &quot;Višnja&quot;     &quot;Petar&quot;      &quot;Draženka&quot;   &quot;Jadranka&quot;   &quot;Mirela&quot;    
-## [416] &quot;Gordana&quot;    &quot;Natko&quot;      &quot;Mirjana&quot;    &quot;Igor&quot;       &quot;Verica&quot;    
-## [421] &quot;Branko&quot;     &quot;Dražen&quot;     &quot;Tomislav&quot;   &quot;Ilija&quot;      &quot;Jana&quot;      
-## [426] &quot;Suzana&quot;     &quot;Gordana&quot;    &quot;Marina&quot;     &quot;Antonija&quot;   &quot;Dijana&quot;    
-## [431] &quot;Andreja&quot;    &quot;Darija&quot;     &quot;Irmelina&quot;   &quot;Snježana&quot;   &quot;Gorana&quot;    
-## [436] &quot;Iva&quot;        &quot;Volodymyr&quot;  &quot;Jasmina&quot;    &quot;Zvonko&quot;     &quot;Anđelka&quot;   
-## [441] &quot;Gordana&quot;    &quot;Tome&quot;       &quot;Mirjana&quot;    &quot;Mario&quot;      &quot;Vesna&quot;     
-## [446] &quot;Zorka&quot;      &quot;Marica&quot;     &quot;Dijana&quot;     &quot;Željka&quot;     &quot;Miodrag&quot;   
-## [451] &quot;Anđelina&quot;   &quot;Vlatko&quot;     &quot;Vera&quot;       &quot;Anto&quot;       &quot;Jasmina&quot;   
-## [456] &quot;Damir&quot;      &quot;Željkica&quot;   &quot;Đurđa&quot;      &quot;Anđelko&quot;    &quot;Štefek&quot;    
-## [461] &quot;Karmen&quot;     &quot;Sanja&quot;      &quot;Anica&quot;      &quot;Jasmina&quot;    &quot;Mario&quot;     
-## [466] &quot;Mario&quot;      &quot;Marin&quot;      &quot;Jurica&quot;     &quot;Nevenka&quot;    &quot;Miljenko&quot;  
-## [471] &quot;Mirjana&quot;    &quot;Predrag&quot;    &quot;Valerija&quot;   &quot;Anđelka&quot;    &quot;Nataša&quot;    
-## [476] &quot;Radmila&quot;    &quot;Marina&quot;     &quot;Mirjana&quot;    &quot;Lidija&quot;     &quot;Sanja&quot;     
-## [481] &quot;Tomislav&quot;   &quot;Mijo&quot;       &quot;Rahela&quot;     &quot;Ratko&quot;      &quot;Mirjana&quot;   
-## [486] &quot;Martina&quot;    &quot;Sonja&quot;      &quot;Mario&quot;      &quot;Željka&quot;     &quot;Goranka&quot;   
-## [491] &quot;Melita&quot;     &quot;Vesna&quot;      &quot;Ivica&quot;      &quot;Draženka&quot;   &quot;Nada&quot;      
-## [496] &quot;Josip&quot;      &quot;Danijel&quot;    &quot;Gordana&quot;    &quot;Krešo&quot;      &quot;Sanja&quot;     
-## [501] &quot;Radmila&quot;    NA           &quot;Igor&quot;       &quot;Mihaela&quot;    &quot;Karolina&quot;  
-## [506] &quot;Ivan&quot;       &quot;Violeta&quot;    &quot;Dragutin&quot;   &quot;Sonja&quot;      &quot;Lidija&quot;    
-## [511] &quot;Krunoslav&quot;  &quot;Saša&quot;       &quot;Stjepan&quot;    &quot;Darko&quot;      &quot;Mirko&quot;     
-## [516] &quot;Tomislav&quot;   &quot;Ivan&quot;       &quot;Miroslav&quot;   &quot;Marica&quot;     &quot;Mirjana&quot;   
-## [521] &quot;Đurđica&quot;    &quot;Martina&quot;    &quot;Ines&quot;       &quot;Goranka&quot;    &quot;Nikola&quot;    
-## [526] &quot;Jasmina&quot;    &quot;Lidija&quot;     &quot;Kornelija&quot;  &quot;Marija&quot;     &quot;Silvija&quot;   
-## [531] &quot;Slaven&quot;     &quot;Stjepan&quot;    &quot;Snježana&quot;   &quot;Anamarija&quot;  &quot;Sanja&quot;     
-## [536] &quot;Dario&quot;      &quot;Ivana&quot;      &quot;Jaromir&quot;    &quot;Zoran&quot;      &quot;Marija&quot;    
-## [541] &quot;Vlatka&quot;     &quot;Sunčica&quot;    &quot;Vesna&quot;      &quot;Marina&quot;     &quot;Dušica&quot;    
-## [546] &quot;Vera&quot;       &quot;Blanka&quot;     &quot;Zdravko&quot;    &quot;Deana&quot;      &quot;Desiree&quot;   
-## [551] &quot;Silvana&quot;    &quot;Mladen&quot;     &quot;Davor&quot;      &quot;Serđo&quot;      &quot;Josip&quot;     
-## [556] &quot;Milana&quot;     &quot;Anamari&quot;    &quot;Denis&quot;      &quot;Adriana&quot;    &quot;Nedjeljka&quot; 
-## [561] &quot;Marjana&quot;    &quot;Dunja&quot;      &quot;Gloria&quot;     &quot;Iva&quot;        &quot;Ana&quot;       
-## [566] &quot;Sanja&quot;      &quot;Kim&quot;        &quot;Ana&quot;        &quot;Jasna&quot;      &quot;Loredana&quot;  
-## [571] &quot;Tatjana&quot;    &quot;Orlando&quot;    &quot;Sonja&quot;      &quot;Ljiljana&quot;   &quot;Violeta&quot;   
-## [576] &quot;Bojana&quot;     &quot;Josipa&quot;     &quot;Ivan&quot;       &quot;Vedran&quot;     &quot;Željko&quot;    
-## [581] &quot;Ivone&quot;      NA           &quot;Anton&quot;      &quot;Tomislav&quot;   &quot;Zoran&quot;     
-## [586] &quot;Tanja&quot;      &quot;Borka&quot;      &quot;Dejana&quot;     &quot;Hedi&quot;       &quot;Jelena&quot;    
-## [591] &quot;Josip&quot;      &quot;Davor&quot;      &quot;Jasna&quot;      &quot;Iva&quot;        &quot;Olivela&quot;   
-## [596] &quot;Astrid&quot;     &quot;Dijana&quot;     &quot;Boris&quot;      &quot;Goran&quot;      &quot;Vilma&quot;     
-## [601] NA           &quot;Nataša&quot;     &quot;Dragutin&quot;   &quot;Tajana&quot;     &quot;Marko&quot;     
-## [606] &quot;Ivica&quot;      &quot;Antonio&quot;    &quot;Jasminka&quot;   &quot;Rosanda&quot;    &quot;Ivana&quot;     
-## [611] &quot;Ana&quot;        &quot;Snježana&quot;   &quot;Elizabeta&quot;  &quot;Zrinka&quot;     &quot;Aleksij&quot;   
-## [616] &quot;Marija&quot;     &quot;Mirko&quot;      &quot;Milan&quot;      &quot;Dražena&quot;    &quot;Maja&quot;      
-## [621] &quot;Božica&quot;     &quot;Ksenija&quot;    &quot;Ivica&quot;      &quot;Sanjica&quot;    &quot;Margarita&quot; 
-## [626] &quot;Mirjana&quot;    &quot;Kristina&quot;   &quot;Saša&quot;       &quot;Ivana&quot;      &quot;Ksenija&quot;   
-## [631] &quot;Lareta&quot;     &quot;Dragan&quot;     &quot;Ines&quot;       &quot;Anto&quot;       &quot;Ivana&quot;     
-## [636] &quot;Igor&quot;       &quot;Sanja&quot;      &quot;Zvjezdana&quot;  &quot;Kornelija&quot;  &quot;Marija&quot;    
-## [641] &quot;Marko&quot;      &quot;Slađana&quot;    &quot;Boško&quot;      &quot;Nino&quot;       &quot;Milorad&quot;   
-## [646] &quot;Hrvoje&quot;     &quot;Zdravko&quot;    &quot;Josip&quot;      &quot;Klaudija&quot;   &quot;Tibor&quot;     
-## [651] &quot;Blagica&quot;    &quot;Vesna&quot;      &quot;Zlatko&quot;     &quot;Snježana&quot;   &quot;Irena&quot;     
-## [656] &quot;Igor&quot;       &quot;Slavica&quot;    &quot;Nataša&quot;     &quot;Irena&quot;      NA          
-## [661] &quot;Nataša&quot;     &quot;Ana&quot;        &quot;Marija&quot;     &quot;Mirta&quot;      &quot;Đurđica&quot;   
-## [666] &quot;Danijela&quot;   &quot;Josip&quot;      &quot;Branka&quot;     &quot;Terezija&quot;   &quot;Darija&quot;    
-## [671] &quot;Petar&quot;      &quot;Miroslav&quot;   &quot;Željko&quot;     &quot;Ivana&quot;      &quot;Reza&quot;      
-## [676] &quot;Jasna&quot;      &quot;Branka&quot;     &quot;Lidija&quot;     &quot;Ivana&quot;      &quot;Tihomir&quot;   
-## [681] &quot;Marija&quot;     &quot;Zrinka&quot;     &quot;Melita&quot;     &quot;Tonći&quot;      &quot;Jordanko&quot;  
-## [686] &quot;Slavica&quot;    &quot;Željko&quot;     &quot;Željka&quot;     &quot;Markica&quot;    &quot;Jasmina&quot;   
-## [691] &quot;Ante&quot;       &quot;Dražen&quot;     &quot;Jagoda&quot;     &quot;Bernardo&quot;   &quot;Katica&quot;    
-## [696] &quot;Irena&quot;      &quot;Davor&quot;      &quot;Dolores&quot;    &quot;Mirka&quot;      &quot;Branimir&quot;  
-## [701] &quot;Božena&quot;     &quot;Josip&quot;      &quot;Marin&quot;      &quot;Elvis&quot;      &quot;Luzarko&quot;   
-## [706] &quot;Branka&quot;     &quot;Antonio&quot;    &quot;Jadranka&quot;   &quot;Vesna&quot;      &quot;Kata&quot;      
-## [711] &quot;Verica&quot;     &quot;Kristijan&quot;  &quot;Gordan&quot;     &quot;Ivan&quot;       &quot;Andrija&quot;   
-## [716] &quot;Gordana&quot;    &quot;Ana&quot;        &quot;Mate&quot;       &quot;Anita&quot;      &quot;Božena&quot;    
-## [721] &quot;Đurđica&quot;    &quot;Lidija&quot;     &quot;Vedran&quot;     &quot;Krešimir&quot;   &quot;Ivan&quot;      
-## [726] &quot;Ante&quot;       &quot;Andrija&quot;    &quot;Zvonko&quot;     &quot;Nada&quot;       &quot;Damir&quot;     
-## [731] &quot;Jasminka&quot;   &quot;Ljerka&quot;     &quot;Vlatka&quot;     &quot;Edit&quot;       &quot;Emina&quot;     
-## [736] &quot;Jadranka&quot;   &quot;Josip&quot;      &quot;Marija&quot;     &quot;Josip&quot;      &quot;Antun&quot;     
-## [741] &quot;Vesna&quot;      &quot;Aleksandra&quot; &quot;Franjo&quot;     &quot;Hrvoje&quot;     &quot;Jasenka&quot;   
-## [746] &quot;Draženka&quot;   &quot;Marin&quot;      &quot;Vedran&quot;     &quot;Vlatka&quot;     &quot;Dane&quot;      
-## [751] &quot;Zlatko&quot;     &quot;Igor&quot;       &quot;Janoš&quot;      &quot;Dalibor&quot;    &quot;Damir&quot;     
-## [756] &quot;Marko&quot;      &quot;Martina&quot;    &quot;Zdenka&quot;     &quot;Zdravko&quot;    &quot;Antonia&quot;   
-## [761] &quot;Jadranka&quot;   &quot;Ivica&quot;      &quot;Kinga&quot;      &quot;Vlatka&quot;     &quot;Ana&quot;       
-## [766] &quot;Mato&quot;       &quot;Janoš&quot;      &quot;Darko&quot;      &quot;Ante&quot;       &quot;Ilija&quot;     
-## [771] &quot;Branka&quot;     &quot;Damir&quot;      &quot;Silvija&quot;    &quot;Damir&quot;      &quot;Darko&quot;     
-## [776] &quot;Darko&quot;      &quot;Miroslav&quot;   &quot;Susana&quot;     &quot;Katica&quot;     &quot;Ružica&quot;    
-## [781] &quot;Robert&quot;     &quot;Nataša&quot;     &quot;Danijel&quot;    &quot;Marija&quot;     &quot;Ante&quot;      
-## [786] &quot;Branko&quot;     &quot;Marko&quot;      NA           &quot;Tomislav&quot;   &quot;Blaženka&quot;  
-## [791] &quot;Saša&quot;       &quot;Marija&quot;     &quot;Silvijo&quot;    &quot;Snježana&quot;   &quot;Žana&quot;      
-## [796] &quot;Ivana&quot;      &quot;Natko&quot;      NA           &quot;Darko&quot;      &quot;Marija&quot;    
-## [801] &quot;Maja&quot;       &quot;Sanja&quot;      &quot;Mirjana&quot;    &quot;Diana&quot;      &quot;Diana&quot;     
-## [806] &quot;Sanda&quot;      &quot;Ivana&quot;      &quot;Marina&quot;     &quot;Ivana&quot;      &quot;Marijan&quot;   
-## [811] &quot;Živko&quot;      &quot;Adrijana&quot;   &quot;Ivan&quot;       &quot;Mario&quot;      &quot;Damir&quot;     
-## [816] &quot;Marina&quot;     &quot;Alen&quot;       &quot;Dario&quot;      &quot;Lidija&quot;     &quot;Josipa&quot;    
-## [821] &quot;Dubravka&quot;   &quot;Mirela&quot;     &quot;Zlatko&quot;     &quot;Vladimir&quot;   &quot;Marijan&quot;   
-## [826] &quot;Marija&quot;     &quot;Marko&quot;      &quot;Slavica&quot;    &quot;Tihomir&quot;    NA          
-## [831] &quot;Mato&quot;       &quot;Mario&quot;      &quot;Stipica&quot;    &quot;Marijana&quot;   &quot;Tamara&quot;    
-## [836] &quot;Mirna&quot;      &quot;Miroslav&quot;   &quot;Vlatka&quot;     &quot;Željko&quot;     &quot;Zdenka&quot;    
-## [841] &quot;Jasna&quot;      &quot;Marko&quot;      &quot;Ljiljana&quot;   &quot;Krunoslav&quot;  &quot;Tatjana&quot;   
-## [846] &quot;Grgur&quot;      &quot;Marija&quot;     &quot;Marina&quot;     &quot;Katica&quot;     &quot;Marija&quot;    
-## [851] &quot;Marina&quot;     &quot;Anđelko&quot;    &quot;Zvonimir&quot;   &quot;Đuro&quot;       &quot;Katica&quot;    
-## [856] &quot;Ema&quot;        NA           &quot;Vesna&quot;      &quot;Brankica&quot;   &quot;Dara&quot;      
-## [861] &quot;Katarina&quot;   &quot;Igor&quot;       &quot;Đurđica&quot;    &quot;Branislav&quot;  &quot;Nada&quot;      
-## [866] &quot;Marko&quot;      &quot;Renata&quot;     &quot;Marica&quot;     &quot;Damir&quot;      &quot;Davorka&quot;   
-## [871] &quot;Ivan&quot;       &quot;Stipe&quot;      &quot;Vranko&quot;     NA           &quot;Nikola&quot;    
-## [876] &quot;Ana&quot;        &quot;Zorana&quot;     &quot;Edita&quot;      &quot;Anela&quot;      &quot;Krešimir&quot;  
-## [881] &quot;Anita&quot;      &quot;Zoran&quot;      &quot;Silvana&quot;    &quot;Jadranka&quot;   &quot;Petar&quot;     
-## [886] &quot;Anđelka&quot;    &quot;Đuro&quot;       &quot;Zdenka&quot;     &quot;Mirjana&quot;    &quot;Davor&quot;     
-## [891] &quot;Leo&quot;        &quot;Marita&quot;     &quot;Sanja&quot;      &quot;Boris&quot;      &quot;Mario&quot;     
-## [896] &quot;Katarina&quot;   &quot;Majda&quot;      &quot;Antonela&quot;   &quot;Nives&quot;      &quot;Jasna&quot;     
-## [901] &quot;Sanja&quot;      &quot;Jure&quot;       &quot;Miljenko&quot;   &quot;Vlade&quot;      &quot;Ines&quot;      
-## [906] &quot;Davor&quot;      &quot;Josipa&quot;     &quot;Mate&quot;       &quot;Matija&quot;     &quot;Zrinka&quot;    
-## [911] &quot;Natalija&quot;   &quot;Marina&quot;     &quot;Bože&quot;       &quot;Željka&quot;     &quot;Dominik&quot;   
-## [916] &quot;Žana&quot;       &quot;Bartul&quot;     &quot;Siniša&quot;     &quot;Sanja&quot;</code></pre>
+<p>Ako u bazi postoje takva imena, pod oznaku spola ću staviti <code>nepoznato</code>. Ako nekog imena nema u bazi, kao oznaku spola stavit ću <code>NA</code>.</p>
+<pre class="r"><code>d_osnovne$ravnatelj_spol &lt;- apply(d_osnovne[, &#39;ravnatelj_ime&#39;],
+                                  MARGIN = 1,
+                                  FUN = crossrefSpol)
+
+d_srednje$ravnatelj_spol &lt;- apply(d_srednje[, &#39;ravnatelj_ime&#39;],
+                                  MARGIN = 1,
+                                  FUN = crossrefSpol)</code></pre>
+<p>Nakon prvog povezivanja imena u infleksijskoj bazi i imena rukovodećih osoba u popisima škola, dobivamo poveći broj oznaka <code>nepoznato</code>.</p>
+<pre class="r"><code>table(d_osnovne$ravnatelj_spol)</code></pre>
+<pre><code>## 
+##         m nepoznato         z 
+##       278        95       525</code></pre>
+<pre class="r"><code>table(d_srednje$ravnatelj_spol)</code></pre>
+<pre><code>## 
+##         m nepoznato         z 
+##       188        45       187</code></pre>
+<pre class="r"><code>. &lt;- table(d_visoko$spol)</code></pre>
 <p>Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih institucija trenutno imamo 101 muškarca i 32 žene.</p>
 <p>U tablici je zabilježena i vrsta ustanove:</p>
 <pre class="r"><code>unique(d_visoko$vrsta_ustanove)</code></pre>
