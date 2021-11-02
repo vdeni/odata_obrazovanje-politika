@@ -3,6 +3,10 @@ import json
 
 import pandas
 
+# >>>>> setup
+_append_colnames = ["rb", "nazivDonatora", "oib", "adresaDonatora",
+                    "datumDonacije", "iznos", "trzisnaVrijednost", "ukupno"]
+
 data_path = os.path.join('data',
                          '2021-lokalni-izbori_donacije')
 
@@ -18,26 +22,32 @@ data_files = [os.path.abspath(os.path.join(data_path,
                                            filename))
               for filename in data_files]
 
-with open(data_files[178], 'r') as infile:
-    d_json = json.load(infile)
+# >>>>> join
+d_out = pandas.DataFrame()
 
-d = pandas.json_normalize(d_json)
+for filename in data_files[0:1]:
+    with open(filename, 'r') as infile:
+        d_json = json.load(infile)
 
-d = d.explode('data')
+    d = pandas.json_normalize(d_json)
 
-pandas.DataFrame(d.data.iloc[1], index=[0])
+    d = d.explode('data')
 
-d_append = pandas.DataFrame()
+    d_append = pandas.DataFrame(columns=_append_colnames)
 
-for row in range(0, d.shape[0]):
-    _ = pandas.DataFrame(d.data.iloc[row],
-                         index=[0])
+    if not d.data.isna():
+        for row in range(0, d.shape[0]):
+            _ = pandas.DataFrame(d.data.iloc[row],
+                                 index=[0])
 
-    d_append = pandas.concat([d_append,
-                              _])
+            d_append = pandas.concat([d_append,
+                                      _])
 
-d = d.drop(columns='data')
+    d = d.drop(columns='data')
 
-d = pandas.concat([d,
-                   d_append],
-                  axis=1)
+    d = pandas.concat([d,
+                       d_append],
+                      axis=1)
+
+    d_out = pandas.concat([d_out,
+                           d])
