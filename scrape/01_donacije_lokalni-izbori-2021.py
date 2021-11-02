@@ -35,7 +35,7 @@ with open(os.path.join(data_path,
 counter_zupanije = dict()
 
 # >>>>> scrape
-for zup_id, zup in enumerate(elem_zupanije[0:1]):
+for zup_id, zup in enumerate(elem_zupanije):
     print(f'\n===>> {zup_id} / 21 _ Prikupljam podatke za: {zup.text}\n')
 
     zup.click()

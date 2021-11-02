@@ -14,3 +14,9 @@ linkovi:
     - kandidature_skupstine.csv: https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZS_GSGZ_GV_OV_03%2005%202021.xlsx
     - kandidature_nacelnici.csv: https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZN_GNGZ_GN_ON_03%2005%202021.xlsx
     - kandidature_zamjenici.csv: https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZZN_ZGN_ZON_03%2005%202021.xlsx
+- `make donacije_lokalni` za scrape JSON izvještaja o donacijama kandidatima
+na lokalnim izborima 2021. sa stranica Državnog izbornog povjerenstva
+(https://www.izbori.hr/lokalni2021/financ/1/). Oslanja se na dvije Python skripte
+s potrebnim paketima popisanima u `/Pipfile`. Varijable čija imena završavaju na
+`Indiv` sadrže podatke o donatorima i donacijama. Ostale varijable se odnose
+na primatelje donacija.
