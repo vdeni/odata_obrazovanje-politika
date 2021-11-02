@@ -2,9 +2,12 @@
 output:
     html_document:
         code_folding: hide
+        toc: true
+        toc_float: true
+title: 'Spolna struktura osoba na rukovodećim pozicijama u hrvatskom obrazovnom sustavu'
 ---
 
-```{r setup}
+```{r setup, message = F}
 library(here)
 library(magrittr)
 library(dplyr)
@@ -12,18 +15,45 @@ library(readr)
 library(stringr)
 
 knitr::opts_chunk$set(echo = T,
+                      message = F,
                       include = T)
+
+# >>>>> custom funkcije
+crossrefSpol <- function(name,
+                         reference_list = d_infleks) {
+    .crossref <- filter(reference_list,
+                        infleksijska_forma == name)
+
+    if (nrow(.crossref) > 1) {
+        return('nepoznato')
+    }
+    else if (nrow(.crossref) == 0) {
+        return(NA_character_)
+    }
+    else {
+        return(.crossref$spol)
+    }
+}
 ```
 
 Podaci korišteni u ovom izvještaju dostupni su na Portalu otvorenih
 podataka
-([ovdje](https://data.gov.hr/ckan/dataset/ustanove-iz-sustava-visokog-obrazovanja))
-i na stranicama Ministarstva znanosti i obrazovanja
-([ovdje](http://mzos.hr/dbApp/pregled.aspx?appName=ustanove_VU)). Podaci
-korišteni u analizi preuzeti su 12. listopada 2021., u 15:43.
+([ovdje](https://data.gov.hr/ckan/organization/ministarstvo-znanosti-i-obrazovanja))
+Podaci korišteni u analizi preuzeti su 02. studenog 2021., u 13:48.
 
 ```{r load-data, message = F}
+d_osnovne <- readr::read_csv2(here::here('data',
+                                         'obrazovne-ustanove_popis',
+                                         'popis_osnovne-skole.csv')) %>%
+    janitor::clean_names(.)
+
+d_srednje <- readr::read_csv2(here::here('data',
+                                         'obrazovne-ustanove_popis',
+                                         'popis_srednje-skole.csv')) %>%
+    janitor::clean_names(.)
+
 d_visoko <- readr::read_csv2(here::here('data',
+                                        'obrazovne-ustanove_popis',
                                         'popis_visoko-obrazovanje.csv')) %>%
     janitor::clean_names(.)
 ```
@@ -33,7 +63,7 @@ navedene čelne osobe institucija, s pripadajućim nazivom funkcije koju obnaša
 (na primjer "dekanica" ili "dekan").
 
 ```{r glimpse-managers}
-head(d_visoko$celnik)
+tail(d_visoko$celnik)
 ```
 
 Budući da se naziv funkcije mijenja ovisno o spolu rukovodeće osobe, na temelju
@@ -50,6 +80,96 @@ d_visoko$spol <-
                      T ~ NA_character_)
 
 . <- table(d_visoko$spol)
+```
+
+Popisi osnovnih i srednjih škola u sebi ne sadrže eksplicitan podatak o spolu
+ravnateljice odnosno ravnatelja. Međutim, budući da je na ovom području
+ime osobe snažan signal za njen spol, možemo iskoristiti
+[infleksijsku bazu hrvatskih imena i prezimena](http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/)
+[^baza-imena] da bismo dobili dobru procjenu spola osoba na rukovodećim
+pozicijama u osnovnim i srednjim školama.
+
+# Spolna struktura rukovodećih osoba u osnovnim i srednjim školama
+
+```{r load-infleksijka-baza}
+d_infleks <- readr::read_csv(here('data',
+                                  'infleksijska-baza',
+                                  'infleksijska-baza.csv'),
+                             col_names = c('infleksijska_forma',
+                                           'lema',
+                                           'oznaka'))
+```
+
+Infleksijska baza hrvatskih imena i prezimena sadrži tri stupca: infleksijske
+forme imena i prezimena, njihove leme, i leksičke oznake[^infleksija-doc]:
+
+```{r glimpse-infleksijska}
+head(d_infleks)
+```
+
+Prvo što trebamo napraviti jest izvući imena ravnateljica i ravnatelja iz
+popisa osnovnih i srednjih škola. Ti podaci nalaze se u varijabli `Ravnatelj`.
+
+```{r glimpse-ravnatelji}
+head(d_osnovne$ravnatelj)
+head(d_srednje$ravnatelj)
+```
+
+Možemo vidjeti da unosi u polje prvo imaju navedena imena, a potom
+prezimena, te da su imena i prezimena odvojena samo razmacima. Također možemo
+vidjeti da, iz nekog meni nepoznatog razloga, za neke škole nemamo navedeno ime
+ravnateljice, odnosno ravnatelja (označeno s `NA`).
+
+Za procjenjivanje spola uzet ću samo prvu riječ upisanu u varijablu `Ravnatelj`
+za svaku školu. Zbog toga neću zahvatiti oba imena osoba koje imaju dva imena
+ako su ona odvojena razmakom (umjesto, crticom; na primjer, ako je ime "Ana
+Marija", dohvatit ću samo "Ana", a ako je "Ana-Marija", dohvatit ću
+"Ana-Marija"). Ipak, smatram da za samu procjenu spola to nije potrebno jer bi
+i samo jedno od višestrukih imena trebalo biti dovoljno
+
+```{r izvuci-imena}
+d_osnovne$ravnatelj_ime <- d_osnovne$ravnatelj %>%
+    stringr::str_extract(.,
+                         pattern = '^\\w+')
+
+d_srednje$ravnatelj_ime <- d_srednje$ravnatelj %>%
+    stringr::str_extract(.,
+                         pattern = '^\\w+')
+```
+
+Jednom kad imamo imena, možemo ih usporediti s infleksijskom bazom imena i
+prezimena. Iz infleksijske baze ću zadržati samo unose koji imaju tag
+`Npfsn` ili `Npmsn` jer, ako dobro tumačim bazu, te oznake stoje uz osobne
+imenice u nominativu jednine, pri čemu `f` i `n` označavaju da je ime
+tradicionalno žensko odnosno muško.
+
+```{r filter-imena}
+d_infleks <- dplyr::filter(d_infleks,
+                           str_detect(oznaka,
+                                      'Np(f|m)sn'))
+
+d_infleks$spol <- case_when(str_detect(d_infleks$oznaka,
+                                       'f') ~ 'z',
+                            str_detect(d_infleks$oznaka,
+                                       'm') ~ 'm')
+```
+
+Nakon toga, možemo usporediti popis imena s popisima imena ravnateljica i
+ravnatelja. Ono na što je potrebno paziti su imena poput "Vanja", koja se daju
+osobama oba spola, te koja u infleksijskoj bazi imaju dva unosa.
+
+```{r vanja}
+filter(d_infleks,
+       infleksijska_forma == 'Vanja')
+```
+
+Ako u bazi postoje takva imena, pod oznaku spola ću staviti `nepoznato`. Ako
+nekog imena nema u bazi, kao oznaku spola stavit ću `NA`.
+
+```{r crossref-imena}
+d_osnovne$ravnatelj_spol <- apply(d_osnovne[, 'ravnatelj_ime'],
+                                  MARGIN = 1,
+                                  FUN = crossrefSpol)
 ```
 
 Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih
@@ -74,7 +194,7 @@ knitr::kable(.)
 ```
 
 Također, možemo vidjeti kakva je distribucija spolova po sastavnicama
-sveučilišta u Osijeku, Rijeci, Splitu i Zagrebu[^1]:
+sveučilišta u Osijeku, Rijeci, Splitu i Zagrebu[^rektorice]:
 
 ```{r spol-po-sveucilistima}
 . <- dplyr::filter(d_visoko,
@@ -89,4 +209,10 @@ dimnames(.)[[1]] <- case_when(dimnames(.)[[1]] == 'z' ~ 'Ženski',
 knitr::kable(.)
 ```
 
-[^1]: Ovdje su isključene rektorice i rektori.
+[^rektorice]: Ovdje su isključene rektorice i rektori.
+[^baza-imena]: Damir Boras, Nives Mikelić, Davor Lauc, Leksička flektivna baza
+podataka hrvatskih imena i prezimena, pp. 219-236 , 2003 
+[^infleksija-doc]: Nisam uspio pronaći dokumentaciju za ovaj skup podataka,
+tako da su sva tumačenja moja osobna procjena. Pretpostavio sam da se leksičke
+oznake mogu tumačiti u skladu s oznakama dostupnima ovdje:
+https://www.sketchengine.eu/multext-east-croatian-part-of-speech-tagset/

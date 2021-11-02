@@ -125,3 +125,5 @@ for zup_id, zup in enumerate(elem_zupanije):
                           'w+') as outfile:
                     json.dump(donacije_json,
                               outfile)
+
+    time.sleep(10)

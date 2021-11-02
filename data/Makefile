@@ -2,11 +2,13 @@
 DIR_OB_USTANOVE=obrazovne-ustanove_popis
 DIR_KANDIDATURE=2021-lokalni-izbori_kandidature
 DIR_DONACIJE=2021-lokalni-izbori_donacije
+DIR_IMENA=infleksijska-baza
 
 .PHONY:\
 	obrazovne_ustanove\
 	kandidature_lokalni\
-	donacije_lokalni
+	donacije_lokalni\
+	infleksijska_baza
 
 # >>>>> recepti
 obrazovne_ustanove:\
@@ -23,6 +25,9 @@ kandidature_lokalni:\
 
 donacije_lokalni:\
 	$(DIR_DONACIJE)/donacije_lokalni.csv
+
+infleksijska_baza:\
+	$(DIR_IMENA)/infleksijska-baza.csv
 
 ## >>>>> obrazovne ustanove
 $(DIR_OB_USTANOVE)/popis_vrtici.csv: 
@@ -76,6 +81,13 @@ $(DIR_KANDIDATURE)/kandidature_zamjenici.csv:
 $(DIR_DONACIJE)/donacije_lokalni.csv:
 	cd ../;\
 	pipenv run \
-	python scrape/01_donacije_lokalni-izbori-2021.py;\
+	python scrape/01_donacije_lokalni-izbori-2021.py && \
 	pipenv run \
 	python wrangling/01_combine-json_donacije_lokalni.py
+
+## >>>>> infleksijska baza
+$(DIR_IMENA)/infleksijska-baza.csv:
+	sed -Ee 's/\t|\s/,/g' $(DIR_IMENA)/HML_v50_utf8_Np.txt > \
+		$(DIR_IMENA)/infleksijska-baza.csv
+	sed -i -e 's/,$$//' $(DIR_IMENA)/infleksijska-baza.csv
+	rm $(DIR_IMENA)/HML_v50_utf8_Np.txt
