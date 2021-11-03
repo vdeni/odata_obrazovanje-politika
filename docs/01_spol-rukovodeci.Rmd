@@ -50,19 +50,19 @@ d_osnovne <- readr::read_csv2(here::here('data',
 d_srednje <- readr::read_csv2(here::here('data',
                                          'obrazovne-ustanove_popis',
                                          'popis_srednje-skole.csv')) %>%
-    janitor::clean_names(.)
+    clean_names(.)
 
-d_visoko <- readr::read_csv2(here::here('data',
-                                        'obrazovne-ustanove_popis',
-                                        'popis_visoko-obrazovanje.csv')) %>%
-    janitor::clean_names(.)
+d_visoko <- read_csv2(here::here('data',
+                                 'obrazovne-ustanove_popis',
+                                 'popis_visoko-obrazovanje.csv')) %>%
+    clean_names(.)
 
-d_infleks <- readr::read_csv(here('data',
-                                  'infleksijska-baza',
-                                  'infleksijska-baza.csv'),
-                             col_names = c('infleksijska_forma',
-                                           'lema',
-                                           'oznaka'))
+d_infleks <- read_csv(here('data',
+                           'infleksijska-baza',
+                           'infleksijska-baza.csv'),
+                      col_names = c('infleksijska_forma',
+                                    'lema',
+                                    'oznaka'))
 ```
 
 Tablica s podacima o visokim učilištima sadrži stupac `Celnik`, u kojem su
@@ -90,8 +90,8 @@ d_visoko$spol <-
 Popisi osnovnih i srednjih škola u sebi ne sadrže eksplicitan podatak o spolu
 ravnateljice odnosno ravnatelja. Međutim, budući da je na ovom području
 ime osobe snažan signal za njen spol, možemo iskoristiti
-[infleksijsku bazu hrvatskih imena i prezimena](http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/)
-[^baza-imena] da bismo dobili dobru procjenu spola osoba na rukovodećim
+[infleksijsku bazu hrvatskih imena i prezimena](http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/)[^baza-imena]
+da bismo dobili dobru procjenu spola osoba na rukovodećim
 pozicijama u osnovnim i srednjim školama.
 
 # Spolna struktura rukovodećih osoba u osnovnim i srednjim školama
@@ -130,8 +130,8 @@ d_osnovne$ravnatelj_ime <- d_osnovne$ravnatelj %>%
                          pattern = '^\\w+')
 
 d_srednje$ravnatelj_ime <- d_srednje$ravnatelj %>%
-    stringr::str_extract(.,
-                         pattern = '^\\w+')
+    str_extract(.,
+                pattern = '^\\w+')
 ```
 
 Jednom kad imamo imena, možemo ih usporediti s infleksijskom bazom imena i
@@ -186,7 +186,6 @@ table(d_srednje$ravnatelj_spol,
 
 ```{r spol-visoko}
 . <- table(d_visoko$spol)
-
 ```
 
 Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih
