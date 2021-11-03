@@ -21,8 +21,8 @@ knitr::opts_chunk$set(echo = T,
 # >>>>> custom funkcije
 crossrefSpol <- function(name,
                          reference_list = d_infleks) {
-    .crossref <- filter(reference_list,
-                        infleksijska_forma == name)
+    .crossref <- dplyr::filter(reference_list,
+                               infleksijska_forma == name)
 
     if (nrow(.crossref) > 1) {
         return('nepoznato')
@@ -47,15 +47,15 @@ d_osnovne <- readr::read_csv2(here::here('data',
                                          'popis_osnovne-skole.csv')) %>%
     janitor::clean_names(.)
 
-d_srednje <- readr::read_csv2(here::here('data',
-                                         'obrazovne-ustanove_popis',
-                                         'popis_srednje-skole.csv')) %>%
-    clean_names(.)
+d_srednje <- read_csv2(here('data',
+                            'obrazovne-ustanove_popis',
+                            'popis_srednje-skole.csv')) %>%
+    janitor::clean_names(.)
 
-d_visoko <- read_csv2(here::here('data',
-                                 'obrazovne-ustanove_popis',
-                                 'popis_visoko-obrazovanje.csv')) %>%
-    clean_names(.)
+d_visoko <- read_csv2(here('data',
+                           'obrazovne-ustanove_popis',
+                           'popis_visoko-obrazovanje.csv')) %>%
+    janitor::clean_names(.)
 
 d_infleks <- read_csv(here('data',
                            'infleksijska-baza',
@@ -173,15 +173,137 @@ d_srednje$ravnatelj_spol <- apply(d_srednje[, 'ravnatelj_ime'],
                                   FUN = crossrefSpol)
 ```
 
-Nakon prvog povezivanja imena u infleksijskoj bazi i imena rukovodećih osoba
-u popisima škola, dobivamo poveći broj oznaka `nepoznato`.
+Nakon prvog pokušaja povezivanja imena u infleksijskoj bazi i imena rukovodećih
+osoba u popisima škola, dobivamo poveći broj oznaka `nepoznato`. Za osnovne
+škole:
 
-```{r oznake-nepoznato}
+```{r oznake-nepoznato-osnovne}
 table(d_osnovne$ravnatelj_spol,
       useNA = 'always')
+```
 
+Za srednje škole:
+
+```{r oznake-nepoznato-srednje}
 table(d_srednje$ravnatelj_spol,
       useNA = 'always')
+```
+
+Podaci za te osobe su izvučeni u posebnu tablicu i ručno kodirani. U nekim
+slučajevima je ostavljena oznaka `nepoznato` jer nije bilo moguće s visokom
+razinom sigurnosti utvrditi spol osobe na temelju drugih javno dostupnih
+podataka (poput informacija na web stranici škole).
+
+```{r spoji-spol}
+# >>>>> osnovne skole
+d_osnovne_spol <- readr::read_tsv(here('data',
+                                       'obrazovne-ustanove_popis',
+                                       'popis_osnovne-skole_kod-spolova.tsv'))
+
+. <- filter(d_osnovne,
+            ravnatelj_spol == 'nepoznato')
+
+d_osnovne %<>%
+    filter(.,
+           ravnatelj_spol != 'nepoznato' | is.na(ravnatelj_spol))
+
+. <- left_join(.,
+               d_osnovne_spol,
+               by = c('naziv',
+                      'zupnija',
+                      'mjesto',
+                      'adresa',
+                      'ravnatelj',
+                      'web'),
+               suffix = c('_orig',
+                          '_kod'))
+
+. <- dplyr::select(.,
+                   -'ravnatelj_spol_orig',
+                   'ravnatelj_spol' = 'ravnatelj_spol_kod')
+
+d_osnovne <- bind_rows(d_osnovne,
+                       .)
+
+rm(d_osnovne_spol)
+
+# rucno kodiranje osoba s imenima koja nisu u infleksijskoj bazi
+d_osnovne[d_osnovne$ravnatelj == 'S. Mandica  Starčević' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'z'
+
+d_osnovne[d_osnovne$ravnatelj == 'Maryline  Boussenard' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'z'
+
+d_osnovne[d_osnovne$ravnatelj == 'Mileo  Todić' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'm'
+
+d_osnovne[d_osnovne$ravnatelj == 'Volodymyr  Kubinskyy' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'm'
+
+d_osnovne[d_osnovne$ravnatelj == 'Olivela  Franko' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'z'
+
+d_osnovne[d_osnovne$ravnatelj == 'Lareta  Žubrinić' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'z'
+
+d_osnovne[d_osnovne$ravnatelj == 'Kinga  Kolar' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'z'
+
+d_osnovne[d_osnovne$ravnatelj == 'Vranko  Perković' &
+          !is.na(d_osnovne$ravnatelj),
+          'ravnatelj_spol'] <- 'm'
+
+# >>>>> srednje skole
+d_srednje_spol <- readr::read_tsv(here('data',
+                                       'obrazovne-ustanove_popis',
+                                       'popis_srednje-skole_kod-spolova.tsv'))
+
+. <- filter(d_srednje,
+            ravnatelj_spol == 'nepoznato')
+
+d_srednje %<>%
+    filter(.,
+           ravnatelj_spol != 'nepoznato' | is.na(ravnatelj_spol))
+
+. <- left_join(.,
+               d_srednje_spol,
+               by = c('naziv',
+                      'zupanija',
+                      'mjesto',
+                      'adresa',
+                      'ravnatelj',
+                      'web'),
+               suffix = c('_orig',
+                          '_kod'))
+
+. <- dplyr::select(.,
+                   -'ravnatelj_spol_orig',
+                   'ravnatelj_spol' = 'ravnatelj_spol_kod')
+
+d_srednje <- bind_rows(d_srednje,
+                       .)
+
+rm(d_srednje_spol)
+
+# rucno kodiranje osoba s imenima koja nisu u infleksijskoj bazi
+d_srednje[d_srednje$ravnatelj == 'Volodymyr  Kubinskyy' &
+          !is.na(d_srednje$ravnatelj),
+          'ravnatelj_spol'] <- 'm'
+
+d_srednje[d_srednje$ravnatelj == 'Alejandro  Castillo Jimenez' &
+          !is.na(d_srednje$ravnatelj),
+          'ravnatelj_spol'] <- 'm'
+
+d_srednje[d_srednje$ravnatelj == 'Mevludi  Arslani' &
+          !is.na(d_srednje$ravnatelj),
+          'ravnatelj_spol'] <- 'm'
 ```
 
 ```{r spol-visoko}
@@ -224,6 +346,11 @@ dimnames(.)[[1]] <- case_when(dimnames(.)[[1]] == 'z' ~ 'Ženski',
 
 knitr::kable(.)
 ```
+
+# Zahvale
+
+1. Hvala Katharini Obraz za pomoć pri kodiranju spolova ravnateljica i
+ravnatelja.
 
 [^rektorice]: Ovdje su isključene rektorice i rektori.
 [^baza-imena]: Damir Boras, Nives Mikelić, Davor Lauc, Leksička flektivna baza
