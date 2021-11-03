@@ -112,8 +112,8 @@ head(d_osnovne$ravnatelj)
 head(d_srednje$ravnatelj)
 ```
 
-Možemo vidjeti da unosi u polje prvo imaju navedena imena, a potom
-prezimena, te da su imena i prezimena odvojena samo razmacima. Također možemo
+Možemo vidjeti da unosi u polje prvo imaju navedena imena, a potom prezimena,
+te da su imena i prezimena odvojena samo razmacima[^razmaci]. Također možemo
 vidjeti da, iz nekog meni nepoznatog razloga, za neke škole nemamo navedeno ime
 ravnateljice, odnosno ravnatelja (označeno s `NA`).
 
@@ -122,7 +122,7 @@ za svaku školu. Zbog toga neću zahvatiti oba imena osoba koje imaju dva imena
 ako su ona odvojena razmakom (umjesto, crticom; na primjer, ako je ime "Ana
 Marija", dohvatit ću samo "Ana", a ako je "Ana-Marija", dohvatit ću
 "Ana-Marija"). Ipak, smatram da za samu procjenu spola to nije potrebno jer bi
-i samo jedno od višestrukih imena trebalo biti dovoljno
+i samo jedno od višestrukih imena trebalo biti dovoljno.
 
 ```{r izvuci-imena}
 d_osnovne$ravnatelj_ime <- d_osnovne$ravnatelj %>%
@@ -349,7 +349,7 @@ knitr::kable(.)
 
 # Zahvale
 
-1. Hvala Katharini Obraz za pomoć pri kodiranju spolova ravnateljica i
+1. Katharini Obraz za pomoć pri kodiranju spolova ravnateljica i
 ravnatelja.
 
 [^rektorice]: Ovdje su isključene rektorice i rektori.
@@ -359,3 +359,7 @@ podataka hrvatskih imena i prezimena, pp. 219-236 , 2003
 tako da su sva tumačenja moja osobna procjena. Pretpostavio sam da se leksičke
 oznake mogu tumačiti u skladu s oznakama dostupnima ovdje:
 https://www.sketchengine.eu/multext-east-croatian-part-of-speech-tagset/
+[^razmaci]: Zapravo, čini mi se da su višestruka imena i prezimena odvojena
+jednim razmakom, a da su imena i prezimena međusobno odvojena dvama razmacima.
+Na primjer, kad bismo razmak označili podvlakom `_`, imali bismo
+`Ime1_Ime2__Prezime1_Prezime2`.
