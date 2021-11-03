@@ -17,6 +17,12 @@ linkovi:
 - `make donacije_lokalni` za scrape JSON izvještaja o donacijama kandidatima
 na lokalnim izborima 2021. sa stranica Državnog izbornog povjerenstva
 (https://www.izbori.hr/lokalni2021/financ/1/). Oslanja se na dvije Python skripte
-s potrebnim paketima popisanima u `/Pipfile`. Varijable čija imena završavaju na
-`Indiv` sadrže podatke o donatorima i donacijama. Ostale varijable se odnose
-na primatelje donacija.
+s potrebnim paketima popisanima u `/Pipfile`.
+Skripte izbacuju CSV datoteku (`;` kao delimiter), u kojoj svaki red
+predstavlja jednu donaciju za jednog kandidata. Pritom, i kandidati
+koji nisu imali niti jednu donaciju imaju unos.
+Varijable čija imena završavaju na `Indiv` sadrže podatke o donatorima i
+donacijama. Ostale varijable se odnose na primatelje donacija. Dakle,
+ako neki kandidat nije primio niti jednu donaciju, imat će unose u
+varijablama koje ne završavaju na `Indiv`, a u varijablama koje završavaju
+na `Indiv` (koje se, dakle, odnose na donatore) imat će vrijednost `NA`.

@@ -72,7 +72,7 @@ for zup_id, zup in enumerate(elem_zupanije):
         for izbori in elem_izbori:
             print(f'\t>>> Prikupljam podatke za: {izbori.text}')
 
-            if izbori.text.startswith('ŽUPAN'):
+            if izbori.text.find('ŽUPAN') >= 0:
                 if zup.text in counter_zupanije and\
                         izbori.text in counter_zupanije[zup.text]:
                     print('\nPreskačem.\n')
