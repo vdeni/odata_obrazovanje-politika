@@ -6,8 +6,13 @@ output:
         toc_float: true
         theme: flatly
         highlight: zenburn
+        css: custom.css
 title: 'Spolna struktura čelnih osoba u hrvatskom obrazovnom sustavu'
 ---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap');
+</style>
 
 ```{r setup, message = F}
 library(here)
@@ -128,7 +133,7 @@ ravnateljice, odnosno ravnatelja (označeno s `NA`).
 
 Za procjenjivanje spola uzet ću samo prvu riječ upisanu u varijablu `Ravnatelj`
 za svaku školu. Zbog toga neću zahvatiti oba imena osoba koje imaju dva imena
-ako su ona odvojena razmakom (umjesto, crticom; na primjer, ako je ime "Ana
+ako su ona odvojena razmakom (umjesto crticom; na primjer, ako je ime "Ana
 Marija", dohvatit ću samo "Ana", a ako je "Ana-Marija", dohvatit ću
 "Ana-Marija"). Ipak, smatram da za samu procjenu spola to nije potrebno jer bi
 i samo jedno od višestrukih imena trebalo biti dovoljno.
@@ -160,9 +165,10 @@ d_infleks$spol <- case_when(str_detect(d_infleks$oznaka,
                                        'm') ~ 'm')
 ```
 
-Nakon toga, možemo usporediti popis imena s popisima imena ravnateljica i
-ravnatelja. Ono na što je potrebno paziti su imena poput "Vanja", koja se daju
-osobama oba spola, te koja u infleksijskoj bazi imaju dva unosa.
+Nakon toga, možemo usporediti popis imena u infleksijskoj bazi s popisima imena
+ravnateljica i ravnatelja. Ono na što je potrebno paziti su imena poput
+"Vanja", koja se daju osobama oba spola, te koja u infleksijskoj bazi imaju dva
+unosa.
 
 ```{r vanja}
 filter(d_infleks,
