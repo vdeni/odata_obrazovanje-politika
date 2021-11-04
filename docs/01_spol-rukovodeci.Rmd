@@ -20,7 +20,10 @@ library(viridis)
 
 knitr::opts_chunk$set(echo = T,
                       message = F,
-                      include = T)
+                      include = T,
+                      out.width = '90%',
+                      fig.align = 'center',
+                      dpi = 200)
 
 theme_set(theme_minimal())
 
@@ -399,7 +402,7 @@ knitr::kable(.)
 Kao alternativni pogled na ove podatke, na slici ispod prikazana je procijenjena
 proporcija muškaraca i žena na čelnim pozicijama unutar osnovnih škola,
 srednjih škola, i visokih učilišta (isključene su osobe s oznakom
-`nepoznato`).
+`nepoznato`).[^kategorizacija-ustanova]
 
 ```{r plot-proporcije-po-razinama}
 .d %>%
@@ -438,11 +441,17 @@ srednjih škola, i visokih učilišta (isključene su osobe s oznakom
                        labels = as.character(seq(0,
                                                  1,
                                                  by = .1))) +
+    coord_cartesian(ylim = c(0, .8)) +
     theme(panel.grid.major.x = element_blank(),
           panel.grid.minor.y = element_line(linetype = 'dashed',
-                                            size = .5)) +
+                                            size = .5),
+          legend.position = c(.93, .7),
+          plot.caption.position = 'plot',
+          plot.caption = element_text(hjust = .5)) +
     labs(x = 'Vrsta ustanove',
-         y = 'Proporcija')
+         y = 'Proporcija',
+         caption = paste('Proporcija žena i muškaraca na rukovodećim',
+                         'pozicijama obrazovnih ustanova različitih razina.'))
 ```
 
 Također, možemo vidjeti kakva je distribucija spolova po sastavnicama
@@ -463,6 +472,11 @@ knitr::kable(.)
 
 # Napomene
 
+Kao skupovi podataka koji predstavljaju temeljnu istinu u ovom slučaju uzeti su 
+skupovi koji su datuma navedenog u uvodnom odlomku bili dostupni na stranicama
+data.gov.hr. Dakle, ako je u tim podacima krivo navedena čelna osoba neke
+insitutcije, ta se pogreška odražava u procjeni.
+
 # Zahvale
 
 1. Katharini Obraz za pomoć pri kodiranju spolova ravnateljica i
@@ -479,3 +493,6 @@ https://www.sketchengine.eu/multext-east-croatian-part-of-speech-tagset/
 jednim razmakom, a da su imena i prezimena međusobno odvojena dvama razmacima.
 Na primjer, kad bismo razmak označili podvlakom `_`, imali bismo
 `Ime1_Ime2__Prezime1_Prezime2`.
+[^kategorizacija-ustanova]: Obrazovne ustanove su ovdje kategorizirane kao
+osnovne ili srednje škole, ili visoka učilišta na temelju toga iz kojeg su
+registra preuzeti njihovi podaci.
