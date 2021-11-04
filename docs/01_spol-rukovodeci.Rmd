@@ -15,10 +15,14 @@ library(magrittr)
 library(dplyr)
 library(readr)
 library(stringr)
+library(ggplot2)
+library(viridis)
 
 knitr::opts_chunk$set(echo = T,
                       message = F,
                       include = T)
+
+theme_set(theme_minimal())
 
 # >>>>> custom funkcije
 crossrefSpol <- function(name,
@@ -392,6 +396,55 @@ dimnames(.)[[2]] <- case_when(dimnames(.)[[2]] == 'z' ~ 'žene',
 knitr::kable(.)
 ```
 
+Kao alternativni pogled na ove podatke, na slici ispod prikazana je procijenjena
+proporcija muškaraca i žena na čelnim pozicijama unutar osnovnih škola,
+srednjih škola, i visokih učilišta (isključene su osobe s oznakom
+`nepoznato`).
+
+```{r plot-proporcije-po-razinama}
+.d %>%
+    filter(.,
+           spol != 'nepoznato') %>%
+    mutate(.,
+           across(spol,
+                  ~ifelse(.x == 'm', 0, 1))) %>%
+    dplyr::group_by(.,
+                    vrsta_ustanove) %>%
+    dplyr::summarise(.,
+                     prop_z = mean(spol),
+                     prop_m = 1 - mean(spol)) %>%
+    tidyr::pivot_longer(.,
+                        cols = matches('^prop'),
+                        names_pattern = 'prop_(.)',
+                        names_to = 'spol',
+                        values_to = 'proporcija') %>%
+    mutate(.,
+           across(spol,
+                  as.factor)) %>%
+    ggplot2::ggplot(.,
+                    aes(x = vrsta_ustanove,
+                        fill = spol,
+                        y = proporcija)) +
+    geom_bar(stat = 'identity',
+             position = 'dodge',
+             color = 'black',
+             alpha = 1) +
+    scale_fill_viridis_d(name = 'Spol',
+                         labels = as_labeller(c('m' = 'muškarci',
+                                                'z' = 'žene'))) +
+    scale_y_continuous(breaks = seq(0,
+                                    1,
+                                    by = .1),
+                       labels = as.character(seq(0,
+                                                 1,
+                                                 by = .1))) +
+    theme(panel.grid.major.x = element_blank(),
+          panel.grid.minor.y = element_line(linetype = 'dashed',
+                                            size = .5)) +
+    labs(x = 'Vrsta ustanove',
+         y = 'Proporcija')
+```
+
 Također, možemo vidjeti kakva je distribucija spolova po sastavnicama
 sveučilišta u Osijeku, Rijeci, Splitu i Zagrebu[^rektorice]:
 
@@ -407,6 +460,8 @@ dimnames(.)[[1]] <- case_when(dimnames(.)[[1]] == 'z' ~ 'Ženski',
 
 knitr::kable(.)
 ```
+
+# Napomene
 
 # Zahvale
 
