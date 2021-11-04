@@ -392,22 +392,6 @@ dimnames(.)[[2]] <- case_when(dimnames(.)[[2]] == 'z' ~ 'žene',
 knitr::kable(.)
 ```
 
-```{r vrsta-ustanove}
-unique(d_visoko$vrsta_ustanove)
-```
-
-Možemo, primjerice, pogledati kakvo je stanje po vrsti ustanove:
-
-```{r spol-po-vrsti-ustanove}
-. <- table(d_visoko$spol,
-           d_visoko$vrsta_ustanove)
-
-dimnames(.)[[1]] <- case_when(dimnames(.)[[1]] == 'z' ~ 'Ženski',
-                              dimnames(.)[[1]] == 'm' ~ 'Muški')
-
-knitr::kable(.)
-```
-
 Također, možemo vidjeti kakva je distribucija spolova po sastavnicama
 sveučilišta u Osijeku, Rijeci, Splitu i Zagrebu[^rektorice]:
 
@@ -427,11 +411,11 @@ knitr::kable(.)
 # Zahvale
 
 1. Katharini Obraz za pomoć pri kodiranju spolova ravnateljica i
-ravnatelja.
+ravnatelja osnovnih i srednjih škola.
 
 [^rektorice]: Ovdje su isključene rektorice i rektori.
-[^baza-imena]: Damir Boras, Nives Mikelić, Davor Lauc, Leksička flektivna baza
-podataka hrvatskih imena i prezimena, pp. 219-236 , 2003 
+[^baza-imena]: Damir Boras, Nives Mikelić, Davor Lauc (2003). *Leksička
+flektivna baza podataka hrvatskih imena i prezimena*, str. 219-236.
 [^infleksija-doc]: Nisam uspio pronaći dokumentaciju za ovaj skup podataka,
 tako da su sva tumačenja moja osobna procjena. Pretpostavio sam da se leksičke
 oznake mogu tumačiti u skladu s oznakama dostupnima ovdje:

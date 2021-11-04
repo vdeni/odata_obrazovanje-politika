@@ -26,3 +26,8 @@ donacijama. Ostale varijable se odnose na primatelje donacija. Dakle,
 ako neki kandidat nije primio niti jednu donaciju, imat će unose u
 varijablama koje ne završavaju na `Indiv`, a u varijablama koje završavaju
 na `Indiv` (koje se, dakle, odnose na donatore) imat će vrijednost `NA`.
+- `make infleksijska-baza` za pretvaranje infleksijske baze u CSV datoteku.
+Prethodno je potrebno preuzeti infleksijsku bazu [odavde](http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/).
+Izvorna baza ima neke trailing tabove, zbog čega sam imao problema s
+učitavanjem baze. Zbog toga sam je pretvorio u CSV i uklonio trailing
+tabove.
