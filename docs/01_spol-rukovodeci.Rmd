@@ -4,7 +4,9 @@ output:
         code_folding: hide
         toc: true
         toc_float: true
-title: 'Spolna struktura osoba na rukovodećim pozicijama u hrvatskom obrazovnom sustavu'
+        theme: flatly
+        highlight: zenburn
+title: 'Spolna struktura čelnih osoba u hrvatskom obrazovnom sustavu'
 ---
 
 ```{r setup, message = F}
@@ -94,7 +96,7 @@ ime osobe snažan signal za njen spol, možemo iskoristiti
 da bismo dobili dobru procjenu spola osoba na rukovodećim
 pozicijama u osnovnim i srednjim školama.
 
-# Spolna struktura rukovodećih osoba u osnovnim i srednjim školama
+# Procjena spola čelnih osoba u osnovnim i srednjim školama
 
 Infleksijska baza hrvatskih imena i prezimena sadrži tri stupca: infleksijske
 forme imena i prezimena, njihove leme, i leksičke oznake[^infleksija-doc]:
@@ -174,8 +176,10 @@ d_srednje$ravnatelj_spol <- apply(d_srednje[, 'ravnatelj_ime'],
 ```
 
 Nakon prvog pokušaja povezivanja imena u infleksijskoj bazi i imena rukovodećih
-osoba u popisima škola, dobivamo poveći broj oznaka `nepoznato`. Za osnovne
-škole:
+osoba u popisima škola, dobivamo poveći broj oznaka `nepoznato`; također,
+imamo ponešto oznaka `NA`, koje su dodijeljene osobama čije se ime ne nalazi
+u infleksijskoj bazi i ustanovama koje nemaju navedenu čelnu osobu.
+Za osnovne škole:
 
 ```{r oznake-nepoznato-osnovne}
 table(d_osnovne$ravnatelj_spol,
@@ -222,8 +226,8 @@ d_osnovne %<>%
                    -'ravnatelj_spol_orig',
                    'ravnatelj_spol' = 'ravnatelj_spol_kod')
 
-d_osnovne <- bind_rows(d_osnovne,
-                       .)
+d_osnovne <- dplyr::bind_rows(d_osnovne,
+                              .)
 
 rm(d_osnovne_spol)
 
@@ -306,14 +310,87 @@ d_srednje[d_srednje$ravnatelj == 'Mevludi  Arslani' &
           'ravnatelj_spol'] <- 'm'
 ```
 
-```{r spol-visoko}
-. <- table(d_visoko$spol)
+# Spolna struktura rukovodećih osoba u hrvatskom obrazovnom sustavu
+
+Sad kad imamo procjenu spola za većinu rukovodećih osoba u osnovnim i srednjim
+školama, te na visokim učilištima, možemo analizirati njihovu spolnu strukturu.
+
+```{r spoji baze}
+d <- bind_rows(select(d_osnovne,
+                      naziv,
+                      tip_ustanove,
+                      'celnik' = ravnatelj,
+                      'spol' = ravnatelj_spol),
+               select(d_srednje,
+                      naziv,
+                      tip_ustanove,
+                      'celnik' = ravnatelj,
+                      'spol' = ravnatelj_spol),
+               select(d_visoko,
+                      'naziv' = naziv_ustanove,
+                      'tip_ustanove' = vrsta_ustanove,
+                      celnik,
+                      spol))
 ```
 
-Na temelju tih podatka, možemo zaključiti da na čelu hrvatskih visokoobrazovnih
-institucija trenutno imamo `r .[['m']]` muškarca i `r .[['z']]` žene.
+U podacima imamo `r nrow(d)` ustanove (`r nrow(d_osnovne)` osnovnih škola,
+`r nrow(d_srednje)` srednje škole i `r nrow(d_visoko)` visoka učilišta).
+Međutim, samo za `r nrow(tidyr::drop_na(d, spol))` čelne osobe imamo nekakav
+podatak o spolu. U daljnjem tekstu ću se fokusirati na podskup ustanova
+za koje imamo procjenu spola čelne osobe.
 
-U tablici je zabilježena i vrsta ustanove:
+```{r drop-na-dedupe-objedinjeno}
+d %<>%
+    tidyr::drop_na(.,
+                   spol)
+
+d_dedupe <- d[!duplicated(d$celnik), ]
+
+. <- table(d_dedupe$spol,
+           useNA = 'ifany')
+```
+
+Sveukupno, na čelnim pozicijama imamo `r nrow(d_dedupe)` osoba. Čelnih osoba
+je manje nego ustanova zato jer su neki ljudi istovremeno čelnici nekoliko
+ustanova. Od tih `r nrow(d_dedupe)` čelnih osoba, procjenjujem da su
+`r .[['m']]` muškarci i `r .[['z']]` žene (`r .[['nepoznato']]` nepoznato).
+
+Kad to razlomimo po osnovnim i srednjim školama te visokim učilištima dobivamo:
+
+```{r spol-vrsta-ustanove}
+.o <- select(d_osnovne,
+             'spol' = ravnatelj_spol) %>%
+    dplyr::mutate(.,
+                  'vrsta_ustanove' = 'Osnovna škola') %>%
+    tidyr::drop_na(.)
+
+.s <- select(d_srednje,
+             'spol' = ravnatelj_spol) %>%
+    mutate(.,
+           'vrsta_ustanove' = 'Srednja škola') %>%
+    tidyr::drop_na(.)
+
+.v <- select(d_visoko,
+             spol) %>%
+    mutate(.,
+           'vrsta_ustanove' = 'Visoko učilište') %>%
+    tidyr::drop_na(.)
+
+.d <- bind_rows(.o,
+                .s,
+                .v)
+
+. <- table(.d$vrsta_ustanove,
+           .d$spol)
+
+. <- .[, c('m', 'z', 'nepoznato')]
+
+dimnames(.)[[2]] <- case_when(dimnames(.)[[2]] == 'z' ~ 'žene',
+                              dimnames(.)[[2]] == 'm' ~ 'muškarci',
+                              T ~ dimnames(.)[[2]])
+
+knitr::kable(.)
+```
 
 ```{r vrsta-ustanove}
 unique(d_visoko$vrsta_ustanove)
