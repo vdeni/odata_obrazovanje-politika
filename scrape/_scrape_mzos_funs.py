@@ -14,6 +14,8 @@ def scrape_mzos(urls: str,
                 def_sleep: float = 1.5) -> pandas.DataFrame:
     re_id = re.compile('detalji\\.aspx\\?appName=Vrtici&amp;id=\\d+')
 
+    row_counter = 0
+
     for url_idx, url in enumerate(urls):
         print(f'{url_idx + 1} / {len(urls)}')
 
@@ -24,7 +26,7 @@ def scrape_mzos(urls: str,
         elem_tr = site.find_all('tr',
                                 onclick=True)
 
-        for entry_idx, entry in enumerate(elem_tr):
+        for entry in elem_tr:
             entry_loc = re_id.search(str(entry))[0]
 
             entry_loc = re.sub('&amp;',
@@ -38,7 +40,9 @@ def scrape_mzos(urls: str,
 
             df_input = [elem.findChildren()[1].text for elem in elem_db_tr]
 
-            d_out.loc[entry_idx] = df_input
+            d_out.loc[row_counter] = df_input
+
+            row_counter += 1
 
         time.sleep(def_sleep)
 

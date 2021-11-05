@@ -72,21 +72,24 @@ $(DIR_OB_USTANOVE_SCRAPE)/popis_vrtici_scrape.csv:\
 	cd ..; pipenv run python scrape/02_podaci_vrtici.py
 
 ## >>>>> kandidature na lokalnim izborima
-$(DIR_KANDIDATURE)/kandidature_skupstine.csv:
+$(DIR_KANDIDATURE)/kandidature_skupstine.csv:\
+	01_process-xlsx_kandidature.sh
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZS_GSGZ_GV_OV_03%2005%202021.xlsx
 	mkdir -p $(DIR_KANDIDATURE)
 	mv 'Kandidatura_Otvoreni podaci_ZS_GSGZ_GV_OV_03 05 2021.xlsx'\
 		$(@:.csv=.xlsx)
 	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
 
-$(DIR_KANDIDATURE)/kandidature_nacelnici.csv:
+$(DIR_KANDIDATURE)/kandidature_nacelnici.csv:\
+	01_process-xlsx_kandidature.sh
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZN_GNGZ_GN_ON_03%2005%202021.xlsx
 	mkdir -p $(DIR_KANDIDATURE)
 	mv 'Kandidatura_Otvoreni podaci_ZN_GNGZ_GN_ON_03 05 2021.xlsx'\
 		$(@:.csv=.xlsx)
 	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
 
-$(DIR_KANDIDATURE)/kandidature_zamjenici.csv:
+$(DIR_KANDIDATURE)/kandidature_zamjenici.csv:\
+	01_process-xlsx_kandidature.sh
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZZN_ZGN_ZON_03%2005%202021.xlsx
 	mkdir -p $(DIR_KANDIDATURE)
 	mv 'Kandidatura_Otvoreni podaci_ZZN_ZGN_ZON_03 05 2021.xlsx'\
@@ -94,7 +97,9 @@ $(DIR_KANDIDATURE)/kandidature_zamjenici.csv:
 	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
 
 ## >>>>> donacije na lokalnim izborima
-$(DIR_DONACIJE)/donacije_lokalni.csv:
+$(DIR_DONACIJE)/donacije_lokalni.csv:\
+	../scrape/01_donacije_lokalni-izbori-2021.py\
+	../scrape/01_combine-json_donacije_lokalni.py
 	cd ../;\
 	pipenv run \
 	python scrape/01_donacije_lokalni-izbori-2021.py && \
