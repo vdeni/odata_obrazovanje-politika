@@ -1,11 +1,13 @@
 # >>>>> varijable
 DIR_OB_USTANOVE=obrazovne-ustanove_popis
+DIR_OB_USTANOVE_SCRAPE=scrape_obrazovne-ustanove_popis
 DIR_KANDIDATURE=2021-lokalni-izbori_kandidature
 DIR_DONACIJE=2021-lokalni-izbori_donacije
 DIR_IMENA=infleksijska-baza
 
 .PHONY:\
 	obrazovne_ustanove\
+	obrazovne_ustanove_scrape\
 	kandidature_lokalni\
 	donacije_lokalni\
 	infleksijska_baza
@@ -17,6 +19,13 @@ obrazovne_ustanove:\
 	$(DIR_OB_USTANOVE)/popis_srednje-skole.csv\
 	$(DIR_OB_USTANOVE)/popis_visoko-obrazovanje.csv\
 	$(DIR_OB_USTANOVE)/popis_znanost.csv
+
+obrazovne_ustanove_scrape:\
+	$(DIR_OB_USTANOVE_SCRAPE)/popis_vrtici_scrape.csv\
+	# $(DIR_OB_USTANOVE_SCRAPE)/popis_osnovne-skole_scrape.csv\
+	# $(DIR_OB_USTANOVE_SCRAPE)/popis_srednje-skole_scrape.csv\
+	# $(DIR_OB_USTANOVE_SCRAPE)/popis_visoko-obrazovanje_scrape.csv\
+	# $(DIR_OB_USTANOVE_SCRAPE)/popis_znanost_scrape.csv
 
 kandidature_lokalni:\
 	$(DIR_KANDIDATURE)/kandidature_zamjenici.csv\
@@ -54,6 +63,13 @@ $(DIR_OB_USTANOVE)/popis_znanost.csv:
 	wget http://52.178.158.152/api/file/ustanove_z.csv
 	mkdir -p $(DIR_OB_USTANOVE)
 	mv ustanove_z.csv $@
+
+## >>>>> scrape za obrazovne ustanove
+$(DIR_OB_USTANOVE_SCRAPE)/popis_vrtici_scrape.csv:\
+	../scrape/_scrape_mzos_funs.py\
+	../scrape/02_podaci_vrtici.py
+	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
+	cd ..; pipenv run python scrape/02_podaci_vrtici.py
 
 ## >>>>> kandidature na lokalnim izborima
 $(DIR_KANDIDATURE)/kandidature_skupstine.csv:
