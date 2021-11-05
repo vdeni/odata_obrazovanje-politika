@@ -1,3 +1,5 @@
+# ova skripta koristi selenium za scrapeanje financijskih izvještaja s
+# izbori.hr
 import os
 import json
 import time
