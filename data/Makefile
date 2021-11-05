@@ -22,10 +22,10 @@ obrazovne_ustanove:\
 
 obrazovne_ustanove_scrape:\
 	$(DIR_OB_USTANOVE_SCRAPE)/popis_vrtici_scrape.csv\
-	# $(DIR_OB_USTANOVE_SCRAPE)/popis_osnovne-skole_scrape.csv\
-	# $(DIR_OB_USTANOVE_SCRAPE)/popis_srednje-skole_scrape.csv\
-	# $(DIR_OB_USTANOVE_SCRAPE)/popis_visoko-obrazovanje_scrape.csv\
-	# $(DIR_OB_USTANOVE_SCRAPE)/popis_znanost_scrape.csv
+	$(DIR_OB_USTANOVE_SCRAPE)/popis_osnovne-skole_scrape.csv\
+	$(DIR_OB_USTANOVE_SCRAPE)/popis_srednje-skole_scrape.csv\
+	$(DIR_OB_USTANOVE_SCRAPE)/popis_visoko-obrazovanje_scrape.csv\
+	$(DIR_OB_USTANOVE_SCRAPE)/popis_znanost_scrape.csv
 
 kandidature_lokalni:\
 	$(DIR_KANDIDATURE)/kandidature_zamjenici.csv\
@@ -70,6 +70,30 @@ $(DIR_OB_USTANOVE_SCRAPE)/popis_vrtici_scrape.csv:\
 	../scrape/02_podaci_vrtici.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
 	cd ..; pipenv run python scrape/02_podaci_vrtici.py
+
+$(DIR_OB_USTANOVE_SCRAPE)/popis_osnovne-skole_scrape.csv:\
+	../scrape/_scrape_mzos_funs.py\
+	../scrape/02_podaci_osnovne-skole.py
+	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
+	cd ..; pipenv run python scrape/02_podaci_osnovne-skole.py
+
+$(DIR_OB_USTANOVE_SCRAPE)/popis_srednje-skole_scrape.csv:\
+	../scrape/_scrape_mzos_funs.py\
+	../scrape/02_podaci_srednje-skole.py
+	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
+	cd ..; pipenv run python scrape/02_podaci_srednje-skole.py
+
+$(DIR_OB_USTANOVE_SCRAPE)/popis_visoko-obrazovanje_scrape.csv:\
+	../scrape/_scrape_mzos_funs.py\
+	../scrape/02_podaci_visoko-obrazovanje.py
+	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
+	cd ..; pipenv run python scrape/02_podaci_visoko-obrazovanje.py
+
+$(DIR_OB_USTANOVE_SCRAPE)/popis_znanost_scrape.csv:\
+	../scrape/_scrape_mzos_funs.py\
+	../scrape/02_podaci_znanost.py
+	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
+	cd ..; pipenv run python scrape/02_podaci_znanost.py
 
 ## >>>>> kandidature na lokalnim izborima
 $(DIR_KANDIDATURE)/kandidature_skupstine.csv:\

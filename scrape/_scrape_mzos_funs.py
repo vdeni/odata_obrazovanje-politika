@@ -10,9 +10,9 @@ import pandas
 
 def scrape_mzos(urls: str,
                 d_out: pandas.DataFrame,
+                re_id: re.Pattern,
                 url_stem: str = 'http://mzos.hr/dbApp/',
                 def_sleep: float = 1.5) -> pandas.DataFrame:
-    re_id = re.compile('detalji\\.aspx\\?appName=Vrtici&amp;id=\\d+')
 
     row_counter = 0
 
