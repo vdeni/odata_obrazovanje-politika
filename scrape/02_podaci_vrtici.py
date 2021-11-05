@@ -1,5 +1,6 @@
 # skripta za scrape podataka sa stranica MZOS o odgojno-obrazovnim ustanovama
 # unutar hrvatske
+import os
 import re
 import time
 
@@ -11,6 +12,9 @@ import pandas
 
 # >>>>> setup
 def_sleep = 1.5
+
+data_path = os.path.join('data',
+                         'scrape_obrazovne-ustanove_popis')
 
 # >>>>> linkovi
 base_url = 'http://mzos.hr/dbApp/pregled.aspx?appName=Vrtici'
@@ -64,3 +68,13 @@ for url in urls:
         d_out.loc[entry_idx] = df_input
 
     time.sleep(def_sleep)
+
+d_out = d_out.replace('',
+                      pandas.NA)
+
+d_out.to_csv(os.path.join(data_path,
+                          'popis_vrtici_scrape.csv'),
+             sep=';',
+             index=False,
+             encoding='utf-8',
+             na_rep='NA')
