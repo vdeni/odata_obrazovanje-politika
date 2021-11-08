@@ -8,7 +8,7 @@ import _scrape_mzos_funs
 
 # >>>>> setup
 data_path = os.path.join('data',
-                         'scrape_obrazovne-ustanove_popis')
+                         'obrazovne-ustanove_popis_scrape')
 
 # >>>>> linkovi
 base_url = 'http://mzos.hr/dbApp/pregled.aspx?appName=ustanove_VU'

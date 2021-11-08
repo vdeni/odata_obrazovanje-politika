@@ -1,9 +1,9 @@
 data/infleksijska-baza/*
 data/2021-lokalni-izbori_donacije/*
 data/2021-lokalni-izbori_kandidature/*
-data/scrape_obrazovne-ustanove_popis/
+data/obrazovne-ustanove_popis_mzos/*
+data/obrazovne-ustanove_popis_scrape/*
 
 !data/2021-lokalni-izbori_donacije/zupanije_kodovi.json
-!data/obrazovne-ustanove_popis/*kod-spolova.tsv
 
 **/geckodriver.log
