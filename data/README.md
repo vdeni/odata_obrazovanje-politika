@@ -2,7 +2,7 @@
 
 ## Licence
 
-## Datoteke
+## Podaci
 
 Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
 [Makefile](##Makefile).
@@ -65,7 +65,7 @@ Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
 - `infleksijska-baza/`
     - `infleksijska-baza.csv`: Damir Boras, Nives Mikelić, Davor Lauc (2003).
     *Leksička flektivna baza podataka hrvatskih imena i prezimena*,
-    pp. 219--236. 
+    pp. 219--236.
 - `obrazovne-ustanove_popis_datagov/`
     - popisi odgojno-obrazovnih i znanstvenih ustanova u Republici Hrvatskoj
     preuzeti s data.gov.hr. Delimiter je `;` u CSV datotekama, i `\t` (tab) u
@@ -109,17 +109,17 @@ Mogućnosti su:
 - `make` za prikupljanje svih setova podataka (traje neko vrijeme jer se dio
 podataka scrapea)
 
-- `make obrazovne_ustanove_datagov` za dohvaćanje popisa odgojno obrazovnih
+- `make obrazovne_ustanove_datagov`: za dohvaćanje popisa odgojno obrazovnih
 ustanova s data.gov.hr u CSV formatu. linkovi:
     - popis_vrtici.csv: http://52.178.158.152/api/file/vrtici.csv
     - popis_osnovne-skole.csv: http://52.178.158.152/api/file/skole_os.csv
     - popis_srednje-skole.csv: http://52.178.158.152/api/file/srednje--skole.csv
     - popis_visoko-obrazovanje.csv: http://52.178.158.152/api/file/ustanove_vu.csv
     - popis_znanost.csv: http://52.178.158.152/api/file/ustanove_z.csv
-- `make obrazovne_ustanove_scrape` za dohvaćanje podataka na web sučelju za
+- `make obrazovne_ustanove_scrape`: za dohvaćanje podataka na web sučelju za
 baze podataka na stranicama Ministarstva znanosti i obrazovanja
 (https://mzo.gov.hr/ustanove/103)
-- `make obrazovne_ustanove_mzos` za dohvaćanje XSLX datoteka sa stranica
+- `make obrazovne_ustanove_mzos`: za dohvaćanje XSLX datoteka sa stranica
 Ministarstva znanosti i obrazovanja:
     - popis_vrtici.xlsx: http://mzos.hr/dbApp/DownloadExcel.ashx?appName=Vrtici
     - popis_osnovne-skole.xlsx: http://mzos.hr/dbApp/DownloadExcel.ashx?appName=OS
@@ -127,14 +127,14 @@ Ministarstva znanosti i obrazovanja:
     - popis_visoko-obrazovanje.xlsx: http://mzos.hr/dbApp/DownloadExcel.ashx?appName=ustanove_VU
     - popis_znanost.xlsx: http://mzos.hr/dbApp/DownloadExcel.ashx?appName=ustanove_Z
 
-- `make kandidature_lokalni` za dohvaćanje popisa kandidata na lokalnim
+- `make kandidature_lokalni`: za dohvaćanje popisa kandidata na lokalnim
 izborima 2021.
 linkovi:
     - kandidature_skupstine.csv: https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZS_GSGZ_GV_OV_03%2005%202021.xlsx
     - kandidature_nacelnici.csv: https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZN_GNGZ_GN_ON_03%2005%202021.xlsx
     - kandidature_zamjenici.csv: https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZZN_ZGN_ZON_03%2005%202021.xlsx
 
-- `make donacije_lokalni` za scrape JSON izvještaja o donacijama kandidatima
+- `make donacije_lokalni`: za scrape JSON izvještaja o donacijama kandidatima
 na lokalnim izborima 2021. sa stranica Državnog izbornog povjerenstva
 (https://www.izbori.hr/lokalni2021/financ/1/). Oslanja se na dvije Python
 skripte s potrebnim paketima popisanima u `/Pipfile`.
@@ -147,8 +147,139 @@ ako neki kandidat nije primio niti jednu donaciju, imat će unose u
 varijablama koje ne završavaju na `Indiv`, a u varijablama koje završavaju
 na `Indiv` (koje se, dakle, odnose na donatore) imat će vrijednost `NA`.
 
-- `make infleksijska-baza` za pretvaranje infleksijske baze u CSV datoteku.
+- `make infleksijska-baza`: za pretvaranje infleksijske baze u CSV datoteku.
 Prethodno je potrebno preuzeti infleksijsku bazu [odavde](http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/).
 Izvorna baza ima neke trailing tabove, zbog čega sam imao problema s
 učitavanjem baze. Zbog toga sam je pretvorio u CSV i uklonio trailing
 tabove.
+
+## Druge datoteke
+- `01_process-xlsx_kandidature.sh`: pomoćna skripta korištena pri preuzimanju
+datoteka s kandidaturama
+- `Makefile`: `make` naredbe za dohvaćanje ili izradu podataka
+
+## Struktura direktorija
+
+```
+.
+├── 01_process-xlsx_kandidature.sh
+├── 2011-popis_agregati-imena-prezimena
+│   └── 2011-popis_agregati-imena-prezimena.xls
+├── 2021-lokalni-izbori_donacije
+│   ├── bjelovarsko-bilogorska_županija
+│   │   ├── 07_berek_gradona_0.json
+│   │   ├── ...
+│   │   └── 07_zrinski_topolovac_gradsko_2.json
+│   ├── brodsko-posavska_županija
+│   │   ├── 12_bebrina_gradona_0.json
+│   │   ├── ...
+│   │   └── 12_vrpolje_gradsko_2.json
+│   ├── donacije_lokalni.csv
+│   ├── dubrovačko-neretvanska_županija
+│   │   ├── 19_blato_gradona_0.json
+│   │   ├── ...
+│   │   └── 19_župa_dubrovačka_gradsko_5.json
+│   ├── grad_zagreb
+│   │   ├── 21_grad_zagreb_gradona_0.json
+│   │   ├── ...
+│   │   └── 21_grad_zagreb_gradska_9.json
+│   ├── istarska_županija
+│   │   ├── 18_bale_-_valle_gradona_0.json
+│   │   ├── ...
+│   │   └── 18_žminj_gradsko_5.json
+│   ├── karlovačka_županija
+│   │   ├── 04_barilović_gradona_0.json
+│   │   ├── ...
+│   │   └── 04_žakanje_gradsko_2.json
+│   ├── koprivničko-križevačka_županija
+│   │   ├── 06_đelekovec_gradona_0.json
+│   │   ├── ...
+│   │   └── 06_virje_gradsko_3.json
+│   ├── krapinsko-zagorska_županija
+│   │   ├── 02_bedekovčina_gradona_0.json
+│   │   ├── ...
+│   │   └── 02_zlatar_gradsko_3.json
+│   ├── ličko-senjska_županija
+│   │   ├── 09_brinje_gradona_0.json
+│   │   ├── ...
+│   │   └── 09_vrhovine_gradsko_3.json
+│   ├── međimurska_županija
+│   │   ├── 20_belica_gradona_0.json
+│   │   ├── ...
+│   │   └── 20_vratišinec_gradsko_2.json
+│   ├── osječko-baranjska_županija
+│   │   ├── 14_antunovac_gradona_0.json
+│   │   ├── ...
+│   │   └── 14_vuka_gradsko_0.json
+│   ├── požeško-slavonska_županija
+│   │   ├── 11_brestovac_gradona_0.json
+│   │   ├── ...
+│   │   └── 11_velika_gradsko_4.json
+│   ├── primorsko-goranska_županija
+│   │   ├── 08_bakar_gradona_0.json
+│   │   ├── ...
+│   │   └── 08_vrbovsko_zamjeni_1.json
+│   ├── šibensko-kninska_županija
+│   │   ├── 15_bilice_gradona_0.json
+│   │   ├── ...
+│   │   └── 15_vodice_gradsko_4.json
+│   ├── sisačko-moslavačka_županija
+│   │   ├── 03_donji_kukuruzari_gradona_0.json
+│   │   ├── ...
+│   │   └── 03_velika_ludina_gradsko_4.json
+│   ├── splitsko-dalmatinska_županija
+│   │   ├── 17_baška_voda_gradona_0.json
+│   │   ├── ...
+│   │   └── 17_zmijavci_gradsko_4.json
+│   ├── varaždinska_županija
+│   │   ├── 05_bednja_gradona_0.json
+│   │   ├── ...
+│   │   └── 05_visoko_gradsko_1.json
+│   ├── virovitičko-podravska_županija
+│   │   ├── 10_čačinci_gradona_0.json
+│   │   ├── ...
+│   │   └── 10_zdenci_gradsko_3.json
+│   ├── vukovarsko-srijemska_županija
+│   │   ├── 16_andrijaševci_gradona_0.json
+│   │   ├── ...
+│   │   └── 16_županja_gradsko_6.json
+│   ├── zadarska_županija
+│   │   ├── 13_benkovac_gradona_0.json
+│   │   ├── ...
+│   │   └── 13_zemunik_donji_gradsko_1.json
+│   ├── zagrebačka_županija
+│   │   ├── 01_bedenica_gradona_0.json
+│   │   ├── ...
+│   │   └── 01_žumberak_gradsko_1.json
+│   └── zupanije_kodovi.json
+├── 2021-lokalni-izbori_kandidature
+│   ├── kandidature_nacelnici.csv
+│   ├── kandidature_skupstine.csv
+│   └── kandidature_zamjenici.csv
+├── infleksijska-baza
+│   └── infleksijska-baza.csv
+├── Makefile
+├── obrazovne-ustanove_popis_datagov
+│   ├── popis_osnovne-skole.csv
+│   ├── popis_osnovne-skole_kod-spolova.tsv
+│   ├── popis_srednje-skole.csv
+│   ├── popis_srednje-skole_kod-spolova.tsv
+│   ├── popis_visoko-obrazovanje.csv
+│   ├── popis_vrtici.csv
+│   └── popis_znanost.csv
+├── obrazovne-ustanove_popis_mzos
+│   ├── popis_osnovne-skole.xlsx
+│   ├── popis_srednje-skole.xlsx
+│   ├── popis_umjetnicke-skole.xlsx
+│   ├── popis_visoko-obrazovanje.xlsx
+│   ├── popis_vrtici.xlsx
+│   └── popis_znanost.xlsx
+├── obrazovne-ustanove_popis_scrape
+│   ├── popis_osnovne-skole_scrape.csv
+│   ├── popis_srednje-skole_scrape.csv
+│   ├── popis_umjetnicke-skole_scrape.csv
+│   ├── popis_visoko-obrazovanje_scrape.csv
+│   ├── popis_vrtici_scrape.csv
+│   └── popis_znanost_scrape.csv
+└── README.md
+```
