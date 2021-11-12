@@ -15,4 +15,4 @@ Podaci u `data/` imaju svoje licence, opisane u `data/README.md`. Datoteke unuta
 datoteke su također pod 
 [CC-BY licencom](https://creativecommons.org/licenses/by/4.0/legalcode).
 Ostalo je
-[CC0]([CC-BY licencom](https://creativecommons.org/licenses/by/4.0/legalcode)).
+[CC0](https://creativecommons.org/licenses/by/4.0/legalcode).
