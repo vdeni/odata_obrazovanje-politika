@@ -2,6 +2,19 @@
 
 ## Licence
 
+Na datoteke u ovom direktoriju primjenjuje se
+[CC0 licenca](http://creativecommons.org/publicdomain/zero/1.0/).
+
+**Iznimke su**:
+- *Imena i prezimena u Republici Hrvatskoj*: nisam dobio informaciju o
+konkretnoj licenci, ali uputa je: "dostavljene podatke možete koristiti prema
+svojim potrebama. Prilikom korištenja podataka obavezno je potrebno navesti
+izvor podataka."
+- *Leksička flektivna baza podataka hrvatskih imena i prezimena* podijeljena
+je pod
+[CC-BY-SA licencom](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+(vidi [izvor](http://meta-share.ffzg.hr/repository/browse/lexical-inflectional-database-of-croatian-first-and-last-names/11e503cc3d3f11e38a985ef2e4e6c59eaeb2fa3a711d40e7b740b9be76e2964c/)).
+
 ## Podaci
 
 Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
