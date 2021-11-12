@@ -1,18 +1,27 @@
 # Podaci
 
+## Licence
+
 ## Datoteke
+
+Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
+[Makefile](##Makefile).
 
 - `2011-popis_agregati-imena-prezimena/`
     - `2011-popis_agregati-imena-prezimena.xls`: popis učestalosti imena,
     prezimena, i parova (ime, prezime) iz popisa stanovništva 2011. Državni
-    zavod za statistiku (2011). *Agregati imena i prezimena*.
+    zavod za statistiku (2011). *Imena i prezimena u Republici Hrvatskoj*.
+    Ovo su podaci u podlozi [ove](https://www.dzs.hr/app/imena/) aplikacije.
 - `2021-lokalni-izbori_donacije/`
     - `donacije_lokalni.csv`: datoteka koja sadrži pojedinačne donacije
     kandidatima na lokalnim izborima 2021. godine. Delimiter je `;`. Svaki
     unos predstavlja jednu donaciju. Informacije o donatorima sadržane su
     u varijablama koje završavaju na `Indiv`; ostali podaci se odnose na
     kandidate. Ako kandidat nije primio niti jednu donaciju, varijable pod
-    `Indiv` sadrže oznaku `NA`.
+    `Indiv` sadrže oznaku `NA`. Budući da ovaj objedinjeni CSV **nije
+    službena baza** DIP-a, preporučujem da se koristi orijentacijski i
+    da se unosi dodatno provjere u
+    [službenim podacima](https://www.izbori.hr/lokalni2021/financ/1/).
     - `zupanije_kodovi.json`: datoteka s numeričkim kodovima županija. Kodovi
     su korišteni pri imenovanju datoteka s pojedinim izvještajima o donacijama.
     - [`bjelovarsko-bilogorska_županija/`,
@@ -45,11 +54,53 @@
         kodirani su tek kroz numeričke oznake, ali za njih ne postoji
         datoteka s kodovima.
 - `2021-lokalni-izbori_kandidature/`
+    - popisi kandidata na lokalnim izborima preuzeti sa stranica Državnog
+    izbornog povjerenstva. Delimiter je `;`.
+    - `kandidature_nacelnici.csv`: kandidature za gradonačelnike, općinske
+    načelnike i župane.
+    - `kandidature_skupstine.csv`: kandidature za članove općinskih, gradskih
+    i županijskih skupština.
+    - `kandidature_zamjenici.csv`: kandidature za zamjenike gradonačelnika,
+    općinskih načelnika i župana.
 - `infleksijska-baza/`
+    - `infleksijska-baza.csv`: Damir Boras, Nives Mikelić, Davor Lauc (2003).
+    *Leksička flektivna baza podataka hrvatskih imena i prezimena*,
+    pp. 219--236. 
 - `obrazovne-ustanove_popis_datagov/`
+    - popisi odgojno-obrazovnih i znanstvenih ustanova u Republici Hrvatskoj
+    preuzeti s data.gov.hr. Delimiter je `;` u CSV datotekama, i `\t` (tab) u
+    TSV datotekama.
+    - `popis_vrtici.csv`: popis vrtića
+    - `popis_osnovne-skole.csv`: popis osnovnih škola
+    - `popis_srednje-skole.csv`: popis srednjih škola
+    - `popis_visoko-obrazovanje.csv`: popis ustanova iz sustava visokog
+    obrazovanja
+    - `popis_znanost.csv`: popis znanstvenih ustanova
+    - `popis_osnovne-skole_kod-spolova.tsv`: tablice u kojima su kodirani
+    spolovi rukovodećih osoba u osnovnim školama
+    - `popis_srednje-skole_kod-spolova.tsv`: tablice u kojima su kodirani
+    spolovi rukovodećih osoba u srednjim školama
 - `obrazovne-ustanove_popis_mzos/`
-- `obrazovne-ustanove_popis_objedinjeno/`
+    - popisi odgojno-obrazovnih i znanstvenih ustanova u Republici Hrvatskoj
+    preuzeti sa stranica Ministarstva znanosti i obrazovanja.
+    - `popis_vrtici.xlsx`: popis vrtića
+    - `popis_osnovne-skole.xlsx`: popis osnovnih škola
+    - `popis_srednje-skole.xlsx`: popis srednjih škola
+    - `popis_umjetnicke-skole.xlsx`: popis umjetničkih škola
+    - `popis_visoko-obrazovanje.xlsx`: popis ustanova iz sustava visokog
+    obrazovanja
+    - `popis_znanost.xlsx`: popis znanstvenih ustanova
 - `obrazovne-ustanove_popis_scrape/`
+    - popisi odgojno-obrazovnih ustanova u Republici Hrvatskoj scrapeani
+    iz aplikacije na stranici Ministarstva znanosti i obrazovanja. Delimiter
+    je `;`.
+    - `popis_vrtici_scrape.csv`: popis vrtića
+    - `popis_osnovne-skole_scrape.csv`: popis osnovnih škola
+    - `popis_srednje-skole_scrape.csv`: popis srednjih škola
+    - `popis_umjetnicke-skole_scrape.csv`: popis umjetničkih škola
+    - `popis_visoko-obrazovanje_scrape.csv`: popis ustanova iz sustava visokog
+    obrazovanja
+    - `popis_znanost_scrape.csv`: popis znanstvenih ustanova
 
 ## Makefile
 
