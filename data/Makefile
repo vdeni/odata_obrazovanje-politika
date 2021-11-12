@@ -9,14 +9,17 @@ DIR_IMENA=infleksijska-baza
 .PHONY:\
 	all\
 	obrazovne_ustanove_datagov\
+	obrazovne_ustanove_mzos\
 	obrazovne_ustanove_scrape\
 	kandidature_lokalni\
 	donacije_lokalni\
 	infleksijska_baza
 
 # >>>>> recepti
+## >>>>> apstraktni
 all:\
 	obrazovne_ustanove_datagov\
+	obrazovne_ustanove_mzos\
 	obrazovne_ustanove_scrape\
 	kandidature_lokalni\
 	donacije_lokalni\
