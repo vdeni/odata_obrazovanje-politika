@@ -1,4 +1,5 @@
 import os
+import re
 
 import pandas
 import scrapy
@@ -23,12 +24,22 @@ class OsnovneSkoleSpider(scrapy.Spider):
                                          'skole_osnovne_url.csv'),
                             delimiter=';')
 
-        self.start_urls = list(_['url'])[0:25]
+        self.start_urls = list(_['url'])[0:100]
 
         self.start_urls = [url.strip() for url in self.start_urls]
 
+        for url_idx, url in enumerate(self.start_urls):
+            _ = re.search(r'((https?://)?(www\.)?)([-\w]*\.skole\.hr)',
+                          url)
+            if _ is not None:
+                self.start_urls[url_idx] = _.group()
+
         self.start_urls = [url if url.startswith('http')
                            else 'http://' + url
+                           for url in self.start_urls]
+
+        self.start_urls = [url + 'skola/djelatnici' if url.endswith('/')
+                           else url + '/skola/djelatnici'
                            for url in self.start_urls]
 
     def parse(self,
