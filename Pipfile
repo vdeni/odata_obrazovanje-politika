@@ -9,6 +9,7 @@ requests = "*"
 selenium = "*"
 pandas = "*"
 html5lib = "*"
+scrapy = "*"
 
 [dev-packages]
 
