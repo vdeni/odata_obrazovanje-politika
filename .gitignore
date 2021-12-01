@@ -2,6 +2,10 @@
 
 scrape/skole_hr/log*
 scrape/skole_hr/skole_hr/*
+scrape/skole_hr/data/
 
 !scrape/skole_hr/skole_hr/spiders
 !scrape/skole_hr/skole_hr/popis-skola_extract.py
+!scrape/skole_hr/skole_hr/pipelines.py
+!scrape/skole_hr/skole_hr/settings.py
+!scrape/skole_hr/skole_hr/items.py

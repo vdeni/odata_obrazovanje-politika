@@ -4,6 +4,9 @@ import re
 import pandas
 import scrapy
 
+from scrapy.loader import ItemLoader
+from skole_hr.items import SkoleHrItem
+
 
 class OsnovneSkoleSpider(scrapy.Spider):
     """
@@ -24,7 +27,7 @@ class OsnovneSkoleSpider(scrapy.Spider):
                                          'skole_osnovne_url.csv'),
                             delimiter=';')
 
-        self.start_urls = list(_['url'])[0:100]
+        self.start_urls = list(_['url'])[0:5]
 
         self.start_urls = [url.strip() for url in self.start_urls]
 
@@ -45,3 +48,13 @@ class OsnovneSkoleSpider(scrapy.Spider):
     def parse(self,
               response):
         self.logger.info(f'>>> Parsing: {response.url}')
+
+        loader = ItemLoader(item=SkoleHrItem(),
+                            response=response)
+
+        loader.add_xpath('tekst',
+                         '//*/text()')
+        loader.add_value('skola_url',
+                         response.url)
+
+        return loader.load_item()
