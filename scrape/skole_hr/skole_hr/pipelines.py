@@ -11,7 +11,7 @@ class SkoleHrPipeline:
     re_only_whitespace = re.compile(f'^[{string.whitespace}]+$')
 
     # regex za skresati whitespace oko teksta
-    re_rm_whitespace = re.compile(f'[({string.whitespace}\xa0)]+')
+    re_any_whitespace = re.compile(f'[({string.whitespace}\xa0)]+')
 
     def open_spider(self, spider):
         os.makedirs('data',
@@ -19,7 +19,7 @@ class SkoleHrPipeline:
 
         self.file = open(os.path.join('data',
                                       'osnovne_skole.jl'),
-                         'w+')
+                         'a')
 
     def close_spider(self, spider):
         self.file.close()
@@ -32,8 +32,8 @@ class SkoleHrPipeline:
                             if not self.re_only_whitespace.search(elem)]
 
         # zamijeni razni whitespace obicnim razmakom \s
-        adapter['tekst'] = [self.re_rm_whitespace.sub(string=elem,
-                                                      repl=' ')
+        adapter['tekst'] = [self.re_any_whitespace.sub(string=elem,
+                                                       repl=' ')
                             for elem in adapter.get('tekst')]
 
         line_out = json.dumps(adapter.asdict()) + '\n'
