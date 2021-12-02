@@ -22,12 +22,14 @@ class OsnovneSkoleSpider(scrapy.Spider):
         'LOG_FILE': 'log_spider_os_skole-hr.txt'
     }
 
+    handle_httpstatus_list = [404]
+
     def __init__(self):
         _ = pandas.read_csv(os.path.join('skole_hr',
                                          'skole_osnovne_url.csv'),
                             delimiter=';')
 
-        self.start_urls = list(_['url'])[0:5]
+        self.start_urls = list(_['url'])[0:10]
 
         self.start_urls = [url.strip() for url in self.start_urls]
 
@@ -48,6 +50,16 @@ class OsnovneSkoleSpider(scrapy.Spider):
     def parse(self,
               response):
         self.logger.info(f'>>> Parsing: {response.url}')
+
+        if response.status == 404:
+            self.logger.info('>>> Added 404 url to list')
+
+            with open(os.path.join('data',
+                                   'osnovne_list_404.txt'),
+                      'a') as ofile:
+                ofile.write(response.url + '\n')
+
+            return None
 
         loader = ItemLoader(item=SkoleHrItem(),
                             response=response)
