@@ -11,7 +11,7 @@ class SkoleHrPipeline:
     re_only_whitespace = re.compile(f'^[{string.whitespace}]+$')
 
     # regex za skresati whitespace oko teksta
-    re_rm_whitespace = re.compile(f'({string.whitespace}|\xa0)+')
+    re_rm_whitespace = re.compile(f'[({string.whitespace}\xa0)]+')
 
     def open_spider(self, spider):
         os.makedirs('data',
