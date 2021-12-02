@@ -24,12 +24,12 @@ class OsnovneSkoleSpider(scrapy.Spider):
 
     handle_httpstatus_list = [404]
 
-    def __init__(self):
-        _ = pandas.read_csv(os.path.join('skole_hr',
-                                         'skole_osnovne_url.csv'),
-                            delimiter=';')
+    url_db = pandas.read_csv(os.path.join('skole_hr',
+                                          'skole_osnovne_url.csv'),
+                             delimiter=';')
 
-        self.start_urls = list(_['url'])[0:10]
+    def __init__(self):
+        self.start_urls = list(self.url_db['url'])[0:10]
 
         self.start_urls = [url.strip() for url in self.start_urls]
 
@@ -51,6 +51,8 @@ class OsnovneSkoleSpider(scrapy.Spider):
               response):
         self.logger.info(f'>>> Parsing: {response.url}')
 
+        _url_id = self.start_urls.index(response.url)
+
         if response.status == 404:
             self.logger.info('>>> Added 404 url to list')
 
@@ -66,7 +68,17 @@ class OsnovneSkoleSpider(scrapy.Spider):
 
         loader.add_xpath('tekst',
                          '//*/text()')
+
         loader.add_value('skola_url',
                          response.url)
+
+        loader.add_value('skola_naziv',
+                         self.url_db.loc[_url_id, 'naziv'])
+
+        loader.add_value('skola_zupanija',
+                         self.url_db.loc[_url_id, 'zupanija'])
+
+        loader.add_value('skola_mjesto',
+                         self.url_db.loc[_url_id, 'mjesto'])
 
         return loader.load_item()
