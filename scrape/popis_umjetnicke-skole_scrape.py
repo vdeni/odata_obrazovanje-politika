@@ -4,7 +4,7 @@ import os
 import re
 
 import pandas
-import _scrape_mzos_funs
+import popis_mzos_helpers
 
 # >>>>> setup
 data_path = os.path.join('data',
@@ -37,9 +37,9 @@ df = pandas.DataFrame(columns=['naziv',
 # >>>>> scrape
 re_id = re.compile('detalji\\.aspx\\?appName=UMJ&amp;id=\\d+')
 
-df = _scrape_mzos_funs.scrape_mzos(urls,
-                                   df,
-                                   re_id)
+df = popis_mzos_helpers.scrape_mzos(urls,
+                                    df,
+                                    re_id)
 
 # >>>>> output
 df.to_csv(os.path.join(data_path,

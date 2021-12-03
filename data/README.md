@@ -167,7 +167,7 @@ učitavanjem baze. Zbog toga sam je pretvorio u CSV i uklonio trailing
 tabove.
 
 ## Druge datoteke
-- `01_process-xlsx_kandidature.sh`: pomoćna skripta korištena pri preuzimanju
+- `lokalni-izbori_kandidature_process-xlsx.sh`: pomoćna skripta korištena pri preuzimanju
 datoteka s kandidaturama
 - `Makefile`: `make` naredbe za dohvaćanje ili izradu podataka
 
@@ -175,7 +175,7 @@ datoteka s kandidaturama
 
 ```
 .
-├── 01_process-xlsx_kandidature.sh
+├── lokalni-izbori_kandidature_process-xlsx.sh
 ├── 2011-popis_agregati-imena-prezimena
 │   └── 2011-popis_agregati-imena-prezimena.xls
 ├── 2021-lokalni-izbori_donacije

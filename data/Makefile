@@ -119,75 +119,75 @@ $(DIR_OB_USTANOVE_MZOS)/popis_srednje-skole.xlsx:
 
 ## >>>>> scrape za obrazovne ustanove
 $(DIR_OB_USTANOVE_SCRAPE)/popis_vrtici_scrape.csv:\
-	../scrape/_scrape_mzos_funs.py\
-	../scrape/02_podaci_vrtici.py
+	../scrape/popis_mzos_helpers.py\
+	../scrape/popis_vrtici_scrape.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
-	cd ..; pipenv run python scrape/02_podaci_vrtici.py
+	cd ..; pipenv run python scrape/popis_vrtici_scrape.py
 
 $(DIR_OB_USTANOVE_SCRAPE)/popis_osnovne-skole_scrape.csv:\
-	../scrape/_scrape_mzos_funs.py\
-	../scrape/02_podaci_osnovne-skole.py
+	../scrape/popis_mzos_helpers.py\
+	../scrape/popis_osnovne-skole_scrape.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
-	cd ..; pipenv run python scrape/02_podaci_osnovne-skole.py
+	cd ..; pipenv run python scrape/popis_osnovne-skole_scrape.py
 
 $(DIR_OB_USTANOVE_SCRAPE)/popis_srednje-skole_scrape.csv:\
-	../scrape/_scrape_mzos_funs.py\
-	../scrape/02_podaci_srednje-skole.py
+	../scrape/popis_mzos_helpers.py\
+	../scrape/popis_srednje-skole_scrape.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
-	cd ..; pipenv run python scrape/02_podaci_srednje-skole.py
+	cd ..; pipenv run python scrape/popis_srednje-skole_scrape.py
 
 $(DIR_OB_USTANOVE_SCRAPE)/popis_umjetnicke-skole_scrape.csv:\
-	../scrape/_scrape_mzos_funs.py\
-	../scrape/02_podaci_umjetnicke-skole.py
+	../scrape/popis_mzos_helpers.py\
+	../scrape/popis_umjetnicke-skole_scrape.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
-	cd ..; pipenv run python scrape/02_podaci_umjetnicke-skole.py
+	cd ..; pipenv run python scrape/popis_umjetnicke-skole_scrape.py
 
 $(DIR_OB_USTANOVE_SCRAPE)/popis_visoko-obrazovanje_scrape.csv:\
-	../scrape/_scrape_mzos_funs.py\
-	../scrape/02_podaci_visoko-obrazovanje.py
+	../scrape/popis_mzos_helpers.py\
+	../scrape/popis_visoko-obrazovanje_scrape.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
-	cd ..; pipenv run python scrape/02_podaci_visoko-obrazovanje.py
+	cd ..; pipenv run python scrape/popis_visoko-obrazovanje_scrape.py
 
 $(DIR_OB_USTANOVE_SCRAPE)/popis_znanost_scrape.csv:\
-	../scrape/_scrape_mzos_funs.py\
-	../scrape/02_podaci_znanost.py
+	../scrape/popis_mzos_helpers.py\
+	../scrape/popis_znanost_scrape.py
 	mkdir -p $(DIR_OB_USTANOVE_SCRAPE)
-	cd ..; pipenv run python scrape/02_podaci_znanost.py
+	cd ..; pipenv run python scrape/popis_znanost_scrape.py
 
 ## >>>>> kandidature na lokalnim izborima
 $(DIR_KANDIDATURE)/kandidature_skupstine.csv:\
-	01_process-xlsx_kandidature.sh
+	lokalni-izbori_kandidature_process-xlsx.sh
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZS_GSGZ_GV_OV_03%2005%202021.xlsx
 	mkdir -p $(DIR_KANDIDATURE)
 	mv 'Kandidatura_Otvoreni podaci_ZS_GSGZ_GV_OV_03 05 2021.xlsx'\
 		$(@:.csv=.xlsx)
-	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
+	bash lokalni-izbori_kandidature_process-xlsx.sh $(DIR_KANDIDATURE) $@
 
 $(DIR_KANDIDATURE)/kandidature_nacelnici.csv:\
-	01_process-xlsx_kandidature.sh
+	lokalni-izbori_kandidature_process-xlsx.sh
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZN_GNGZ_GN_ON_03%2005%202021.xlsx
 	mkdir -p $(DIR_KANDIDATURE)
 	mv 'Kandidatura_Otvoreni podaci_ZN_GNGZ_GN_ON_03 05 2021.xlsx'\
 		$(@:.csv=.xlsx)
-	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
+	bash lokalni-izbori_kandidature_process-xlsx.sh $(DIR_KANDIDATURE) $@
 
 $(DIR_KANDIDATURE)/kandidature_zamjenici.csv:\
-	01_process-xlsx_kandidature.sh
+	lokalni-izbori_kandidature_process-xlsx.sh
 	wget https://www.izbori.hr/site/UserDocsImages/2021/Lokalni%20izbori%202021/KANDIDATURE/Kandidatura_Otvoreni%20podaci_ZZN_ZGN_ZON_03%2005%202021.xlsx
 	mkdir -p $(DIR_KANDIDATURE)
 	mv 'Kandidatura_Otvoreni podaci_ZZN_ZGN_ZON_03 05 2021.xlsx'\
 		$(@:.csv=.xlsx)
-	bash 01_process-xlsx_kandidature.sh $(DIR_KANDIDATURE) $@
+	bash lokalni-izbori_kandidature_process-xlsx.sh $(DIR_KANDIDATURE) $@
 
 ## >>>>> donacije na lokalnim izborima
 $(DIR_DONACIJE)/donacije_lokalni.csv:\
-	../scrape/01_donacije_lokalni-izbori-2021.py\
-	../wrangling/01_combine-json_donacije_lokalni.py
+	../scrape/lokalni-izbori-2021_donacije_scrape.py\
+	../wrangling/lokalni-izbori_donacije_combine-json.py
 	cd ../;\
 	pipenv run \
-	python scrape/01_donacije_lokalni-izbori-2021.py && \
+	python scrape/lokalni-izbori-2021_donacije_scrape.py && \
 	pipenv run \
-	python wrangling/01_combine-json_donacije_lokalni.py
+	python wrangling/lokalni-izbori_donacije_combine-json.py
 
 ## >>>>> infleksijska baza
 $(DIR_IMENA)/infleksijska-baza.csv:
