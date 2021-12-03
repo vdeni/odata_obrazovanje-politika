@@ -4,6 +4,10 @@ import re
 import pandas
 import classla
 
+from importlib import import_module
+
+helpers = import_module('wrangling.obrazovne-ustanove_izvuci-imena_helpers')
+
 # ucitaj podatke
 data_path = os.path.join('scrape',
                          'skole_hr',
@@ -13,30 +17,28 @@ data_path = os.path.join('scrape',
 d = pandas.read_json(data_path,
                      lines=True)
 
-t = d.at[1, 'tekst']
+inflex_db = pandas.read_csv(os.path.join('data',
+                                         'infleksijska-baza',
+                                         'infleksijska-baza.csv'),
+                            header=0,
+                            names=['forma', 'lema', 'tag'])
+
+imena_db =\
+    pandas.read_excel(os.path.join('data',
+                                   '2011-popis_agregati-imena-prezimena',
+                                   '2011-popis_agregati-imena-prezimena.xls'),
+                      sheet_name='AgregatIme')
 
 # postavi NLP pipeline
 nlp = classla.Pipeline('hr',
+                       type='standard',
                        processors='tokenize,ner')
 
-# inicijaliziraj series za spremanje podataka
-djelatnici = pandas.Series(name='djelatnici',
-                           dtype='string')
+# napravi NER na unosima preuzetima s weba
+d['tekst_ner'] = d.get('tekst').apply(helpers.apply_nlp_pipeline,
+                                      pipeline=nlp)
 
-# iteriraj kroz unose za svaku skolu i izvuci samo one koji su prepoznati kao
-# PERSON u CLASSLA NER
-for entry_idx, entry in enumerate(t):
-    try:
-        doc = nlp(entry)
-
-        for ent in doc.entities:
-            if ent.type == 'PER':
-                djelatnici.loc[entry_idx] = ent.text
-    except IndexError:
-        continue
-
-djelatnici = djelatnici.reset_index(drop=True)
-
+# normaliziraj unose
 # ukloni interpunkciju
 re_punctuation = re.compile('[\'\'!\"#\\$%&\'()*+,-./:;<=>\\?@\\[\\]^_`{|}~]')
 
@@ -51,6 +53,4 @@ djelatnici = djelatnici.map(lambda x: re.sub(pattern='\\s{2,}',
                                              string=x))
 
 # TODO: filtriranje unosa u djelatnicima tako da se izbace pogresno
-# prepoznati entiteti. izbacuje unose koji sadrze samo jednu rijec. izbacuje
-# unose dulje od sest rijeci. za ostale provjerava nalazi li se bilo koji od
-# elemenata unosa u infleksijskoj bazi ili u popisu imena DZS
+# prepoznati entiteti

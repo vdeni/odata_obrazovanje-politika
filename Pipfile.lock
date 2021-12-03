@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4977cca8534dc97ec15d876d43132c37e39acc7bc1dc5bb6d8576aab779b6a1f"
+            "sha256": "b1a24ee348b351b0f9b213a49869749c776ae30da1e005000b961878b1b6f5c6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -768,6 +768,14 @@
             "markers": "python_full_version >= '3.6.1'",
             "version": "==1.0.0"
         },
+        "xlrd": {
+            "hashes": [
+                "sha256:6a33ee89877bd9abc1158129f6e94be74e2679636b8a205b43b85206c3f0bbdd",
+                "sha256:f72f148f54442c6b056bf931dbc34f986fd0c3b0b6b5a58d013c9aef274d0c88"
+            ],
+            "index": "pypi",
+            "version": "==2.0.1"
+        },
         "zope.interface": {
             "hashes": [
                 "sha256:08f9636e99a9d5410181ba0729e0408d3d8748026ea938f3b970a0249daa8192",
@@ -826,5 +834,28 @@
             "version": "==5.4.0"
         }
     },
-    "develop": {}
+    "develop": {
+        "asyncore-wsgi": {
+            "hashes": [
+                "sha256:22fa129dc78ee7b9d31c684bd5c049bdb67f539207eba3559b8b16cf4a33b452",
+                "sha256:66c7cfcb209c5b0aa8bdfb48d7ebe3ef2dcd2b085c29fde2930073db2220157c"
+            ],
+            "version": "==0.0.10"
+        },
+        "bottle": {
+            "hashes": [
+                "sha256:87fa8e5a7a20fdd6e05d565dedeac6883d2bd4f3d0c3a1ad9ef3250388d420ee",
+                "sha256:b5529f8956682320b90f518041269784a37770d5fcc1ae6d70d288e9fc060fbc"
+            ],
+            "version": "==0.12.15"
+        },
+        "web-pdb": {
+            "hashes": [
+                "sha256:00caf906fc5d730c9bd4d3a219e3cbc5b93e334c4beac28a9617fc82275f5e8b",
+                "sha256:40d58fa1b522382925c9e63619b333ab3d32ca03a73ac6e7bd33e546ebb236dc"
+            ],
+            "index": "pypi",
+            "version": "==1.5.6"
+        }
+    }
 }

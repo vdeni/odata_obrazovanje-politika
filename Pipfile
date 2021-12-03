@@ -11,8 +11,10 @@ pandas = "*"
 html5lib = "*"
 scrapy = "*"
 classla = "*"
+xlrd = "*"
 
 [dev-packages]
+web-pdb = "*"
 
 [requires]
 python_version = "3.9"
