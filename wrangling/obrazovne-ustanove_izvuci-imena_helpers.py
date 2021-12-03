@@ -1,5 +1,9 @@
-def apply_nlp_pipeline(data,
-                       pipeline):
+import re
+from classla import Pipeline
+
+
+def apply_nlp_pipeline(data: list[str],
+                       pipeline: Pipeline) -> list[str]:
     """
     Primijeni CLASSLA nlp pipeline na listu stringova. Vraca listu stringova u
     kojoj se nalaze samo oni unosi iz izvorne liste koji su prepoznati kao
@@ -18,6 +22,28 @@ def apply_nlp_pipeline(data,
             continue
 
     return out_list
+
+
+def normalize_inputs(data: list[str]) -> list[str]:
+    """
+    Ukloni interpunkciju iz unosa, ukloni vise uzastopnih razmaka, ukloni
+    razmake na pocetku i na kraju unosa.
+    """
+    re_punctuation = re.compile(
+        '[\'\'!\"#\\$%&\'()*+,-./:;<=>\\?@\\[\\]^_`{|}~]')
+
+    data = [re_punctuation.sub(repl=' ',
+                               string=elem) for elem in data]
+
+    data = [elem.strip() for elem in data]
+
+    data = [re.sub(pattern='\\s{2,}',
+                   repl=' ',
+                   string=elem) for elem in data]
+
+    data = [elem.title() for elem in data]
+
+    return data
 
 # def filter_entries(series: pandas.Series,
 #                    inflectional_db: pandas.DataFrame,

@@ -1,5 +1,4 @@
 import os
-import re
 
 import pandas
 import classla
@@ -39,18 +38,7 @@ d['tekst_ner'] = d.get('tekst').apply(helpers.apply_nlp_pipeline,
                                       pipeline=nlp)
 
 # normaliziraj unose
-# ukloni interpunkciju
-re_punctuation = re.compile('[\'\'!\"#\\$%&\'()*+,-./:;<=>\\?@\\[\\]^_`{|}~]')
-
-djelatnici = djelatnici.map(lambda x: re_punctuation.sub(repl=' ',
-                                                         string=x))
-
-# ukloni ponavljajuce razmake i razmake s pocetka i kraja
-djelatnici = djelatnici.map(lambda x: x.strip())
-
-djelatnici = djelatnici.map(lambda x: re.sub(pattern='\\s{2,}',
-                                             repl=' ',
-                                             string=x))
+d.get('tekst_ner').map(helpers.normalize_inputs)
 
 # TODO: filtriranje unosa u djelatnicima tako da se izbace pogresno
 # prepoznati entiteti
