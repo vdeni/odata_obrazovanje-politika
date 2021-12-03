@@ -36,6 +36,8 @@ class SkoleHrPipeline:
                                                        repl=' ')
                             for elem in adapter.get('tekst')]
 
+        adapter['tekst'] = [elem.strip() for elem in adapter.get('tekst')]
+
         line_out = json.dumps(adapter.asdict()) + '\n'
 
         self.file.write(line_out)
