@@ -45,14 +45,29 @@ def normalize_inputs(data: list[str]) -> list[str]:
 
     return data
 
-# def filter_entries(series: pandas.Series,
-#                    inflectional_db: pandas.DataFrame,
-#                    names_db: pandas.DataFrame) -> pandas.Series:
-#     """
-#     Filtriranje unosa u popisu djelatnika tako da se izbace pogresno
-#     prepoznati entiteti. Izbacuje unose koji sadrze samo jednu rijec. Izbacuje
-#     unose dulje od sest rijeci. Za ostale provjerava nalazi li se bilo koji od
-#     elemenata unosa u infleksijskoj bazi ili u popisu imena DZS. Ako se niti
-#     jedan element ne nalazi u tim bazama, unos se izbacuje.
-#     """
-#     pass
+
+def filter_entries(data: list[str],
+                   inflectional_set: set,
+                   names_set: set,
+                   lastnames_set: set) -> list[str]:
+    """
+    Filtriranje unosa u popisu djelatnika tako da se izbace pogresno
+    prepoznati entiteti. Izbacuje unose koji sadrze samo jednu rijec. Izbacuje
+    unose dulje od sest rijeci. Za ostale provjerava nalazi li se bilo koji od
+    elemenata unosa u infleksijskoj bazi ili u popisu imena DZS. Ako se niti
+    jedan element ne nalazi u tim bazama, unos se izbacuje.
+    """
+    data_elems = [elem.split() for elem in data
+                  if len(elem.split()) > 1 and len(elem.split()) <= 5]
+
+    for entry_idx, entry in enumerate(data_elems):
+        entry_set = set(entry)
+
+        if not set(entry_set).intersection(inflectional_set) or\
+                not set(entry_set).intersection(names_set) or\
+                not set(entry_set).intersection(lastnames_set):
+            data_elems.pop(entry_idx)
+        else:
+            data_elems[entry_idx] = ' '.join(entry)
+
+    return data_elems
