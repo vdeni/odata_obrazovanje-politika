@@ -28,15 +28,16 @@ class SkoleHrPipeline:
         adapter = ItemAdapter(item)
 
         # filtriraj HTML elemente koji sadrze samo praznine
-        adapter['tekst'] = [elem for elem in adapter.get('tekst')
-                            if not self.re_only_whitespace.search(elem)]
+        adapter['scrape_tekst'] = [elem for elem in adapter.get('scrape_tekst')
+                                   if not self.re_only_whitespace.search(elem)]
 
         # zamijeni razni whitespace obicnim razmakom \s
-        adapter['tekst'] = [self.re_any_whitespace.sub(string=elem,
-                                                       repl=' ')
-                            for elem in adapter.get('tekst')]
+        adapter['scrape_tekst'] = [self.re_any_whitespace.sub(string=elem,
+                                                              repl=' ')
+                                   for elem in adapter.get('scrape_tekst')]
 
-        adapter['tekst'] = [elem.strip() for elem in adapter.get('tekst')]
+        adapter['scrape_tekst'] = [elem.strip()
+                                   for elem in adapter.get('scrape_tekst')]
 
         line_out = json.dumps(adapter.asdict()) + '\n'
 

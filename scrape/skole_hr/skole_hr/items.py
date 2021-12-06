@@ -13,4 +13,5 @@ class SkoleHrItem(scrapy.Item):
     skola_naziv = scrapy.Field(output_processor=unlist_singleton)
     skola_zupanija = scrapy.Field(output_processor=unlist_singleton)
     skola_mjesto = scrapy.Field(output_processor=unlist_singleton)
-    tekst = scrapy.Field()
+    scrape_time = scrapy.Field(output_processor=unlist_singleton)
+    scrape_tekst = scrapy.Field()

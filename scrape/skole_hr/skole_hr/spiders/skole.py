@@ -1,5 +1,6 @@
 import os
 import re
+import datetime
 
 import pandas
 import scrapy
@@ -54,6 +55,7 @@ class OsnovneSkoleSpider(scrapy.Spider):
         _url_id = self.start_urls.index(response.url)
 
         if response.status == 404:
+            # TODO: dodati da trazi link na djelatnike?
             self.logger.info('>>> Added 404 url to list')
 
             with open(os.path.join('data',
@@ -66,8 +68,12 @@ class OsnovneSkoleSpider(scrapy.Spider):
         loader = ItemLoader(item=SkoleHrItem(),
                             response=response)
 
-        loader.add_xpath('tekst',
+        loader.add_xpath('scrape_tekst',
                          '//*/text()')
+
+        loader.add_value('scrape_time',
+                         datetime.datetime.now().astimezone().
+                         replace(microsecond=0).isoformat())
 
         loader.add_value('skola_url',
                          response.url)
