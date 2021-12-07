@@ -21,14 +21,6 @@ nlp = classla.Pipeline('hr',
                        type='standard',
                        processors='tokenize,ner')
 
-#####
-t = d.scrape_tekst[1]
-doc = nlp(t[10])
-
-_ = doc.get('ner', from_token=True)
-[e.find('PER') for e in _]
-#####
-
 # napravi NER na unosima preuzetima s weba
 d['tekst_ner'] = d.get('scrape_tekst').apply(helpers.apply_nlp_pipeline,
                                              pipeline=nlp)

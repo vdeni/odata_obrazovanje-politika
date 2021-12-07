@@ -7,7 +7,8 @@ def apply_nlp_pipeline(data: list[str],
     """
     Primijeni CLASSLA nlp pipeline na listu stringova. Vraca listu stringova u
     kojoj se nalaze samo oni unosi iz izvorne liste koji su prepoznati kao
-    PERSON.
+    'PER'. Ulazi u svaki 'PER' unos i pregledava tagove elemenata. Ako svi nisu
+    '*-PER', zanemaruje cijeli unos.
     """
     out_list = []
 
@@ -15,9 +16,28 @@ def apply_nlp_pipeline(data: list[str],
         try:
             doc = pipeline(entry)
 
-            for entity in doc.entities:
-                if entity.type == 'PER':
-                    out_list.append(entity.text)
+            elems = doc.get(['text', 'ner'],
+                            from_token=True)
+
+            for elem_idx, elem in enumerate(elems):
+                if elem[1] == 'B-PER':
+                    out_line = elem[0]
+                elif elem[1] == 'I-PER':
+                    out_line = ' '.join([out_line, elem[0]])
+
+                    if elem_idx + 1 == len(elems):
+                        out_list.append(out_line)
+
+                        del(out_line)
+                elif elem[1] not in ['B-PER', 'I-PER']\
+                        and 'out_line' in locals():
+                    out_list.append(out_line)
+
+                    del(out_line)
+                elif elem[1] not in ['B-PER', 'I-PER']\
+                        and 'out_line' not in locals():
+                    continue
+
         except IndexError:
             continue
 
