@@ -21,44 +21,12 @@ nlp = classla.Pipeline('hr',
                        type='standard',
                        processors='tokenize,ner')
 
+# standardiziraj crtice u tekstovima
+d['tekst_dash_cleaned'] = d.get('scrape_tekst').map(helpers.dash_handler)
+
 # napravi NER na unosima preuzetima s weba
-d['tekst_ner'] = d.get('scrape_tekst').apply(helpers.apply_nlp_pipeline,
-                                             pipeline=nlp)
+d['tekst_ner'] = d.get('tekst_dash_cleaned').apply(helpers.apply_nlp_pipeline,
+                                                   pipeline=nlp)
 
-# normaliziraj unose
-d['tekst_ner'] = d.get('tekst_ner').map(helpers.normalize_inputs)
-
-# TODO: filtriranje unosa u djelatnicima tako da se izbace pogresno
-# prepoznati entiteti
-inflex_db = pandas.read_csv(os.path.join('data',
-                                         'infleksijska-baza',
-                                         'infleksijska-baza.csv'),
-                            header=0,
-                            names=['forma', 'lema', 'tag'])
-
-imena_db =\
-    pandas.read_excel(os.path.join('data',
-                                   '2011-popis_agregati-imena-prezimena',
-                                   '2011-popis_agregati-imena-prezimena.xls'),
-                      sheet_name='AgregatIme')
-
-imena_db = imena_db.dropna()
-
-imena_db['Ime'] = imena_db.get('Ime').map(lambda x: x.title())
-# imena_db['Ime'] = imena_db.loc[:, 'Ime'].map(lambda x: x.title())
-
-prezimena_db =\
-    pandas.read_excel(os.path.join('data',
-                                   '2011-popis_agregati-imena-prezimena',
-                                   '2011-popis_agregati-imena-prezimena.xls'),
-                      sheet_name='AgregatPrezime')
-
-prezimena_db = prezimena_db.dropna()
-
-prezimena_db['Prezime'] = prezimena_db.loc[:, 'Prezime'].\
-    map(lambda x: x.title())
-
-d.tekst_ner.apply(helpers.filter_entries,
-                  inflectional_set=set(inflex_db.lema.values),
-                  names_set=set(imena_db.Ime.values),
-                  lastnames_set=set(prezimena_db.Prezime.values))
+# filtriraj unose koji imaju samo jednu rijec
+d['tekst_ner'] = d.get('tekst_ner').map(helpers.filter_entries)

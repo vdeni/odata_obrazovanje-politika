@@ -1,4 +1,5 @@
 import re
+
 from classla import Pipeline
 
 
@@ -7,8 +8,7 @@ def apply_nlp_pipeline(data: list[str],
     """
     Primijeni CLASSLA nlp pipeline na listu stringova. Vraca listu stringova u
     kojoj se nalaze samo oni unosi iz izvorne liste koji su prepoznati kao
-    'PER'. Ulazi u svaki 'PER' unos i pregledava tagove elemenata. Ako svi nisu
-    '*-PER', zanemaruje cijeli unos.
+    'PER'. Ulazi u svaki unos i vadi sukcesivne B-PER i I-PER tagove.
     """
     out_list = []
 
@@ -44,6 +44,21 @@ def apply_nlp_pipeline(data: list[str],
     return out_list
 
 
+def dash_handler(data: list[str]) -> list[str]:
+    """
+    Ukloni razmake oko crtica; npr. ako je napisano 'Ivan Horvat - Vuk',
+    rezultat treba biti 'Ivan Horvat-Vuk'. Osim toga, zamjenjuje en i em dash
+    s obicnom crticom (CLSSLA NER moze raditi s em dashom, ali ne i s en).
+    Ovo olaskava izvlacenje imena u appl_nlp_pipleine().
+    """
+    re_dashes = re.compile('\\s*[\u002d\u2010\u2011\u2012\u2013\u2014]\\s*')
+
+    out_list = [re_dashes.sub(string=entry,
+                              repl='-') for entry in data]
+
+    return out_list
+
+
 def normalize_inputs(data: list[str]) -> list[str]:
     """
     Ukloni interpunkciju iz unosa, ukloni vise uzastopnih razmaka, ukloni
@@ -66,28 +81,11 @@ def normalize_inputs(data: list[str]) -> list[str]:
     return data
 
 
-def filter_entries(data: list[str],
-                   inflectional_set: set,
-                   names_set: set,
-                   lastnames_set: set) -> list[str]:
+def filter_entries(data: list[str]) -> list[str]:
     """
-    Filtriranje unosa u popisu djelatnika tako da se izbace pogresno
-    prepoznati entiteti. Izbacuje unose koji sadrze samo jednu rijec. Izbacuje
-    unose dulje od sest rijeci. Za ostale provjerava nalazi li se bilo koji od
-    elemenata unosa u infleksijskoj bazi ili u popisu imena DZS. Ako se niti
-    jedan element ne nalazi u tim bazama, unos se izbacuje.
+    Filtriranje unosa u popisu djelatnika. Izbacuje unose koji sadrze samo
+    jednu rijec.
     """
-    data_elems = [elem.split() for elem in data
-                  if len(elem.split()) > 1 and len(elem.split()) <= 5]
-
-    for entry_idx, entry in enumerate(data_elems):
-        entry_set = set(entry)
-
-        if not set(entry_set).intersection(inflectional_set) or\
-                not set(entry_set).intersection(names_set) or\
-                not set(entry_set).intersection(lastnames_set):
-            data_elems.pop(entry_idx)
-        else:
-            data_elems[entry_idx] = ' '.join(entry)
+    data_elems = [elem for elem in data if len(elem.split()) > 1]
 
     return data_elems
