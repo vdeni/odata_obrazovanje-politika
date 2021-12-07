@@ -17,8 +17,7 @@ class SkoleHrPipeline:
         os.makedirs('data',
                     exist_ok=True)
 
-        self.file = open(os.path.join('data',
-                                      'osnovne_skole.jl'),
+        self.file = open(spider.data_path,
                          'a')
 
     def close_spider(self, spider):

@@ -59,6 +59,7 @@ def dash_handler(data: list[str]) -> list[str]:
     return out_list
 
 
+# TODO: makni ako ostane neiskoristeno
 def normalize_inputs(data: list[str]) -> list[str]:
     """
     Ukloni interpunkciju iz unosa, ukloni vise uzastopnih razmaka, ukloni

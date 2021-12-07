@@ -15,21 +15,23 @@ class OsnovneSkoleSpider(scrapy.Spider):
     domenom skole.hr
     """
 
-    name = 'spider_os_skole-hr'
+    name = 'spider_skole-hr'
 
     allowed_domains = 'www.skole.hr'
 
-    custom_settings = {
-        'LOG_FILE': 'log_spider_os_skole-hr.txt'
-    }
-
     handle_httpstatus_list = [404]
 
-    url_db = pandas.read_csv(os.path.join('skole_hr',
-                                          'skole_osnovne_url.csv'),
-                             delimiter=';')
+    def __init__(self,
+                 link_db_path,
+                 data_path,
+                 path_404):
+        self.url_db = pandas.read_csv(link_db_path,
+                                      delimiter=';')
 
-    def __init__(self):
+        self.data_path = data_path
+
+        self.path_404 = path_404
+
         self.start_urls = list(self.url_db['url'])[0:10]
 
         self.start_urls = [url.strip() for url in self.start_urls]
@@ -55,11 +57,9 @@ class OsnovneSkoleSpider(scrapy.Spider):
         _url_id = self.start_urls.index(response.url)
 
         if response.status == 404:
-            # TODO: dodati da trazi link na djelatnike?
             self.logger.info('>>> Added 404 url to list')
 
-            with open(os.path.join('data',
-                                   'osnovne_list_404.txt'),
+            with open(self.path_404,
                       'a') as ofile:
                 ofile.write(response.url + '\n')
 
