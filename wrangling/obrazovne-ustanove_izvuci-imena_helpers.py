@@ -85,7 +85,7 @@ def remove_classes(data: list[str]) -> list[str]:
     """
     Naivan pokusaj uklanjanja zaostalih informacija o razrednom odjeljenju.
     """
-    re_class = re.compile('[1-8]\.?.*')
+    re_class = re.compile('[1-8]\\.?.*')
 
     data = [re_class.sub(repl='',
                          string=elem) for elem in data]

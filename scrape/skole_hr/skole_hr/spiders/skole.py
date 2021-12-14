@@ -8,6 +8,9 @@ from scrapy.loader import ItemLoader
 from skole_hr.items import SkoleHrItem
 
 
+# TODO: klasu za pretrazivanje popisa zaposlenika
+
+
 class OsnovneSkoleSpider(scrapy.Spider):
     """
     Klasa za scrape informacija o djelatnicima osnovnih skola sa stranica pod

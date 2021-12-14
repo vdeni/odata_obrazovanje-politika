@@ -36,3 +36,8 @@ d['tekst_ner'] = d.get('tekst_ner').map(helpers.normalize_inputs)
 
 # makni zaostale unose razreda
 d['tekst_ner'] = d.get('tekst_ner').map(helpers.remove_classes)
+
+# ukloni duplicirane unose
+d['tekst_ner'] = d.get('tekst_ner').map(lambda x: list(set(x)))
+
+# TODO: izvuci URL-ove skola koje imaju manje od 20 unosa
