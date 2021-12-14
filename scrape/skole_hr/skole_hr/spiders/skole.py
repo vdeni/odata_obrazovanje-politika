@@ -1,4 +1,3 @@
-import os
 import re
 import datetime
 
@@ -21,6 +20,12 @@ class OsnovneSkoleSpider(scrapy.Spider):
 
     handle_httpstatus_list = [404]
 
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'skole_hr.pipelines.SkoleHrPipeline': 300,
+        }
+    }
+
     def __init__(self,
                  link_db_path,
                  data_path,
@@ -28,11 +33,19 @@ class OsnovneSkoleSpider(scrapy.Spider):
         self.url_db = pandas.read_csv(link_db_path,
                                       delimiter=';')
 
+        self.url_db = self.url_db.dropna(axis=0,
+                                         how='any',
+                                         subset=['url'])
+
+        self.url_db = self.url_db.reset_index(drop=True)
+
         self.data_path = data_path
 
         self.path_404 = path_404
 
-        self.start_urls = list(self.url_db['url'])[0:10]
+        self.start_urls = self.url_db['url']
+
+        self.start_urls = list(self.start_urls)
 
         self.start_urls = [url.strip() for url in self.start_urls]
 
@@ -52,12 +65,14 @@ class OsnovneSkoleSpider(scrapy.Spider):
 
     def parse(self,
               response):
-        self.logger.info(f'>>> Parsing: {response.url}')
+        print(f'>>> Parsing: {response.url}')
 
         _url_id = self.start_urls.index(response.url)
 
+        print(f'\t>>> {_url_id} Ime: {self.url_db.loc[_url_id, "naziv"]}')
+
         if response.status == 404:
-            self.logger.info('>>> Added 404 url to list')
+            print('\t>>> Added 404 url to list')
 
             with open(self.path_404,
                       'a') as ofile:
