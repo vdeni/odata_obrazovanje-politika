@@ -30,3 +30,9 @@ d['tekst_ner'] = d.get('tekst_dash_cleaned').apply(helpers.apply_nlp_pipeline,
 
 # filtriraj unose koji imaju samo jednu rijec
 d['tekst_ner'] = d.get('tekst_ner').map(helpers.filter_entries)
+
+# normaliziraj unose
+d['tekst_ner'] = d.get('tekst_ner').map(helpers.normalize_inputs)
+
+# makni zaostale unose razreda
+d['tekst_ner'] = d.get('tekst_ner').map(helpers.remove_classes)
