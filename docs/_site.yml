@@ -1,11 +1,12 @@
 navbar:
   title: ''
   left:
-    - text: 'Početna stranica'
-      icon: fa-home
+    - icon: fa-home
       href: index.html
     - text: 'Izvještaji'
       menu:
+        - text: 'Procjena povezanosti zaposlenih u odgojno-obrazovnom sustavu s političkim strankama'
+          href: procjena-povezanosti-politika.html
         - text: 'Spolna struktura osoba na rukovodećim pozicijama'
           href: spol-rukovodeci.html
 output:

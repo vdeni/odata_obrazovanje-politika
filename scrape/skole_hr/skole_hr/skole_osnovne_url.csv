@@ -1,0 +1,901 @@
+naziv;opis;sifra;podsifra;zupanija;mjesto;e_mail;web;url
+Osnovna škola Josipa Zorića;Osnovna škola;01-020-004;0-0;Zagrebačka;10370  Dugo Selo;skola@os-jzorica-dugo-selo.skole.hr;www.os-jzorica-dugo-selo.skole.hr;www.os-jzorica-dugo-selo.skole.hr
+Osnovna škola Ivan Benković;Osnovna škola;01-020-005;0-0;Zagrebačka;10370  Dugo Selo;ured@os-ibenkovic-dugo-selo.skole.hr;www.os-ibenkovic-dugo-selo.skole.hr;www.os-ibenkovic-dugo-selo.skole.hr
+OSNOVNA ŠKOLA ĐURE DEŽELIĆA IVANIĆ GRAD;Osnovna škola, Posebna ustanova odgoja i obrazovanja;01-032-001;0-0;Zagrebačka;10310  Ivanić-Grad;ured@os-gjdezelica-ivanicgrad.skole.hr;http://os-gjdezelica-ivanicgrad.skole.hr;http://os-gjdezelica-ivanicgrad.skole.hr
+Osnovna škola Stjepana Basaričeka;Osnovna škola, Umjetnička škola;01-032-002;0-0;Zagrebačka;10310  Ivanić-Grad;ured@os-sbasariceka-ivanicgrad.skole.hr;http://www.os-sbasariceka-ivanicgrad.skole.hr/;http://www.os-sbasariceka-ivanicgrad.skole.hr/
+OSNOVNA ŠKOLA JOSIPA BADALIĆA GRABERJE IVANIĆKO;Osnovna škola;01-032-003;0-0;Zagrebačka;10313  Graberje Ivanićko;ured@os-jbadalica-graberjeivanicko.skole.hr;http://os-jbadalica-graberjeivanicko.skole.hr;http://os-jbadalica-graberjeivanicko.skole.hr
+Osnovna škola Posavski Bregi;Osnovna škola;01-032-005;0-0;Zagrebačka;10311  Posavski Bregi;ured@os-posavski-bregi.skole.hr;os-posavski-bregi.skole.hr;os-posavski-bregi.skole.hr
+Osnovna škola Ljubo Babić;Osnovna škola;01-033-001;0-0;Zagrebačka;10450  Jastrebarsko;ljbabic@os-ljbabic-jastrebarsko.skole.hr , ljbabic@os-jastrebarsko.hr;NA;www.os-ljbabic-jastrebarsko.skole.hr
+OSNOVNA ŠKOLA BOGUMILA TONIJA;Osnovna škola;01-073-001;0-0;Zagrebačka;10430  Samobor;ured@os-bogumil-toni-samobor.skole.hr;http://os-bogumil-toni-samobor.skole.hr/skola/kontakti;http://os-bogumil-toni-samobor.skole.hr/skola/kontakti
+OSNOVNA ŠKOLA MIHAELA ŠILOBODA;Osnovna škola;01-073-002;0-0;Zagrebačka;10435  Sveti Martin pod Okićem;ured@os-msiloboda.skole.hr;NA;www.os-msiloboda.skole.hr
+OSNOVNA ŠKOLA SAMOBOR;Osnovna škola;01-073-003;0-0;Zagrebačka;10430  Samobor;ured@os-samobor.skole.hr;www.os-samobor.skole.hr;www.os-samobor.skole.hr
+OSNOVNA ŠKOLA MILANA LANGA;Osnovna škola;01-073-004;0-0;Zagrebačka;10432  Bregana;ured@osmilanalanga.hr;http://os-mlanga-bregana.skole.hr/;http://os-mlanga-bregana.skole.hr/
+Osnovna škola Nova škola;Osnovna škola;01-073-005;0-0;Zagrebačka;10430  Samobor;info@novaskola.hr;http://www.novaskola.hr;http://www.novaskola.hr
+OSNOVNA ŠKOLA RUDE;Osnovna škola;01-073-006;0-0;Zagrebačka;10430  Rude;ured@os-rude.skole.hr;	http://os-rude.skole.hr;	http://os-rude.skole.hr
+OSNOVNA ŠKOLA EUGENA KVATERNIKA;Osnovna škola;01-087-001;0-0;Zagrebačka;10410  Velika Gorica;ured@os-ekvaternika-velikagorica.skole.hr;www.os-ekvaternika-velikagorica.skole.hr;www.os-ekvaternika-velikagorica.skole.hr
+OSNOVNA ŠKOLA JURJA HABDELIĆA;Osnovna škola;01-087-002;0-0;Zagrebačka;10410  Velika Gorica;os-jurja.habdelica@zg.t-com.hr	 , ured@os-jhabdelica-velikagorica.skole.hr;http://os-jhabdelica-velikagorica.skole.hr;http://os-jhabdelica-velikagorica.skole.hr
+Osnovna škola Vukovina;Osnovna škola;01-087-003;0-0;Zagrebačka;10419  Gornje Podotočje;ured@os-vukovina.skole.hr;http://www.os-vukovina.skole.hr/;http://www.os-vukovina.skole.hr/
+Osnovna škola Nikole Hribara;Osnovna škola;01-087-004;0-0;Zagrebačka;10410  Velika Gorica;velikagorica@os-nhribara-velikagorica.skole.hr;www.osnikolehribara.hr;www.osnikolehribara.hr
+Osnovna škola Eugena Kumičića;Osnovna škola;01-087-005;0-0;Zagrebačka;10410  Velika Gorica;ured@os-ekumicica-velikagorica.skole.hr;http://os-ekumicica-velikagorica.skole.hr/;http://os-ekumicica-velikagorica.skole.hr/
+Osnovna škola VELIKA MLAKA;Osnovna škola;01-087-006;0-0;Zagrebačka;10408  Velika Mlaka;ured@os-velika-mlaka.skole.hr;www.os-velika-mlaka.skole.hr;www.os-velika-mlaka.skole.hr
+Osnovna škola Novo Čiče;Osnovna škola;01-087-007;0-0;Zagrebačka;10415  Novo Čiče;ured@os-novo-cice.skole.hr;http://www.os-novo-cice.skole.hr;http://www.os-novo-cice.skole.hr
+Osnovna škola ŠĆITARJEVO;Osnovna škola;01-087-010;0-0;Zagrebačka;10410  Šćitarjevo;ured@os-scitarjevo.skole.hr , osnovna.skola.scitarjevo@zg.t-com.hr;NA;www.os-scitarjevo.skole.hr
+CENTAR ZA ODGOJ I OBRAZOVANJE VELIKA GORICA;Osnovna škola;01-087-011;0-0;Zagrebačka;10410  Velika Gorica;czoo.vg@gmail.com   ;www.centar-odgojiobrazovanje-velikagorica.skole.hr;www.centar-odgojiobrazovanje-velikagorica.skole.hr
+Osnovna škola Krunoslava Kutena;Osnovna škola;01-094-001;0-0;Zagrebačka;10340  Vrbovec;ured@os-kkutena-vrbovec.skole.hr;http://www.os-kkutena-vrbovec.skole.hr;http://www.os-kkutena-vrbovec.skole.hr
+Osnovna škola Marije Jurić Zagorke;Osnovna škola, Umjetnička škola;01-094-003;0-0;Zagrebačka;10340  Vrbovec;ured@os-mjzagorke-vrbovec.skole.hr;http://os-mjzagorke-vrbovec.skole.hr/;http://os-mjzagorke-vrbovec.skole.hr/
+Osnovna škola Antuna Augustinčića;Osnovna škola;01-108-001;0-0;Zagrebačka;10290  Zaprešić;ured@os-aaugustincica-zapresic.skole.hr , danijela.adzijevic@skole.hr;NA;www.os-aaugustincica-zapresic.skole.hr
+OSNOVNA ŠKOLA LJUDEVITA GAJA;Osnovna škola;01-108-002;0-0;Zagrebačka;10290  Zaprešić;tajnistvo@os-ljudevita-gaja-zapresic.skole.hr;NA;www.os-ljudevita-gaja-zapresic.skole.hr
+Osnovna škola Kupljenovo;Osnovna škola;01-108-004;0-0;Zagrebačka;10295  Kupljenovo;kupljenovo@os-kupljenovo.skole.hr;os-kupljenovo.skole.hr;os-kupljenovo.skole.hr
+OSNOVNA ŠKOLA DRAGUTINA DOMJANIĆA;Osnovna škola;01-109-001;0-0;Zagrebačka;10380  Sveti Ivan Zelina;osnovna.skola.zelina@zg.t-com.hr;NA;http://os-ddomjanica-zg.skole.hr/
+OSNOVNA ŠKOLA KSAVERA ŠANDORA ĐALSKOG;Osnovna škola;01-109-002;0-0;Zagrebačka;10382  Donja Zelina;ured@os-ksdjalski-donjazelina.skole.hr , ;http://os-ksdjalski-donjazelina.skole.hr;http://os-ksdjalski-donjazelina.skole.hr
+Osnovna škola Ivana Perkovca;Osnovna škola;01-151-001;0-0;Zagrebačka;10292  Šenkovec;os-ivana-perkovca@zg.t-com.hr , ured@os-iperkovca-senkovec.skole.hr;http://os-iperkovca-senkovec.skole.hr/;http://os-iperkovca-senkovec.skole.hr/
+Osnovna škola Ivane Brlić-Mažuranić;Osnovna škola;01-151-002;0-0;Zagrebačka;10291  Prigorje Brdovečko;ured@os-ibmazuranic-prigorjebrdovecko.skole.hr;www.os-ibmazuranic-prigorjebrdovecko.skole.hr;www.os-ibmazuranic-prigorjebrdovecko.skole.hr
+OSNOVNA ŠKOLA PAVAO BELAS;Osnovna škola, Umjetnička škola;01-151-003;0-0;Zagrebačka;10291  Brdovec;osnovna.skola-pavao.belas@zg.t-com.hr;http://os-pavao-belas.skole.hr/;http://os-pavao-belas.skole.hr/
+Osnovna škola Rugvica;Osnovna škola;01-152-001;0-0;Zagrebačka;10370  Rugvica;os-rugvica@os-rugvica.skole.hr;http://www.os-rugvica.skole.hr;http://www.os-rugvica.skole.hr
+Osnovna škola Stjepan Radić;Osnovna škola;01-153-001;0-0;Zagrebačka;10370  Božjakovina;skola@os-stjepan-radic-bozjakovina.skole.hr;www.os-stjepan-radic-bozjakovina.skole.hr;www.os-stjepan-radic-bozjakovina.skole.hr
+Osnovna škola Pušća;Osnovna škola;01-155-001;0-0;Zagrebačka;10294  Donja Pušća;os-pusca@zg.t-com.hr , ured@os-pusca-donja.skole.hr;http://os-pusca-donja.skole.hr/;http://os-pusca-donja.skole.hr/
+Osnovna škola Sveta Nedelja;Osnovna škola;01-156-001;0-0;Zagrebačka;10431  Sveta Nedelja;ured@os-sveta-nedelja.skole.hr  , racunovodstvo@os-sveta-nedelja.skole.hr;NA;www.os-sveta-nedelja.skole.hr
+OSNOVNA ŠKOLA KLINČA SELA;Osnovna škola;01-157-001;0-0;Zagrebačka;10450  Klinča Sela;ured@os-klinca-sela.skole.hr;www.os-klinca-sela.skole.hr;www.os-klinca-sela.skole.hr
+Osnovna škola Vladimir Nazor;Osnovna škola;01-158-001;0-0;Zagrebačka;10451  Pisarovina;ured@os-vladimir-nazor-pisarovina.skole.hr;NA;www.os-vladimir-nazor-pisarovina.skole.hr
+Osnovna škola Kardinal Alojzije Stepinac;Osnovna škola;01-159-001;0-0;Zagrebačka;10454  Krašić;ured@os-alojzije-stepinac-krasic.skole.hr;http://os-alojzije-stepinac-krasic.skole.hr/;http://os-alojzije-stepinac-krasic.skole.hr/
+Osnovna škola Vladimir Deščak;Osnovna škola;01-160-001;0-0;Zagrebačka;10431  Sveta Nedelja;ured@os-vladimir-descak.skole.hr;www.os-vladimir-descak.skole.hr;www.os-vladimir-descak.skole.hr
+Osnovna škola Gradec;Osnovna škola;01-163-001;0-0;Zagrebačka;10345  Gradec;biljana.vojvodic@skole.hr , ured@os-gradec.skole.hr ;os-gradec.skole.hr;os-gradec.skole.hr
+Osnovna škola Dubrava;Osnovna škola;01-164-001;0-0;Zagrebačka;10342  Dubrava;os-dubrava@os-dubrava.skole.hr;NA;www.os-dubrava.skole.hr
+Osnovna škola Jakovlje;Osnovna škola;01-166-001;0-0;Zagrebačka;10297  Jakovlje;ured@os-jakovlje.skole.hr;http://os-jakovlje.skole.hr/;http://os-jakovlje.skole.hr/
+Osnovna škola braće Radića;Osnovna škola;01-198-001;0-0;Zagrebačka;10312  Kloštar Ivanić;ured@os-brace-radica-klostarivanic.skole.hr;NA;www.os-brace-radica-klostarivanic.skole.hr
+Osnovna škola MILKE TRNINE;Osnovna škola;01-199-001;0-0;Zagrebačka;10314  Križ;os-kriz-001@os-mtrnine-kriz.skole.hr;http://www.os-mtrnine-kriz.skole.hr/;http://www.os-mtrnine-kriz.skole.hr/
+Osnovna škola Ante Kovačića;Osnovna škola;01-539-001;0-0;Zagrebačka;10299  Marija Gorica;os.ante.kovacica@gmail.com , tajnistvo@os-akovacica-mgorica.skole.hr 	 , ured@os-akovacica-mgorica.skole.hr;www.os-akovacica-mgorica.skole.hr;www.os-akovacica-mgorica.skole.hr
+Osnovna škola POKUPSKO;Osnovna škola;01-544-001;0-0;Zagrebačka;10414  Pokupsko;ured@os-pokupsko.skole.hr;www.os-pokupsko.hr;www.os-pokupsko.hr
+OSNOVNA ŠKOLA SLAVKA KOLARA;Osnovna škola;01-545-001;0-0;Zagrebačka;10413  Kravarsko;ured@os-skolara-kravarsko.skole.hr;www.os-skolara-kravarsko.skole.hr;www.os-skolara-kravarsko.skole.hr
+Osnovna škola Bistra;Osnovna škola;01-547-001;0-0;Zagrebačka;10298  Poljanica Bistranska;tajnistvo@os-bistra.skole.hr;NA;www.os-bistra.skole.hr
+Osnovna škola Luka;Osnovna škola;01-548-001;0-0;Zagrebačka;10296  Luka;skolaluka@os-luka.skole.hr;NA;www.os-luka.skole.hr
+Osnovna škola Bedenica;Osnovna škola;01-550-001;0-0;Zagrebačka;10381  Bedenica;ured@os-bedenica.skole.hr;NA;www.os-bedenica.skole.hr
+OSNOVNA ŠKOLA DONJA STUBICA;Osnovna škola;02-014-001;0-0;Krapinsko-zagorska;49240  Donja Stubica;ured1@os-donja-stubica.skole.hr;www.os-donja-stubica.skole.hr;www.os-donja-stubica.skole.hr
+Osnovna škola Vladimir Bosnar Stubičke Toplice;Osnovna škola;02-014-004;0-0;Krapinsko-zagorska;49244  Stubičke Toplice;skola@os-stubicke-toplice.skole.hr;www.os-stubicke-toplice.skole.hr;www.os-stubicke-toplice.skole.hr
+Osnovna škola Antuna Mihanovića;Osnovna škola;02-035-001;0-0;Krapinsko-zagorska;49290  Klanjec;skola@os-amihanovica-klanjec.skole.hr;os-amihanovica-klanjec.skole.hr;os-amihanovica-klanjec.skole.hr
+Osnovna škola Augusta Cesarca, Krapina;Osnovna škola, Umjetnička škola;02-040-001;0-0;Krapinsko-zagorska;49000  Krapina;mjuricev65@gmail.com , ured@os-acesarca-kr.skole.hr ;http://www.os-acesarca-kr.skole.hr/;http://www.os-acesarca-kr.skole.hr/
+Osnovna škola Ljudevit Gaj u Krapini;Osnovna škola;02-040-002;0-0;Krapinsko-zagorska;49000  Krapina;ured@os-ljudevit-gaj-kr.skole.hr;NA;www.os-ljudevit-gaj-kr.skole.hr
+Osnovna škola Ksavera Šandora Gjalskog;Osnovna škola, Umjetnička škola;02-097-001;0-0;Krapinsko-zagorska;49210  Zabok;ured@os-ksaver-sandor-djalski-zabok.skole.hr;NA;www.os-ksaver-sandor-djalski-zabok.skole.hr
+Osnovna škola Zlatar Bistrica;Osnovna škola;02-110-001;0-0;Krapinsko-zagorska;49247  Zlatar-Bistrica;ured@os-zlatar-bistrica.skole.hr;http://www.os-zlatar-bistrica.skole.hr/;http://www.os-zlatar-bistrica.skole.hr/
+OSNOVNA ŠKOLA JANKA LESKOVARA;Osnovna škola;02-123-001;0-0;Krapinsko-zagorska;49218  Pregrada;ured.ospregrada@skole.hr;http://os-pregrada.skole.hr/;http://os-pregrada.skole.hr/
+OSNOVNA ŠKOLA BEDEKOVČINA;Osnovna škola;02-167-001;0-0;Krapinsko-zagorska;49221  Bedekovčina;ravnatelj@os-bedekovcina.skole.hr , osb-racunovodstvo@kr.t-com.hr , osb-pedagog@kr.t-com.hr , osb-ravnatelj@kr.t-com.hr , ivan.paradi@skole.hr , os-bedekovcina@kr.htnet.hr  , osb-tajnik@kr.t-com.hr;http://os-bedekovcina.skole.hr/;http://os-bedekovcina.skole.hr/
+Osnovna škola Stjepana Radića Brestovec Orehovički;Osnovna škola;02-167-002;0-0;Krapinsko-zagorska;49228  Brestovec Orehovički;ravnatelj@os-sradica-brestovec.skole.hr , os.stjepana.radica.brestovec.orehovicki@kr.t-com.hr , os-s.radica@kr.t-com.hr , ured@os-sradica-brestovec.skole.hr;http://os-sradica-brestovec.skole.hr/;http://os-sradica-brestovec.skole.hr/
+Osnovna škola VLADIMIR NAZOR BUDINŠČINA;Osnovna škola;02-168-001;0-0;Krapinsko-zagorska;49284  Budinšćina;ured@os-vnazor-budinscina.skole.hr;http://os-vnazor-budinscina.skole.hr/;http://os-vnazor-budinscina.skole.hr/
+CENTAR ZA ODGOJ I OBRAZOVANJE ZAJEZDA;Osnovna škola, Srednja škola;02-168-002;0-0;Krapinsko-zagorska;49284  Zajezda;zajezda@kr.t-com.hr;NA;https://coo-zajezda.hr/
+OSNOVNA ŠKOLA ĐURE PREJCA DESINIĆ;Osnovna škola;02-169-001;0-0;Krapinsko-zagorska;49216  Desinić;ured@os-djure-prejca-desinic.skole.hr;NA;www.os-djure-prejca-desinic.skole.hr
+OSNOVNA ŠKOLA ĐURMANEC;Osnovna škola;02-170-001;0-0;Krapinsko-zagorska;49225  Đurmanec;ured@os-djurmanec.skole.hr;www.os-djurmanec.skole.hr;www.os-djurmanec.skole.hr
+Osnovna škola Matije Gupca;Osnovna škola;02-171-001;0-0;Krapinsko-zagorska;49245  Gornja Stubica;osmggs@os-mgupca-gornjastubica.skole.hr , ravnateljica@os-mgupca-gornjastubica.skole.hr;http://os-mgupca-gornjastubica.skole.hr/;http://os-mgupca-gornjastubica.skole.hr/
+OSNOVNA ŠKOLA VIKTORA KOVAČIĆA;Osnovna škola;02-172-001;0-0;Krapinsko-zagorska;49231  Hum na Sutli;ured@os-vkovacica-humnasutli.skole.hr;http://www.os-vkovacica-humnasutli.skole.hr;http://www.os-vkovacica-humnasutli.skole.hr
+Osnovna škola PAVLA ŠTOOSA;Osnovna škola;02-174-001;0-0;Krapinsko-zagorska;49294  Kraljevec na Sutli;skola@os-pstoosa-kraljevecnasutli.skole.hr;NA;www.os-pstoosa-kraljevecnasutli.skole.hr
+Osnovna škola LIJEPA NAŠA;Osnovna škola;02-175-001;0-0;Krapinsko-zagorska;49215  Tuhelj;ured@os-lijepa-nasa-tuhelj.skole.hr;NA;www.os-lijepa-nasa-tuhelj.skole.hr
+OSNOVNA ŠKOLA KONJŠČINA;Osnovna škola;02-177-001;0-0;Krapinsko-zagorska;49282  Konjščina;ured@os-konjscina.skole.hr;NA;www.os-konjscina.skole.hr
+OSNOVNA ŠKOLA KRAPINSKE TOPLICE;Osnovna škola;02-178-001;0-0;Krapinsko-zagorska;49217  Krapinske Toplice;os-krapinske-toplice@kr.t-com.hr , skola@os-krapinske-toplice.skole.hr;www.os-krapinske-toplice.skole.hr;www.os-krapinske-toplice.skole.hr
+Centar za odgoj i obrazovanje Krapinske Toplice;Osnovna škola;02-178-003;0-0;Krapinsko-zagorska;49217  Krapinske Toplice;ured@centar-krapinske-toplice-kr.skole.hr , ravnatelj@centar-krapinske-toplice-kr.skole.hr , pedagog@centar-krapinske-toplice-kr.skole.hr , ured@centar-krapinske-toplice-kr.skole.hr;http://centar-krapinske-toplice-kr.skole.hr/;http://centar-krapinske-toplice-kr.skole.hr/
+Osnovna škola Franje Horvata Kiša;Osnovna škola;02-179-001;0-0;Krapinsko-zagorska;49253  Lobor;ured@os-fhorvata-kisa-lobor.skole.hr;www.os-fhorvata-kisa-lobor.skole.hr;www.os-fhorvata-kisa-lobor.skole.hr
+Osnovna škola Mače;Osnovna škola;02-180-001;0-0;Krapinsko-zagorska;49251  Mače;ured@os-mace.skole.hr;www.os-mace.com;www.os-mace.com
+Osnovna škola Marija Bistrica;Osnovna škola, Umjetnička škola;02-181-001;0-0;Krapinsko-zagorska;49246  Marija Bistrica;ured@os-marija-bistrica.skole.hr , dominik.karajic@skole.hr;NA;www.os-marija-bistrica.skole.hr
+OSNOVNA ŠKOLA LJUDEVIT GAJ Mihovljan;Osnovna škola;02-182-001;0-0;Krapinsko-zagorska;49252  Mihovljan;os-mihovljan@os-ljgaj-mihovljan.hr , ured@os-ljudevit-gaj-mihovljan.skole.hr;NA;www.os-ljgaj-mihovljan.hr
+Osnovna škola Oroslavje;Osnovna škola;02-183-001;0-0;Krapinsko-zagorska;49243  Oroslavje;os-oroslavje@os-oroslavje.skole.hr , os-oroslavje@kr.t-com.hr;www.os-oroslavje.skole.hr;www.os-oroslavje.skole.hr
+Osnovna škola Antuna Mihanovića Petrovsko;Osnovna škola;02-184-001;0-0;Krapinsko-zagorska;49234  Petrovsko;skola@os-amihanovica-petrovsko.skole.hr;NA;www.os-amihanovica-petrovsko.skole.hr
+OSNOVNA ŠKOLA SIDE KOŠUTIĆ RADOBOJ;Osnovna škola;02-185-001;0-0;Krapinsko-zagorska;49232  Radoboj;radoboj@os-skosutic-radoboj.skole.hr;NA;www.os-skosutic-radoboj.skole.hr
+OSNOVNA ŠKOLA SVETI KRIŽ ZAČRETJE;Osnovna škola;02-187-001;0-0;Krapinsko-zagorska;49223  Sveti Križ Začretje;ured@os-sveti-kriz-zacretje.skole.hr;NA;www.os-sveti-kriz-zacretje.skole.hr
+Osnovna škola Veliko Trgovišće;Osnovna škola;02-188-001;0-0;Krapinsko-zagorska;49214  Veliko Trgovišće;ured@os-veliko-trgovisce.skole.hr;NA;www.os-veliko-trgovisce.skole.hr
+Osnovna škola Ante Kovačića;Osnovna škola;02-189-001;0-0;Krapinsko-zagorska;49250  Zlatar; , ured@os-akovacica-zlatar.skole.hr;NA;www.os-akovacica-zlatar.skole.hr
+Osnovna škola Belec;Osnovna škola;02-189-002;0-0;Krapinsko-zagorska;49254  Belec;os-belec@os-belec.skole.hr , osmorazredna-skola-belec@kr.t-com.hr;http://os-belec.skole.hr/;http://os-belec.skole.hr/
+Osnovna škola GORNJE JESENJE;Osnovna škola;02-552-001;0-0;Krapinsko-zagorska;49233  Gornje Jesenje;os-gornje-jesenje@kr.t-com.hr , ured@os-gornje-jesenje.skole.hr;NA;www.os-gornje-jesenje.skole.hr
+Osnovna škola Josipa Broza;Osnovna škola;02-553-001;0-0;Krapinsko-zagorska;49295  Kumrovec;ured@os-josipa-broza-kumrovec.skole.hr;NA;www.os-josipa-broza-kumrovec.skole.hr
+Osnovna škola Dvor;Osnovna škola;03-021-001;0-0;Sisačko-moslavačka;44440  Dvor;osnovna-skola-dvor@os-dvor.skole.hr;http://os-dvor.skole.hr/;http://os-dvor.skole.hr/
+OSNOVNA ŠKOLA GLINA;Osnovna škola;03-025-001;0-0;Sisačko-moslavačka;44400  Glina;os-glina@sk.t-com.hr , ured@os-glina.skole.hr;www.os-glina.skole.hr;www.os-glina.skole.hr
+OSNOVNA ŠKOLA DAVORINA TRSTENJAKA;Osnovna škola;03-039-001;0-0;Sisačko-moslavačka;44430  Hrvatska Kostajnica;skola@os-dtrstenjaka-hrkostajnica.skole.hr;os-dtrstenjaka-hrkostajnica.skole.hr;os-dtrstenjaka-hrkostajnica.skole.hr
+OSNOVNA ŠKOLA BANOVA JARUGA;Osnovna škola;03-043-001;0-0;Sisačko-moslavačka;44321  Banova Jaruga;ured@os-banova-jaruga.skole.hr;https://os-banova-jaruga.site123.me/ , http://os-banova-jaruga.skole.hr/;https://os-banova-jaruga.site123.me/ , http://os-banova-jaruga.skole.hr/
+OSNOVNA ŠKOLA MATE LOVRAKA;Osnovna škola;03-043-002;0-0;Sisačko-moslavačka;44320  Kutina;skola@os-mate-lovraka-kt.skole.hr;www.os-mate-lovraka-kt.skole.hr;www.os-mate-lovraka-kt.skole.hr
+OSNOVNA ŠKOLA VLADIMIRA VIDRIĆA;Osnovna škola;03-043-003;0-0;Sisačko-moslavačka;44320  Kutina;skola@os-vvidrica-kt.skole.hr;NA;www.os-vvidrica-kt.skole.hr
+OSNOVNA ŠKOLA STJEPANA KEFELJE;Osnovna škola;03-043-004;0-0;Sisačko-moslavačka;44320  Kutina; skola@os-stjepana-kefelje-kt.skole.hr  ;http://os-stjepana-kefelje-kt.skole.hr/;http://os-stjepana-kefelje-kt.skole.hr/
+OSNOVNA ŠKOLA ZVONIMIRA FRANKA;Osnovna škola;03-043-005;0-0;Sisačko-moslavačka;44320  Kutina;skola@os-zvonimira-franka-kt.skole.hr;www.os-zvonimira-franka-kt.skole.hr;www.os-zvonimira-franka-kt.skole.hr
+OSNOVNA ŠKOLA NOVSKA;Osnovna škola;03-054-001;0-0;Sisačko-moslavačka;44330  Novska;os-novska@os-novska.skole.hr;http://www.os-novska.hr/;http://www.os-novska.hr/
+OSNOVNA ŠKOLA RAJIĆ;Osnovna škola;03-054-002;0-0;Sisačko-moslavačka;44323  Rajić;skola@os-rajic.skole.hr;www.os-rajic.skole.hr;www.os-rajic.skole.hr
+Katolička osnovna škola u Novskoj;Osnovna škola;03-054-004;0-0;Sisačko-moslavačka;44330  Novska;ravnatelj@kos-novska.hr;https://www.kos-novska.hr;https://www.kos-novska.hr
+I. OSNOVNA ŠKOLA PETRINJA;Osnovna škola;03-066-001;0-0;Sisačko-moslavačka;44250  Petrinja;ured@os-prva-petrinja.skole.hr;www.1os-petrinja.hr;www.1os-petrinja.hr
+OSNOVNA ŠKOLA MATE LOVRAKA PETRINJA;Osnovna škola;03-066-002;0-0;Sisačko-moslavačka;44250  Petrinja;ured@os-mlovraka-petrinja.skole.hr;NA;www.os-mlovraka-petrinja.skole.hr
+OSNOVNA ŠKOLA DRAGUTINA TADIJANOVIĆA PETRINJA;Osnovna škola;03-066-003;0-0;Sisačko-moslavačka;44250  Petrinja;ravnatelj@os-dtadijanovica-petrinja.skole.hr , pedagog@os-dtadijanovica-petrinja.skole.hr , szop@os-dtadijanovica-petrinja.skole.hr , ured@os-dtadijanovica-petrinja.skole.hr ;www.os-tadija-petrinja.hr;www.os-tadija-petrinja.hr
+Osnovna škola Ivan Goran Kovačić;Osnovna škola;03-066-004;0-0;Sisačko-moslavačka;44250  Gora;igk@os-igkovacic-petrinjagora.skole.hr;www.http://os-igkovacic-petrinjagora.skole.hr/;www.http://os-igkovacic-petrinjagora.skole.hr/
+OSNOVNA ŠKOLA IVANA KUKULJEVIĆA SISAK;Osnovna škola;03-076-001;0-0;Sisačko-moslavačka;44000  Sisak;ured@os-ikukuljevica-sk.skole.hr;www.os-ikukuljevica-sk.skole.hr;www.os-ikukuljevica-sk.skole.hr
+Osnovna škola 22. lipnja;Osnovna škola;03-076-002;0-0;Sisačko-moslavačka;44000  Sisak; , ured@os-22lipnja-sk.skole.hr;NA;www.os-22lipnja-sk.skole.hr
+"OSNOVNA ŠKOLA ""BRAĆA BOBETKO"" SISAK";Osnovna škola;03-076-003;0-0;Sisačko-moslavačka;44000  Sisak;ured@os-braca-bobetko-sk.skole.hr;http://os-braca-bobetko-sk.skole.hr;http://os-braca-bobetko-sk.skole.hr
+Osnovna škola Braća Ribar;Osnovna škola;03-076-004;0-0;Sisačko-moslavačka;44000  Sisak;ured@os-braca-ribar-sk.skole.hr;NA;www.os-braca-ribar-sk.skole.hr
+Osnovna škola Viktorovac;Osnovna škola;03-076-005;0-0;Sisačko-moslavačka;44000  Sisak;skola@os-viktorovac-sk.skole.hr;NA;www.os-viktorovac-sk.skole.hr
+Osnovna škola Galdovo;Osnovna škola;03-076-006;0-0;Sisačko-moslavačka;44000  Sisak;ured@os-galdovo-sk.skole.hr;NA;www.os-galdovo-sk.skole.hr
+Osnovna škola Sela;Osnovna škola;03-076-007;0-0;Sisačko-moslavačka;44273  Sela;NA;www.os-sela.skole.hr;www.os-sela.skole.hr
+Osnovna škola Budaševo-Topolovac-Gušće;Osnovna škola;03-076-008;0-0;Sisačko-moslavačka;44202  Budaševo;os-budasevo@os-budasevo.skole.hr;os-budasevo.skole.hr;os-budasevo.skole.hr
+OSNOVNA ŠKOLA IVANA ANTOLČIĆA KOMAREVO;Osnovna škola;03-076-010;0-0;Sisačko-moslavačka;44010  Sisak-Caprag;os-komarevo@sk.t-com.hr , tajnistvo@os-iantolcica-komarevo.skole.hr , os-komarevo@sk.t-com.hr;http://www.os-komarevo.skole.hr;http://www.os-komarevo.skole.hr
+Osnovna škola Gvozd;Osnovna škola;03-092-002;0-0;Sisačko-moslavačka;44410  Gvozd;os-gvozd@os-gvozd.skole.hr;NA;www.os-gvozd.skole.hr
+OSNOVNA ŠKOLA JOSIPA KOZARCA;Osnovna škola;03-190-001;0-0;Sisačko-moslavačka;44322  Lipovljani;ured@os-jkozarca-lipovljani.skole.hr;www.os-jkozarca-lipovljani.skole.hr;www.os-jkozarca-lipovljani.skole.hr
+Osnovna škola Mladost;Osnovna škola;03-191-001;0-0;Sisačko-moslavačka;44272  Lekenik;ured@os-mladost-lekenik.skole.hr;os-mladost-lekenik.skole.hr;os-mladost-lekenik.skole.hr
+Osnovna škola Braća Radić;Osnovna škola;03-192-001;0-0;Sisačko-moslavačka;44201  Martinska Ves;os.braca.radic@sk.t-com.hr , ured@os-braca-radic-martinskaves.skole.hr;NA;www.os-braca-radic-martinskaves.skole.hr
+Osnovna škola Jasenovac;Osnovna škola;03-193-001;0-0;Sisačko-moslavačka;44324  Jasenovac;os-jasenovac@os-jasenovac.skole.hr;www.os-jasenovac.skole.hr;www.os-jasenovac.skole.hr
+OSNOVNA ŠKOLA JABUKOVAC;Osnovna škola;03-194-001;0-0;Sisačko-moslavačka;44250  Petrinja;jadranka.novak3@skole.hr , jadranka.novak3@skole.hr;http://www.os-jabukovac.skole.hr/;http://www.os-jabukovac.skole.hr/
+OSNOVNA ŠKOLA POPOVAČA;Osnovna škola;03-195-001;0-0;Sisačko-moslavačka;44317  Popovača;ured@os-popovaca.skole.hr , ured@os-popovaca.hr;www.os-popovaca.skole.hr;www.os-popovaca.skole.hr
+Osnovna škola Zorke Sever;Osnovna škola;03-195-002;0-0;Sisačko-moslavačka;44317  Popovača;ured@os-zorke-sever.skole.hr;os-zorke-sever.skole.hr;os-zorke-sever.skole.hr
+OSNOVNA ŠKOLA LUDINA;Osnovna škola;03-196-001;0-0;Sisačko-moslavačka;44316  Velika Ludina;ured@os-ludina.skole.hr;NA;www.os-ludina.skole.hr
+OSNOVNA ŠKOLA SUNJA;Osnovna škola;03-197-001;0-0;Sisačko-moslavačka;44210  Sunja;os-sunja-001@os-sunja.skole.hr;os-sunja.skole.hr;os-sunja.skole.hr
+Osnovna škola Vladimir Nazor Topusko;Osnovna škola;03-202-001;0-0;Sisačko-moslavačka;44415  Topusko;ured@os-vnazor-topusko.skole.hr; http://os-vnazor-topusko.skole.hr/  ; http://os-vnazor-topusko.skole.hr/  
+Osnovna škola Katarina Zrinska Mečenčani;Osnovna škola;03-204-001;0-0;Sisačko-moslavačka;44430  Hrvatska Kostajnica;ured@os-kzrinska-mecencani.skole.hr;www.os-kzrinska-mecencani.skole.hr;www.os-kzrinska-mecencani.skole.hr
+Osnovna škola Ivo Kozarčanin;Osnovna škola;03-206-001;0-0;Sisačko-moslavačka;44450  Hrvatska Dubica;ured@os-ikozarcanin-hrvatskadubica.skole.hr	 	;www.os-ikozarcanin-hrvatskadubica.skole.hr ;www.os-ikozarcanin-hrvatskadubica.skole.hr 
+"OSNOVNA ŠKOLA ""VLADIMIR NAZOR""";Osnovna škola;04-019-001;0-0;Karlovačka;47250  Duga Resa;ured@os-vnazor-dugaresa.skole.hr;NA;www.os-vnazor-dugaresa.skole.hr
+"OSNOVNA ŠKOLA ""IVAN GORAN KOVAČIĆ""";Osnovna škola;04-019-002;0-0;Karlovačka;47250  Duga Resa;ured@os-igkovacic-dugaresa.skole.hr;http://os-igkovacic-dugaresa.skole.hr/;http://os-igkovacic-dugaresa.skole.hr/
+OSNOVNA ŠKOLA BANIJA;Osnovna škola;04-034-001;0-0;Karlovačka;47000  Karlovac;os-banija@os-banija-ka.skole.hr;NA;www.os-banija-ka.skole.hr
+OSNOVNA ŠKOLA REČICA;Osnovna škola;04-034-002;0-0;Karlovačka;47000  Karlovac;ured@os-recica.skole.hr;www.os-recica.skole.hr;www.os-recica.skole.hr
+OSNOVNA ŠKOLA ŠVARČA;Osnovna škola;04-034-003;0-0;Karlovačka;47000  Karlovac;svarca@os-svarca-ka.skole.hr;www.os-svarca-ka.skole.hr;www.os-svarca-ka.skole.hr
+OSNOVNA ŠKOLA GRABRIK;Osnovna škola;04-034-005;0-0;Karlovačka;47000  Karlovac;grabrik@os-grabrik-ka.skole.hr;www.os-grabrik.hr;www.os-grabrik.hr
+OSNOVNA ŠKOLA DUBOVAC;Osnovna škola;04-034-006;0-0;Karlovačka;47000  Karlovac;tajnistvo@os-dubovac-ka.skole.hr;NA;www.os-dubovac-ka.skole.hr
+OSNOVNA ŠKOLA TURANJ;Osnovna škola;04-034-007;0-0;Karlovačka;47000  Karlovac;snjezana.zunac@skole.hr , ured@os-turanj-ka.skole.hr  , pedagog@os-turanj-ka.skole.hr;www.os-turanj.weebly.com;www.os-turanj.weebly.com
+OSNOVNA ŠKOLA MAHIČNO;Osnovna škola;04-034-008;0-0;Karlovačka;47000  Karlovac;ured@os-mahicno.skole.hr;NA;www.os-mahicno.skole.hr
+OSNOVNA ŠKOLA DRAGOJLE JARNEVIĆ;Osnovna škola;04-034-009;0-0;Karlovačka;47000  Karlovac;ured@os-djarnevic-ka.skole.hr;http://os-djarnevic-ka.skole.hr/;http://os-djarnevic-ka.skole.hr/
+CENTAR ZA ODGOJ I OBRAZOVANJE DJECE I MLADEŽI;Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola;04-034-010;0-0;Karlovačka;47000  Karlovac;coodm@centar-odgojiobrazovanje-djeceimladezi-ka.skole.hr;centar-odgojiobrazovanje-djeceimladezi-ka.skole.hr;centar-odgojiobrazovanje-djeceimladezi-ka.skole.hr
+"OSNOVNA ŠKOLA ""BRAĆA SELJAN""";Osnovna škola;04-034-013;0-0;Karlovačka;47000  Karlovac;ured@os-braca-seljan-ka.skole.hr;www.os-braca-seljan-ka.skole.hr;www.os-braca-seljan-ka.skole.hr
+"OSNOVNA ŠKOLA ""SKAKAVAC""";Osnovna škola;04-034-014;0-0;Karlovačka;47212  Skakavac;racunovodstvo.oskakavac@gmail.com , ured@os-skakavac.skole.hr ;NA;www.os-skakavac.skole.hr
+PRVA OSNOVNA ŠKOLA;Osnovna škola;04-056-001;0-0;Karlovačka;47300  Ogulin;tajnistvo@os-prva-ogulin.skole.hr;os-prva-ogulin.skole.hr;os-prva-ogulin.skole.hr
+Osnovna škola Ivane Brlić - Mažuranić Ogulin;Osnovna škola, Umjetnička škola;04-056-002;0-0;Karlovačka;47300  Ogulin;ured@os-ibmazuranic-ogulin.skole.hr;NA;www.os-ibmazuranic-ogulin.skole.hr
+"OSNOVNA ŠKOLA ""SLAVA RAŠKAJ""";Osnovna škola;04-062-001;0-0;Karlovačka;47280  Ozalj;ured@os-slava-raskaj-ozalj.skole.hr , tajnistvo@os-slava-raskaj-ozalj.skole.hr;http://os-slava-raskaj-ozalj.skole.hr/;http://os-slava-raskaj-ozalj.skole.hr/
+OSNOVNA ŠKOLA SLUNJ;Osnovna škola;04-079-001;0-0;Karlovačka;47240  Slunj;ured@os-slunj.skole.hr;http://os-slunj.skole.hr/;http://os-slunj.skole.hr/
+Osnovna škola Vojnić;Osnovna škola;04-091-001;0-0;Karlovačka;47220  Vojnić;skola@os-vojnic.skole.hr;NA;www.os-vojnic.skole.hr
+OSNOVNA ŠKOLA ˝ANTUN KLASINC˝ LASINJA;Osnovna škola;04-201-001;0-0;Karlovačka;47206  Lasinja;ured@osakl.hr;NA;www.osakl.hr
+OSNOVNA ŠKOLA BARILOVIĆ;Osnovna škola;04-209-001;0-0;Karlovačka;47252  Barilović;ured@os-barilovic.skole.hr;www.os-barilovic.skole.hr;www.os-barilovic.skole.hr
+OSNOVNA ŠKOLA CETINGRAD;Osnovna škola;04-210-001;0-0;Karlovačka;47222  Cetingrad;ured@os-cetingrad.skole.hr;os-cetingrad.skole.hr;os-cetingrad.skole.hr
+OSNOVNA ŠKOLA DRAGANIĆI;Osnovna škola;04-211-001;0-0;Karlovačka;47201  Draganić;ured@os-draganici.skole.hr;NA;www.os-draganici.skole.hr
+OSNOVNA ŠKOLA GENERALSKI STOL;Osnovna škola;04-212-001;0-0;Karlovačka;47262  Generalski Stol;dijana.zadrovic@skole.hr , skola@os-generalski-stol.skole.hr ;www.os-generalski-stol.hr;www.os-generalski-stol.hr
+OSNOVNA ŠKOLA KATARINE ZRINSKI;Osnovna škola;04-213-001;0-0;Karlovačka;47242  Krnjak;ured@os-kzrinski-krnjak.skole.hr;NA;www.os-kzrinski-krnjak.skole.hr
+OSNOVNA ŠKOLA NETRETIĆ;Osnovna škola;04-214-001;0-0;Karlovačka;47271  Netretić;ured@os-netretic.skole.hr;NA;www.os-netretic.skole.hr
+"OSNOVNA ŠKOLA ""JOSIPDOL""";Osnovna škola;04-216-001;0-0;Karlovačka;47303  Josipdol;ured@os-josipdol.skole.hr;os-josipdol.skole.hr ;os-josipdol.skole.hr 
+OSNOVNA ŠKOLA PLAŠKI;Osnovna škola;04-217-001;0-0;Karlovačka;47304  Plaški;ured@os-plaski.skole.hr;os-plaski.skole.hr;os-plaski.skole.hr
+OSNOVNA ŠKOLA EUGENA KVATERNIKA;Osnovna škola;04-219-001;0-0;Karlovačka;47245  Rakovica;vera.ljubanovic-grdic@skole.hr , valentina.kraljicek@skole.hr , os-rakovica@os-ekvaternika-rakovica.skole.hr;http://os-ekvaternika-rakovica.skole.hr/;http://os-ekvaternika-rakovica.skole.hr/
+OSNOVNA ŠKOLA ŽAKANJE;Osnovna škola;04-221-001;0-0;Karlovačka;47276  Žakanje;ured@os-zakanje.skole.hr;www/os-zakanje.hr;www/os-zakanje.hr
+Osnovna škola Ivana Kukuljevića Sakcinskog;Osnovna škola;05-031-001;0-0;Varaždinska;42240  Ivanec;os-ivanec@os-iksakcinskog-ivanec.skole.hr ;http://os-iksakcinskog-ivanec.skole.hr/;http://os-iksakcinskog-ivanec.skole.hr/
+Osnovna škola Metel Ožegović;Osnovna škola;05-031-004;0-0;Varaždinska;42242  Radovan;ured@os-metel-ozegovic-radovan.skole.hr;www.os-metel-ozegovic-radovan.skole.hr;www.os-metel-ozegovic-radovan.skole.hr
+Osnovna škola Ludbreg;Osnovna škola, Umjetnička škola;05-046-001;0-0;Varaždinska;42230  Ludbreg;os-ludbreg@osl.hr , ured@os-ludbreg.skole.hr ;NA;www.osl.hr
+Osnovna škola Novi Marof;Osnovna škola, Umjetnička škola;05-053-001;0-0;Varaždinska;42220  Novi Marof;branka.novak1@skole.hr , andelko.bosnjak@skole.hr , os.novimarof@skole.hr ;NA;https://os-novi-marof.skole.hr/
+"Osnovna škola ""Podrute""";Osnovna škola;05-053-002;0-0;Varaždinska;42220  Donje Makojišće;ravnatelj@os-podrute-donje-makoisce.skole.hr;http://www.os-podrute-donje-makoisce.skole.hr/;http://www.os-podrute-donje-makoisce.skole.hr/
+I. OSNOVNA ŠKOLA VARAŽDIN;Osnovna škola;05-086-001;0-0;Varaždinska;42000  Varaždin;ured@os-prva-vz.skole.hr;http://os-prva-vz.skole.hr/;http://os-prva-vz.skole.hr/
+II. osnovna škola Varaždin;Osnovna škola;05-086-002;0-0;Varaždinska;42000  Varaždin;drugaos-vz@os-druga-vz.skole.hr , ravnatelj@os-druga-vz.skole.hr;NA;www.os-druga-vz.skole.hr
+III. OSNOVNA ŠKOLA VARAŽDIN;Osnovna škola;05-086-003;0-0;Varaždinska;42000  Varaždin;ravnateljica@os-treca-vz.skole.hr    , tajnistvo@os-treca-vz.skole.hr    , racunovodstvo@os-treca-vz.skole.hr  , knjiznica@os-treca-vz.skole.hr    , ured@os-treca-vz.skole.hr ;http://os-treca-vz.skole.hr/;http://os-treca-vz.skole.hr/
+IV. osnovna škola Varaždin;Osnovna škola;05-086-004;0-0;Varaždinska;42000  Varaždin;ured@os-cetvrta-vz.skole.hr , jasmina.dvorski@skole.hr;http://os-cetvrta.skole.hr/;http://os-cetvrta.skole.hr/
+V. osnovna škola Varaždin;Osnovna škola;05-086-005;0-0;Varaždinska;42000  Varaždin;peta@os-peta-vz.skole.hr;NA;www.os-peta-vz.skole.hr
+VI. osnovna škola Varaždin;Osnovna škola;05-086-006;0-0;Varaždinska;42000  Varaždin;ured@os-sesta-vz.skole.hr;http://www.os-sesta-vz.skole.hr/;http://www.os-sesta-vz.skole.hr/
+Centar za odgoj i obrazovanje Tomislav Špoljar;Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola;05-086-007;0-0;Varaždinska;42000  Varaždin;info@centar-tspoljar-vz.skole.hr , info@centar-tspoljar-vz.skole.hr;NA;https://centar-tomislavspoljar.hr/
+VII. osnovna  škola  Varaždin;Osnovna škola;05-086-008;0-0;Varaždinska;42000  Varaždin;ured@os-sedma-vz.skole.hr;os-sedma-vz.skole.hr;os-sedma-vz.skole.hr
+Katolička osnovna škola Svete Uršule;Osnovna škola;05-086-010;0-0;Varaždinska;42000  Varaždin;ured@os-svete-ursule.skole.hr;www.os-svete-ursule.skole.hr;www.os-svete-ursule.skole.hr
+Osnovna škola Cestica;Osnovna škola;05-222-001;0-0;Varaždinska;42208  Cestica;ravnateljica@os-cestica.hr , racunovodstvo@os-cestica.hr , pedagog@os-cestica.hr , zbornica@os-cestica.hr , knjiznica@os-cestica.hr , ured@os-cestica.skole.hr , tajnistvo@os-cestica.hr , skola@os-cestica.hr;http://os-cestica.skole.hr/;http://os-cestica.skole.hr/
+Osnovna škola Kneginec Gornji;Osnovna škola;05-223-001;0-0;Varaždinska;42204  Gornji Kneginec;miljenko.rozmaric@skole.hr , ured@os-gornji-kneginec.skole.hr ;NA;www.os-gornji-kneginec.skole.hr
+"Osnovna škola ""Petar Zrinski"" Jalžabet";Osnovna škola;05-224-001;0-0;Varaždinska;42203  Jalžabet;ured@os-pzrinski-jalzabet.skole.hr;http://os-pzrinski-jalzabet.skole.hr/;http://os-pzrinski-jalzabet.skole.hr/
+Osnovna škola Vidovec;Osnovna škola;05-225-001;0-0;Varaždinska;42205  Vidovec;vidovec@os-vidovec.skole.hr;os-vidovec.skole.hr;os-vidovec.skole.hr
+Osnovna škola Petrijanec;Osnovna škola;05-226-001;0-0;Varaždinska;42206  Petrijanec;os-petrijanec@os-petrijanec.skole.hr;http://os-petrijanec.skole.hr/;http://os-petrijanec.skole.hr/
+Osnovna škola Vladimir Nazor;Osnovna škola;05-227-001;0-0;Varaždinska;42214  Sveti Ilija;skola@os-vnazor-svetiilija.skole.hr;NA;www.os-vnazor-svetiilija.skole.hr
+Osnovna škola Beletinec;Osnovna škola;05-227-002;0-0;Varaždinska;42214  Beletinec;tajnistvo@os-beletinec.skole.hr;www.os-beletinec.skole.hr;www.os-beletinec.skole.hr
+Osnovna škola Trnovec;Osnovna škola;05-229-001;0-0;Varaždinska;42202  Trnovec;os.trnovec@skole.hr , ostrnovec@ostrnovec.hr;NA;www.ostrnovec.hr
+Osnovna škola Šemovec;Osnovna škola;05-229-002;0-0;Varaždinska;42202  Šemovec;racunovodstvo@os-semovec.hr , ravnateljica@os-semovec.hr , tajnistvo@os-semovec.hr  , skola@os-semovec.hr;http://os-semovec.skole.hr , os-semovec.skole.hr/skola;http://os-semovec.skole.hr , os-semovec.skole.hr/skola
+Osnovna škola Vinica;Osnovna škola;05-230-001;0-0;Varaždinska;42207  Vinica;os-vinica@os-vinica.skole.hr;http://os-vinica.skole.hr/;http://os-vinica.skole.hr/
+Osnovna škola Sračinec;Osnovna škola;05-231-001;0-0;Varaždinska;42209  Sračinec;lidija.valec@ossracinec.hr , ljiljanka.skomrak@ossracinec.hr , skola@ossracinec.hr ;http://os-sracinec.skole.hr;http://os-sracinec.skole.hr
+Osnovna škola Franje Serta Bednja;Osnovna škola;05-232-001;0-0;Varaždinska;42253  Bednja;admin@os-fserta-bednja.skole.hr , ured@os-fserta-bednja.skole.hr;http://os-fserta-bednja.skole.hr/;http://os-fserta-bednja.skole.hr/
+Osnovna škola Gustav Krklec Maruševec;Osnovna škola;05-233-001;0-0;Varaždinska;42243  Maruševec;ured@os-gkrklec-calinec.skole.hr;NA;www.os-gkrklec-calinec.skole.hr
+Osnovna škola grofa Janka Draškovića;Osnovna škola;05-234-001;0-0;Varaždinska;42244  Klenovnik;ured@os-grofa-jdraskovica-klenovnik.skole.hr;www:http://skole.htnet.hr/os-klenovnik-001/skola;www:http://skole.htnet.hr/os-klenovnik-001/skola
+Osnovna škola Andrije Kačića Miošića;Osnovna škola;05-235-001;0-0;Varaždinska;42245  Donja Voća;ured@os-akmiosica-donja-voca.skole.hr;NA;www.os-akmiosica-donja-voca.skole.hr
+Osnovna škola Ante Starčevića;Osnovna škola;05-236-001;0-0;Varaždinska;42250  Lepoglava;ratko.tomic1@gmail.com , tajnistvo@os-astarcevica-lepoglava.skole.hr;NA;www.os-astarcevica-lepoglava.skole.hr
+Osnovna škola Ivana Rangera, Kamenica;Osnovna škola;05-236-002;0-0;Varaždinska;42250  Kamenica;ured@os-irangera-kamenica.skole.hr;http://www.os-kamenica.com;http://www.os-kamenica.com
+Osnovna škola Izidora Poljaka, Višnjica;Osnovna škola;05-236-003;0-0;Varaždinska;42250  Lepoglava;ured@os-ipoljaka-visnjica.skole.hr;http://os-ipoljaka-visnjica.skole.hr;http://os-ipoljaka-visnjica.skole.hr
+Osnovna škola Martijanec;Osnovna škola;05-237-001;0-0;Varaždinska;42232  Martijanec;ured@os-martijanec.skole.hr;www.os-martijanec.skole.hr;www.os-martijanec.skole.hr
+Osnovna škola Sveti Đurđ;Osnovna škola;05-238-001;0-0;Varaždinska;42233  Sveti Đurđ;mirela.vukoja@skole.hr , ured@os-sveti-djurdj.skole.hr;http://os-sveti-djurdj.skole.hr;http://os-sveti-djurdj.skole.hr
+Osnovna škola Veliki Bukovec;Osnovna škola;05-239-001;0-0;Varaždinska;42231  Veliki Bukovec;ured@os-bukovec.hr;NA;www.os-bukovec.hr
+Osnovna škola Antuna i Ivana Kukuljevića;Osnovna škola;05-240-001;0-0;Varaždinska;42223  Varaždinske Toplice;skola@os-aiikukuljevica-varazdinske-toplice.skole.hr;os-aiikukuljevica-varazdinske-toplice.skole.hr;os-aiikukuljevica-varazdinske-toplice.skole.hr
+Osnovna škola Svibovec;Osnovna škola;05-240-002;0-0;Varaždinska;42223  Svibovec;tajnistvo@os-svibovec.skole.hr , ravnateljica@os-svibovec.skole.hr;NA;www.os-svibovec.skole.hr
+Osnovna škola Breznički Hum;Osnovna škola;05-241-001;0-0;Varaždinska;42225  Breznički Hum;ured@os-breznicki-hum.skole.hr;NA;www.os-breznicki-hum.skole.hr
+Osnovna škola Ljubešćica;Osnovna škola;05-242-001;0-0;Varaždinska;42222  Ljubešćica;ured@os-ljubescica.skole.hr , skola@os-ljubescica.hr;www.os-ljubescica.skole.hr;www.os-ljubescica.skole.hr
+Osnovna škola Bisag;Osnovna škola;05-243-001;0-0;Varaždinska;42226  Bisag;os-bisag@os-bisag.skole.hr , os-bisag@os-bisag.skole.hr;NA;www.os-bisag.skole.hr
+Osnovna škola Visoko;Osnovna škola;05-244-001;0-0;Varaždinska;42224  Visoko;tajnistvo@os-visoko.skole.hr , pedagog@os-visoko.skole.hr , knjiznica@os-visoko.skole.hr , skola@os-visoko.skole.hr ;https://osvisoko.hr;https://osvisoko.hr
+Osnovna škola Tužno;Osnovna škola;05-484-001;0-0;Varaždinska;42242  Tužno;skola@os-tuzno.skole.hr;www:os-tuzno.skole.hr;www:os-tuzno.skole.hr
+OSNOVNA ŠKOLA ĐURĐEVAC;Osnovna škola;06-023-001;0-0;Koprivničko-križevačka;48350  Đurđevac;ured@os-djurdjevac.skole.hr;http://os-djurdjevac.skole.hr/;http://os-djurdjevac.skole.hr/
+OSNOVNA ŠKOLA ANTUN NEMČIĆ GOSTOVINSKI;Osnovna škola;06-037-001;0-0;Koprivničko-križevačka;48000  Koprivnica;ang@os-angostovinski-kc.skole.hr , osang-kc@kc.t-com.hr;NA;www.os-angostovinski-kc.skole.hr
+"OSNOVNA ŠKOLA ""Braća Radić""";Osnovna škola;06-037-002;0-0;Koprivničko-križevačka;48000  Koprivnica;anita.brkovic@skole.hr , andreja.ersetic@skole.hr , ljubinka.jug@skole.hr , jadranka.bosanac@skole.hr , dunja.mlinjaric@skole.hr , vesna.auer-gregor@skole.hr , kreso.grgac@skole.hr  , adrijana.hatadi@skole.hr ,  ured@os-braca-radic-koprivnica.skole.hr;NA;www.os-braca-radic-koprivnica.skole.hr
+"OSNOVNA ŠKOLA ""ĐURO ESTER""";Osnovna škola;06-037-003;0-0;Koprivničko-križevačka;48000  Koprivnica;sanja.prelogovic@skole.hr , marina.kozjak@skole.hr , ured@os-gjuro-ester-koprivnica.skole.hr ;www.os-gjuro-ester-koprivnica.skole.hr;www.os-gjuro-ester-koprivnica.skole.hr
+CENTAR ZA ODGOJ, OBRAZOVANJE I REHABILITACIJU PODRAVSKO SUNCE;Osnovna škola;06-037-004;0-0;Koprivničko-križevačka;48000  Koprivnica;ravnatelj@centar-podravskosunce-koprivnica.skole.hr , ured@centar-podravskosunce-koprivnica.skole.hr;www.podravsko-sunce.hr;www.podravsko-sunce.hr
+Osnovna škola Koprivnički Ivanec;Osnovna škola;06-038-001;0-0;Koprivničko-križevačka;48311  Kunovec;ured@os-koprivnicki-ivanec.skole.hr;www.os-koprivnicki-ivanec.skole.hr;www.os-koprivnicki-ivanec.skole.hr
+OSNOVNA ŠKOLA LJUDEVITA MODECA KRIŽEVCI;Osnovna škola;06-041-001;0-0;Koprivničko-križevačka;48260  Križevci;krizevci@os-ljmodeca-kc.skole.hr;os-ljmodeca-kc.skole.hr;os-ljmodeca-kc.skole.hr
+"OSNOVNA ŠKOLA ""VLADIMIR NAZOR"" KRIŽEVCI";Osnovna škola;06-041-002;0-0;Koprivničko-križevačka;48260  Križevci;ravnatelj@os-vnazor-kc.skole.hr , tatjana.strabic@skole.hr , ljiljana.kopjar@skole.hr , gordana.loncaric@skole.hr , petra.kamenaric@skole.hr , andrea.katanovic-babic@skole.hr , tajnistvo@os-vnazor-kc.skole.hr ;NA;www.os-vnazor-kc.skole.hr
+CENTAR ZA ODGOJ, OBRAZOVANJE I REHABILITACIJU KRIŽEVCI;Osnovna škola;06-041-004;0-0;Koprivničko-križevačka;48260  Križevci;ured@centar-odgoj-obrazovanjeirehabilitacija-kc.skole.hr  , ccokrizevci@net.hr;http://www.centar-odgoj-obrazovanjeirehabilitacija-kc.skole.hr/;http://www.centar-odgoj-obrazovanjeirehabilitacija-kc.skole.hr/
+OSNOVNA ŠKOLA KOPRIVNIČKI BREGI;Osnovna škola;06-150-001;0-0;Koprivničko-križevačka;48324  Koprivnički Bregi;ured@os-koprivnicki-bregi.skole.hr;www.os-koprivnicki-bregi.skole.hr;www.os-koprivnicki-bregi.skole.hr
+OSNOVNA ŠKOLA FRAN KONCELAK DRNJE;Osnovna škola;06-247-001;0-0;Koprivničko-križevačka;48316  Drnje;ured@os-fkoncelak-drnje.skole.hr;http://os-fkoncelak-drnje.skole.hr;http://os-fkoncelak-drnje.skole.hr
+OSNOVNA ŠKOLA GOLA;Osnovna škola;06-248-001;0-0;Koprivničko-križevačka;48331  Gola;ured@os-gola.skole.hr;NA;www.os-gola.skole.hr
+OSNOVNA ŠKOLA LEGRAD;Osnovna škola;06-249-001;0-0;Koprivničko-križevačka;48317  Legrad;ured@os-legrad.skole.hr;http://os-legrad.skole.hr;http://os-legrad.skole.hr
+OSNOVNA ŠKOLA MIHOVIL PAVLEK MIŠKINA ĐELEKOVEC;Osnovna škola;06-250-001;0-0;Koprivničko-križevačka;48316  Đelekovec;ravnatelj@os-mpavlek-miskina-djelekovec.skole.hr;NA;www.os-mpavlek-miskina-djelekovec.skole.hr
+"OSNOVNA ŠKOLA ""PROF.BLAŽ MAĐER"", Novigrad Podravski";Osnovna škola;06-251-001;0-0;Koprivničko-križevačka;48325  Novigrad Podravski;ured@os-bmadjera-novigrad-podravski.skole.hr;http://www.os-bmadjera-novigrad-podravski.skole.hr;http://www.os-bmadjera-novigrad-podravski.skole.hr
+Osnovna škola ANDRIJE PALMOVIĆA;Osnovna škola;06-253-001;0-0;Koprivničko-križevačka;48312  Rasinja;ured@os-apalmovica-rasinja.skole.hr;NA;www.os-apalmovica-rasinja.skole.hr
+OSNOVNA ŠKOLA SOKOLOVAC;Osnovna škola;06-254-001;0-0;Koprivničko-križevačka;48306  Sokolovac;ured@os-sokolovac.skole.hr;www.os-sokolovac.skole.hr;www.os-sokolovac.skole.hr
+OSNOVNA ŠKOLA SVETI PETAR OREHOVEC;Osnovna škola;06-255-001;0-0;Koprivničko-križevačka;48267  Sveti Petar Orehovec;ured@os-sveti-petar-orehovec.skole.hr;www.os-sveti-petar-orehovec.skole.hr ;www.os-sveti-petar-orehovec.skole.hr 
+OSNOVNA ŠKOLA SIDONIJE RUBIDO ERDODY;Osnovna škola;06-255-002;0-0;Koprivničko-križevačka;48268  Gornja Rijeka;os.sidonije.rubido.erddy.gornja.rijeka@kc.t-com.hr;NA;http://os-srerdody-gornjarijeka.skole.hr/
+OSNOVNA ŠKOLA KLOŠTAR PODRAVSKI;Osnovna škola;06-256-001;0-0;Koprivničko-križevačka;48362  Kloštar Podravski;ured@os-klostar-podravski.skole.hr;os-klostar-podravski.skole.hr;os-klostar-podravski.skole.hr
+"OSNOVNA ŠKOLA ""GRIGOR VITEZ""";Osnovna škola;06-257-001;0-0;Koprivničko-križevačka;48214  Sveti Ivan Žabno;ured@os-gvitez-zabno.skole.hr;http://os-gvitez-zabno.skole.hr;http://os-gvitez-zabno.skole.hr
+OSNOVNA ŠKOLA MOLVE;Osnovna škola;06-258-001;0-0;Koprivničko-križevačka;48327  Molve;ivan.jakovic1@os-molve.skole.hr;NA;www.os-molve.skole.hr
+OSNOVNA ŠKOLA FERDINANDOVAC;Osnovna škola;06-259-001;0-0;Koprivničko-križevačka;48356  Ferdinandovac;danijela.begovic@skole.hr , racunovodstvo-os-ferdinandovac@kckzz.hr  , ured@os-ferdinandovac.skole.hr ;http://www.os-ferdinandovac.skole.hr;http://www.os-ferdinandovac.skole.hr
+OSNOVNA ŠKOLA PROF. FRANJE VIKTORA ŠIGNJARA;Osnovna škola;06-260-001;0-0;Koprivničko-križevačka;48326  Virje;skola@os-fvsignjara-virje.skole.hr;http://www.os-fvsignjara-virje.skole.hr/;http://www.os-fvsignjara-virje.skole.hr/
+OSNOVNA ŠKOLA IVAN LACKOVIĆ CROATA KALINOVAC;Osnovna škola;06-559-001;0-0;Koprivničko-križevačka;48361  Kalinovac;mirjana.bazijanec@skole.hr , racunovodstvo.os.kalinovac@gmail.com , ured@os-kalinovac.skole.hr ;NA;www.os-kalinovac.skole.hr
+OSNOVNA ŠKOLA KALNIK;Osnovna škola;06-560-001;0-0;Koprivničko-križevačka;48269  Kalnik;os-kalnik@kc.t-com.hr , ured@os-kalnik.skole.hr , racunovodstvo-os-kalnik-001@kckzz.hr;http://www.os-kalnik.skole.hr/;http://www.os-kalnik.skole.hr/
+I. OSNOVNA  ŠKOLA BJELOVAR;Osnovna škola;07-004-001;0-0;Bjelovarsko-bilogorska;43000  Bjelovar;tajnistvo@1osb.ims.hr , prva.bj@os-prva-bj.skole.hr  , ravnatelj@1osb.ims.hr , tajnistvo@1osb.ims.hr;http://www.os-prva-bj.skole.hr/;http://www.os-prva-bj.skole.hr/
+II. OSNOVNA  ŠKOLA  BJELOVAR;Osnovna škola;07-004-002;0-0;Bjelovarsko-bilogorska;43000  Bjelovar;2.os-bjelovar@bj.t-com.hr , ssluzba@os-druga-bj.skole.hr , ines.kapsa@skole.hr , tajnistvo@os-druga-bj.skole.hr , ured@os-druga-bj.skole.hr , ured@os-druga.bj.skole.hr;NA;www.os-druga-bj.skole.hr
+III. OSNOVNA  ŠKOLA  BJELOVAR;Osnovna škola;07-004-003;0-0;Bjelovarsko-bilogorska;43000  Bjelovar;ured@os-treca-bj.skole.hr;http://os-treca-bj.skole.hr/;http://os-treca-bj.skole.hr/
+IV. OSNOVNA  ŠKOLA  BJELOVAR;Osnovna škola;07-004-004;0-0;Bjelovarsko-bilogorska;43000  Bjelovar;ured@os-cetvrta-bj.skole.hr;os-cetvrta-bj.skole.hr;os-cetvrta-bj.skole.hr
+V OSNOVNA ŠKOLA;Osnovna škola;07-004-005;0-0;Bjelovarsko-bilogorska;43000  Bjelovar;skola@os-peta-bj.skole.hr , skola@os-peta-bj.skole.hr;NA;www.os-peta-bj.skole.hr
+OSNOVNA ŠKOLA ČAZMA;Osnovna škola;07-011-001;0-0;Bjelovarsko-bilogorska;43240  Čazma;ured@os-cazma.skole.hr;www.os-cazma.skole.hr;www.os-cazma.skole.hr
+OSNOVNA ŠKOLA VLADIMIRA NAZORA;Osnovna škola;07-012-001;0-0;Bjelovarsko-bilogorska;43500  Daruvar;os-daruvar-001@os-vnazora-daruvar.skole.hr;http://os-vnazora-daruvar.skole.hr/;http://os-vnazora-daruvar.skole.hr/
+ČEŠKA OSNOVNA ŠKOLA JANA AMOSA KOMENSKOG - ČESKÁ ZÁKLADNÍ ŠKOLA JANA AMOSE KOMENSKÉHO;Osnovna škola;07-012-002;0-0;Bjelovarsko-bilogorska;43500  Daruvar;ured@os-ceska-jakomenskog-daruvar.skole.hr , ured@os-ceska-jakomenskog-daruvar.skole.hr;http://os-ceska-jakomenskog-daruvar.skole.hr/;http://os-ceska-jakomenskog-daruvar.skole.hr/
+CENTAR ZA ODGOJ I OBRAZOVANJE RUDOLF STEINER DARUVAR;Osnovna škola;07-012-004;0-0;Bjelovarsko-bilogorska;43500  Daruvar;info@crsd.hr;NA;https://crsd.hr/
+OSNOVNA ŠKOLA GAREŠNICA;Osnovna škola, Umjetnička škola;07-024-001;0-0;Bjelovarsko-bilogorska;43280  Garešnica;ured@os-garesnica.skole.hr;http://www.os-garesnica.skole.hr/;http://www.os-garesnica.skole.hr/
+OSNOVNA ŠKOLA TRNOVITIČKI POPOVAC;Osnovna škola;07-024-003;0-0;Bjelovarsko-bilogorska;43233  Trnovitički Popovac;ured@os-trnoviticki-popovac.skole.hr;NA;www.os-trnoviticki-popovac.skole.hr
+OSNOVNA ŠKOLA IVANA NEPOMUKA JEMERŠIĆA;Osnovna škola;07-028-001;0-0;Bjelovarsko-bilogorska;43290  Grubišno Polje;ured@os-injemersica-grubisnopolje.skole.hr;http://os-injemersica-grubisnopolje.skole.hr/;http://os-injemersica-grubisnopolje.skole.hr/
+OSNOVNA ŠKOLA MIRKA PEREŠA;Osnovna škola;07-261-001;0-0;Bjelovarsko-bilogorska;43203  Kapela;ured@os-mperesa-kapela.skole.hr , os-mirka-peresa@bj.t-com.hr;www.os-mperesa-kapela.skole.hr;www.os-mperesa-kapela.skole.hr
+OSNOVNA ŠKOLA VELIKO TROJSTVO;Osnovna škola;07-262-001;0-0;Bjelovarsko-bilogorska;43226  Veliko Trojstvo;branka.gilanj@gmail.com , sanja.vranjesevic@skole.hr , ured@os-veliko-trojstvo.skole.hr ;NA;www.os-veliko-trojstvo.skole.hr
+OSNOVNA ŠKOLA IVANA VITEZA TRNSKOG;Osnovna škola;07-263-001;0-0;Bjelovarsko-bilogorska;43272  Nova Rača;ured@os-ivt-nova-raca.skole.hr , nova.raca@hotmail.com;NA;www.os-ivt-nova-raca.skole.hr
+OSNOVNA ŠKOLA VELIKA PISANICA;Osnovna škola;07-264-001;0-0;Bjelovarsko-bilogorska;43270  Velika Pisanica;ured@os-velika-pisanica.skole.hr;NA;www.os-velika-pisanica.skole.hr
+ČEŠKA OSNOVNA ŠKOLA JOSIPA RUŽIČKE KONČANICA-ČESKÁ ZÁKLADNÍ ŠKOLA JOSEFA RŮŽIČKY KONČENICE;Osnovna škola;07-265-001;0-0;Bjelovarsko-bilogorska;43505  Končanica;ured@os-ceska-jruzicka-koncanica.skole.hr;NA;www.os-ceska-jruzicka-koncanica.skole.hr
+OSNOVNA ŠKOLA DEŽANOVAC;Osnovna škola;07-266-001;0-0;Bjelovarsko-bilogorska;43506  Dežanovac;os.dezanovac@gmail.com , ravnatelj@os-dezanovac.skole.hr;www.os-dezanovac.skole.hr;www.os-dezanovac.skole.hr
+OSNOVNA ŠKOLA SIRAČ;Osnovna škola;07-267-001;0-0;Bjelovarsko-bilogorska;43541  Sirač;skola@os-sirac.skole.hr;os-sirac.skole.hr;os-sirac.skole.hr
+OSNOVNA ŠKOLA U ĐULOVCU;Osnovna škola;07-268-001;0-0;Bjelovarsko-bilogorska;43532  Đulovac;os-djulovac@os-djulovac.skole.hr;http:/os-djulovac.skole.hr;http:/os-djulovac.skole.hr
+OSNOVNA ŠKOLA IVANSKA;Osnovna škola;07-269-001;0-0;Bjelovarsko-bilogorska;43231  Ivanska;os-ivanska@bj.t-com.hr , ured@os-ivanska.skole.hr;www.os-ivanska.skole.hr;www.os-ivanska.skole.hr
+OSNOVNA ŠKOLA ŠTEFANJE;Osnovna škola;07-270-001;0-0;Bjelovarsko-bilogorska;43246  Štefanje;ured@os-stefanje.skole.hr , vesna.pavlinec-kolaric@os-stefanje.skole.hr;www.os-stefanje.skole.hr;www.os-stefanje.skole.hr
+OSNOVNA ŠKOLA MATE LOVRAKA;Osnovna škola;07-271-001;0-0;Bjelovarsko-bilogorska;43270  Veliki Grđevac;ured@os-mlovraka-veliki-grdjevac.skole.hr;http://os-mlovraka-veliki-grdjevac.skole.hr/;http://os-mlovraka-veliki-grdjevac.skole.hr/
+OSNOVNA ŠKOLA BEREK;Osnovna škola;07-272-001;0-0;Bjelovarsko-bilogorska;43232  Berek;ured@os-berek.skole.hr;NA;www.os-berek.skole.hr
+OSNOVNA ŠKOLA Slavka Kolara;Osnovna škola;07-273-001;0-0;Bjelovarsko-bilogorska;43284  Hercegovac;ured@os-skolara-hercegovac.skole.hr;http://www.os-skolara-hercegovac.skole.hr;http://www.os-skolara-hercegovac.skole.hr
+OSNOVNA ŠKOLA ROVIŠĆE;Osnovna škola;07-274-001;0-0;Bjelovarsko-bilogorska;43212  Rovišće;katica.hajtic@skole.hr , anamarija.curic2@skole.hr , skola@os-rovisce.skole.hr  , blanka.klemic@skole.hr;http://os-rovisce.skole.hr;http://os-rovisce.skole.hr
+OSNOVNA ŠKOLA TRNOVITICA;Osnovna škola;07-565-001;0-0;Bjelovarsko-bilogorska;43285  Velika Trnovitica;ostrnovitica@inet.hr , ured@os-velika-trnovitica.skole.hr;http://os-velika-trnovitica.skole.hr;http://os-velika-trnovitica.skole.hr
+OSNOVNA ŠKOLA VLADIMIRA NAZORA CRIKVENICA;Osnovna škola, Umjetnička škola;08-008-002;0-0;Primorsko-goranska;51260  Crikvenica;skola@os-vnazora-crikvenica.skole.hr;NA;www.os-vnazora-crikvenica.skole.hr
+Osnovna škola Zvonka Cara;Osnovna škola;08-008-003;0-0;Primorsko-goranska;51260  Crikvenica;damir.donadic@skole.hr , selce@os-zvonkacara.hr , pothalasso@gmail.com , tajnistvo@os-zvonkacara.hr  , ravnateljica@os-zvonkacara.hr;NA;www.os-zvonkacara.hr
+Osnovna škola Petar Zrinski Čabar;Osnovna škola;08-009-001;0-0;Primorsko-goranska;51306  Čabar;ured@os-pzrinski-cabar.skole.hr , ured@os-pzrinski-cabar.skole.hr;http://os-pzrinski-cabar.skole.hr/ ;http://os-pzrinski-cabar.skole.hr/ 
+Osnovna škola Ivana Gorana Kovačića;Osnovna škola;08-013-001;0-0;Primorsko-goranska;51300  Delnice;ured@os-igkovacica-delnice.skole.hr , os.delnice@oskovacic.tcloud.hr;www.osigk-delnice.hr;www.osigk-delnice.hr
+Osnovna škola Frana Krste Frankopana;Osnovna škola;08-013-002;0-0;Primorsko-goranska;51301  Brod na Kupi;brodkupa@gmail.com , ured@os-fkfrankopan-brodnakupi.skole.hr;http://os-fkfrankopan-brodnakupi.skole.hr/;http://os-fkfrankopan-brodnakupi.skole.hr/
+Osnovna škola Fran Krsto Frankopan Krk;Osnovna škola;08-042-001;0-0;Primorsko-goranska;51500  Krk;ravnatelj@os-fkfrankopan-krk.skole.hr , skola.krk@os-fkfrankopan-krk.skole.hr ;NA;www.os-fkfrankopan-krk.skole.hr
+Osnovna škola Omišalj;Osnovna škola;08-043-001;0-0;Primorsko-goranska;51513  Omišalj;ured@os-omisalj.skole.hr;www.os-omisalj.hr;www.os-omisalj.hr
+Osnovna škola Malinska-Dubašnica;Osnovna škola;08-044-001;0-0;Primorsko-goranska;51511  Malinska;osmalinskadubasnica@os-malinska-krk.skole.hr;www.osnovnaskolamalinskadubasnica.hr;www.osnovnaskolamalinskadubasnica.hr
+OSNOVNA ŠKOLA FRANE PETRIĆA;Osnovna škola, Umjetnička škola;08-048-001;0-0;Primorsko-goranska;51557  Cres;zeljka.matovinovic@skole.hr , jelena.sudar@skole.hr , os-cres@os-fpetrica-cres.skole.hr  , josip.pope@skole.hr;NA;www.os-fpetrica-cres.skole.hr
+Osnovna škola Rikard Katalinić Jeretov;Osnovna škola;08-058-002;0-0;Primorsko-goranska;51410  Opatija;rkj@os-rkatalinic-jeretov-opatija.skole.hr;NA;www.os-rkatalinic-jeretov-opatija.skole.hr
+OSNOVNA ŠKOLA IVANA RABLJANINA RAB;Osnovna škola;08-070-001;0-0;Primorsko-goranska;51280  Rab;osrab@os-irabljanina-rab.skole.hr ;http://os-irabljanina-rab.skole.hr/;http://os-irabljanina-rab.skole.hr/
+OSNOVNA ŠKOLA - SCUOLA ELEMENTARE BELVEDERE;Osnovna škola;08-071-001;0-0;Primorsko-goranska;51000  Rijeka;belvedere@os-belvedere-ri.skole.hr , racun@os-belvedere-ri.skole.hr ;NA;www.os-belvedere-ri.skole.hr
+Osnovna škola Brajda;Osnovna škola;08-071-002;0-0;Primorsko-goranska;51000  Rijeka;osbrajda@os-brajda-ri.skole.hr;osbrajda.skole.t-com.hr;osbrajda.skole.t-com.hr
+OSNOVNA ŠKOLA CENTAR;Osnovna škola;08-071-003;0-0;Primorsko-goranska;51000  Rijeka;centar@os-centar-ri.skole.hr;http://os-centar-ri.skole.hr/;http://os-centar-ri.skole.hr/
+OSNOVNA ŠKOLA ZAMET;Osnovna škola;08-071-005;0-0;Primorsko-goranska;51000  Rijeka;zamet@os-zamet-ri.skole.hr;http://os-zamet-ri.skole.hr/;http://os-zamet-ri.skole.hr/
+Osnovna škola - Scuola elementare Dolac;Osnovna škola;08-071-006;0-0;Primorsko-goranska;51000  Rijeka;ured@os-dolac-ri.skole.hr;http://os-dolac-ri.skole.hr/;http://os-dolac-ri.skole.hr/
+Osnovna škola - Scuola elementare Gelsi;Osnovna škola;08-071-007;0-0;Primorsko-goranska;51000  Rijeka;se@os-gelsi-ri.skole.hr  ;NA;www.os-gelsi-ri.skole.hr
+OSNOVNA ŠKOLA - SCUOLA ELEMENTARE ˝SAN NICOLO˝;Osnovna škola;08-071-008;0-0;Primorsko-goranska;51000  Rijeka;se@os-san-nicolo-ri.skole.hr;os-san-nicolo-ri.skole.hr;os-san-nicolo-ri.skole.hr
+Osnovna škola Vladimir Gortan;Osnovna škola;08-071-009;0-0;Primorsko-goranska;51000  Rijeka;ured@os-vgortan-ri.skole.hr;NA;www.os-vgortan-ri.skole.hr
+Osnovna škola ˝Kantrida˝;Osnovna škola;08-071-011;0-0;Primorsko-goranska;51000  Rijeka;ravnatelj@os-kantrida-ri.skole.hr;NA;www.os-kantrida-ri.skole.hr
+OSNOVNA ŠKOLA KOZALA;Osnovna škola;08-071-012;0-0;Primorsko-goranska;51000  Rijeka;oskozala@os-kozala-ri.skole.hr;www.os-kozala-ri.skole.hr;www.os-kozala-ri.skole.hr
+OSNOVNA ŠKOLA EUGEN KUMIČIĆ;Osnovna škola;08-071-013;0-0;Primorsko-goranska;51000  Rijeka;ek@os-ekumicic-ri.skole.hr;www.os-ekumicic-ri.skole.hr;www.os-ekumicic-ri.skole.hr
+Osnovna škola Pećine;Osnovna škola;08-071-014;0-0;Primorsko-goranska;51000  Rijeka;ured@os-pecine-ri.skole.hr;http://os-pecine-ri.skole.hr/;http://os-pecine-ri.skole.hr/
+OSNOVNA ŠKOLA PODMURVICE;Osnovna škola;08-071-015;0-0;Primorsko-goranska;51000  Rijeka;ospodmurvice@os-podmurvice-ri.skole.hr;http://os-podmurvice-ri.skole.hr/;http://os-podmurvice-ri.skole.hr/
+Osnovna škola Nikola Tesla;Osnovna škola;08-071-016;0-0;Primorsko-goranska;51000  Rijeka;os-ntesla@net.hr , ured@os-ntesla-ri.skole.hr;NA;www.os-ntesla-ri.skole.hr
+OSNOVNA ŠKOLA ŠKURINJE RIJEKA;Osnovna škola;08-071-017;0-0;Primorsko-goranska;51000  Rijeka;skola@os-skurinje-ri.skole.hr;NA;www.os-skurinje-ri.skole.hr
+"OSNOVNA ŠKOLA ""TRSAT""";Osnovna škola;08-071-018;0-0;Primorsko-goranska;51000  Rijeka;os.trsat.rijeka@os-trsat-ri.skole.hr;os-trsat-ri.skole.hr;os-trsat-ri.skole.hr
+Osnovna škola Turnić;Osnovna škola;08-071-019;0-0;Primorsko-goranska;51000  Rijeka;osturnic.uprava@ri.t-com.hr , os-turnic@os-turnic-ri.skole.hr;www.os-turnic-ri.skole.hr;www.os-turnic-ri.skole.hr
+Osnovna škola Vežica;Osnovna škola, Umjetnička škola;08-071-020;0-0;Primorsko-goranska;51000  Rijeka;iskola@os-vezica-ri.skole.hr;NA;www.os-vezica-ri.skole.hr
+Osnovna škola Gornja Vežica;Osnovna škola;08-071-021;0-0;Primorsko-goranska;51000  Rijeka;ured@os-gornja-vezica-ri.skole.hr;NA;www.os-gornja-vezica-ri.skole.hr
+Osnovna škola Ivana Zajca;Osnovna škola;08-071-022;0-0;Primorsko-goranska;51000  Rijeka;skola@os-izajca-ri.skole.hr;NA;www.os-izajca-ri.skole.hr
+"Osnovna škola ""Srdoči""";Osnovna škola;08-071-023;0-0;Primorsko-goranska;51000  Rijeka;ossrdoci@gmail.com , ossrdoci@os-srdoci-ri.skole.hr;http://www.srdoci.hr;http://www.srdoci.hr
+Osnovna škola Fran Franković;Osnovna škola;08-071-024;0-0;Primorsko-goranska;51000  Rijeka;ured@os-ffrankovic-ri.skole.hr , os-fran.frankovic@ri.t-com.hr;NA;www.os-ffrankovic-ri.skole.hr
+OSNOVNA ŠKOLA PEHLIN;Osnovna škola;08-071-025;0-0;Primorsko-goranska;51000  Rijeka;ravnatelj@os-pehlin-ri.skole.hr;http://os-pehlin-ri.skole.hr/;http://os-pehlin-ri.skole.hr/
+CENTAR ZA ODGOJ I OBRAZOVANJE;Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola;08-071-026;0-0;Primorsko-goranska;51000  Rijeka;dina.dezmar@skole.hr , ured@centar-odgojiobrazovanje-ri.skole.hr , tatjana.kovacic@skole.hr;http://centar-odgojiobrazovanje-ri.skole.hr/;http://centar-odgojiobrazovanje-ri.skole.hr/
+OSNOVNA WALDORFSKA ŠKOLA;Osnovna škola;08-071-031;0-0;Primorsko-goranska;51000  Rijeka;info@waldorf-rijeka.hr;NA;https://waldorf-rijeka.hr/
+Katolička osnovna škola Josip Pavlišić;Osnovna škola;08-071-032;0-0;Primorsko-goranska;51000  Rijeka;tajnistvo@kat-os-jpavlisic.hr , ured@kat-os-jpavlisic.hr;kat-os-jpavlisic.hr;kat-os-jpavlisic.hr
+Centar za autizam Rijeka;Obrazovanje odraslih, Osnovna škola, Posebna ustanova odgoja i obrazovanja;08-071-033;0-0;Primorsko-goranska;51000  Rijeka;autizam.ri@gmail.com;NA;https://cza-ri.hr/en/center-for-autism-rijeka-2/
+Osnovna škola Ivana Gorana Kovačića Vrbovsko;Osnovna škola;08-095-001;0-0;Primorsko-goranska;51326  Vrbovsko;ured@os-igkovacic-vrbovsko.skole.hr;os-igkovacic-vrbovsko.skole.hr;os-igkovacic-vrbovsko.skole.hr
+OSNOVNA ŠKOLA KOSTRENA;Osnovna škola;08-221-001;0-0;Primorsko-goranska;51221  Kostrena;ured@os-kostrena.skole.hr;http://www.os-kostrena.skole.hr/;http://www.os-kostrena.skole.hr/
+OSNOVNA ŠKOLA BAKAR;Osnovna škola;08-275-001;0-0;Primorsko-goranska;51222  Bakar;ured@os-bakar.skole.hr;http://os-bakar.skole.hr/;http://os-bakar.skole.hr/
+OSNOVNA ŠKOLA HRELJIN;Osnovna škola;08-275-002;0-0;Primorsko-goranska;51226  Hreljin;os-hreljin@os-hreljin.skole.hr;NA;www.os-hreljin.skole.hr
+Osnovna škola ČAVLE;Osnovna škola;08-276-001;0-0;Primorsko-goranska;51219  Čavle;ured@os-cavle.skole.hr;http://os-cavle.skole.hr/;http://os-cavle.skole.hr/
+OSNOVNA ŠKOLA RUDOLFA STROHALA;Osnovna škola;08-277-001;0-0;Primorsko-goranska;51316  Lokve;ured@os-lokve.skole.hr , os.rudolfa.strohala@gmail.com;NA;www.os-lokve.skole.hr
+Osnovna škola JELENJE - DRAŽICE;Osnovna škola;08-278-001;0-0;Primorsko-goranska;51218  Dražice;skola@os-drazice.skole.hr;NA;www.os-drazice.skole.hr
+Osnovna škola ˝Milan Brozović˝;Osnovna škola, Umjetnička škola;08-279-001;0-0;Primorsko-goranska;51215  Kastav;os-kastav@os-mbrozovic-kastav.skole.hr;NA;www.os-mbrozovic-kastav.skole.hr
+Osnovna škola Klana;Osnovna škola;08-280-001;0-0;Primorsko-goranska;51217  Klana;skola@os-klana.skole.hr;os-klana.skole.hr;os-klana.skole.hr
+Osnovna škola SVETI MATEJ;Osnovna škola;08-281-001;0-0;Primorsko-goranska;51216  Viškovo;skola@os-sveti-matej-viskovo.skole.hr;www.ossvetimatej.hr;www.ossvetimatej.hr
+Osnovna škola Kraljevica;Osnovna škola;08-282-001;0-0;Primorsko-goranska;51262  Kraljevica;ured@os-kraljevica.skole.hr;http://www.os-kraljevica.skole.hr/;http://www.os-kraljevica.skole.hr/
+Osnovna škola Ivanke Trohar;Osnovna škola;08-289-001;0-0;Primorsko-goranska;51322  Fužine;ured@os-itrohar-fuzine.skole.hr;http://os-itrohar-fuzine.skole.hr/;http://os-itrohar-fuzine.skole.hr/
+OSNOVNA ŠKOLA VIKTORA CARA EMINA;Osnovna škola;08-290-001;0-0;Primorsko-goranska;51415  Lovran;ured@os-vcemina-lovran.skole.hr;os-vcemina-lovran.skole.hr/ ;os-vcemina-lovran.skole.hr/ 
+OSNOVNA ŠKOLA MARIA MARTINOLIĆA;Osnovna škola, Umjetnička škola;08-292-001;0-0;Primorsko-goranska;51550  Mali Lošinj;os.maria.martinolica@os-mmartinolica.skole.hr;www.os-mmartinolica-mali-losinj.skole.hr;www.os-mmartinolica-mali-losinj.skole.hr
+OSNOVNA ŠKOLA Dr. ANDRIJA MOHOROVIČIĆ;Osnovna škola;08-293-001;0-0;Primorsko-goranska;51211  Matulji;osamohorovicic@os-amohorovicica-matulji.skole.hr;www.OŠ Dr. Andrija Mohorovičić Matulji;www.OŠ Dr. Andrija Mohorovičić Matulji
+OSNOVNA ŠKOLA DRAGO GERVAIS;Osnovna škola;08-293-002;0-0;Primorsko-goranska;51213  Jurdani;osbresca@os-dgervais-jurdani.skole.hr; www.os-dgervais-jurdani.skole.hr; www.os-dgervais-jurdani.skole.hr
+Osnovna škola Ivana Mažuranića;Osnovna škola, Umjetnička škola;08-294-001;0-0;Primorsko-goranska;51250  Novi Vinodolski;skola@osivanamazuranica.hr;NA;www.osivanamazuranica.hr
+Osnovna škola dr. Josipa Pančića Bribir;Osnovna škola;08-295-001;0-0;Primorsko-goranska;51253  Bribir;skola@os-jpancica-bribir.skole.hr;os-jpancica-bribir.skole.hr;os-jpancica-bribir.skole.hr
+Osnovna škola Jurja Klovića Tribalj;Osnovna škola;08-295-002;0-0;Primorsko-goranska;51243  Tribalj;skola@os-jklovica-tribalj.skole.hr;os-jklovica-tribalj.skole.hr;os-jklovica-tribalj.skole.hr
+Osnovna škola Skrad;Osnovna škola;08-296-001;0-0;Primorsko-goranska;51311  Skrad;os-skrad@os-skrad.skole.hr , vjekoslav.pintar@skole.hr;www.os-skrad.skole.hr;www.os-skrad.skole.hr
+Osnovna škola Dr. Branimira Markovića;Osnovna škola;08-297-001;0-0;Primorsko-goranska;51314  Ravna Gora;ured@os-bmarkovica-ravna-gora.skole.hr;NA;www.os-bmarkovica-ravna-gora.skole.hr
+Osnovna škola Mrkopalj;Osnovna škola;08-298-001;0-0;Primorsko-goranska;51315  Mrkopalj;os.mrkopalj@inet.hr , mrkopalj@os-mrkopalj.skole.hr;NA;www.os-mrkopalj.skole.hr
+Osnovna škola Brod Moravice;Osnovna škola;08-299-001;0-0;Primorsko-goranska;51312  Brod Moravice;skola@os-brod-moravice.skole.hr;http://web2.os-brod-moravice.skole.hr/;http://web2.os-brod-moravice.skole.hr/
+OSNOVNA ŠKOLA DONJI LAPAC;Osnovna škola;09-015-001;0-0;Ličko-senjska;53250  Donji Lapac;skola@os-donji-lapac.skole.hr;http://os-donji-lapac.skole.hr/;http://os-donji-lapac.skole.hr/
+OSNOVNA ŠKOLA DR. JURE TURIĆA;Osnovna škola, Umjetnička škola;09-026-001;0-0;Ličko-senjska;53000  Gospić;ured@os-jturic-gospic.skole.hr;http://www.os-gospic.hr/;http://www.os-gospic.hr/
+Osnovna škola Dr. Franje Tuđmana Lički Osik;Osnovna škola;09-026-003;0-0;Ličko-senjska;53201  Lički Osik;ivana.dapic@skole.hr , ivanka.vojvodic@skole.hr , ured@os-licki-osik.skole.hr ;os-licki-osik.skole.hr;os-licki-osik.skole.hr
+OSNOVNA ŠKOLA DR. ANTE STARČEVIĆ PAZARIŠTE-KLANAC;Osnovna škola;09-026-005;0-0;Ličko-senjska;53212  Klanac;ured@os-astarcevic-klanac.skole.hr;NA;www.os-astarcevic-klanac.skole.hr
+OSNOVNA ŠKOLA ZRINSKIH I FRANKOPANA;Osnovna škola;09-061-001;0-0;Ličko-senjska;53220  Otočac;ured@os-zrinskihifrankopana-otocac.skole.hr;www. os-zrinskihifrankopana-otocac.skole.hr;www. os-zrinskihifrankopana-otocac.skole.hr
+OSNOVNA ŠKOLA SILVIJA STRAHIMIRA KRANJČEVIĆA SENJ;Osnovna škola, Umjetnička škola;09-074-001;0-0;Ličko-senjska;53270  Senj;os-ss.kranjcevica@gs.t-com.hr , tajnistvo@os-sskranjcevica-senj.skole.hr;os-sskranjcevica-senj.skole.hr;os-sskranjcevica-senj.skole.hr
+OSNOVNA ŠKOLA LUKE PERKOVIĆA BRINJE;Osnovna škola;09-300-001;0-0;Ličko-senjska;53260  Brinje;ured@os-lperkovica-brinje.skole.hr;os-lperkovica-brinje.skole.hr;os-lperkovica-brinje.skole.hr
+OSNOVNA ŠKOLA KARLOBAG;Osnovna škola;09-301-001;0-0;Ličko-senjska;53288  Karlobag;tajnistvo@os-karlobag.skole.hr;NA;www.os-karlobag.skole.hr
+OSNOVNA ŠKOLA PERUŠIĆ;Osnovna škola;09-302-001;0-0;Ličko-senjska;53202  Perušić;ured@os-perusic.skole.hr;NA;www.os-perusic.skole.hr
+OSNOVNA ŠKOLA ANŽ FRANKOPAN KOSINJ;Osnovna škola;09-302-003;0-0;Ličko-senjska;53203  Gornji Kosinj;ured@os-afrankopan-kosinj.skole.hr;NA;www.os-afrankopan-kosinj.skole.hr
+Osnovna škola A. G. Matoša Novalja;Osnovna škola;09-304-001;0-0;Ličko-senjska;53291  Novalja;ured@os-agmatosa-novalja.skole.hr;NA;www.os-agmatosa-novalja.skole.hr
+"Osnovna škola ""Milan Sekulić"" Lovinac";Osnovna škola;09-379-001;0-0;Ličko-senjska;53244  Lovinac;ured@os-lovinac.skole.hr , os-lovinac@post.t-com.hr , os-mile.pavicic-lovinac@gs.t-com.hr;http://os-lovinac.skole.hr/;http://os-lovinac.skole.hr/
+Osnovna škola KRALJA TOMISLAVA;Osnovna škola;09-380-001;0-0;Ličko-senjska;53234  Udbina;ured@os-kralja-tomislava-udbina.skole.hr , os-kralja-tomislava@gs.htnet.hr;NA;www.os-kralja-tomislava-udbina.skole.hr
+OSNOVNA ŠKOLA PLITVIČKA JEZERA;Osnovna škola;09-455-001;0-0;Ličko-senjska;53231  Plitvička Jezera; ured@os-plitvicka-jezera.skole.hr;NA;www.os-plitvicka-jezera.skole.hr
+Osnovna škola dr. Franje Tuđmana;Osnovna škola;09-455-002;0-0;Ličko-senjska;53230  Korenica;korenica@os-korenica.skole.hr;NA;www.os-korenica.skole.hr
+OSNOVNA ŠKOLA IVANE BRLIĆ-MAŽURANIĆ ORAHOVICA;Osnovna škola;10-059-001;0-0;Virovitičko-podravska;33515  Orahovica;ured@os-ibmazuranic-orahovica.skole.hr;www.os-ibmazuranic-orahovica.skole.hr;www.os-ibmazuranic-orahovica.skole.hr
+OSNOVNA ŠKOLA EUGENA KUMIČIĆA;Osnovna škola;10-067-001;0-0;Virovitičko-podravska;33520  Slatina;os-eugena.kumicica@vt.t-com.hr , os-slatina-001@os-ekumicica-slatina.skole.hr;www.os-ekumicica-slatina.skole.hr;www.os-ekumicica-slatina.skole.hr
+OSNOVNA ŠKOLA JOSIPA KOZARCA;Osnovna škola;10-067-002;0-0;Virovitičko-podravska;33520  Slatina;os-josipa-kozarca@vt.t-com.hr , ured@os-jkozarca-slatina.skole.hr;NA;www.os-jkozarca-slatina.skole.hr
+OSNOVNA ŠKOLA IVANE BRLIĆ-MAŽURANIĆ VIROVITICA;Osnovna škola;10-089-001;0-0;Virovitičko-podravska;33000  Virovitica;ured@os-ibmazuranic-vt.skole.hr;www.brlici.hr;www.brlici.hr
+OSNOVNA ŠKOLA VLADIMIR NAZOR VIROVITICA;Osnovna škola;10-089-002;0-0;Virovitičko-podravska;33000  Virovitica;ured@os-vnazor-vt.skole.hr;www.os-vnazor-vt.skole.hr;www.os-vnazor-vt.skole.hr
+CENTAR ZA ODGOJ, OBRAZOVANJE I REHABILITACIJU VIROVITICA;Osnovna škola, Srednja škola;10-089-004;0-0;Virovitičko-podravska;33000  Virovitica;tajnistvo@coorvirovitica.hr , ured@coor-virovitica.skole.hr;NA;https://www.coorvirovitica.hr/
+Katolička osnovna škola u Virovitici;Osnovna škola;10-089-005;0-0;Virovitičko-podravska;33000  Virovitica;ured@os-katolicka-vt.skole.hr;NA;www.os-katolicka-vt.skole.hr
+OSNOVNA ŠKOLA IVAN GORAN KOVAČIĆ;Osnovna škola;10-305-001;0-0;Virovitičko-podravska;33513  Zdenci;ured@os-igkovacic-zdenci.skole.hr;NA;www.os-igkovacic-zdenci.skole.hr
+OSNOVNA ŠKOLA ANTUNA GUSTAVA MATOŠA;Osnovna škola;10-307-001;0-0;Virovitičko-podravska;33514  Čačinci;ured@os-agmatosa-cacinci.skole.hr;http://os-agmatosa-cacinci.skole.hr/;http://os-agmatosa-cacinci.skole.hr/
+OSNOVNA ŠKOLA IVANA GORANA KOVAČIĆA GORNJE BAZJE;Osnovna škola;10-308-001;0-0;Virovitičko-podravska;33406  Lukač;tajnistvo@os-igkovacic-gornjebazje.skole.hr;www.os-igkovacic-gornjebazje.skole.hr;www.os-igkovacic-gornjebazje.skole.hr
+OSNOVNA ŠKOLA GRADINA;Osnovna škola;10-309-001;0-0;Virovitičko-podravska;33411  Gradina;ured@os-gradina.skole.hr;www.os-gradina.skole.hr;www.os-gradina.skole.hr
+OSNOVNA ŠKOLA DAVORIN TRSTENJAK ČAĐAVICA;Osnovna škola;10-310-001;0-0;Virovitičko-podravska;33523  Čađavica;ured@os-davorin-trstenjak-cadjavica.skole.hr;http://os-davorin-trstenjak-cadjavica.skole.hr/;http://os-davorin-trstenjak-cadjavica.skole.hr/
+OSNOVNA ŠKOLA VLADIMIRA NAZORA;Osnovna škola;10-311-001;0-0;Virovitičko-podravska;33518  Nova Bukovica;skola@os-vnazora-novabukovica.skole.hr;www.os-vnazora-novabukovica.skole.hr;www.os-vnazora-novabukovica.skole.hr
+OSNOVNA ŠKOLA MIKLEUŠ;Osnovna škola;10-312-001;0-0;Virovitičko-podravska;33517  Mikleuš;ured@os-mikleus.skole.hr;NA;www.os-mikleus.skole.hr
+OSNOVNA ŠKOLA VOĆIN;Osnovna škola;10-314-001;0-0;Virovitičko-podravska;33522  Voćin;ravnatelj@os-vocin.skole.hr;NA;www.os-vocin.skole.hr
+OSNOVNA ŠKOLA SUHOPOLJE;Osnovna škola;10-315-001;0-0;Virovitičko-podravska;33410  Suhopolje;ured@os-suhopolje.skole.hr;http://os-suhopolje.skole.hr/;http://os-suhopolje.skole.hr/
+OSNOVNA ŠKOLA AUGUST CESAREC;Osnovna škola;10-316-001;0-0;Virovitičko-podravska;33404  Špišić Bukovica;ured@os-acesarec-spisicbukovica.skole.hr;NA;www.os-acesarec-spisicbukovica.skole.hr
+OSNOVNA ŠKOLA PETRA PRERADOVIĆA;Osnovna škola;10-317-001;0-0;Virovitičko-podravska;33405  Pitomača;os-pitomaca-tajnistvo@vt.t-com.hr , ured@os-ppreradovica-pitomaca.skole.hr , racunovodstvo@os-ppreradovica-pitomaca.skole.hr ;www.os-ppreradovica-pitomaca.skole.hr;www.os-ppreradovica-pitomaca.skole.hr
+OSNOVNA ŠKOLA BRAĆE RADIĆA PAKRAC;Osnovna škola;11-064-001;0-0;Požeško-slavonska;34550  Pakrac;ured@os-brace-radica-pakrac.skole.hr;http://os-brace-radica-pakrac.skole.hr/;http://os-brace-radica-pakrac.skole.hr/
+Osnovna škola Dobriša Cesarić;Osnovna škola;11-077-001;0-0;Požeško-slavonska;34000  Požega;skola@os-dcesaric-pozega.skole.hr;http://www.os-dcesaric-pozega.skole.hr/;http://www.os-dcesaric-pozega.skole.hr/
+Osnovna škola Julija Kempfa;Osnovna škola;11-077-002;0-0;Požeško-slavonska;34000  Požega;skola@os-jkempfa-pozega.skole.hr;http://os-jkempfa-pozega.skole.hr/;http://os-jkempfa-pozega.skole.hr/
+OSNOVNA ŠKOLA ANTUNA KANIŽLIĆA;Osnovna škola;11-077-003;0-0;Požeško-slavonska;34000  Požega;akanizlica@os-akanizlica-pozega.skole.hr;http://os-akanizlica-pozega.skole.hr/;http://os-akanizlica-pozega.skole.hr/
+Katolička osnovna škola u Požegi;Osnovna škola;11-077-005;0-0;Požeško-slavonska;34000  Požega;kos@kospz.hr , ured@os-katolicka-pz.skole.hr;os-katolicka-pz.skole.hr;os-katolicka-pz.skole.hr
+Osnovna škola Dragutina Lermana;Osnovna škola;11-318-001;0-0;Požeško-slavonska;34322  Brestovac;ured@os-dlermana-brestovac.skole.hr;NA;www.os-dlermana-brestovac.skole.hr
+OSNOVNA ŠKOLA STJEPANA RADIĆA ČAGLIN;Osnovna škola;11-319-001;0-0;Požeško-slavonska;34350  Čaglin;os-caglin@os-sradica-caglin.skole.hr;NA;www.os-sradica-caglin.skole.hr
+Osnovna škola Mladost;Osnovna škola;11-320-001;0-0;Požeško-slavonska;34308  Jakšić;mladost-jaksic@os-mladost-jaksic.skole.hr;http://os-mladost-jaksic.skole.hr/;http://os-mladost-jaksic.skole.hr/
+Osnovna škola Vilima Korajca;Osnovna škola;11-321-001;0-0;Požeško-slavonska;34334  Kaptol;ured@os-vkorajca-kaptol.skole.hr;NA;www.os-vkorajca-kaptol.skole.hr
+Osnovna škola Zdenka Turkovića;Osnovna škola;11-322-001;0-0;Požeško-slavonska;34340  Kutjevo;tajnistvo@os-zturkovica-kutjevo.skole.hr ,  ravnatelj@os-zturkovica-kutjevo.skole.hr , os-zdenka-turkovica@po.t-com.hr;NA;www.os-zturkovica-kutjevo.skole.hr
+Osnovna škola fra Kaje Adžića Pleternica;Osnovna škola;11-323-001;0-0;Požeško-slavonska;34310  Pleternica;skola@os-frakajeadzica-pleternica.skole.hr;http://os-frakajeadzica-pleternica.skole.hr/;http://os-frakajeadzica-pleternica.skole.hr/
+OSNOVNA ŠKOLA IVAN GORAN KOVAČIĆ;Osnovna škola;11-324-001;0-0;Požeško-slavonska;34330  Velika;ured@os-igkovacic-velika.skole.hr;os-igkovacic-velika.skole.hr;os-igkovacic-velika.skole.hr
+OSNOVNA ŠKOLA VLADIMIR NAZOR;Osnovna škola;11-324-002;0-0;Požeško-slavonska;34330  Trenkovo;skola@os-vnazor-trenkovo.skole.hr;www.os-vnazor-trenkovo.skole.hr/;www.os-vnazor-trenkovo.skole.hr/
+Osnovna škola Lipik;Osnovna škola;11-327-001;0-0;Požeško-slavonska;34551  Lipik;ured@os-lipik.skole.hr , osnovna.skola.lipik@oslipik.tcloud.hr;http://os-lipik.skole.hr/;http://os-lipik.skole.hr/
+OSNOVNA ŠKOLA GRIGORA VITEZA POLJANA;Osnovna škola;11-327-002;0-0;Požeško-slavonska;34543  Poljana;ured@os-gviteza-poljana.skole.hr;NA;www.os-gviteza-poljana.skole.hr
+Osnovna škola Ljudevita Gaja Nova Gradiška;Osnovna škola;12-051-001;0-0;Brodsko-posavska;35400  Nova Gradiška;ured@os-ljgaja-ng.skole.hr;os-ljgaja-ng.skole.hr ;os-ljgaja-ng.skole.hr 
+Osnovna škola Mato Lovrak;Osnovna škola, Umjetnička škola;12-051-002;0-0;Brodsko-posavska;35400  Nova Gradiška;ured@os-mlovrak-ng.skole.hr  , ravnatelj@os-mlovrak-ng.skole.hr;http://os-mlovrak-ng.skole.hr;http://os-mlovrak-ng.skole.hr
+OSNOVNA ŠKOLA IVAN GORAN KOVAČIĆ;Osnovna škola;12-078-001;0-0;Brodsko-posavska;35000  Slavonski Brod;ured@os-igkovacic-sb.skole.hr;os-igkovacic-sb.skole.hr;os-igkovacic-sb.skole.hr
+OSNOVNA ŠKOLA ANTUN MIHANOVIĆ;Osnovna škola;12-078-002;0-0;Brodsko-posavska;35000  Slavonski Brod;antun.mihanovic@os-amihanovic-sb.skole.hr;NA;www.os-amihanovic-sb.skole.hr
+OSNOVNA ŠKOLA HUGO BADALIĆ;Osnovna škola;12-078-003;0-0;Brodsko-posavska;35000  Slavonski Brod;ured@os-hbadalic-sb.skole.hr;NA;www.os-hbadalic-sb.skole.hr
+OSNOVNA ŠKOLA ĐURO PILAR;Osnovna škola;12-078-004;0-0;Brodsko-posavska;35000  Slavonski Brod;ured@os-djpilar-sb.skole.hr;http://os-djpilar-sb.skole.hr/;http://os-djpilar-sb.skole.hr/
+OSNOVNA ŠKOLA BOGOSLAV ŠULEK;Osnovna škola;12-078-005;0-0;Brodsko-posavska;35000  Slavonski Brod;ured@os-bsulek-sb.skole.hr;http://os-bsulek-sb.skole.hr;http://os-bsulek-sb.skole.hr
+OSNOVNA ŠKOLA VLADIMIR NAZOR;Osnovna škola;12-078-006;0-0;Brodsko-posavska;35000  Slavonski Brod;os-vnazor-sb@os-vnazor-sb.skole.hr;NA;www.os-vnazor-sb.skole.hr
+OSNOVNA ŠKOLA IVANA BRLIĆ-MAŽURANIĆ;Osnovna škola;12-078-007;0-0;Brodsko-posavska;35000  Slavonski Brod;skola@os-ibmazuranic-sb.skole.hr;http://os-ibmazuranic-sb.skole.hr/;http://os-ibmazuranic-sb.skole.hr/
+OSNOVNA ŠKOLA BLAŽ TADIJANOVIĆ;Osnovna škola;12-078-008;0-0;Brodsko-posavska;35000  Slavonski Brod;ured@os-btadijanovic-sb.skole.hr;NA;www.os-btadijanovic-sb.skole.hr
+OSNOVNA ŠKOLA MILAN AMRUŠ;Osnovna škola;12-078-009;0-0;Brodsko-posavska;35000  Slavonski Brod;ured@os-mamrus-sb.skole.hr;http://os-mamrus-sb.skole.hr/;http://os-mamrus-sb.skole.hr/
+Osnovna škola Dragutin Tadijanović;Osnovna škola;12-078-011;0-0;Brodsko-posavska;35000  Slavonski Brod;os.dragutin.tadijanovic@sb.t-com.hr , ured@os-dragutin-tadijanovic-sb.skole.hr;www.os-dragutin-tadijanovic-sb-skole.hr;www.os-dragutin-tadijanovic-sb-skole.hr
+OSNOVNA ŠKOLA ANTUN MATIJA RELJKOVIĆ;Osnovna škola;12-329-001;0-0;Brodsko-posavska;35254  Bebrina;os-bebrina@os-amreljkovic-bebrina.skole.hr;http://os-amreljkovic-bebrina.skole.hr/;http://os-amreljkovic-bebrina.skole.hr/
+OSNOVNA ŠKOLA VIKTOR CAR EMIN;Osnovna škola;12-331-001;0-0;Brodsko-posavska;35214  Donji Andrijevci;skola@os-vcemin-donjiandrijevci.skole.hr;http://www.os-vcemin-donjiandrijevci.skole.hr/;http://www.os-vcemin-donjiandrijevci.skole.hr/
+OSNOVNA ŠKOLA AUGUSTA ŠENOE;Osnovna škola;12-332-001;0-0;Brodsko-posavska;35222  Gundinci;ured@os-asenoe-gundinci.skole.hr;http://os-asenoe-gundinci.skole.hr;http://os-asenoe-gundinci.skole.hr
+OSNOVNA ŠKOLA VJEKOSLAV KLAIĆ;Osnovna škola;12-333-001;0-0;Brodsko-posavska;35212  Garčin;ured@os-vklaic-garcin.skole.hr;NA;www.os-vklaic-garcin.skole.hr
+Osnovna škola Sibinjskih žrtava;Osnovna škola;12-335-001;0-0;Brodsko-posavska;35252  Sibinj;ured@os-sibinjskihzrtava-sibinj.hr , tajnistvo@os-sibinjskihzrtava-sibinj.skole.hr;NA;www.os-sibinjskihzrtava-sibinj.hr
+OSNOVNA ŠKOLA JOSIP KOZARAC SLAVONSKI ŠAMAC;Osnovna škola;12-336-001;0-0;Brodsko-posavska;35220  Kruševica;ured@os-jkozarac-slavonski-samac.skole.hr;http://os-jkozarac-slavonski-samac.skole.hr/;http://os-jkozarac-slavonski-samac.skole.hr/
+Osnovna škola Sikirevci;Osnovna škola;12-336-002;0-0;Brodsko-posavska;35224  Sikirevci;os-sikirevci@os-sikirevci.skole.hr;os-sikirevci.skole.hr;os-sikirevci.skole.hr
+OSNOVNA ŠKOLA DR. STJEPAN ILIJAŠEVIĆ;Osnovna škola;12-337-001;0-0;Brodsko-posavska;35250  Oriovac;racunovodstvo@os-silijasevic-oriovac.skole.hr , tajnistvo@os-silijasevic-oriovac.skole.hr ;NA;www.os-silijasevic-oriovac.skole.hr
+OSNOVNA ŠKOLA LJUDEVIT GAJ;Osnovna škola;12-337-002;0-0;Brodsko-posavska;35257  Lužani;ured@os-ljgaj-luzani.skole.hr;NA;www.os-ljgaj-luzani.skole.hr
+OSNOVNA ŠKOLA IVAN MEŠTROVIĆ;Osnovna škola;12-338-001;0-0;Brodsko-posavska;35210  Vrpolje;tajnistvo@os-imestrovic-vrpolje.skole.hr , ured@os-imestrovic-vrpolje.skole.hr;os-imestrovic-vrpolje.skole.hr ;os-imestrovic-vrpolje.skole.hr 
+OSNOVNA ŠKOLA IVAN FILIPOVIĆ;Osnovna škola;12-339-001;0-0;Brodsko-posavska;35221  Velika Kopanica;ured@os-ifilipovic-velikakopanica.skole.hr;www.os-ifilipovic-velikakopanica.skole.hr;www.os-ifilipovic-velikakopanica.skole.hr
+Osnovna škola Stjepan Radić Oprisavci;Osnovna škola;12-341-001;0-0;Brodsko-posavska;35213  Oprisavci;ured@os-sradic-oprisavci.skole.hr;NA;www.os-sradic-oprisavci.skole.hr
+Osnovna škola Matija Gubec Cernik;Osnovna škola;12-342-001;0-0;Brodsko-posavska;35404  Cernik;ured@os-mgubec-cernik.skole.hr;www.os-mgubec-cernik.skole.hr;www.os-mgubec-cernik.skole.hr
+Osnovna škola Matija Antun Relković;Osnovna škola;12-343-001;0-0;Brodsko-posavska;35425  Davor;os-davor@os-mareljkovic-davor.skole.hr;NA;www.os-mareljkovic-davor.skole.hr
+Osnovna škola Dragalić;Osnovna škola;12-344-001;0-0;Brodsko-posavska;35428  Dragalić;skola@os-dragalic.skole.hr;www.os-dragalic.skole.hr;www.os-dragalic.skole.hr
+Osnovna škola Antun Mihanović Nova Kapela Batrina;Osnovna škola;12-346-001;0-0;Brodsko-posavska;35410  Batrina;ured@os-amihanovic-batrina.skole.hr;http://os-amihanovic-batrina.skole.hr/;http://os-amihanovic-batrina.skole.hr/
+Osnovna škola Okučani;Osnovna škola;12-347-001;0-0;Brodsko-posavska;35430  Okučani;os-okucani@sb.t-com.hr , ured@os-okucani.skole.hr;http://os-okucani.skole.hr/;http://os-okucani.skole.hr/
+Osnovna škola Ante Starčevića;Osnovna škola;12-348-001;0-0;Brodsko-posavska;35403  Rešetari;ured@os-astarcevic-resetari.skole.hr;http://os-astarcevic-resetari.skole.hr/;http://os-astarcevic-resetari.skole.hr/
+Osnovna škola Vladimir Nazor;Osnovna škola;12-348-002;0-0;Brodsko-posavska;35422  Adžamovci;ured@os-vnazor-adzamovci.skole.hr;os-v.nazor-adzamovci.skole.hr;os-v.nazor-adzamovci.skole.hr
+Osnovna škola Ivana Gorana Kovačića;Osnovna škola;12-349-001;0-0;Brodsko-posavska;35420  Staro Petrovo Selo;ured@os-igkovacic-staropetrovoselo.skole.hr;http://os-igkovacic-staropetrovoselo.skole.hr/;http://os-igkovacic-staropetrovoselo.skole.hr/
+Osnovna škola Markovac;Osnovna škola;12-349-002;0-0;Brodsko-posavska;35414  Vrbova;skola@os-markovac-vrbova.skole.hr;http://os-markovac-vrbova.skole.hr/;http://os-markovac-vrbova.skole.hr/
+OSNOVNA ŠKOLA BENKOVAC;Osnovna škola;13-002-001;0-0;Zadarska;23420  Benkovac;ravnatelj@os-benkovac.skole.hr , racunovodstvo@os-benkovac.skole.hr , logoped@os-benkovac.skole.hr , psiholog@os-benkovac.skole.hr , knjiznica@os-benkovac.skole.hr , ured@os-benkovac.skole.hr  , os-benkovac@zd.t-com.hr;NA;www.os-benkovac.skole.hr
+Osnovna škola Biograd;Osnovna škola, Umjetnička škola;13-003-001;0-0;Zadarska;23210  Biograd na Moru;os.biograd@os-biogradnamoru.skole.hr;os-biogradnamoru.skole.hr;os-biogradnamoru.skole.hr
+OSNOVNA ŠKOLA NIKOLE TESLE;Osnovna škola;13-027-001;0-0;Zadarska;23440  Gračac;ured@os-ntesle-gracac.skole.hr;http://os-ntesle-gracac.skole.hr/;http://os-ntesle-gracac.skole.hr/
+OSNOVNA ŠKOLA OBROVAC;Osnovna škola;13-055-001;0-0;Zadarska;23450  Obrovac;obrovac@os-obrovac.skole.hr;NA;www.os-obrovac.skole.hr
+OSNOVNA ŠKOLA JURJA DALMATINCA PAG;Osnovna škola;13-063-001;0-0;Zadarska;23250  Pag;ured@os-jdalmatinca-pag.skole.hr;http://www.os-jdalmatinca-pag.skole.r;http://www.os-jdalmatinca-pag.skole.r
+OSNOVNA ŠKOLA STANOVI;Osnovna škola;13-107-001;0-0;Zadarska;23000  Zadar;uprava@os-stanovi-zd.skole.hr;http://www.os-stanovi-zd.skole.hr/;http://www.os-stanovi-zd.skole.hr/
+OSNOVNA ŠKOLA KRUNE KRSTIĆA - ZADAR;Osnovna škola;13-107-002;0-0;Zadarska;23000  Zadar;ured@os-kkrstica-zd.skole.hr;NA;www.os-kkrstica-zd.skole.hr
+OSNOVNA ŠKOLA PETRA PRERADOVIĆA;Osnovna škola;13-107-003;0-0;Zadarska;23000  Zadar;ured@os-ppreradovica-zd.skole.hr;http://os-ppreradovica-zd.skole.hr/;http://os-ppreradovica-zd.skole.hr/
+OSNOVNA ŠKOLA ŠIMUNA KOŽIČIĆA BENJE;Osnovna škola;13-107-004;0-0;Zadarska;23000  Zadar;ured@os-skbenje-zd.skole.hr;NA;www.os-skbenje-zd.skole.hr
+Osnovna škola Šime Budinića - Zadar;Osnovna škola;13-107-005;0-0;Zadarska;23000  Zadar;os-s.budinica@zd.t-com.hr   , ured@os-sbudinica-zd.skole.hr;www.os-sbudinica-zd.skole.hr;www.os-sbudinica-zd.skole.hr
+Osnovna škola Smiljevac;Osnovna škola;13-107-006;0-0;Zadarska;23000  Zadar;smiljevac@os-smiljevac-zd.skole.hr;NA;www.os-smiljevac-zd.skole.hr
+Osnovna škola BARTULA KAŠIĆA;Osnovna škola;13-107-007;0-0;Zadarska;23000  Zadar;ured@os-bkasica-zadar.skole.hr , katica.skukan@skole.hr;http://os-bkasica-zadar.skole.hr/;http://os-bkasica-zadar.skole.hr/
+Osnovna škola Voštarnica - Zadar;Osnovna škola;13-107-008;0-0;Zadarska;23000  Zadar;os-vostarnica@zd.t-com.hr;http://www.os-vostarnica-zd.skole.hr/;http://www.os-vostarnica-zd.skole.hr/
+Osnovna škola ZADARSKI OTOCI - Zadar;Osnovna škola;13-107-009;0-0;Zadarska;23000  Zadar;ured@os-zadarski-otoci-zd.skole.hr;http://os-zadarski-otoci-zd.skole.hr/;http://os-zadarski-otoci-zd.skole.hr/
+Privatna osnovna škola NOVA;Osnovna škola;13-107-011;0-0;Zadarska;23000  Zadar;skola@posnova.hr , ured.nova@skole.hr , privatna.osnovna.skola.nova@zd.t-com.hr;www.posnova.hr;www.posnova.hr
+"KATOLIČKA OSNOVNA ŠKOLA ""IVO MAŠINA""";Osnovna škola;13-107-013;0-0;Zadarska;23000  Zadar;kos.ivomasina.zd@gmail.com;www.kosim.hr;www.kosim.hr
+OSNOVNA ŠKOLA STJEPANA RADIĆA-BIBINJE;Osnovna škola;13-351-001;0-0;Zadarska;23205  Bibinje;mirka.sikiric@os-sradica-bibinje.skole.hr , os-bibinje@email.t-com.hr;http://www.os-stjepanaradica-bibinje.hr/;http://www.os-stjepanaradica-bibinje.hr/
+OSNOVNA ŠKOLA SUKOŠAN;Osnovna škola;13-352-001;0-0;Zadarska;23206  Sukošan;ured@os-sukosan.skole.hr;www.os-sukosan.skole.hr;www.os-sukosan.skole.hr
+OSNOVNA ŠKOLA ZEMUNIK;Osnovna škola;13-353-001;0-0;Zadarska;23222  Zemunik Donji;oszemunik@os-zemunik.skole.hr;http://os-zemunik.skole.hr/;http://os-zemunik.skole.hr/
+OSNOVNA ŠKOLA GALOVAC;Osnovna škola;13-353-002;0-0;Zadarska;23222  Galovac;ured@os-galovac.skole.hr; www.os-galovac.skole.hr; www.os-galovac.skole.hr
+Osnovna škola Vladimira Nazora - Škabrnje;Osnovna škola;13-354-001;0-0;Zadarska;23223  Škabrnja;ured@os-vnazora-skabrnja.skole.hr;NA;www.os-vnazora-skabrnja.skole.hr
+OSNOVNA ŠKOLA POLIČNIK;Osnovna škola;13-355-001;0-0;Zadarska;23241  Poličnik;ured@os-policnik.skole.hr;NA;www.os-policnik.skole.hr
+Osnovna škola Braća Ribar;Osnovna škola;13-356-001;0-0;Zadarska;23242  Posedarje;os-posedarje@os-brace-ribar-posedarje.skole.hr;NA;www.os-brace-ribar-posedarje.skole.hr
+OSNOVNA ŠKOLA NOVIGRAD;Osnovna škola;13-357-001;0-0;Zadarska;23312  Novigrad;ured@os-novigrad.skole.hr;http://os-novigrad.skole.hr/;http://os-novigrad.skole.hr/
+OSNOVNA ŠKOLA BRAĆE RADIĆ;Osnovna škola;13-357-002;0-0;Zadarska;23226  Pridraga;skola@os-brace-radic-pridraga.skole.hr;NA;www.os-brace-radic-pridraga.skole.hr
+Osnovna škola Starigrad;Osnovna škola;13-358-001;0-0;Zadarska;23244  Starigrad;skola@os-starigrad-paklenica.skole.hr;NA;www.os-starigrad-paklenica.skole.hr
+Osnovna škola Jurja Barakovića Ražanac;Osnovna škola;13-359-001;0-0;Zadarska;23248  Ražanac;ured@os-jbarakovica-razanac.skole.hr;www. os-jbarakovica-razanac.skole.hr;www. os-jbarakovica-razanac.skole.hr
+OSNOVNA ŠKOLA ˝PETAR ZORANIĆ˝;Osnovna škola;13-360-001;0-0;Zadarska;23232  Nin;ured@os-pzoranic-nin.skole.hr;http://www.os-pzoranic-nin.skole.hr/;http://www.os-pzoranic-nin.skole.hr/
+OSNOVNA ŠKOLA PRIVLAKA;Osnovna škola;13-360-002;0-0;Zadarska;23233  Privlaka;ured@os-privlaka.skole.hr;http://os-privlaka.skole.hr/;http://os-privlaka.skole.hr/
+Osnovna škola VALENTIN KLARIN Preko;Osnovna škola;13-362-001;0-0;Zadarska;23273  Preko;vklarin@os-vklarin-preko.skole.hr;NA;www.os-vklarin-preko.skole.hr
+Osnovna škola PETAR LORINI;Osnovna škola;13-364-001;0-0;Zadarska;23281  Sali;ured@os-plorini-sali.skole.hr , os-petar-lorini@zd.htnet.hr;http://os-plorini-sali.skole.hr;http://os-plorini-sali.skole.hr
+OSNOVNA ŠKOLA VLADIMIR NAZOR;Osnovna škola;13-365-001;0-0;Zadarska;23264  Neviđane;ured@os-vnazor-nevidjane.skole.hr;NA;www.os-vnazor-nevidjane.skole.hr
+Osnovna škola Pakoštane;Osnovna škola;13-366-001;0-0;Zadarska;23211  Pakoštane;os-pakostane@os-pakostane.skole.hr;http://www.os-pakostane.skole.hr/;http://www.os-pakostane.skole.hr/
+Osnovna škola Sv. Filip i Jakov;Osnovna škola;13-367-001;0-0;Zadarska;23207  Sveti Filip i Jakov;svetifilipijakov@os-svetifilipijakov.skole.hr;http://os-svetifilipijakov.skole.hr/;http://os-svetifilipijakov.skole.hr/
+OSNOVNA ŠKOLA PETRA ZORANIĆA;Osnovna škola;13-368-001;0-0;Zadarska;23243  Jasenice;ospzoranicajasenice@os-pzoranic-jasenice.skole.hr;os-pzoranic-jasenice.skole.hr;os-pzoranic-jasenice.skole.hr
+OSNOVNA ŠKOLA FRANKA LISICE POLAČA;Osnovna škola;13-372-001;0-0;Zadarska;23423  Polača;ured@os-polaca.skole.hr;www.os-polaca.skole.hr;www.os-polaca.skole.hr
+"Osnovna škola ""Ivan Goran Kovačić""";Osnovna škola;13-374-001;0-0;Zadarska;23420  Lišane Ostrovičke;ured@os-igkovacic-lisaneostrovicke.skole.hr;http://os-igkovacic-lisaneostrovicke.skole.hr/;http://os-igkovacic-lisaneostrovicke.skole.hr/
+OSNOVNA ŠKOLA PETAR ZORANIĆ;Osnovna škola;13-375-001;0-0;Zadarska;23422  Stankovci;ured@os-pzoranic-stankovci.skole.hr;NA;www.os-pzoranic-stankovci.skole.hr
+Osnovna škola Šećerana;Osnovna škola;14-001-001;0-0;Osječko-baranjska;31300  Šećerana;skola@os-secerana.skole.hr;NA;www.os-secerana.skole.hr
+OSNOVNA ŠKOLA DR. FRANJO TUĐMAN;Osnovna škola;14-001-002;0-0;Osječko-baranjska;31300  Beli Manastir;ured@os-drftudjman-beli-manastir.skole.hr;http://os-drftudjman-beli-manastir.skole.hr/;http://os-drftudjman-beli-manastir.skole.hr/
+Osnovna škola August Harambašić;Osnovna škola, Umjetnička škola;14-016-001;0-0;Osječko-baranjska;31540  Donji Miholjac;dmiholjac@os-aharambasica-donjimiholjac.skole.hr;http://www.os-aharambasica-donjimiholjac.skole.hr;http://www.os-aharambasica-donjimiholjac.skole.hr
+Osnovna škola Hrvatski sokol;Osnovna škola;14-016-002;0-0;Osječko-baranjska;31552  Podgajci Podravski;skola@os-hrvatskisokol-podgajcipodravski.skole.hr , skola@os-hrvatskisokol-podgajcipodravski.skole.hr;NA;www.os-hrvatskisokol-podgajcipodravski.skole.hr
+Osnovna škola Budrovci;Osnovna škola;14-022-001;0-0;Osječko-baranjska;31400  Budrovci;ured@os-budrovci.skole.hr;http://os-budrovci.skole.hr/;http://os-budrovci.skole.hr/
+Osnovna škola Ivan Goran Kovačić;Osnovna škola, Umjetnička škola;14-022-002;0-0;Osječko-baranjska;31400  Đakovo;igkdjak@gmail.com , igk@os-igkovacic-dj.skole.hr;http://os-igkovacic-dj.skole.hr/;http://os-igkovacic-dj.skole.hr/
+Osnovna škola Vladimir Nazor;Osnovna škola;14-022-003;0-0;Osječko-baranjska;31400  Đakovo;ured@os-vnazor-dj.skole.hr;NA;www.os-vnazor-dj.skole.hr
+Osnovna škola Josipa Antuna Ćolnića;Osnovna škola;14-022-004;0-0;Osječko-baranjska;31400  Đakovo;ured@os-jacolnica-dj.skole.hr;os-jacolnica-dj.skole.hr;os-jacolnica-dj.skole.hr
+Osnovna škola Đakovački Selci;Osnovna škola;14-022-005;0-0;Osječko-baranjska;31415  Selci Đakovački;skola@os-selci-djakovacki.skole.hr;NA;www.os-selci-djakovacki.skole.hr
+Osnovna škola Matija Gubec;Osnovna škola;14-022-006;0-0;Osječko-baranjska;31417  Piškorevci;ured@os-mgubec-piskorevci.skole.hr;http://os-mgubec-piskorevci.skole.hr;http://os-mgubec-piskorevci.skole.hr
+Osnovna škola Satnica Đakovačka;Osnovna škola;14-022-007;0-0;Osječko-baranjska;31421  Satnica Đakovačka;ured@os-satnicadjakovacka.skole.hr;http://www.os-satnicadjakovacka.skole.hr/;http://www.os-satnicadjakovacka.skole.hr/
+Osnovna škola Dore Pejačević Našice;Osnovna škola;14-050-001;0-0;Osječko-baranjska;31500  Našice;osdorepejacevic@os-dpejacevic-na.skole.hr , osdore@os-dpejacevic-na.skole.hr;www.os-dpejacevic-na.skole.hr;www.os-dpejacevic-na.skole.hr
+Osnovna škola Ivana Brnjika Slovaka;Osnovna škola;14-050-002;0-0;Osječko-baranjska;31225  Jelisavac;ured@os-ibslovak-jelisavac.skole.hr;www.os-ibslovak-jelisavac.skole.hr;www.os-ibslovak-jelisavac.skole.hr
+OSNOVNA ŠKOLA KRALJA TOMISLAVA;Osnovna škola;14-050-003;0-0;Osječko-baranjska;31500  Našice;ured@os-kralja-tomislava-na.skole.hr;http://os-kralja-tomislava-na.skole.hr/;http://os-kralja-tomislava-na.skole.hr/
+Centar za odgoj i obrazovanje Ivan Štark;Osnovna škola;14-060-001;0-0;Osječko-baranjska;31000  Osijek;centar@centar-istark-os.skole.hr;NA;https://www.centar-istark-os.skole.hr/
+Osnovna škola Svete Ane u Osijeku;Osnovna škola;14-060-002;0-0;Osječko-baranjska;31000  Osijek;ured@os-svete-ane-os.skole.hr;http://www.os-svete-ane-os.skole.hr;http://www.os-svete-ane-os.skole.hr
+Osnovna škola Franje Krežme;Osnovna škola;14-060-003;0-0;Osječko-baranjska;31000  Osijek;ured@os-fkrezme-os.skole.hr;http://os-fkrezme-os.skole.hr/;http://os-fkrezme-os.skole.hr/
+Osnovna škola Antuna Mihanovića;Osnovna škola;14-060-004;0-0;Osječko-baranjska;31000  Osijek;ured@os-amihanovica-os.skole.hr;http://os-amihanovica-os.skole.hr/;http://os-amihanovica-os.skole.hr/
+Osnovna škola Vladimira Becića Osijek;Osnovna škola;14-060-005;0-0;Osječko-baranjska;31000  Osijek;os-vb@os-vbecica-os.skole.hr;NA;www.os-vbecica-os.skole.hr
+Osnovna škola Mladost;Osnovna škola;14-060-006;0-0;Osječko-baranjska;31000  Osijek;osmladostos@gmail.com , ured@os-mladost-os.skole.hr;NA;www.os-mladost-os.skole.hr
+Osnovna škola Frana Krste Frankopana;Osnovna škola;14-060-007;0-0;Osječko-baranjska;31000  Osijek;osijek@os-fkfrankopana-os.skole.hr;http://os-fkfrankopana-os-skole.hr;http://os-fkfrankopana-os-skole.hr
+Osnovna škola Vijenac;Osnovna škola;14-060-008;0-0;Osječko-baranjska;31000  Osijek;vesna.vrbosic@skole.hr , ravnatelj@os-vijenac-os.skole.hr;os-vijenac-os.skole.hr;os-vijenac-os.skole.hr
+Osnovna škola Ljudevita Gaja;Osnovna škola;14-060-009;0-0;Osječko-baranjska;31000  Osijek;skola@os-ljgaja-os.skole.hr;http://os-ljgaja-os.skole.hr/;http://os-ljgaja-os.skole.hr/
+Osnovna škola Jagode Truhelke;Osnovna škola;14-060-010;0-0;Osječko-baranjska;31000  Osijek;skola@os-jtruhelke-os.skole.hr;www.os-jtruhelke-os.skole.hr;www.os-jtruhelke-os.skole.hr
+Osnovna škola Grigor Vitez;Osnovna škola;14-060-011;0-0;Osječko-baranjska;31000  Osijek;dragana.marendic@skole.hr , skola@os-gvitez-os.skole.hr;NA;www.os-gvitez-os.skole.hr
+Osnovna škola Tin Ujević;Osnovna škola;14-060-012;0-0;Osječko-baranjska;31000  Osijek;ured@os-tujevic-os.skole.hr;NA;www.os-tujevic-os.skole.hr
+Osnovna škola Tenja;Osnovna škola;14-060-013;0-0;Osječko-baranjska;31207  Tenja;ured@os-tenja.skole.hr;NA;www.os-tenja.skole.hr
+Osnovna škola Dobriša Cesarić;Osnovna škola;14-060-014;0-0;Osječko-baranjska;31000  Osijek;ured@os-dcesaric-os.skole.hr;http://os-dcesaric-os.skole.hr;http://os-dcesaric-os.skole.hr
+Osnovna škola August Šenoa;Osnovna škola;14-060-015;0-0;Osječko-baranjska;31000  Osijek;asenoa@os-asenoa-os.skole.hr;NA;www.os-asenoa-os.skole.hr
+Osnovna škola Josipovac;Osnovna škola;14-060-016;0-0;Osječko-baranjska;31221  Josipovac;skola@os-josipovac.skole.hr;NA;www.os-josipovac.skole.hr
+OSNOVNA ŠKOLA VIŠNJEVAC;Osnovna škola;14-060-017;0-0;Osječko-baranjska;31220  Višnjevac;ured@os-visnjevac.skole.hr;NA;www.os-visnjevac.skole.hr
+Osnovna škola Ivana Filipovića;Osnovna škola;14-060-018;0-0;Osječko-baranjska;31000  Osijek;ured@os-ifilipovica-os.skole.hr;NA;www.os-ifilipovica-os.skole.hr
+Osnovna škola Retfala;Osnovna škola;14-060-019;0-0;Osječko-baranjska;31000  Osijek;ured@os-retfala-os.skole.hr;www.retfala-os.skole.hr;www.retfala-os.skole.hr
+PROSVJETNO-KULTURNI CENTAR MAĐARA U REPUBLICI HRVATSKOJ;Osnovna škola, Srednja škola;14-060-021;0-0;Osječko-baranjska;31000  Osijek;hmomk@pkcm.hr , ravnatelj@pkcm.hr;www.pkcm.hr;www.pkcm.hr
+Centar za autizam;Osnovna škola;14-060-022;0-0;Osječko-baranjska;31000  Osijek;ured@ss-vinkobek-os.skole.hr;NA;https://cza-os.hr/
+Osnovna škola Cvjetno;Osnovna škola;14-060-023;0-0;Osječko-baranjska;31000  Briješće;NA;NA;NA
+Osnovna škola Matije Petra Katančića;Osnovna škola, Umjetnička škola;14-085-001;0-0;Osječko-baranjska;31550  Valpovo;ravnatelj@oskatancic.hr , racunovodstvo@oskatancic.hr , tajnistvo@oskatancic.hr , ured@oskatancic.hr;http://oskatancic.hr;http://oskatancic.hr
+Osnovna škola Ladimirevci;Osnovna škola;14-085-002;0-0;Osječko-baranjska;31550  Ladimirevci;ured@os-ladimirevci.skole.hr;www.os-ladimirevci.skole.hr;www.os-ladimirevci.skole.hr
+OSNOVNA ŠKOLA VLADIMIRA NAZORA;Osnovna škola;14-325-001;0-0;Osječko-baranjska;31512  Feričanci;ured@os-vnazora-fericanci.skole.hr;www.os-vnazora-fericanci.skole.hr;www.os-vnazora-fericanci.skole.hr
+Osnovna škola Josipa Jurja Strossmayera;Osnovna škola;14-326-001;0-0;Osječko-baranjska;31511  Đurđenovac;martina.pavlic6@skole.hr , ured@os-jjstrossmayera-djurdjenovac.skole.hr;http://os-jjstrossmayera-djurdjenovac.skole.hr/;http://os-jjstrossmayera-djurdjenovac.skole.hr/
+OSNOVNA ŠKOLA HINKA JUHNA PODGORAČ;Osnovna škola;14-328-001;0-0;Osječko-baranjska;31433  Podgorač;os_podgorac@os-hjuhna-podgorac.skole.hr ;NA;www.os-hjuhna-podgorac.skole.hr
+"Osnovna škola ""Matija Gubec""";Osnovna škola;14-384-001;0-0;Osječko-baranjska;31325  Čeminac;ceminac@os-ceminac.skole.hr;NA;www.os-ceminac.skole.hr
+Osnovna škola Jagodnjak;Osnovna škola;14-384-002;0-0;Osječko-baranjska;31324  Jagodnjak;skola@os-jagodnjak.skole.hr;NA;www.os-jagodnjak.skole.hr
+Osnovna škola Popovac;Osnovna škola;14-385-001;0-0;Osječko-baranjska;31303  Popovac;ured@os-popovac.skole.hr;http://www.os-popovac.skole.hr/;http://www.os-popovac.skole.hr/
+Osnovna škola Kneževi Vinogradi;Osnovna škola;14-387-001;0-0;Osječko-baranjska;31309  Kneževi Vinogradi;ured@os-knezevi-vinogradi.skole.hr;http://www.os-knezevi-vinogradi.skole.hr/;http://www.os-knezevi-vinogradi.skole.hr/
+OSNOVNA ŠKOLA ZMAJEVAC;Osnovna škola;14-387-002;0-0;Osječko-baranjska;31307  Zmajevac;os-zmajevac@os-zmajevac.tcloud.hr , ured@os-zmajevac.skole.hr;www.os-zmajevac.skole.hr;www.os-zmajevac.skole.hr
+Osnovna škola Bilje;Osnovna škola;14-388-001;0-0;Osječko-baranjska;31327  Bilje;os-bilje@os-bilje.skole.hr;www.os-bilje.skole.hr;www.os-bilje.skole.hr
+Osnovna škola Lug - Laskói Általános Iskola;Osnovna škola;14-388-003;0-0;Osječko-baranjska;31328  Lug;oslug@os-lug.skole.hr;http://os-lug.skole.hr/;http://os-lug.skole.hr/
+Osnovna škola Draž;Osnovna škola;14-389-001;0-0;Osječko-baranjska;31305  Draž;os-draz@os-draz.skole.hr;http://os-draz.skole.hr/;http://os-draz.skole.hr/
+Osnovna škola Darda;Osnovna škola;14-390-001;0-0;Osječko-baranjska;31326  Darda;ured@os-darda.skole.hr;http://os-darda.skole.hr/;http://os-darda.skole.hr/
+Osnovna škola Ivana Kukuljevića;Osnovna škola;14-391-001;0-0;Osječko-baranjska;31551  Belišće;ured@os-ikukuljevica-belisce.skole.hr;www.os-ikukuljevica-belisce.skole.hr;www.os-ikukuljevica-belisce.skole.hr
+Osnovna škola Bratoljuba Klaića;Osnovna škola;14-392-001;0-0;Osječko-baranjska;31222  Bizovac;tajnistvo@os-bklaica-bizovac.skole.hr;http://os-bklaica-bizovac.skole.hr/;http://os-bklaica-bizovac.skole.hr/
+Osnovna škola Vladimir Nazor;Osnovna škola;14-393-001;0-0;Osječko-baranjska;31431  Čepin;skola@os-vnazor-cepin.skole.hr;http://os-vnazor-cepin.skole.hr/;http://os-vnazor-cepin.skole.hr/
+Osnovna škola Miroslava Krleže;Osnovna škola;14-393-002;0-0;Osječko-baranjska;31431  Čepin;ured@os-mkrleze-cepin.skole.hr;NA;www.os-mkrleze-cepin.skole.hr
+Osnovna škola Ernestinovo;Osnovna škola;14-394-001;0-0;Osječko-baranjska;31215  Ernestinovo;ured@os-ernestinovo.skole.hr;NA;www.os-ernestinovo.skole.hr
+Osnovna škola Laslovo;Osnovna škola;14-394-002;0-0;Osječko-baranjska;31214  Laslovo;ured@os-laslovo-korog.skole.hr;www.os-laslovo-korog.skole.hr;www.os-laslovo-korog.skole.hr
+Osnovna škola Gorjani;Osnovna škola;14-395-001;0-0;Osječko-baranjska;31422  Gorjani;osgorjani@os-gorjani.skole.hr;http://os-gorjani.skole.hr;http://os-gorjani.skole.hr
+Osnovna škola Josip Kozarac;Osnovna škola;14-396-001;0-0;Osječko-baranjska;31424  Josipovac Punitovački;skola@os-jkozarac-josipovac-punitovacki.skole.hr;http://os-jkozarac-josipovac-punitovacki.skole.hr/;http://os-jkozarac-josipovac-punitovacki.skole.hr/
+Osnovna škola Drenje;Osnovna škola;14-397-001;0-0;Osječko-baranjska;31418  Drenje;osdrenje@os-drenje.skole.hr;http://os-drenje.skole.hr/;http://os-drenje.skole.hr/
+Osnovna škola Ivane Brlić Mažuranić;Osnovna škola;14-398-001;0-0;Osječko-baranjska;31224  Koška;ured@os-ibmazuranic-koska.skole.hr , miroslav.cukic@skole.hr , silvija.kovacevic3@skole.hr , ljerka.drca@skole.hr , zaklina.krulic@skole.hr , os-i.b.mazuranic@os.t-com.hr;http://www.os-ibmazuranic-koska.skole.hr;http://www.os-ibmazuranic-koska.skole.hr
+Osnovna škola Petrijevci;Osnovna škola;14-399-001;0-0;Osječko-baranjska;31208  Petrijevci;tajnistvo@os-petrijevci.skole.hr;http://os-petrijevci.skole.hr/;http://os-petrijevci.skole.hr/
+Osnovna škola Josipa Jurja Strossmayera;Osnovna škola;14-401-001;0-0;Osječko-baranjska;31411  Trnava;ured@os-jjstrossmayer-trnava.skole.hr;http://www.os-jjstrossmayer-trnava.skole.hr/;http://www.os-jjstrossmayer-trnava.skole.hr/
+Osnovna škola Josipa Kozarca;Osnovna škola;14-402-001;0-0;Osječko-baranjska;31402  Semeljci;skola@os-jkozarca-semeljci.skole.hr   ;NA;www.os-jkozarca-semeljci.skole.hr
+Osnovna škola Ivana Brlić Mažuranić;Osnovna škola;14-403-001;0-0;Osječko-baranjska;31410  Strizivojna;ured@os-ibmazuranic-strizivojna.skole.hr;NA;www.os-ibmazuranic-strizivojna.skole.hr
+Osnovna škola Silvije Strahimir Kranjčević;Osnovna škola;14-404-001;0-0;Osječko-baranjska;31416  Levanjska Varoš;ured@os-sskranjcevic-levanjska-varos.skole.hr;os-sskranjcevic-levanjska-varos.skole.hr;os-sskranjcevic-levanjska-varos.skole.hr
+Osnovna škola Milka Cepelića;Osnovna škola;14-405-001;0-0;Osječko-baranjska;31403  Vuka;ured@os-mcepelica-vuka.skole.hr;http://os-mcepelica-vuka.skole.hr/skola;http://os-mcepelica-vuka.skole.hr/skola
+Osnovna škola Mate Lovraka;Osnovna škola;14-405-002;0-0;Osječko-baranjska;31404  Vladislavci;ured@os-mlovraka-vladislavci.skole.hr;http://os-mlovraka-vladislavci.skole.hr/;http://os-mlovraka-vladislavci.skole.hr/
+OSNOVNA ŠKOLA LUKA BOTIĆ;Osnovna škola;14-406-001;0-0;Osječko-baranjska;31401  Viškovci;os-viskovci@os-lbotic-viskovci.skole.hr , ured@os-lbotic-viskovci.skole.hr;https://www.os-lbotic-viskovci.skole.hr;https://www.os-lbotic-viskovci.skole.hr
+Osnovna škola Matija Gubec;Osnovna škola;14-407-001;0-0;Osječko-baranjska;31542  Magadenovac;ured@os-mgubec-magadenovac.skole.hr;http://os-mgubec-magadenovac.skole.hr/;http://os-mgubec-magadenovac.skole.hr/
+Osnovna škola Dalj;Osnovna škola;14-411-001;0-0;Osječko-baranjska;31226  Dalj;ured@os-dalj.skole.hr;http://os-dalj.skole.hr/;http://os-dalj.skole.hr/
+Osnovna škola Bijelo Brdo;Osnovna škola;14-411-002;0-0;Osječko-baranjska;31204  Bijelo Brdo;ured@os-bijelo-brdo.skole.hr;www.os-bijelo-brdo.skole.hr;www.os-bijelo-brdo.skole.hr
+Osnovna škola Antunovac;Osnovna škola;14-412-001;0-0;Osječko-baranjska;31216  Antunovac;ured@os-antunovac.skole.hr;www.osantunovac.hr;www.osantunovac.hr
+Osnovna škola Ante Starčevića Viljevo;Osnovna škola;14-485-001;0-0;Osječko-baranjska;31531  Viljevo;ured@os-astarcevica-viljevo.skole.hr;os-astarcevica-viljevo.skole.hr;os-astarcevica-viljevo.skole.hr
+OSNOVNA ŠKOLA ANTUNA MIHANOVIĆA PETROPOLJSKOG;Osnovna škola;15-017-001;0-0;Šibensko-kninska;22320  Drniš;sasa.kolombo@gmail.com  , skolaosdrnis@gmail.com;http://os-ampetropoljskog-drnis.skole.hr/;http://os-ampetropoljskog-drnis.skole.hr/
+OSNOVNA ŠKOLA DOMOVINSKE ZAHVALNOSTI;Osnovna škola;15-036-001;0-0;Šibensko-kninska;22300  Knin;ured.ravnatelj@os-domovinske-zahvalnosti-kn.skole.hr , ured.ravnatelj@os-domovinske-zahvalnosti-kn.skole.hr;http://os-domovinske-zahvalnosti-kn.skole.hr/;http://os-domovinske-zahvalnosti-kn.skole.hr/
+OSNOVNA ŠKOLA DR. FRANJE TUĐMANA;Osnovna škola;15-036-002;0-0;Šibensko-kninska;22300  Knin;ured@os-drfranjetudmana-knin.skole.hr;http://os-drfranjetudmana-knin.skole.hr/;http://os-drfranjetudmana-knin.skole.hr/
+OSNOVNA ŠKOLA FAUSTA VRANČIĆA;Osnovna škola;15-081-001;0-0;Šibensko-kninska;22000  Šibenik;fausta.vrancica@os-fvrancica-si.skole.hr;www.os-fvrancica-si.skole.hr;www.os-fvrancica-si.skole.hr
+Osnovna škola Petra Krešimira IV.;Osnovna škola;15-081-002;0-0;Šibensko-kninska;22000  Šibenik;ured@os-petrakresimiracetvrtog-si.skole.hr;NA;www.os-petrakresimiracetvrtog-si.skole.hr
+Osnovna škola JURJA ŠIŽGORIĆA;Osnovna škola;15-081-003;0-0;Šibensko-kninska;22000  Šibenik;ured@os-jsizgorica-si.skole.hr;NA;www.os-jsizgorica-si.skole.hr
+Osnovna škola JURJA DALMATINCA ŠIBENIK;Osnovna škola, Umjetnička škola;15-081-004;0-0;Šibensko-kninska;22000  Šibenik;ured@os-jdalmatinca-si.skole.hr , os-sibenik-004@skole.hr;http://www.os-jdalmatinca-si.skole.hr/;http://www.os-jdalmatinca-si.skole.hr/
+Osnovna škola Tina Ujevića;Osnovna škola;15-081-005;0-0;Šibensko-kninska;22000  Šibenik;ured@os-tujevica-si.skole.hr;NA;www.os-tujevica-si.skole.hr
+OSNOVNA ŠKOLA VIDICI;Osnovna škola;15-081-006;0-0;Šibensko-kninska;22000  Šibenik;osvidici@os-vidici-si.skole.hr;NA;www.os-vidici-si.skole.hr
+Osnovna škola Vrpolje;Osnovna škola;15-081-007;0-0;Šibensko-kninska;22206  Vrpolje;vrpolje007@os-vrpolje.skole.hr;NA;www.os-vrpolje.skole.hr
+Osnovna škola Brodarica;Osnovna škola;15-081-009;0-0;Šibensko-kninska;22010  BRODARICA;ured@os-brodarica.skole.hr;NA;www.os-brodarica.skole.hr
+KATOLIČKA OSNOVNA ŠKOLA;Osnovna škola;15-081-010;0-0;Šibensko-kninska;22000  Šibenik;katolicka-os@hi.t-com.hr;NA;https://os-katolicka-si.skole.hr/
+CENTAR ZA ODGOJ I OBRAZOVANJE ŠUBIĆEVAC;Osnovna škola, Srednja škola;15-081-011;0-0;Šibensko-kninska;22000  Šibenik;ured@centar-odgojiobrazovanje-subicevac-si.skole.hr;http://centar-odgojiobrazovanje-subicevac-si.skole.hr/;http://centar-odgojiobrazovanje-subicevac-si.skole.hr/
+"Osnovna škola ""Meterize""";Osnovna škola;15-081-012;0-0;Šibensko-kninska;22000  Šibenik;ured@os-meterize-si.skole.hr;NA;www.os-meterize-si.skole.hr
+Osnovna škola Kistanje;Osnovna škola;15-376-001;0-0;Šibensko-kninska;22305  Kistanje;ured@os-kistanje.skole.hr;www.os-kistanje.skole.hr;www.os-kistanje.skole.hr
+OSNOVNA ŠKOLA PRIMOŠTEN;Osnovna škola;15-413-001;0-0;Šibensko-kninska;22202  Primošten;ured@os-primosten.skole.hr;http://os-primosten.skole.hr/;http://os-primosten.skole.hr/
+OSNOVNA ŠKOLA ROGOZNICA;Osnovna škola;15-413-002;0-0;Šibensko-kninska;22203  Rogoznica;osrogoznica@gmail.com , ured@os-rogoznica.skole.hr ;NA;www.os-rogoznica.skole.hr
+OSNOVNA ŠKOLA SKRADIN;Osnovna škola;15-414-001;0-0;Šibensko-kninska;22222  Skradin;ured@os-skradin.hr;www.os-skradin.skole.hr;www.os-skradin.skole.hr
+OSNOVNA ŠKOLA VJEKOSLAVA KALEBA;Osnovna škola, Umjetnička škola;15-415-001;0-0;Šibensko-kninska;22240  Tisno;ured@os-tisno.skole.hr;NA;www.os-tisno.skole.hr
+Osnovna škola MURTERSKI ŠKOJI;Osnovna škola;15-415-002;0-0;Šibensko-kninska;22243  Murter;ured@os-murterski-skoji.skole.hr , zeljka.radman1@skole.hr;NA;www.os-murterski-skoji.skole.hr
+OSNOVNA ŠKOLA PIROVAC;Osnovna škola;15-415-003;0-0;Šibensko-kninska;22213  Pirovac;ured@os-pirovac.skole.hr;www.os-pirovac.skole.hr;www.os-pirovac.skole.hr
+OSNOVNA ŠKOLA VODICE;Osnovna škola;15-416-001;0-0;Šibensko-kninska;22211  Vodice;vodice@os-vodice.skole.hr;www.os-vodice.skole.hr;www.os-vodice.skole.hr
+OSNOVNA ŠKOLA ČISTA VELIKA;Osnovna škola;15-416-002;0-0;Šibensko-kninska;22214  Čista Velika;ured@os-cista-velika.skole.hr;NA;www.os-cista-velika.skole.hr
+Osnovna škola Jakova Gotovca;Osnovna škola;15-419-001;0-0;Šibensko-kninska;22323  Unešić;unesic@os-jgotovca-unesic.skole.hr;os-jgotovca-unesic.skole.hr;os-jgotovca-unesic.skole.hr
+Osnovna škola Bartola Kašića;Osnovna škola;16-088-001;0-0;Vukovarsko-srijemska;32100  Vinkovci;ured@os-bkasica-vk.skole.hr;http://os-bkasica-vk.skole.hr;http://os-bkasica-vk.skole.hr
+OSNOVNA ŠKOLA JOSIPA KOZARCA, Vinkovci;Osnovna škola;16-088-002;0-0;Vukovarsko-srijemska;32100  Vinkovci;josip.kozarac@os-jkozarca-vk.skole.hr;http://os-jkozarca-vk.skole.hr/;http://os-jkozarca-vk.skole.hr/
+Osnovna škola Ivana Gorana Kovačića;Osnovna škola;16-088-003;0-0;Vukovarsko-srijemska;32100  Vinkovci;ured@os-igkovacica-vk.skole.hr;http://os-igkovacica-vk.skole.hr;http://os-igkovacica-vk.skole.hr
+Osnovna škola Vladimira Nazora;Osnovna škola;16-088-004;0-0;Vukovarsko-srijemska;32100  Vinkovci;o.s.vladimira.nazora@vk.t-com.hr , vlana@os-vnazora-vk.skole.hr;http://os-vnazora-vk.skole.hr/;http://os-vnazora-vk.skole.hr/
+Osnovna škola Ivana Mažuranića;Osnovna škola;16-088-005;0-0;Vukovarsko-srijemska;32100  Vinkovci;ured@os-imazuranica-vk.skole.hr;http://os-imazuranica-vk.skole.hr/;http://os-imazuranica-vk.skole.hr/
+Osnovna škola Nikole Tesle;Osnovna škola;16-088-006;0-0;Vukovarsko-srijemska;32100  Mirkovci;ntesle@os-mirkovci.skole.hr , os-mirkovci@vk.t-com.hr ;NA;www.os-mirkovci.skole.hr
+Osnovna škola Antun Gustav Matoš;Osnovna škola;16-088-007;0-0;Vukovarsko-srijemska;32100  Vinkovci;agma@os-agmatos-vk.skole.hr;http://os-agmatos-vk.skole.hr/;http://os-agmatos-vk.skole.hr/
+Osnovna škola Dragutina Tadijanovića;Osnovna škola, Umjetnička škola;16-096-002;0-0;Vukovarsko-srijemska;32000  Vukovar;racunovodstvo@os-dtadijanovica-vu.skole.hr   , ravnateljica@os-dtadijanovica-vu.skole.hr   , tajnica@os-dtadijanovica-vu.skole.hr , skola@os-dtadijanovica-vu.skole.hr;http://www.os-dtadijanovica-vu.skole.hr/;http://www.os-dtadijanovica-vu.skole.hr/
+Osnovna škola Nikole Andrića;Osnovna škola;16-096-004;0-0;Vukovarsko-srijemska;32000  Vukovar;ured@os-nandrica-vu.skole.hr;os-nandrica-vu.skole.hr;os-nandrica-vu.skole.hr
+OSNOVNA ŠKOLA MITNICA;Osnovna škola;16-096-005;0-0;Vukovarsko-srijemska;32000  Vukovar;ured@os-mitnica-vu.skole.hr;www.os-mitnica-vu.skole.hr;www.os-mitnica-vu.skole.hr
+Osnovna škola Josipa Matoša;Osnovna škola;16-096-006;0-0;Vukovarsko-srijemska;32000  Vukovar;ured@os-jmatosa-vu.skole.hr , ured@os-jmatosa-vu.skole.hr;NA;www.os-jmatosa-vu.skole.hr
+OSNOVNA ŠKOLA ANTUNA BAUERA;Osnovna škola;16-096-008;0-0;Vukovarsko-srijemska;32000  Vukovar;zlatko.milic@skole.hr , tajnistvo@os-abauera-vu.skole.hr;http://os-abauera-vu.skole.hr;http://os-abauera-vu.skole.hr
+Osnovna škola Ivana Kozarca Županja;Osnovna škola, Umjetnička škola;16-111-001;0-0;Vukovarsko-srijemska;32270  Županja;ured@os-ikozarca-zu.skole.hr;http://os-ikozarca-zu.skole.hr/;http://os-ikozarca-zu.skole.hr/
+Osnovna škola Mate Lovraka;Osnovna škola;16-111-002;0-0;Vukovarsko-srijemska;32270  Županja;os.mlovraka.zu@os-mlovraka-zu.skole.hr;http://os-mlovraka-zu.skole.hr/;http://os-mlovraka-zu.skole.hr/
+Osnovna škola Ivana Martinovića;Osnovna škola;16-111-004;0-0;Vukovarsko-srijemska;32274  Štitar;ured@os-imartinovica.skole.hr;NA;www.os-imartinovica.skole.hr
+Osnovna škola fra Bernardina Tome Leakovića;Osnovna škola;16-420-001;0-0;Vukovarsko-srijemska;32275  Bošnjaci;marko.kovacevic3@skole.hr , ured@os-btleakovica-bosnjaci.skole.hr;NA;www.os-btleakovica-bosnjaci.skole.hr
+Osnovna škola Siniše Glavaševića;Osnovna škola;16-421-001;0-0;Vukovarsko-srijemska;32010  Vukovar;ured@os-sinise-glavasevica-vu.skole.hr;www.os-sinise-glavasevica-vu.skole.hr;www.os-sinise-glavasevica-vu.skole.hr
+Osnovna škola Blage Zadre;Osnovna škola;16-421-002;0-0;Vukovarsko-srijemska;32010  Vukovar;ured@os-blage-zadre-vu.skole.hr;NA;www.os-blage-zadre-vu.skole.hr
+Osnovna škola BOROVO;Osnovna škola;16-421-003;0-0;Vukovarsko-srijemska;32227  Borovo;ured@os-borovo.skole.hr , os-borovo@vk.ht.hr;NA;www.os-borovo.skole.hr
+Osnovna škola Matija Antun Reljković;Osnovna škola;16-422-001;0-0;Vukovarsko-srijemska;32272  Cerna;ured@os-mareljkovic-cerna.skole.hr , os.cerna001@gmail.com;http://os-mareljkovic-cerna.skole.hr/;http://os-mareljkovic-cerna.skole.hr/
+Osnovna škola GRADIŠTE;Osnovna škola;16-423-001;0-0;Vukovarsko-srijemska;32273  Gradište;ured@os-gradiste.skole.hr;http://os-gradiste.skole.hr/;http://os-gradiste.skole.hr/
+Osnovna škola Antun i Stjepan Radić;Osnovna škola;16-424-001;0-0;Vukovarsko-srijemska;32260  Gunja;ured@os-antunistjepanradic-gunja.skole.hr;http://os-antunistjepanradic-gunja.skole.hr/ , https://www.facebook.com/OSGunja/;http://os-antunistjepanradic-gunja.skole.hr/ , https://www.facebook.com/OSGunja/
+Osnovna škola Franjo Hanaman;Osnovna škola;16-425-001;0-0;Vukovarsko-srijemska;32257  Drenovci;ured@os-fhanaman-drenovci.skole.hr;NA;www.os-fhanaman-drenovci.skole.hr
+Osnovna škola Ivan Filipović;Osnovna škola;16-425-002;0-0;Vukovarsko-srijemska;32262  Račinovci;ured@os-ifilipovic-racinovci.skole.hr;NA;www.os-ifilipovic-racinovci.skole.hr
+Osnovna škola Davorin Trstenjak;Osnovna škola;16-425-003;0-0;Vukovarsko-srijemska;32258  Posavski Podgajci;ured@os-dtrstenjak-podgajci-posavski.skole.hr;NA;www.os-dtrstenjak-podgajci-posavski.skole.hr
+Osnovna škola Julija Benešića;Osnovna škola;16-426-001;0-0;Vukovarsko-srijemska;32236  Ilok;ured@os-ilok.skole.hr;NA;www.os-ilok.skole.hr
+Osnovna škola dr. Franjo Tuđman;Osnovna škola;16-426-002;0-0;Vukovarsko-srijemska;32234  Šarengrad;ured@os-drftudjman-sarengrad.skole.hr;http:/www.os-drftudjman-sarengrad.skole.hr;http:/www.os-drftudjman-sarengrad.skole.hr
+Osnovna škola August Cesarec;Osnovna škola;16-427-001;0-0;Vukovarsko-srijemska;32281  Ivankovo;ravnatelj@os-acesarec-ivankovo.skole.hr  , racunovodstvo@os-acesarec-ivankovo.skole.hr  , tajnik@os-acesarec-ivankovo.skole.hr  , pedagog@os-acesarec-ivankovo.skole.hr  , knjiznica@os-acesarec-ivankovo.skole.hr  , dragica.maricos@gmail.com , skola@os-acesarec-ivankovo.skole.hr;NA;www.os-acesarec-ivankovo.skole.hr
+Osnovna škola Ane Katarine Zrinski;Osnovna škola;16-427-002;0-0;Vukovarsko-srijemska;32282  Retkovci;tajnistvo.retkovci@gmail.com , skola@os-akzrinski-retkovci.skole.hr;NA;www.os-akzrinski-retkovci.skole.hr
+Osnovna škola Matija Gubec;Osnovna škola;16-428-001;0-0;Vukovarsko-srijemska;32280  Jarmina;tajnistvo@os-mgubec-jarmina.skole.hr;www.os-mgubec-jarmina.skole.hr;www.os-mgubec-jarmina.skole.hr
+Osnovna škola Lovas;Osnovna škola;16-429-001;0-0;Vukovarsko-srijemska;32237  Lovas;ured@os-lovas.skole.hr;NA;www.os-lovas.skole.hr
+Osnovna škola Antun Gustav Matoš Tovarnik;Osnovna škola;16-430-001;0-0;Vukovarsko-srijemska;32249  Tovarnik;ured@os-agmatos-tovarnik.skole.hr;http://os-agmatos-tovarnik.skole.hr/;http://os-agmatos-tovarnik.skole.hr/
+OSNOVNA ŠKOLA ZRINSKIH NUŠTAR;Osnovna škola;16-431-001;0-0;Vukovarsko-srijemska;32221  Nuštar;tajnistvo@os-zrinskih-nustar.skole.hr , pedagog@os-zrinskih-nustar.skole.hr , racunovodstvo@os-zrinskih-nustar.skole.hr , zrinus@os-zrinskih-nustar.skole.hr , ravnatelj@os-zrinskih-nustar.skole.hr;http://os-zrinskih-nustar.skole.hr/;http://os-zrinskih-nustar.skole.hr/
+Osnovna škola Ivan Kozarac;Osnovna škola;16-432-001;0-0;Vukovarsko-srijemska;32245  Nijemci;ured@os-ikozarac-nijemci.skole.hr;www.os-ikozarac-nijemci.skole.hr;www.os-ikozarac-nijemci.skole.hr
+Osnovna škola LIPOVAC;Osnovna škola;16-432-002;0-0;Vukovarsko-srijemska;32246  Lipovac;ured@os-lipovac.skole.hr;NA;www.os-lipovac.skole.hr
+Osnovna škola Ilača-Banovci;Osnovna škola;16-432-003;0-0;Vukovarsko-srijemska;32248  Ilača;ured@os-ilaca-banovci.skole.hr;NA;www.os-ilaca-banovci.skole.hr
+Osnovna škola Josipa Lovretića;Osnovna škola;16-433-001;0-0;Vukovarsko-srijemska;32252  Otok;ured@os-jlovretica-otok.skole.hr;http://os-jlovretica-otok.skole.hr/;http://os-jlovretica-otok.skole.hr/
+Osnovna škola Vladimir Nazor;Osnovna škola;16-433-002;0-0;Vukovarsko-srijemska;32253  Komletinci;ured@os-vnazor-komletinci.skole.hr , os-v.nazor@vk.htnet.hr;os-vnazor-komletinci.skole.hr;os-vnazor-komletinci.skole.hr
+Osnovna škola Stjepana Antolovića;Osnovna škola;16-433-003;0-0;Vukovarsko-srijemska;32251  Privlaka;ured@os-santolovica-privlaka.skole.hr;http://os-santolovica-privlaka.skole.hr/;http://os-santolovica-privlaka.skole.hr/
+Osnovna škola ČAKOVCI;Osnovna škola;16-435-001;0-0;Vukovarsko-srijemska;32238  Čakovci;skola@os-cakovci.skole.hr; http://www.os-cakovci.skole.hr; http://www.os-cakovci.skole.hr
+Osnovna škola STARI JANKOVCI;Osnovna škola;16-436-001;0-0;Vukovarsko-srijemska;32241  Stari Jankovci;ravnatelj@os-stari-jankovci.skole.hr , skola@os-stari-jankovci.skole.hr;http://os-stari-jankovci.skole.hr;http://os-stari-jankovci.skole.hr
+Osnovna škola Slakovci;Osnovna škola;16-436-003;0-0;Vukovarsko-srijemska;32242  Slakovci;joza.ivakic@vk.t-com.hr , slak@os-slakovci.skole.hr;NA;www.os-slakovci.skole.hr
+Osnovna škola Stjepana Cvrkovića;Osnovna škola;16-437-001;0-0;Vukovarsko-srijemska;32284  Stari Mikanovci;ured@os-scvrkovica-stari-mikanovci.skole.hr;NA;www.os-scvrkovica-stari-mikanovci.skole.hr
+Osnovna škola Vođinci;Osnovna škola;16-437-002;0-0;Vukovarsko-srijemska;32283  Vođinci;ured@os-vodjinci.skole.hr;NA;www.os-vodjinci.skole.hr
+OSNOVNA ŠKOLA KOROG, KOROG;Osnovna škola;16-438-001;0-0;Vukovarsko-srijemska;31214  Korog;ured@os-korog.skole.hr;NA;www.os-korog.skole.hr
+Osnovna škola MARKUŠICA;Osnovna škola;16-438-002;0-0;Vukovarsko-srijemska;32213  Markušica;ured@os-markusica.skole.hr;os-markusica.skole.hr;os-markusica.skole.hr
+Osnovna škola Tordinci;Osnovna škola;16-438-003;0-0;Vukovarsko-srijemska;32214  Tordinci;os-tordinci@os-tordinci.skole.hr;www.os-tordinci.skole.hr;www.os-tordinci.skole.hr
+Osnovna škola TRPINJA;Osnovna škola;16-439-001;0-0;Vukovarsko-srijemska;32224  Trpinja;ured@os-trpinja.skole.hr;www.os-trpinja.skole.hr;www.os-trpinja.skole.hr
+Osnovna škola Bobota;Osnovna škola;16-439-002;0-0;Vukovarsko-srijemska;32225  Bobota;ured@os-bobota.skole.hr , ravnatelj@os-bobota.skole.hr;http://os-bobota.skole.hr/;http://os-bobota.skole.hr/
+Osnovna škola Bršadin;Osnovna škola;16-439-003;0-0;Vukovarsko-srijemska;32222  Bršadin;ured@os-brsadin.skole.hr;NA;www.os-brsadin.skole.hr
+Osnovna škola Mare Švel-Gamiršek;Osnovna škola;16-440-001;0-0;Vukovarsko-srijemska;32254  Vrbanja;ured@os-msgamirsek-vrbanja.skole.hr;os-msgamirsek-vrbanja.skole.hr;os-msgamirsek-vrbanja.skole.hr
+Osnovna škola Josip Kozarac Soljani;Osnovna škola;16-440-002;0-0;Vukovarsko-srijemska;32255  Soljani;ured@os-jkozarac-soljani.skole.hr;NA;www.os-jkozarac-soljani.skole.hr
+Osnovna škola Ivane Brlić-Mažuranić Rokovci - Andrijaševci;Osnovna škola;16-441-001;0-0;Vukovarsko-srijemska;32271  Andrijaševci;ured@os-ibmazuranic-rokovci-andrijasevci.skole.hr;NA;www.os-ibmazuranic-rokovci-andrijasevci.skole.hr
+Osnovna škola Mijat Stojanović;Osnovna škola;16-442-001;0-0;Vukovarsko-srijemska;32276  Babina Greda;ured@os-mstojanovic-babinagreda.skole.hr	;NA;www.os-mstojanovic-babinagreda.skole.hr
+Osnovna škola NEGOSLAVCI;Osnovna škola;16-612-001;0-0;Vukovarsko-srijemska;32239  Negoslavci;ured@os-negoslavci.skole.hr , ured@os-negoslavci.skole.hr;NA;www.os-negoslavci.skole.hr
+Osnovna škola HVAR;Osnovna škola;17-029-001;0-0;Splitsko-dalmatinska;21450  Hvar;skola@os-hvar.skole.hr;NA;www.os-hvar.skole.hr
+Osnovna škola STJEPAN RADIĆ;Osnovna škola;17-030-001;0-0;Splitsko-dalmatinska;21260  Imotski;ured@os-sradic-im.skole.hr;os-sradic-im.skole.hr;os-sradic-im.skole.hr
+"Osnovna škola ""Josip Vergilij Perić""";Osnovna škola;17-030-003;0-0;Splitsko-dalmatinska;21260  Imotski;ured@os-jvperic.skole.hr;www.os-jvperic.skole.hr;www.os-jvperic.skole.hr
+OSNOVNA ŠKOLA o.PETRA PERICE MAKARSKA;Osnovna škola;17-047-001;0-0;Splitsko-dalmatinska;21300  Makarska;skola@os-pperice-ma.skole.hr;os-pperice-ma.skole.hr;os-pperice-ma.skole.hr
+Osnovna škola STJEPANA IVIČEVIĆA;Osnovna škola;17-047-002;0-0;Splitsko-dalmatinska;21300  Makarska;os-s.ivicevica@st.t-com.hr , skola@os-sivicevica-ma.skole.hr;http://www.os-s.ivicevica-ma.skole.hr;http://www.os-s.ivicevica-ma.skole.hr
+OSNOVNA ŠKOLA JOSIP PUPAČIĆ;Osnovna škola;17-057-001;0-0;Splitsko-dalmatinska;21310  Omiš;os-josip-pupacic@os-jpupacic-omis.skole.hr;NA;www.os-jpupacic-omis.skole.hr
+OSNOVNA ŠKOLA 1. LISTOPADA 1942.;Osnovna škola;17-057-002;0-0;Splitsko-dalmatinska;21253  Čišla;os-cisla@os-cisla.skole.hr;www.os-cisla.skole.hr;www.os-cisla.skole.hr
+OSNOVNA ŠKOLA Gornja Poljica;Osnovna škola;17-057-003;0-0;Splitsko-dalmatinska;21205  Srijane;ured@os-gornja-poljica-srijane.skole.hr;NA;www.os-gornja-poljica-srijane.skole.hr
+Osnovna škola Ivana Lovrića;Osnovna škola;17-075-001;0-0;Splitsko-dalmatinska;21230  Sinj;ured@os-ilovrica-sinj.skole.hr;NA;www.os-ilovrica-sinj.skole.hr
+OSNOVNA ŠKOLA MARKA MARULIĆA;Osnovna škola;17-075-002;0-0;Splitsko-dalmatinska;21230  Sinj;malbasadragan@gmail.com , ured@os-mmarulica-sinj.skole.hr;NA;www.os-mmarulica-sinj.skole.hr
+Osnovna škola Fra Pavla Vučkovića;Osnovna škola;17-075-003;0-0;Splitsko-dalmatinska;21230  Sinj;ured@os-frapvuckovica-sinj.skole.hr;http://os-frapvuckovica-sinj.skole.hr/;http://os-frapvuckovica-sinj.skole.hr/
+Osnovna škola Stjepan Radić;Osnovna škola;17-075-004;0-0;Splitsko-dalmatinska;21245  Tijarica;ostijarica@os-sradic-tijarica.skole.hr;http://os-sradic-tijarica.skole.hr/;http://os-sradic-tijarica.skole.hr/
+Osnovna škola Majstora Radovana;Osnovna škola;17-083-001;0-0;Splitsko-dalmatinska;21220  Trogir;ured@os-mradovana-trogir.skole.hr;NA;www.os-mradovana-trogir.skole.hr
+Osnovna škola Petar Berislavić;Osnovna škola;17-083-002;0-0;Splitsko-dalmatinska;21220  Trogir;trogir-002@os-pberislavic-trogir.skole.hr ;http://os-pberislavic-trogir.skole.hr/;http://os-pberislavic-trogir.skole.hr/
+OSNOVNA ŠKOLA VIS;Osnovna škola;17-090-001;0-0;Splitsko-dalmatinska;21480  Vis;anela.borcic@skole.hr , vlatko.urban@skole.hr , ured@os-vis.skole.hr;www.os-vis.skole.hr;www.os-vis.skole.hr
+Osnovna škola VRGORAC;Osnovna škola;17-093-001;0-0;Splitsko-dalmatinska;21276  Vrgorac;os-vrgorac@os-vrgorac.skole.hr;NA;www.os-vrgorac.skole.hr
+Osnovna škola kneza Mislava;Osnovna škola;17-124-001;0-0;Splitsko-dalmatinska;21212  Kaštel Sućurac;os-knezmislav@os-knezmislav-kastelsucurac.skole.hr;www.os-knezmislav-kastelsucurac.skole.hr;www.os-knezmislav-kastelsucurac.skole.hr
+OSNOVNA ŠKOLA KNEZA TRPIMIRA;Osnovna škola;17-124-002;0-0;Splitsko-dalmatinska;21213  Kaštel Gomilica;ured@os-kneztrpimir-kastelgomilica.skole.hr;NA;www.os-kneztrpimir-kastelgomilica.skole.hr
+Osnovna škola OSTROG;Osnovna škola;17-124-003;0-0;Splitsko-dalmatinska;21215  Kaštel Lukšić;os-ostrog@os-ostrog-kastelluksic.skole.hr , os-ostrog@os-ostrog.hr;NA;www.os-ostrog-kastelluksic.skole.hr
+OSNOVNA ŠKOLA BIJAĆI;Osnovna škola;17-124-004;0-0;Splitsko-dalmatinska;21216  Kaštel Novi;os-bijaci@os-bijaci-kastelnovi.skole.hr;http://www.os-bijaci-kastelnovi.skole.hr/;http://www.os-bijaci-kastelnovi.skole.hr/
+Osnovna škola prof. Filipa Lukasa;Osnovna škola;17-124-005;0-0;Splitsko-dalmatinska;21216  Kaštel Stari;ured@os-flukasa-kastelstari.skole.hr , ured@os-flukasa-kastelstari.skole.hr;http://os-flukasa-kastelstari.skole.hr/;http://os-flukasa-kastelstari.skole.hr/
+OSNOVNA ŠKOLA DON LOVRE KATIĆA;Osnovna škola;17-125-001;0-0;Splitsko-dalmatinska;21210  Solin; ured@os-donlovrekatica-solin.skole.hr;http://os-donlovrekatica-solin.skole.hr;http://os-donlovrekatica-solin.skole.hr
+OSNOVNA ŠKOLA VJEKOSLAVA PARAĆA;Osnovna škola;17-125-002;0-0;Splitsko-dalmatinska;21210  Solin;admin@os-vparac-solin.skole.hr  , ured@os-vparac-solin.skole.hr ;http://os-vparac-solin.skole.hr;http://os-vparac-solin.skole.hr
+OSNOVNA ŠKOLA KRALJICE JELENE;Osnovna škola;17-125-003;0-0;Splitsko-dalmatinska;21210  Solin;ured@os-kraljicejelene-solin.skole.hr;NA;www.os-kraljicejelene-solin.skole.hr
+Osnovna škola kralja Zvonimira;Osnovna škola;17-125-004;0-0;Splitsko-dalmatinska;21210  Solin;ured@os-kraljazvonimira.skole.hr;os-kraljazvonimira.skole.hr;os-kraljazvonimira.skole.hr
+OSNOVNA ŠKOLA MARJAN;Osnovna škola;17-126-001;0-0;Splitsko-dalmatinska;21000  Split;ured@os-marjan-st.skole.hr;NA;www.os-marjan-st.skole.hr
+Osnovna škola DOBRI;Osnovna škola;17-126-002;0-0;Splitsko-dalmatinska;21000  Split;dobri@os-dobri.hr;NA;www.os-dobri.hr
+Osnovna škola ˝Bol˝;Osnovna škola;17-126-003;0-0;Splitsko-dalmatinska;21000  Split;ured@os-bol-st.skole.hr;NA;www.os-bol-st.skole.hr
+Osnovna škola SKALICE;Osnovna škola;17-126-004;0-0;Splitsko-dalmatinska;21000  Split;os-skalice@os-skalice-st.skole.hr , OS-SPLIT-004@skole.htnet.hr;NA;www.os-skalice-st.skole.hr
+OSNOVNA ŠKOLA MANUŠ-SPLIT;Osnovna škola;17-126-005;0-0;Splitsko-dalmatinska;21000  Split;ured@os-manus-st.skole.hr , os-manus-split@st.t-com.hr;www.os-manus-st.skole.hr;www.os-manus-st.skole.hr
+Osnovna škola Spinut;Osnovna škola;17-126-006;0-0;Splitsko-dalmatinska;21000  Split;ured@os-spinut-st.skole.hr;http://os-spinut-st.skole.hr/;http://os-spinut-st.skole.hr/
+Osnovna škola Pojišan;Osnovna škola;17-126-007;0-0;Splitsko-dalmatinska;21000  Split;ured@os-pojisan-st.skole.hr;NA;www.os-pojisan-st.skole.hr
+OSNOVNA ŠKOLA LUČAC;Osnovna škola;17-126-008;0-0;Splitsko-dalmatinska;21000  Split;oslucac@os-lucac-st.skole.hr;NA;www.os-lucac-st.skole.hr
+Osnovna škola Brda;Osnovna škola;17-126-009;0-0;Splitsko-dalmatinska;21000  Split;ured@os-brda-st.skole.hr;NA;www.os-brda-st.skole.hr
+OSNOVNA ŠKOLA MEJE;Osnovna škola;17-126-010;0-0;Splitsko-dalmatinska;21000  Split;ravnatelj@os-meje-st.skole.hr , tajnistvo@os-meje-st.skole.hr , racunovodstvo@os-meje-st.skole.hr;http://os-meje-st.skole.hr/;http://os-meje-st.skole.hr/
+Osnovna škola Trstenik;Osnovna škola;17-126-011;0-0;Splitsko-dalmatinska;21000  Split;split@os-trstenik-st.skole.hr;NA;www.os-trstenik-st.skole.hr
+Osnovna škola BLATINE-ŠKRAPE;Osnovna škola;17-126-012;0-0;Splitsko-dalmatinska;21000  Split;ured@os-blatine-skrape-st.skole.hr;NA;www.os-blatine-skrape-st.skole.hr
+OSNOVNA ŠKOLA PLOKITE;Osnovna škola;17-126-013;0-0;Splitsko-dalmatinska;21000  Split;ured@os-plokite-st.skole.hr;http://www.os-plokite-st.skole.hr/;http://www.os-plokite-st.skole.hr/
+Osnovna škola Kman-Kocunar;Osnovna škola;17-126-014;0-0;Splitsko-dalmatinska;21000  Split;ured@os-kman-kocunar-st.skole.hr;NA;www.os-kman-kocunar-st.skole.hr
+OSNOVNA ŠKOLA SPLIT 3;Osnovna škola;17-126-015;0-0;Splitsko-dalmatinska;21000  Split;skola@os-split-tri-st.skole.hr ;NA;www.os-split-tri-st.skole.hr
+Osnovna škola Ravne njive - Neslanovac Split;Osnovna škola;17-126-016;0-0;Splitsko-dalmatinska;21000  Split;ured@os-ravnenjiveneslanovac-st.skole.hr;NA;www.os-ravnenjiveneslanovac-st.skole.hr
+OSNOVNA ŠKOLA SUĆIDAR;Osnovna škola;17-126-017;0-0;Splitsko-dalmatinska;21000  Split;ured@os-sucidar-st.skole.hr , OS-SPLIT-017@skole.t-com.hr;NA;www.os-sucidar-st.skole.hr
+Osnovna škola Mertojak;Osnovna škola;17-126-018;0-0;Splitsko-dalmatinska;21000  Split;ured@os-mertojak-st.skole.hr;NA;www.os-mertojak-st.skole.hr
+"Osnovna škola ""Lokve-Gripe""";Osnovna škola;17-126-019;0-0;Splitsko-dalmatinska;21000  Split;os-gripe@st.t-com.hr , ured@os-gripe-st.skole.hr;http://os-gripe-st.skole.hr;http://os-gripe-st.skole.hr
+OSNOVNA ŠKOLA MEJAŠI;Osnovna škola;17-126-020;0-0;Splitsko-dalmatinska;21000  Split;ured@os-mejasi-st.skole.hr , josipa.kapitanovic@skole.hr;www.os-mejasi-st.skole.hr;www.os-mejasi-st.skole.hr
+OSNOVNA ŠKOLA PUJANKI;Osnovna škola;17-126-021;0-0;Splitsko-dalmatinska;21000  Split;ospujankiusplitu@gmail.com , ured@os-pujanki-st.skole.hr;NA;www.os-pujanki-st.skole.hr
+Osnovna škola ŽRNOVNICA;Osnovna škola;17-126-022;0-0;Splitsko-dalmatinska;21251  Žrnovnica;matija.situm4@gmail.com , roberta.donlic@gmail.com , ured@os-zrnovnica-st.skole.hr;www.os-zrnovnica-st.skole.hr;www.os-zrnovnica-st.skole.hr
+OSNOVNA ŠKOLA SRINJINE;Osnovna škola;17-126-023;0-0;Splitsko-dalmatinska;21292  Srinjine;srinjine@os-srinjine.skole.hr;NA;www.os-srinjine.skole.hr
+OSNOVNA ŠKOLA VISOKA;Osnovna škola;17-126-024;0-0;Splitsko-dalmatinska;21000  Split;visoka@os-visoka-st.skole.hr;NA;www.os-visoka-st.skole.hr
+Privatna osnovna škola Harfa;Osnovna škola;17-126-025;0-0;Splitsko-dalmatinska;21000  Split;info@posh.hr;NA;https://posh.hr/
+OSNOVNA ŠKOLA STOBREČ;Osnovna škola;17-126-027;0-0;Splitsko-dalmatinska;21311  Stobreč;stobrec@os-stobrec.skole.hr;www.os-stobrec.skole.hr;www.os-stobrec.skole.hr
+OSNOVNA ŠKOLA KAMEN-ŠINE;Osnovna škola;17-126-028;0-0;Splitsko-dalmatinska;21000  Split;ured@os-kamen-sine-st.skole.hr;NA;www.os-kamen-sine-st.skole.hr
+OSNOVNA ŠKOLA SLATINE;Osnovna škola;17-126-029;0-0;Splitsko-dalmatinska;21224  Slatine;ured@os-slatine.skole.hr;http://www.os-slatine.skole.hr/;http://www.os-slatine.skole.hr/
+Osnovna škola Žnjan-Pazdigrad;Osnovna škola;17-126-032;0-0;Splitsko-dalmatinska;21000  Split;ured@os-znjan-st.skole.hr;http://os-znjan-st.skole.hr/;http://os-znjan-st.skole.hr/
+Centar za autizam Split;Osnovna škola;17-126-033;0-0;Splitsko-dalmatinska;21000  Split;info@cza-split.hr;NA;https://www.cza-split.hr/
+Centar za odgoj i obrazovanje JURAJ BONAČI;Osnovna škola, Srednja škola;17-126-535;0-0;Splitsko-dalmatinska;21000  Split;centar.juraj.bonaci@gmail.com;https://centar-juraj-bonaci.hr/;https://centar-juraj-bonaci.hr/
+Centar za odgoj i obrazovanje SLAVA RAŠKAJ;Osnovna škola, Srednja škola;17-126-536;0-0;Splitsko-dalmatinska;21000  Split;slava.raskaj@st.t-com.hr;http://www.centarslavaraskaj.hr/;http://www.centarslavaraskaj.hr/
+Osnovna škola Kralja Zvonimira;Osnovna škola;17-382-001;0-0;Splitsko-dalmatinska;21218  Seget Donji;dominik.matkovic2@skole.hr , ured@os-kralja-zvonimira-st.skole.hr;NA;www.os-kralja-zvonimira-st.skole.hr
+"OSNOVNA ŠKOLA ""Strožanac""";Osnovna škola;17-443-001;0-0;Splitsko-dalmatinska;21312  Strožanac - Podstrana;ured@os-strozanac-podstrana.skole.hr;NA;www.os-strozanac-podstrana.skole.hr
+Osnovna škola BOL;Osnovna škola;17-444-001;0-0;Splitsko-dalmatinska;21420  Bol;ured@os-bol.skole.hr;www.os-bol.skole.hr;www.os-bol.skole.hr
+Osnovna škola PUČIŠĆA;Osnovna škola;17-445-001;0-0;Splitsko-dalmatinska;21412  Pučišća;ured@os-pucisca.skole.hr , os-pucisca@st.t-com.hr;NA;www.os-pucisca.skole.hr
+Osnovna škola Vladimira Nazora;Osnovna škola;17-446-001;0-0;Splitsko-dalmatinska;21410  Postira;ravnatelj@nazor-postira.hr , tajnica@nazor-postira.hr;http://www.os-vnazora-postira.skole.hr/;http://www.os-vnazora-postira.skole.hr/
+Osnovna škola SELCA;Osnovna škola;17-447-001;0-0;Splitsko-dalmatinska;21425  Selca;os-selca@st.t-com.hr;NA;https://os-selca.skole.hr/
+Osnovna škola Kneza Branimira;Osnovna škola;17-448-001;0-0;Splitsko-dalmatinska;21203  Donji Muć;ured@os-kneza-branimira-donjimuc.skole.hr;http://os-kneza-branimira-donjimuc.skole.hr/;http://os-kneza-branimira-donjimuc.skole.hr/
+Osnovna škola Neorić-Sutina;Osnovna škola;17-448-002;0-0;Splitsko-dalmatinska;21247  Neorić; neoric@os-neoric-sutina.skole.hr; www.os-neoric-sutina.skole.hr; www.os-neoric-sutina.skole.hr
+Osnovna škola BRAĆE RADIĆA;Osnovna škola;17-448-003;0-0;Splitsko-dalmatinska;21203  Bračević;ured@os-brace-radica-bracevic.skole.hr;NA;www.os-brace-radica-bracevic.skole.hr
+OSNOVNA ŠKOLA JESENICE;Osnovna škola;17-449-001;0-0;Splitsko-dalmatinska;21315  Dugi Rat;ured@os-jesenice-dugirat.skole.hr;NA;www.os-jesenice-dugirat.skole.hr
+OSNOVNA ŠKOLA GROHOTE;Osnovna škola;17-450-001;0-0;Splitsko-dalmatinska;21430  Grohote;ured@os-grohote-solta.skole.hr;http://os-grohote-solta.skole.hr;http://os-grohote-solta.skole.hr
+OSNOVNA ŠKOLA DINKA ŠIMUNOVIĆA;Osnovna škola;17-451-001;0-0;Splitsko-dalmatinska;21233  Hrvace;ossimunovic@skolahrvace.hr;NA;https://os-dsimunovica-hrvace.skole.hr/
+Osnovna škola TIN UJEVIĆ;Osnovna škola;17-452-001;0-0;Splitsko-dalmatinska;21263  Krivodol;ured@os-tujevic-krivodol.skole.hr ;NA;www.os-tujevic-krivodol.skole.hr
+Osnovna škola Ivana Gorana Kovačića;Osnovna škola;17-453-001;0-0;Splitsko-dalmatinska;21244  Cista Velika;ured@os-igkovacica-cistavelika.skole.hr;www.os-igkovacica-cistavelika.skole.hr;www.os-igkovacica-cistavelika.skole.hr
+Osnovna škola Josipa Jovića;Osnovna škola;17-453-002;0-0;Splitsko-dalmatinska;21246  Aržano;ured@os-jjovica.skole.hr;http://os-jjovica.skole.hr;http://os-jjovica.skole.hr
+OSNOVNA ŠKOLA SILVIJA STRAHIMIRA KRANJČEVIĆA LOVREĆ;Osnovna škola;17-454-001;0-0;Splitsko-dalmatinska;21257  Lovreć;marica.luetic@skole.hr , lovrec@os-sskranjcevica-lovrec.skole.hr;NA;www.os-sskranjcevica-lovrec.skole.hr
+Osnovna škola STUDENCI;Osnovna škola;17-454-002;0-0;Splitsko-dalmatinska;21265  Studenci;studenci@os-studenci.skole.hr;http://os-studenci.skole.hr;http://os-studenci.skole.hr
+OSNOVNA ŠKOLA IVAN LEKO;Osnovna škola;17-455-001;0-0;Splitsko-dalmatinska;21264  Donji Proložac;prolozac@os-ileko-prolozac.skole.hr;http://os-ileko-prolozac.skole.hr/;http://os-ileko-prolozac.skole.hr/
+OSNOVNA ŠKOLA RUNOVIĆ;Osnovna škola;17-456-002;0-0;Splitsko-dalmatinska;21261  Runović;os-runovic@st.t-com.hr , skola@os-runovic.skole.hr;NA;www.os-runovic.skole.hr
+Osnovna škola JELSA;Osnovna škola;17-457-001;0-0;Splitsko-dalmatinska;21465  Jelsa;osjelsa@osjelsa.tcloud.hr , ured@os-jelsa.skole.hr;NA;www.osjelsa.tcloud.hr
+Osnovna škola ANTE ANĐELINOVIĆ;Osnovna škola;17-458-001;0-0;Splitsko-dalmatinska;21469  Sućuraj;ured@os-aandjelinovic-sucuraj.skole.hr;NA;www.os-aandjelinovic-sucuraj.skole.hr
+Osnovna škola Primorski Dolac;Osnovna škola;17-459-003;0-0;Splitsko-dalmatinska;21227  Primorski Dolac;ured@os-primorski-dolac.skole.hr;os-primorski-dolac.skole.hr;os-primorski-dolac.skole.hr
+Osnovna škola don Mihovila Pavlinovića;Osnovna škola;17-460-001;0-0;Splitsko-dalmatinska;21327  Podgora;os-podgora@os-mpavlinovica-podgora.skole.hr;http://os-mpavlinovica-podgora.skole.hr/;http://os-mpavlinovica-podgora.skole.hr/
+Osnovna škola GRADAC;Osnovna škola;17-461-001;0-0;Splitsko-dalmatinska;21330  Gradac;ured@os-gradac.skole.hr;NA;www.os-gradac.skole.hr
+Osnovna škola dr. Franje Tuđmana Brela;Osnovna škola;17-462-001;0-0;Splitsko-dalmatinska;21322  Brela;ured@os-drftudjmana-brela.skole.hr;www.os-drftudjmana-brela.skole.hr;www.os-drftudjmana-brela.skole.hr
+OSNOVNA ŠKOLA BARIŠE GRANIĆA MEŠTRA;Osnovna škola;17-463-001;0-0;Splitsko-dalmatinska;21320  Baška Voda;ured@os-bgmestra-baskavoda.skole.hr;NA;www.os-bgmestra-baskavoda.skole.hr
+OSNOVNA ŠKOLA IVAN DUKNOVIĆ;Osnovna škola;17-464-001;0-0;Splitsko-dalmatinska;21222  Marina;ured@os-iduknovic-marina.skole.hr;NA;www.os-iduknovic-marina.skole.hr
+Osnovna škola KAMEŠNICA;Osnovna škola;17-465-001;0-0;Splitsko-dalmatinska;21238  Otok;miroslav.jukic@skole.hr , ured@os-kamesnica-otok.skole.hr;www.skola-kamesnica.hr;www.skola-kamesnica.hr
+OSNOVNA ŠKOLA IVANA MAŽURANIĆA;Osnovna škola;17-465-002;0-0;Splitsko-dalmatinska;21241  Obrovac Sinjski;os-han@os-imazuranica-obrovacsinjski.skole.hr;www.osim.hr;www.osim.hr
+Osnovna škola Ante Starčevića;Osnovna škola;17-466-001;0-0;Splitsko-dalmatinska;21232  Dicmo;os-dicmo@os-astarcevica.skole.hr;NA;www.os-astarcevica.skole.hr
+Osnovna škola Petra Kružića Klis;Osnovna škola;17-467-001;0-0;Splitsko-dalmatinska;21231  Klis;neven.tesija@skole.hr , os-petra-kruzica@st.t-com.hr , ured@os-pkruzica-klis.skole.hr;os-pkruzica-klis.skole.hr;os-pkruzica-klis.skole.hr
+Osnovna škola DUGOPOLJE;Osnovna škola;17-467-002;0-0;Splitsko-dalmatinska;21204  Dugopolje;dugopolje@os-dugopolje.skole.hr;NA;www.os-dugopolje.skole.hr
+Osnovna škola Supetar;Osnovna škola;17-468-001;0-0;Splitsko-dalmatinska;21400  Supetar;pedagog@os-supetar.skole.hr  , psiholog@os-supetar.skole.hr , defektolog@os-supetar.skole.hr , knjiznica@os-supetar.skole.hr , ured@os-supetar.skole.hr , os-supetar@os-supetar.skole.hr;http://os-supetar.skole.hr/;http://os-supetar.skole.hr/
+Osnovna škola MILNA;Osnovna škola;17-469-001;0-0;Splitsko-dalmatinska;21405  Milna;tajnistvo@os-milna.skole.hr;1;https://os-milna.skole.hr/
+Osnovna škola PETRA HEKTOROVIĆA Stari Grad;Osnovna škola;17-470-001;0-0;Splitsko-dalmatinska;21460  Stari Grad;skola@os-phektorovica-starigrad.skole.hr;NA;www.os-phektorovica-starigrad.skole.hr
+OSNOVNA ŠKOLA DR. FRA KARLO BALIĆ;Osnovna škola;17-471-001;0-0;Splitsko-dalmatinska;21250  Šestanovac;tajnistvo@os-sestanovac.hr , ured@os-kbalic-sestanovac.skole.hr , ravnatelj@os-sestanovac.hr;NA;www.os-sestanovac.hr
+Osnovna škola Trilj;Osnovna škola;17-473-001;0-0;Splitsko-dalmatinska;21240  Trilj;ravnatelj@os-trilj.skole.hr;http://www.os-trilj.skole.hr;http://www.os-trilj.skole.hr
+OSNOVNA ŠKOLA MILANA BEGOVIĆA;Osnovna škola;17-474-001;0-0;Splitsko-dalmatinska;21236  Vrlika;ured@os-mbegovica-vrlika.skole.hr;http://www.os-mbegovica-vrlika.skole.hr/;http://www.os-mbegovica-vrlika.skole.hr/
+Osnovna škola Komiža;Osnovna škola;17-475-001;0-0;Splitsko-dalmatinska;21485  Komiža;ured@os-komiza.skole.hr;www.os-komiza.skole.hr;www.os-komiza.skole.hr
+Osnovna škola Zagvozd;Osnovna škola;17-477-001;0-0;Splitsko-dalmatinska;21270  Zagvozd;ravnatelj@os-zagvozd.skole.hr;http://os-zagvozd.skole.hr/;http://os-zagvozd.skole.hr/
+OSNOVNA ŠKOLA ZMIJAVCI;Osnovna škola;17-528-001;0-0;Splitsko-dalmatinska;21266  Zmijavci;os-zmijavci@skole.hr , ured@os-zmijavci.skole.hr;www.os-zmijavci.skole.hr;www.os-zmijavci.skole.hr
+Osnovna škola Okruk u Okrugu Gornjem;Osnovna škola;17-588-001;0-0;Splitsko-dalmatinska;21223  Okrug Gornji;ured@os-okruk-og.skole.hr;NA;www.os-okruk-og.skole.hr
+Osnovna škola Tučepi;Osnovna škola;17-593-001;0-0;Splitsko-dalmatinska;21325  Tučepi;os-tucepi@os-tucepi.skole.hr;NA;www.os-tucepi.skole.hr
+Osnovna škola - Scuola elementare Mate Balote Buje - Buie;Osnovna škola;18-006-001;0-0;Istarska;52460  Buje;ured@os-mbalote-buje.skole.hr;os-mbalote-buje.skole.hr;os-mbalote-buje.skole.hr
+"Talijanska osnovna škola Scuola elementare italiana ""Edmondo De Amicis"" Buje Buie";Osnovna škola;18-006-002;0-0;Istarska;52460  Buje;ured@os-talijanska-buje.skole.hr;http://os-talijanska-buje.skole.hr/;http://os-talijanska-buje.skole.hr/
+"Osnovna škola ""VAZMOSLAV GRŽALJA""";Osnovna škola;18-007-001;0-0;Istarska;52420  Buzet;ured@os-vgrzalja-buzet.skole.hr;NA;www.os-vgrzalja-buzet.skole.hr
+Osnovna škola Matije Vlačića;Osnovna škola;18-044-001;0-0;Istarska;52220  Labin;ured@os-mvlacica-labin.skole.hr , os-matije.vlacica@pu.t-com.hr;http://os-labin-001.skole.t-com.hr;http://os-labin-001.skole.t-com.hr
+Osnovna škola Ivo Lola Ribar Labin;Osnovna škola;18-044-002;0-0;Istarska;52220  Labin;ured@os-ilribar-labin.skole.hr;www.os-ilribar-labin.skole.hr;www.os-ilribar-labin.skole.hr
+Centar Liče Faraguna;Osnovna škola;18-044-003;0-0;Istarska;52220  Labin;ured@centar-licefaraguna-labin.skole.hr;NA;https://centar-licefaraguna-labin.skole.hr/
+OSNOVNA ŠKOLA VLADIMIRA NAZORA PAZIN;Osnovna škola;18-065-001;0-0;Istarska;52000  Pazin;ured@os-vnazora-pazin.skole.hr , pazin@osvnpazin.hr;www.os-vnazora-pazin.skole.hr;www.os-vnazora-pazin.skole.hr
+OSNOVNA ŠKOLA POREČ;Osnovna škola;18-068-001;0-0;Istarska;52440  Poreč - Parenzo;ured@os-porec.skole.hr;NA;www.os-porec.skole.hr
+Osnovna škola Tar - Vabriga - Scuola elementare Torre - Abrega;Osnovna škola;18-068-002;0-0;Istarska;52465  Tar;ured@os-tar.skole.hr;http://os-tar.skole.hr/;http://os-tar.skole.hr/
+Talijanska osnovna škola - Scuola elementare italiana Bernardo Parentin Poreč - Parenzo;Osnovna škola;18-068-004;0-0;Istarska;52440  Poreč - Parenzo;ured@os-talijanska-bparentin-porec.skole.hr;http://www.os-talijanska-bparentin-porec.skole.hr/;http://www.os-talijanska-bparentin-porec.skole.hr/
+OSNOVNA ŠKOLA FINIDA;Osnovna škola;18-068-006;0-0;Istarska;52440  Poreč - Parenzo;ured@os-finida-porec.skole.hr;NA;www.os-finida-porec.skole.hr
+OSNOVNA ŠKOLA ŠIJANA PULA;Osnovna škola;18-069-001;0-0;Istarska;52100  Pula;os-sijana.pu@skole.hr;NA;https://os-sijana-pu.skole.hr/
+Osnovna škola Stoja;Osnovna škola;18-069-002;0-0;Istarska;52100  Pula;ured@os-stoja-pu.skole.hr , ured@os-stoja-pu.skole.hr , ured@os-stoja-pu.skole.hr;NA;www.os-stoja-pu.skole.hr
+Osnovna škola Centar;Osnovna škola;18-069-003;0-0;Istarska;52100  Pula;ured@os-centar-pu.skole.hr;NA;www.os-centar-pu.skole.hr
+Osnovna škola -  Scuola elementare Giuseppina Martinuzzi Pula-Pola;Osnovna škola;18-069-004;0-0;Istarska;52100  Pula;martinuzzi@os-giuseppina-martinuzzi-pu.skole.hr;NA;www.os-giuseppina-martinuzzi-pu.skole.hr
+OSNOVNA ŠKOLA TONE PERUŠKA PULA;Osnovna škola;18-069-005;0-0;Istarska;52100  Pula;ured@os-tperuska-pu.skole.hr;NA;www.os-tperuska-pu.skole.hr
+OSNOVNA ŠKOLA KAŠTANJER PULA;Osnovna škola;18-069-006;0-0;Istarska;52100  Pula;ured@os-kastanjer-pu.skole.hr;NA;www.os-kastanjer-pu.skole.hr
+OSNOVNA ŠKOLA VIDIKOVAC;Osnovna škola;18-069-007;0-0;Istarska;52100  Pula;ured@os-vidikovac-pu.skole.hr;os-vidikovac-pu.skole.hr;os-vidikovac-pu.skole.hr
+Osnovna škola Monte Zaro;Osnovna škola;18-069-008;0-0;Istarska;52100  Pula;ured@os-mzaro-pu.skole.hr;https://www./os-mzaro-pu.skole.hr;https://www./os-mzaro-pu.skole.hr
+OSNOVNA ŠKOLA VERUDA PULA;Osnovna škola;18-069-009;0-0;Istarska;52100  Pula;ured@os-veruda-pu.skole.hr;NA;www.os-veruda-pu.skole.hr
+Osnovna škola Veli Vrh Pula;Osnovna škola;18-069-010;0-0;Istarska;52100  Pula;ured@os-veli-vrh-pu.skole.hr;www.os-veli-vrh-pu.skole.hr;www.os-veli-vrh-pu.skole.hr
+Škola za odgoj i obrazovanje - Pula;Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola;18-069-011;0-0;Istarska;52100  Pula;ured@ss-odgoj-obrazovanje-pu.skole.hr , skoo.pula@gmail.com;http://ss-odgoj-obrazovanje-pu.skole.hr/;http://ss-odgoj-obrazovanje-pu.skole.hr/
+"Talijanska osnovna škola - Scuola elementare italiana ""Bernardo Benussi"" Rovinj - Rovigno";Osnovna škola;18-072-001;0-0;Istarska;52210  Rovinj;sei.rovigno.001@gmail.com , ured@os-talijanska-bbenussi-rovinj.skole.hr;NA;www.os-talijanska-bbenussi-rovinj.skole.hr
+"Osnovna škola Vladimira Nazora - Scuola elementare ""Vladimir Nazor""";Osnovna škola, Umjetnička škola;18-072-002;0-0;Istarska;52210  Rovinj;ured@os-vnazora-rovinj.skole.hr;NA;www.os-vnazora-rovinj.skole.hr
+Osnovna škola Jurja Dobrile Rovinj;Osnovna škola, Posebna ustanova odgoja i obrazovanja;18-072-003;0-0;Istarska;52210  Rovinj;ured@os-jdobrile-rovinj.skole.hr;NA;www.os-jdobrile-rovinj.skole.hr
+Osnovna škola Jure Filipovića Barban;Osnovna škola;18-479-001;0-0;Istarska;52207  Barban;ured@os-barban.skole.hr;http//www.os-barban.skole.hr ;http//www.os-barban.skole.hr 
+OSNOVNA ŠKOLA PETRA STUDENCA Kanfanar;Osnovna škola;18-484-001;0-0;Istarska;52352  Kanfanar;ured@os-pstudenca-kanfanar.skole.hr , os-p.studenca@pu.t-com.hr;NA;www.os-pstudenca-kanfanar.skole.hr
+Osnovna škola Ivan Goran Kovačić Čepić;Osnovna škola;18-485-001;0-0;Istarska;52232  Purgarija Čepić;ured@os-igkovacic-cepic.skole.hr;NA;www.os-igkovacic-cepic.skole.hr
+Osnovna škola Vladimira Nazora Potpićan;Osnovna škola;18-485-002;0-0;Istarska;52333  Potpićan;ured@os-vnazora-potpican.skole.hr;http://os-vnazora-potpican.skole.hr/;http://os-vnazora-potpican.skole.hr/
+Osnovna škola Ivana Batelića - Raša;Osnovna škola;18-486-001;0-0;Istarska;52223  Raša;ured@os-ibatelica-rasa.skole.hr;http://os-ibatelica-rasa.skole.hr;http://os-ibatelica-rasa.skole.hr
+Osnovna škola Joakima Rakovca;Osnovna škola;18-490-001;0-0;Istarska;52448  Sveti Lovreč Pazenatički;ured@os-jrakovca-svlovrecpazenaticki.skole.hr ;http://os-jrakovca-svlovrecpazenaticki.skole.hr/;http://os-jrakovca-svlovrecpazenaticki.skole.hr/
+Osnovna škola Marčana;Osnovna škola;18-491-001;0-0;Istarska;52206  Marčana;ured@os-marcana.skole.hr;NA;www.os-marcana.skole.hr
+OSNOVNA ŠKOLA VLADIMIRA NAZORA - KRNICA;Osnovna škola;18-491-002;0-0;Istarska;52208  Krnica;ured@os-vnazora-krnica.skole.hr;http://os-vnazora-krnica.skole.hr/;http://os-vnazora-krnica.skole.hr/
+Osnovna škola Divšići;Osnovna škola;18-491-003;0-0;Istarska;52206  Divšići;skola.divsici@gmail.com , ured@os-divsici.skole.hr;http://os-divsici.skole.hr/;http://os-divsici.skole.hr/
+Osnovna škola dr Mate Demarina;Osnovna škola;18-492-001;0-0;Istarska;52203  Medulin;ured@os-mdemarina-medulin.skole.hr;NA;www.os-mdemarina-medulin.skole.hr
+Osnovna škola Vitomir Širola - Pajo;Osnovna škola;18-494-001;0-0;Istarska;52231  Nedešćina;osnedescina@gmail.com , ured@os-vspajo-nedescina.skole.hr , klara.svrakavskole.hr;NA;www.os-vspajo-nedescina.skole.hr
+Osnovna škola - scuola elementare RIVARELA;Osnovna škola, Umjetnička škola;18-495-001;0-0;Istarska;52466  Novigrad;ured@os-rivarela-novigrad.skole.hr;NA;www.os-rivarela-novigrad.skole.hr
+Talijanska osnovna škola, Scuola elementare italiana, Novigrad - Cittanova;Osnovna škola;18-495-002;0-0;Istarska;52466  Novigrad;ured@os-talijanska-novigrad.skole.hr;www.os-talijanska-novigrad.skole.hr;www.os-talijanska-novigrad.skole.hr
+Osnovna škola - Scuola elementare Milana Šorga Oprtalj - Portole;Osnovna škola;18-496-001;0-0;Istarska;52428  Oprtalj;ured@os-msorga-oprtalj.skole.hr;www.os-msorga-oprtalj.skole.hr;www.os-msorga-oprtalj.skole.hr
+OSNOVNA ŠKOLA SVETVINČENAT;Osnovna škola;18-499-001;0-0;Istarska;52342  Svetvinčenat;ured@os-svetvincenat.skole.hr;http://os-svetvincenat.skole.hr/;http://os-svetvincenat.skole.hr/
+Osnovna škola JURŠIĆI;Osnovna škola;18-499-002;0-0;Istarska;52342  Juršići;ured@os-jursici.skole.hr;NA;www.os-jursici.skole.hr
+Osnovna škola Marije i Line;Osnovna škola, Umjetnička škola;18-501-001;0-0;Istarska;52470  Umag – Umago;ured@os-marijeiline-umag.skole.hr , os-mil@hi.t-com.hr;www.os-marijeiline-umag.skole.hr ;www.os-marijeiline-umag.skole.hr 
+Talijanska osnovna škola Galileo Galilei;Osnovna škola;18-501-002;0-0;Istarska;52470  Umag – Umago;sei.umago@os-talijanska-ggalilei-umag.skole.hr , talijan-os-skola@pu.t-com.hr;www.os-talijanska-ggalilei-umag.skole.hr;www.os-talijanska-ggalilei-umag.skole.hr
+OSNOVNA ŠKOLA JOŽE ŠURANA VIŠNJAN;Osnovna škola;18-502-001;0-0;Istarska;52463  Višnjan;visnjan@os-jsurana-visnjan.skole.hr;http://os-jsurana-visnjan.skole.hr/;http://os-jsurana-visnjan.skole.hr/
+OSNOVNA ŠKOLA VODNJAN - SCUOLA ELEMENTARE DIGNANO;Osnovna škola;18-504-001;0-0;Istarska;52215  Vodnjan-Dignano;ured@os-vodnjan.skole.hr;http://os-vodnjan.skole.hr/;http://os-vodnjan.skole.hr/
+OSNOVNA ŠKOLA FAŽANA;Osnovna škola;18-504-002;0-0;Istarska;52212  Fažana;os-fazana@os-fazana.tcloud.hr , os-fazana@os-fazana.tcloud.hr;os-fazana.skole.hr;os-fazana.skole.hr
+Osnovna škola Vladimira Nazora;Osnovna škola;18-505-001;0-0;Istarska;52450  Vrsar;ured@os-vnazora-vrsar.skole.hr;http://os-vnazora-vrsar.skole.hr/;http://os-vnazora-vrsar.skole.hr/
+Osnovna škola Vladimira Gortana;Osnovna škola;18-506-001;0-0;Istarska;52341  Žminj;ravnatelj@os-vgortan-zminj.skole.hr , ured@os-vgortan-zminj.skole.hr;NA;www.os-vgortan-zminj.skole.hr
+Osnovna škola Marina Getaldića;Osnovna škola;19-018-001;0-0;Dubrovačko-neretvanska;20000  Dubrovnik;ured@os-mgetaldica-du.skole.hr;http://os-mgetaldica-du.skole.hr/;http://os-mgetaldica-du.skole.hr/
+Osnovna škola Lapad;Osnovna škola;19-018-002;0-0;Dubrovačko-neretvanska;20000  Dubrovnik;ravnatelj@os-lapad-du.skole.hr;NA;www.os-lapad-du.skole.hr
+Osnovna škola MARINA DRŽIĆA;Osnovna škola;19-018-003;0-0;Dubrovačko-neretvanska;20000  Dubrovnik;ured@os-mdrzica-du.skole.hr;http://os-mdrzica-du.skole.hr/;http://os-mdrzica-du.skole.hr/
+OSNOVNA ŠKOLA IVANA GUNDULIĆA;Osnovna škola;19-018-004;0-0;Dubrovačko-neretvanska;20000  Dubrovnik;tajnistvo@os-igundulic-du.skole.hr , ravnatelj@os-igundulic-du.skole.hr;http://os-igundulic-du.skole.hr;http://os-igundulic-du.skole.hr
+OSNOVNA ŠKOLA ANTUNA MASLE - ORAŠAC;Osnovna škola;19-018-005;0-0;Dubrovačko-neretvanska;20234  Orašac;skola@os-amasle-orasac.skole.hr ;http://os-amasle-orasac.skole.hr/;http://os-amasle-orasac.skole.hr/
+Osnovna škola Mokošica, Dubrovnik;Osnovna škola;19-018-009;0-0;Dubrovačko-neretvanska;20236  Mokošica;ured@os-mokosica.skole.hr;http://os-mokosica.skole.hr/skola/ploca ;http://os-mokosica.skole.hr/skola/ploca 
+Osnovna škola Montovjerna;Osnovna škola;19-018-010;0-0;Dubrovačko-neretvanska;20000  Dubrovnik;tajnistvo@os-montovjerna-du.skole.hr , ravnatelj@os-montovjerna-du.skole.hr;NA;www.os-montovjerna-du.skole.hr
+Osnovna škola PETRA KANAVELIĆA;Osnovna škola, Umjetnička škola;19-038-001;0-0;Dubrovačko-neretvanska;20260  Korčula;ured@os-pkanavelica-korcula.skole.hr;http://os-pkanavelica-korcula.skole.hr/;http://os-pkanavelica-korcula.skole.hr/
+Osnovna škola ANTE CURAĆ-PINJAC;Osnovna škola;19-038-002;0-0;Dubrovačko-neretvanska;20275  Žrnovo;skola@os-acpinjac-zrnovo.skole.hr , tajnistvo@os-acpinjac-zrnovo.skole.hr;http://os-acpinjac-zrnovo.skole.hr/;http://os-acpinjac-zrnovo.skole.hr/
+"OSNOVNA ŠKOLA ""BRAĆA GLUMAC""";Osnovna škola;19-045-001;0-0;Dubrovačko-neretvanska;20290  Lastovo;ured@os-bglumac-lastovo.skole.hr;NA;www.os-bglumac-lastovo.skole.hr
+OSNOVNA ŠKOLA STJEPANA RADIĆA;Osnovna škola;19-049-001;0-0;Dubrovačko-neretvanska;20350  Metković;ossradica@os-sradica-metkovic.skole.hr;http://os-sradica-metkovic.skole.hr/;http://os-sradica-metkovic.skole.hr/
+Osnovna škola Don Mihovila Pavlinovića;Osnovna škola;19-049-002;0-0;Dubrovačko-neretvanska;20350  Metković;tajnistvo@os-mpavlinovica-metkovic.skole.hr , ravnatelj@os-mpavlinovica-metkovic.skole.hr , admin@os-mpavlinovica-metkovic.skole.hr , ured@os-mpavlinovica-metkovic.skole.hr;NA;www.os-mpavlinovica-metkovic.skole.hr
+"OSNOVNA ŠKOLA ""VLADIMIR NAZOR""";Osnovna škola, Umjetnička škola;19-112-001;0-0;Dubrovačko-neretvanska;20340  Ploče;osploce@os-vnazor-ploce.skole.hr;http://www.os-vnazor-ploce.skole.hr/;http://www.os-vnazor-ploce.skole.hr/
+Osnovna škola FRA ANTE GNJEČA;Osnovna škola;19-112-002;0-0;Dubrovačko-neretvanska;20345  Staševica;skola@os-agnjeca-stasevica.skole.hr;NA;www.os-agnjeca-stasevica.skole.hr
+OSNOVNA ŠKOLA IVO DUGANDŽIĆ-MIŠIĆ;Osnovna škola;19-112-004;0-0;Dubrovačko-neretvanska;20344  Komin;racunovodstvo@os-idmisic-komin.skole.hr , tajnistvo@os-idmisic-komin.skole.hr , ured@os-idmisic-komin.skole.hr;http://os-idmisic-komin.skole.hr/;http://os-idmisic-komin.skole.hr/
+OSNOVNA ŠKOLA CAVTAT;Osnovna škola;19-507-001;0-0;Dubrovačko-neretvanska;20210  Cavtat;racunovodstvo@os-cavtat.skole.hr , knjiznica@os-cavtat.skole.hr , pauline.runje@os-cavtat.skole.hr , katarina.cumo@os-cavtat.skole.hr , tajnistvo@os-cavtat.skole.hr;http://os-cavtat.skole.hr/;http://os-cavtat.skole.hr/
+OSNOVNA ŠKOLA GRUDA;Osnovna škola;19-507-002;0-0;Dubrovačko-neretvanska;20215  Gruda;ravnatelj@os-gruda.skole.hr , racunovodja@os-gruda.skole.hr , knjiznica@os-gruda.skole.hr , pedagog@os-gruda.skole.hr , socijalnipedagog@os-gruda.skole.hr , ured@os-gruda.skole.hr;www.os-gruda.skole.hr;www.os-gruda.skole.hr
+Osnovna škola STON;Osnovna škola;19-508-001;0-0;Dubrovačko-neretvanska;20230  Ston;andrijana.mateljak@skole.hr   , radovan.serdarusic@skole.hr , ured@os-ston.skole.hr , mirko.mamic@skole.hr;http://os-ston.skole.hr/;http://os-ston.skole.hr/
+Osnovna škola Janjina;Osnovna škola;19-508-002;0-0;Dubrovačko-neretvanska;20246  Janjina;skola@os-janjina.skole.hr;NA;www.os-janjina.skole.hr
+OSNOVNA ŠKOLA OREBIĆ;Osnovna škola, Umjetnička škola;19-509-001;0-0;Dubrovačko-neretvanska;20250  Orebić;ured@os-orebic.skole.hr;http://os-orebic.skole.hr/;http://os-orebic.skole.hr/
+Osnovna škola Kuna;Osnovna škola;19-509-003;0-0;Dubrovačko-neretvanska;20243  Kuna Pelješka;skola@os-kuna.skole.hr;os-kuna.skole.hr;os-kuna.skole.hr
+Osnovna škola Mljet;Osnovna škola;19-510-001;0-0;Dubrovačko-neretvanska;20225  Babino Polje;ured@os-mljet-babinopolje.skole.hr;os-mljet-babinopolje.skole.hr;os-mljet-babinopolje.skole.hr
+OSNOVNA ŠKOLA BLATO;Osnovna škola, Umjetnička škola;19-511-001;0-0;Dubrovačko-neretvanska;20271  Blato;tonci.padovan@skole.hr , os-blato@os-blato.skole.hr;	http://os-blato.skole.hr/ ;	http://os-blato.skole.hr/ 
+OSNOVNA ŠKOLA OPUZEN;Osnovna škola, Umjetnička škola;19-512-001;0-0;Dubrovačko-neretvanska;20355  Opuzen;info@os-opuzen.skole.hr , os-opuzen-001@os-opuzen.skole.hr;www.os-opuzen.skole.hr;www.os-opuzen.skole.hr
+OSNOVNA ŠKOLA KULA NORINSKA;Osnovna škola;19-513-001;0-0;Dubrovačko-neretvanska;20341  Kula Norinska;skola@os-kula-norniska.skole.hr;NA;www.os-kula-norniska.skole.hr
+Osnovna škola Otrići-Dubrave;Osnovna škola;19-514-001;0-0;Dubrovačko-neretvanska;20342  Otrić-Seoci;skola@os-otrici-dubrave.skole.hr;os-otrici-dubrave.skole.hr;os-otrici-dubrave.skole.hr
+Osnovna škola Vela Luka;Osnovna škola, Umjetnička škola;19-517-001;0-0;Dubrovačko-neretvanska;20270  Vela Luka;osvelaluka@os-vela-luka.skole.hr;http://os-vela-luka.skole.hr/;http://os-vela-luka.skole.hr/
+OSNOVNA ŠKOLA SMOKVICA;Osnovna škola;19-518-001;0-0;Dubrovačko-neretvanska;20272  Smokvica;ured@os-smokvica.skole.hr;NA;www.os-smokvica.skole.hr
+OSNOVNA ŠKOLA SLANO;Osnovna škola;19-589-001;0-0;Dubrovačko-neretvanska;20232  Slano;ured@os-slano.skole.hr;http://os-slano.skole.hr/;http://os-slano.skole.hr/
+OSNOVNA ŠKOLA PRIMORJE;Osnovna škola;19-589-002;0-0;Dubrovačko-neretvanska;20231  Smokovljani;os.primorje@gmail.com , racunovodstvo@os-primorje-smokovljani.skole.hr , ured@os-primorje-smokovljani.skole.hr;www.os-primorje-smokovljani.hr;www.os-primorje-smokovljani.hr
+OSNOVNA ŠKOLA TRPANJ;Osnovna škola;19-601-001;0-0;Dubrovačko-neretvanska;20240  Trpanj;ostrpanj@gmail.com , ured@os-trpanj.skole.hr;http://os-trpanj.skole.hr/;http://os-trpanj.skole.hr/
+Osnovna škola ŽUPA DUBROVAČKA;Osnovna škola;19-602-001;0-0;Dubrovačko-neretvanska;20207  Mlini;ured@os-zupa-dubrovacka.skole.hr , os-zupa@du.t-com.hr;http://os-zupa-dubrovacka.skole.hr/;http://os-zupa-dubrovacka.skole.hr/
+I. OSNOVNA ŠKOLA ČAKOVEC;Osnovna škola;20-010-001;0-0;Međimurska;40000  Čakovec;ured@os-prva-ck.skole.hr;http://os-prva-ck.skole.hr/;http://os-prva-ck.skole.hr/
+II. OSNOVNA ŠKOLA ČAKOVEC;Osnovna škola;20-010-002;0-0;Međimurska;40000  Čakovec;vinko.grgic@skole.hr , ii.osnovna.skola2@ck.t-com.hr , ured@os-druga-ck.skole.hr;NA;www.os-druga-ck.skole.hr
+III. OSNOVNA  ŠKOLA  ČAKOVEC;Osnovna škola;20-010-003;0-0;Međimurska;40000  Čakovec;treca-os-cakovec@ck.t-com.hr;NA;https://os-treca-ck.skole.hr/
+OSNOVNA ŠKOLA VLADIMIRA NAZORA;Osnovna škola;20-010-004;0-0;Međimurska;40000  Pribislavec; , ured@os-vnazor-pribislavec.skole.hr , ured@os-vnazor-pribislavec.skole.hr;www.os-vnazor-pribislavec.skole.hr;www.os-vnazor-pribislavec.skole.hr
+CENTAR ZA ODGOJ I OBRAZOVANJE ČAKOVEC;Osnovna škola;20-010-006;0-0;Međimurska;40000  Čakovec;coocakovec@centar-odgojiobrazovanje-ck.skole.hr;www.centar-odgojiobrazovanje-ck.skole.hr;www.centar-odgojiobrazovanje-ck.skole.hr
+OSNOVNA ŠKOLA IVANOVEC;Osnovna škola;20-010-009;0-0;Međimurska;40000  Ivanovec;ured@os-ivanovec.skole.hr;NA;www.os-ivanovec.skole.hr
+OSNOVNA ŠKOLA KURŠANEC;Osnovna škola;20-010-010;0-0;Međimurska;40000  Kuršanec;skola@os-kursanec.skole.hr;www.os-kursanec.skole.hr;www.os-kursanec.skole.hr
+OSNOVNA ŠKOLA Dr. VINKA ŽGANCA VRATIŠINEC;Osnovna škola;20-504-001;0-0;Međimurska;40316  Vratišinec;ured@os-vzganca-vratisinec.skole.hr;NA;www.os-vzganca-vratisinec.skole.hr
+OSNOVNA ŠKOLA BELICA;Osnovna škola;20-519-001;0-0;Međimurska;40319  Belica;ured@os-belica.skole.hr;NA;www.os-belica.skole.hr
+OSNOVNA ŠKOLA DONJA DUBRAVA;Osnovna škola;20-520-001;0-0;Međimurska;40328  Donja Dubrava;ured@os-donja-dubrava.skole.hr;www.os-donja-dubrava.skole.hr;www.os-donja-dubrava.skole.hr
+Osnovna škola Hodošan;Osnovna škola;20-521-001;0-0;Međimurska;40320  Hodošan;osh@os-hodosan.skole.hr;NA;www.os-hodosan.skole.hr
+OSNOVNA ŠKOLA GORIČAN;Osnovna škola;20-522-001;0-0;Međimurska;40324  Goričan;osg@os-gorican.skole.hr;NA;www.os-gorican.skole.hr
+OSNOVNA ŠKOLA TOMAŠA GORIČANCA MALA SUBOTICA;Osnovna škola;20-523-001;0-0;Međimurska;40321  Mala Subotica;ured@os-mala-subotica.skole.hr;NA;www.os-mala-subotica.skole.hr
+OSNOVNA ŠKOLA OREHOVICA;Osnovna škola;20-523-002;0-0;Međimurska;40322  Orehovica;ured@os-orehovica.skole.hr;NA;www.os-orehovica.skole.hr
+OSNOVNA ŠKOLA MURSKO SREDIŠĆE;Osnovna škola;20-524-001;0-0;Međimurska;40315  Mursko Središće;osnovna.skola.mursko.sredisce@ck.t-com.hr;NA;https://os-mursko-sredisce.skole.hr/
+OSNOVNA ŠKOLA NEDELIŠĆE;Osnovna škola;20-525-001;0-0;Međimurska;40305  Nedelišće;os-nedelisce@os-nedelisce.skole.hr;http://os-nedelisce.skole.hr/;http://os-nedelisce.skole.hr/
+Osnovna škola Dr. Ivana Novaka Macinec;Osnovna škola;20-525-002;0-0;Međimurska;40306  Macinec;os.macinec@ck.t-com.hr , tajnistvo@os-macinec.skole.hr , ured@os-inovaka-macinec.skole.hr;NA;www.os-macinec.skole.hr
+OSNOVNA ŠKOLA PODTUREN;Osnovna škola;20-526-001;0-0;Međimurska;40317  Podturen;ured@os-podturen.skole.hr , os-podturen-tajnistvo@ck.htnet.hr;www.os-podturen.hr;www.os-podturen.hr
+OSNOVNA ŠKOLA PRELOG;Osnovna škola;20-527-001;0-0;Međimurska;40323  Prelog;ured@os-prelog.skole.hr;NA;www.os-prelog.skole.hr
+OSNOVNA ŠKOLA DONJI KRALJEVEC;Osnovna škola;20-527-002;0-0;Međimurska;40320  Donji Kraljevec;ravnateljica@os-donji-kraljevec.skole.hr , skola@os-donji-kraljevec.skole.hr;NA;www.os-donji-kraljevec.skole.hr
+OSNOVNA ŠKOLA DRAŠKOVEC;Osnovna škola;20-527-003;0-0;Međimurska;40323  Prelog;ured@os-draskovec.skole.hr;www.os-draskovec.skole.hr;www.os-draskovec.skole.hr
+OSNOVNA ŠKOLA IVANA GORANA KOVAČIĆA SVETI JURAJ NA BREGU;Osnovna škola;20-528-001;0-0;Međimurska;40311  Pleškovec;ured@os-igkovacic-svetijurajnabregu.skole.hr;NA;www.os-igkovacic-svetijurajnabregu.skole.hr
+OSNOVNA ŠKOLA SVETI MARTIN NA MURI;Osnovna škola;20-529-001;0-0;Međimurska;40313  Sveti Martin na Muri;skola@os-svetimartinnamuri.skole.hr;http://os-svetimartinnamuri.skole.hr/;http://os-svetimartinnamuri.skole.hr/
+OSNOVNA ŠKOLA SELNICA;Osnovna škola;20-530-001;0-0;Međimurska;40314  Selnica;ured@os-selnica.skole.hr;http://os-selnica.skole.hr;http://os-selnica.skole.hr
+OSNOVNA ŠKOLA ŠTRIGOVA;Osnovna škola;20-531-001;0-0;Međimurska;40312  Štrigova;os-strigova@ck.t-com.hr , os-strigova@os-strigova.skole.hr;os-strigova.skole.hr;os-strigova.skole.hr
+Osnovna škola Domašinec;Osnovna škola;20-532-001;0-0;Međimurska;40318  Domašinec;ured@os-domasinec.skole.hr;NA;www.os-domasinec.skole.hr
+OSNOVNA ŠKOLA JOŽE HORVATA KOTORIBA;Osnovna škola;20-533-001;0-0;Međimurska;40329  Kotoriba;os-kotoriba@ck.t-com.hr , ured@os-jozehorvata-kotoriba.skole.hr;www.os-jozehorvata-kotoriba.skole.hr;www.os-jozehorvata-kotoriba.skole.hr
+OSNOVNA ŠKOLA GORNJI MIHALJEVEC;Osnovna škola;20-604-001;0-0;Međimurska;40306  Gornji Mihaljevec;os-gornji-mihaljevec@ck.t-com.hr;NA;https://os-gornji-mihaljevec.skole.hr/
+OSNOVNA ŠKOLA STRAHONINEC;Osnovna škola;20-606-001;0-0;Međimurska;40000  Strahoninec;ured@os-strahoninec.skole.hr , os-strahoninec@ck.t-com.hr;www.os-strahoninec.skole.hr;www.os-strahoninec.skole.hr
+OSNOVNA ŠKOLA SVETA MARIJA;Osnovna škola;20-607-001;0-0;Međimurska;40326  Sveta Marija;ured@os-sveta-marija.skole.hr;os-sveta-marija.skole.hr;os-sveta-marija.skole.hr
+OSNOVNA ŠKOLA PETAR ZRINSKI ŠENKOVEC;Osnovna škola;20-608-001;0-0;Međimurska;40000  Šenkovec;os-pzrinski@os-senkovec.skole.hr;http://os-senkovec.skole.hr/;http://os-senkovec.skole.hr/
+Osnovna škola Ivana Gundulića;Osnovna škola;21-114-001;0-0;Grad Zagreb;10000  Zagreb;skola@os-igundulica-zg.skole.hr;NA;www.os-igundulica-zg.skole.hr
+Osnovna škola Jabukovac - Zagreb;Osnovna škola;21-114-002;0-0;Grad Zagreb;10000  Zagreb;jabukovac-zagreb@os-jabukovac-zg.skole.hr;NA;www.os-jabukovac-zg.skole.hr
+Osnovna škola Miroslava Krleže;Osnovna škola;21-114-003;0-0;Grad Zagreb;10000  Zagreb;osmk@os-mkrleze-zg.skole.hr , osmk@os-mkrleze-zg.skole.hr;http://os-mkrleze-zg.skole.hr/ , http://os-mkrleze-zg.skole.hr/;http://os-mkrleze-zg.skole.hr/ , http://os-mkrleze-zg.skole.hr/
+Osnovna škola Šestine;Osnovna škola;21-114-004;0-0;Grad Zagreb;10000  Zagreb;ured@os-sestine-zg.skole.hr;NA;www.os-sestine-zg.skole.hr
+Osnovna škola Pantovčak;Osnovna škola;21-114-005;0-0;Grad Zagreb;10000  Zagreb;pantovcak@os-pantovcak-zg.skole.hr;NA;www.os-pantovcak-zg.skole.hr
+Osnovna škola Izidora Kršnjavoga;Osnovna škola;21-114-006;0-0;Grad Zagreb;10000  Zagreb;ured@os-ikrsnjavi-zg.skole.hr;1;https://os-ikrsnjavi-zg.skole.hr/
+Osnovna škola Ksavera Šandora Gjalskog;Osnovna škola;21-114-007;0-0;Grad Zagreb;10000  Zagreb;skola@os-ksdjalskog-zg.skole.hr;NA;www.os-ksdjalskog-zg.skole.hr
+Osnovna škola Josipa Jurja Strossmayera;Osnovna škola;21-114-008;0-0;Grad Zagreb;10000  Zagreb;os.strossmayera@gmail.com;NA;https://www.os-jjstrossmayera-zg.skole.hr/
+Osnovna škola Otona Ivekovića;Osnovna škola;21-114-010;0-0;Grad Zagreb;10090  Zagreb;ured@os-oivekovica-zg.skole.hr , os-otona-ivekovica@zg.t-com.hr;NA;www.os-oivekovica-zg.skole.hr
+OSNOVNA ŠKOLA KUSTOŠIJA;Osnovna škola;21-114-011;0-0;Grad Zagreb;10000  Zagreb;ured@os-kustosija-zg.skole.hr;os-kustosija-zg.skole.hr;os-kustosija-zg.skole.hr
+OSNOVNA ŠKOLA IVANA CANKARA;Osnovna škola;21-114-012;0-0;Grad Zagreb;10000  Zagreb;cankarica@os-icankara-zg.skole.hr;NA;www.os-icankara-zg.skole.hr
+Osnovna škola Medvedgrad;Osnovna škola;21-114-013;0-0;Grad Zagreb;10000  Zagreb;ured@os-medvedgrad-zg.skole.hr;http://os-medvedgrad-zg.skole.hr/;http://os-medvedgrad-zg.skole.hr/
+OSNOVNA ŠKOLA PAVLEKA MIŠKINE;Osnovna škola;21-114-014;0-0;Grad Zagreb;10000  Zagreb;pavlekica@os-pmiskine-zg.skole.hr;NA;www.os-pmiskine-zg.skole.hr
+Osnovna škola Petra Zrinskog;Osnovna škola;21-114-015;0-0;Grad Zagreb;10000  Zagreb;ospz@os-pzrinskog-zg.skole.hr;http://www.os-pzrinskog-zg.skole.hr/;http://www.os-pzrinskog-zg.skole.hr/
+OSNOVNA ŠKOLA ANTUNA MIHANOVIĆA;Osnovna škola;21-114-016;0-0;Grad Zagreb;10040  Zagreb;ured@os-amihanovica-zg.skole.hr;NA;www.os-amihanovica-zg.skole.hr
+OSNOVNA ŠKOLA RETKOVEC;Osnovna škola;21-114-017;0-0;Grad Zagreb;10040  Zagreb;ured@os-retkovec-zg.skole.hr;NA;www.os-retkovec-zg.skole.hr
+OSNOVNA ŠKOLA ŽUTI BRIJEG;Osnovna škola;21-114-018;0-0;Grad Zagreb;10040  Zagreb;skola@os-zutibrijeg-zg.skole.hr;www.os-zutibrijeg-zg.skole.hr;www.os-zutibrijeg-zg.skole.hr
+Osnovna škola dr. Ante Starčevića;Osnovna škola;21-114-019;0-0;Grad Zagreb;10040  Zagreb;skola@os-astarcevica-zg.skole.hr;NA;www.os-astarcevica-zg.skole.hr
+Osnovna škola Granešina;Osnovna škola;21-114-020;0-0;Grad Zagreb;10040  Zagreb;ured@os-granesina-zg.skole.hr;www.granesina@gmail.com;www.granesina@gmail.com
+Osnovna škola IVANA MAŽURANIĆA;Osnovna škola;21-114-021;0-0;Grad Zagreb;10040  Zagreb;ured@os-imazuranica-zg.skole.hr;os-imazuranica-zg.skole.hr;os-imazuranica-zg.skole.hr
+Osnovna škola Mate Lovraka;Osnovna škola;21-114-022;0-0;Grad Zagreb;10040  Zagreb;ured@os-mlovraka-zg.skole.hr;http://os-mlovraka-zg.skole.hr;http://os-mlovraka-zg.skole.hr
+OSNOVNA ŠKOLA MARIJE JURIĆ ZAGORKE;Osnovna škola;21-114-023;0-0;Grad Zagreb;10040  Zagreb;ured@os-mjzagorke-zg.skole.hr;www.os-mjzagorke-zg.skole.hr;www.os-mjzagorke-zg.skole.hr
+Osnovna škola Čučerje;Osnovna škola;21-114-024;0-0;Grad Zagreb;10040  Zagreb;ured@os-cucerje-zg.skole.hr;http://www.os-cucerje-zg.skole.hr/;http://www.os-cucerje-zg.skole.hr/
+Osnovna škola Vjenceslava Novaka;Osnovna škola;21-114-025;0-0;Grad Zagreb;10040  Zagreb;ured@os-vnovaka-zg.skole.hr;NA;www.os-vnovaka-zg.skole.hr
+Osnovna škola Antuna Branka Šimića;Osnovna škola;21-114-026;0-0;Grad Zagreb;10040  Zagreb;ured@os-absimic-zg.skole.hr;www.os-absimic-zg.skole.hr;www.os-absimic-zg.skole.hr
+Osnovna škola Vladimira Nazora;Osnovna škola;21-114-027;0-0;Grad Zagreb;10000  Zagreb;ured@os-vnazora-zg.skole.hr;http://os-vnazora-zg.skole.hr/;http://os-vnazora-zg.skole.hr/
+OSNOVNA ŠKOLA ANTUNA GUSTAVA MATOŠA;Osnovna škola;21-114-028;0-0;Grad Zagreb;10000  Zagreb;osagm.zg@gmail.com;www.osagm.hr;www.osagm.hr
+Osnovna škola Augusta Harambašića;Osnovna škola;21-114-029;0-0;Grad Zagreb;10000  Zagreb;os-zagreb-029@os-aharambasica-zg.skole.hr;http://www.os-aharambasica-zg.skole.hr/;http://www.os-aharambasica-zg.skole.hr/
+Osnovna škola Ivana Filipovića;Osnovna škola;21-114-030;0-0;Grad Zagreb;10000  Zagreb;info@os-ifilipovica-zg.skole.hr;NA;www.os-ifilipovica-zg.skole.hr
+OSNOVNA ŠKOLA MARKUŠEVEC;Osnovna škola;21-114-031;0-0;Grad Zagreb;10040  Zagreb;ured@os-markusevec-zg.skole.hr;http://www.os-markusevec-zg.skole.hr/;http://www.os-markusevec-zg.skole.hr/
+OSNOVNA ŠKOLA JORDANOVAC;Osnovna škola;21-114-032;0-0;Grad Zagreb;10000  Zagreb;racunovodstvo@os-jordanovac-zg.skole.hr , ured@os-jordanovac-zg.skole.hr;http://os-jordanovac-zg.skole.hr/;http://os-jordanovac-zg.skole.hr/
+OSNOVNA ŠKOLA BUKOVAC;Osnovna škola;21-114-033;0-0;Grad Zagreb;10000  Zagreb; os-zagreb-033@os-bukovac-zg.skole.hr;http://os-bukovac-zg.skole.hr/;http://os-bukovac-zg.skole.hr/
+Osnovna škola Gračani;Osnovna škola;21-114-034;0-0;Grad Zagreb;10000  Zagreb;ured@os-gracani-zg.skole.hr;http://os-gracani-zg.skole.hr/;http://os-gracani-zg.skole.hr/
+OSNOVNA ŠKOLA IVANA GORANA KOVAČIĆA;Osnovna škola;21-114-035;0-0;Grad Zagreb;10000  Zagreb;osigk-zg@os-igkovacic-zg.skole.hr;NA;www.os-igkovacic-zg.skole.hr
+OSNOVNA ŠKOLA MATKA LAGINJE;Osnovna škola;21-114-036;0-0;Grad Zagreb;10000  Zagreb;skola@os-mlaginje-zg.skole.hr;NA;www.os-mlaginje-zg.skole.hr
+OSNOVNA ŠKOLA DR. IVAN MERZ;Osnovna škola;21-114-037;0-0;Grad Zagreb;10000  Zagreb;osmerz@os-imerz-zg.skole.hr;www.os-ivan-merz.hr;www.os-ivan-merz.hr
+Osnovna škola Silvija Strahimira Kranjčevića;Osnovna škola;21-114-038;0-0;Grad Zagreb;10000  Zagreb;os-sskranjcevic-zg@os-sskranjcevic-zg.skole.hr;NA;www.os-sskranjcevic-zg.skole.hr
+Osnovna škola Augusta Cesarca;Osnovna škola;21-114-039;0-0;Grad Zagreb;10000  Zagreb; acesarca@os-acesarca-zg.skole.hr     ;http://os-acesarca-zg.skole.hr/;http://os-acesarca-zg.skole.hr/
+OSNOVNA ŠKOLA DOBRIŠE CESARIĆA;Osnovna škola;21-114-040;0-0;Grad Zagreb;10000  Zagreb;os.dobrise.cesarica@inet.hr;NA;https://www.os-dcesarica-zg.skole.hr/
+OSNOVNA ŠKOLA ŽITNJAK;Osnovna škola;21-114-041;0-0;Grad Zagreb;10000  Zagreb;ured@os-zitnjak.skole.hr;NA;www.os-zitnjak.skole.hr
+OSNOVNA ŠKOLA FRANA KRSTE FRANKOPANA;Osnovna škola;21-114-042;0-0;Grad Zagreb;10000  Zagreb;ured@os-fkfrankopana-zg.skole.hr , os-zagreb-042@skole.t-com.hr;NA;www.os-fkfrankopana-zg.skole.hr
+Osnovna škola Lovre pl. Matačića;Osnovna škola;21-114-043;0-0;Grad Zagreb;10000  Zagreb;info@lovre-pl-matacica.hr , ravnatelj@os-lovre-pl-matacica.hr;NA;www.os-lovre-pl-matacica.hr
+Osnovna škola Petra Preradovića;Osnovna škola;21-114-044;0-0;Grad Zagreb;10000  Zagreb;preradovic@os-ppreradovica-zg.skole.hr;http://www.os-ppreradovica-zg.skole.hr/;http://www.os-ppreradovica-zg.skole.hr/
+Osnovna škola Dr. Vinka Žganca;Osnovna škola;21-114-045;0-0;Grad Zagreb;10000  Zagreb;ured@os-vzganca-zg.skole.hr;NA;www.os-vzganca-zg.skole.hr
+Osnovna škola Dragutina Kušlana;Osnovna škola;21-114-046;0-0;Grad Zagreb;10000  Zagreb;ured@os-dkuslana-zg.skole.hr;NA;www.os-dkuslana-zg.skole.hr
+OSNOVNA ŠKOLA VUKOMEREC;Osnovna škola;21-114-047;0-0;Grad Zagreb;10000  Zagreb;ured@os-vukomerec-zg.skole.hr;http://os-vukomerec-zg.skole.hr/;http://os-vukomerec-zg.skole.hr/
+Osnovna škola Stenjevec;Osnovna škola;21-114-048;0-0;Grad Zagreb;10090  Zagreb;skola@os-stenjevec-zg.skole.hr;NA;www.os-stenjevec-zg.skole.hr
+Osnovna škola Ante Kovačića;Osnovna škola;21-114-049;0-0;Grad Zagreb;10090  Zagreb;os.a.kovacica@zg.t-com.hr;os-akovacica-zg.skole.hr/;os-akovacica-zg.skole.hr/
+Osnovna škola Dragutina Domjanića;Osnovna škola;21-114-050;0-0;Grad Zagreb;10090  Zagreb;ured@os-ddomjanica-zg.skole.hr;http://os-ddomjanica-zg.skole.hr/;http://os-ddomjanica-zg.skole.hr/
+Osnovna škola Dragutina Tadijanovića;Osnovna škola;21-114-051;0-0;Grad Zagreb;10090  Zagreb;skola@os-dtadijanovica-zg.skole.hr;os-dtadijanovica-zg.skole.hr/;os-dtadijanovica-zg.skole.hr/
+OSNOVNA ŠKOLA BANA JOSIPA JELAČIĆA;Osnovna škola;21-114-052;0-0;Grad Zagreb;10090  Zagreb;ured@os-bana-jjelacica-zg.skole.hr;www.os-bana-jjelacica-zg.skole.hr;www.os-bana-jjelacica-zg.skole.hr
+OSNOVNA ŠKOLA GROFA JANKA DRAŠKOVIĆA;Osnovna škola;21-114-053;0-0;Grad Zagreb;10090  Zagreb;ured@os-grofa-jdraskovica-zg.skole.hr;http://www.os-grofa-jdraskovica-zg.skole.hr/ ;http://www.os-grofa-jdraskovica-zg.skole.hr/ 
+OSNOVNA ŠKOLA TITUŠA BREZOVAČKOG;Osnovna škola;21-114-054;0-0;Grad Zagreb;10090  Zagreb;ured@os-tbrezovackog-zg.skole.hr;os-tbrezovackog-zg.skole.hr;os-tbrezovackog-zg.skole.hr
+OSNOVNA ŠKOLA GORNJE VRAPČE;Osnovna škola;21-114-055;0-0;Grad Zagreb;10090  Zagreb;ured@os-gornjevrapce-zg.skole.hr;NA;www.os-gornjevrapce-zg.skole.hr
+Osnovna škola Malešnica;Osnovna škola;21-114-056;0-0;Grad Zagreb;10090  Zagreb;ured@osmalesnica.hr;NA;www.osmalesnica.hr
+OSNOVNA ŠKOLA AUGUSTA ŠENOE;Osnovna škola;21-114-057;0-0;Grad Zagreb;10000  Zagreb;ured@os-asenoe-zg.skole.hr , os.a.senoe@zg.t-com.hr;www.os-asenoe-zagreb.skole.hr;www.os-asenoe-zagreb.skole.hr
+Osnovna škola Horvati;Osnovna škola;21-114-058;0-0;Grad Zagreb;10000  Zagreb;ured@os-horvati-zg.skole.hr;NA;www.os-horvati-zg.skole.hr
+Osnovna škola kralja Tomislava;Osnovna škola;21-114-059;0-0;Grad Zagreb;10000  Zagreb;ured@os-kraljatomislava-zg.skole.hr;www.os-kraljatomislava-zg.skole.hr;www.os-kraljatomislava-zg.skole.hr
+OSNOVNA ŠKOLA IVANA MEŠTROVIĆA;Osnovna škola;21-114-060;0-0;Grad Zagreb;10000  Zagreb;ured@os-imestrovica-zg.skole.hr;http://os-imestrovica-zg.skole.hr/;http://os-imestrovica-zg.skole.hr/
+Osnovna škola Josipa Račića;Osnovna škola;21-114-063;0-0;Grad Zagreb;10000  Zagreb;franjo.gudelj@skole.hr , racic@os-jracica-zg.skole.hr;NA;www.os-jracica-zg.skole.hr
+OSNOVNA ŠKOLA JULIJA KLOVIĆA;Osnovna škola;21-114-064;0-0;Grad Zagreb;10000  Zagreb; jklovic@os-jklovica-zg.skole.hr;www.os-jklovica-zg.skole.hr;www.os-jklovica-zg.skole.hr
+Osnovna škola Prečko;Osnovna škola;21-114-065;0-0;Grad Zagreb;10000  Zagreb;zg.os.precko@gmail.com , ured@os-precko-zg.skole.hr;www.os-precko-zg.skole.hr;www.os-precko-zg.skole.hr
+Osnovna škola Matije Gupca;Osnovna škola;21-114-066;0-0;Grad Zagreb;10000  Zagreb;ured@os-mgupca-zg.skole.hr;NA;www.os-mgupca-zg.skole.hr
+Osnovna škola Rudeš;Osnovna škola;21-114-067;0-0;Grad Zagreb;10000  Zagreb;ured@os-rudes-zg.skole.hr;http://os-rudes-zg.skole.hr/;http://os-rudes-zg.skole.hr/
+OSNOVNA ŠKOLA VOLTINO;Osnovna škola;21-114-068;0-0;Grad Zagreb;10000  Zagreb;os_voltino@inet.hr;NA;https://www.os-voltino.hr/
+Osnovna škola Nikole Tesle;Osnovna škola;21-114-069;0-0;Grad Zagreb;10000  Zagreb;skola@os-ntesle-zg.skole.hr;NA;www.os-ntesle-zg.skole.hr
+OSNOVNA ŠKOLA LJUBLJANICA ZAGREB;Osnovna škola;21-114-070;0-0;Grad Zagreb;10000  Zagreb;ljubljanica@os-ljubljanica-zg.skole.hr;os-ljubljanica-zg.skole.hr;os-ljubljanica-zg.skole.hr
+Osnovna škola Alojzija Stepinca;Osnovna škola;21-114-071;0-0;Grad Zagreb;10000  Zagreb;ured@os-astepinca-zg.skole.hr;NA;www.os-astepinca-zg.skole.hr
+Osnovna škola Vrbani;Osnovna škola;21-114-072;0-0;Grad Zagreb;10000  Zagreb;ured@os-vrbani-zg.skole.hr  , ured@osvrbani.hr;NA;www.os-vrbani-zg.skole.hr
+OSNOVNA ŠKOLA CVJETNO NASELJE;Osnovna škola;21-114-073;0-0;Grad Zagreb;10000  Zagreb;oscvjetnonaselje@os-cvjetno-naselje-zg.skole.hr;NA;www.os-cvjetno-naselje-zg.skole.hr
+OSNOVNA ŠKOLA JURE KAŠTELANA;Osnovna škola;21-114-074;0-0;Grad Zagreb;10000  Zagreb;os-jure-kastelana@zg.t-com.hr;http://os-jkastelana-zg.skole.hr/;http://os-jkastelana-zg.skole.hr/
+OSNOVNA ŠKOLA GRIGORA VITEZA;Osnovna škola;21-114-075;0-0;Grad Zagreb;10000  Zagreb;tajnistvo@os-gviteza-zg.skole.hr;www.os-gviteza-zgskole.hr;www.os-gviteza-zgskole.hr
+Osnovna škola Tina Ujevića;Osnovna škola;21-114-076;0-0;Grad Zagreb;10000  Zagreb;os.tina.ujevica@gmail.com , os.tina.ujevica@zg.t-com.hr , ured@os-tujevica-zg.skole.hr;www.os-tujevica-zg.skole.hr;www.os-tujevica-zg.skole.hr
+Osnovna škola Rapska;Osnovna škola;21-114-077;0-0;Grad Zagreb;10000  Zagreb;ured@os-rapska-zg.skole.hr;NA;www.os-rapska-zg.skole.hr
+Osnovna škola Marina Držića;Osnovna škola;21-114-078;0-0;Grad Zagreb;10000  Zagreb;ured@os-mdrzica-zg.skole.hr;NA;www.os-mdrzica-zg.skole.hr
+OSNOVNA ŠKOLA DAVORINA TRSTENJAKA;Osnovna škola;21-114-079;0-0;Grad Zagreb;10000  Zagreb;ured@os-dtrstenjaka-zg.skole.hr , davorin.trstenjak2@gmail.com;NA;www.os-dtrstenjaka-zg.skole.hr
+Osnovna škola Trnjanska;Osnovna škola;21-114-080;0-0;Grad Zagreb;10000  Zagreb;ured@os-trnjanska-zg.skole.hr;NA;www.os-trnjanska-zg.skole.hr
+Osnovna škola Savski Gaj;Osnovna škola;21-114-081;0-0;Grad Zagreb;10020  Zagreb;informatika@os-savski-gaj-zg.skole.hr , ured@os-savski-gaj-zg.skole.hr;NA;www.os-savski-gaj-zg.skole.hr
+Osnovna škola BRAĆE RADIĆ;Osnovna škola;21-114-082;0-0;Grad Zagreb;10020  Zagreb;os.brace.radic@os-brace-radic-zg.skole.hr;NA;www.os-brace-radic-zg.skole.hr
+OSNOVNA ŠKOLA BREZOVICA;Osnovna škola;21-114-083;0-0;Grad Zagreb;10257  Brezovica;osbrezovica@os-brezovica.skole.hr;http://os-brezovica.skole.hr/;http://os-brezovica.skole.hr/
+OSNOVNA ŠKOLA LUČKO;Osnovna škola;21-114-084;0-0;Grad Zagreb;10250  Lučko;ured@os-lucko.skole.hr;http://www.os-lucko.skole.hr;http://www.os-lucko.skole.hr
+OSNOVNA ŠKOLA GUSTAVA KRKLECA;Osnovna škola;21-114-085;0-0;Grad Zagreb;10020  Zagreb;ured@os-gkrkleca-zg.skole.hr;http://os-gkrkleca-zg.skole.hr;http://os-gkrkleca-zg.skole.hr
+Osnovna škola Ive Andrića;Osnovna škola;21-114-086;0-0;Grad Zagreb;10020  Zagreb;ured@os-iandrica-zg.skole.hr;http://www.os-iveandrica.hr;http://www.os-iveandrica.hr
+I. osnovna  škola  Dugave;Osnovna škola;21-114-087;0-0;Grad Zagreb;10010  Zagreb;ured@os-prva-dugave-zg.skole.hr ;http://os-prva-dugave-zg.skole.hr/;http://os-prva-dugave-zg.skole.hr/
+Osnovna škola Zapruđe;Osnovna škola;21-114-088;0-0;Grad Zagreb;10020  Zagreb;ured@os-zaprudje-zg.skole.hr;http://os-zaprudje-zg.skole.hr/;http://os-zaprudje-zg.skole.hr/
+OSNOVNA ŠKOLA TRNSKO;Osnovna škola;21-114-089;0-0;Grad Zagreb;10020  Zagreb;ured@os-trnsko-zg.skole.hr;http://os-trnsko-zg.skole.hr/;http://os-trnsko-zg.skole.hr/
+OSNOVNA ŠKOLA SVETA KLARA;Osnovna škola;21-114-090;0-0;Grad Zagreb;10020  Zagreb;svklara@os-sveta-klara.skole.hr;http://os-sveta-klara.skole.hr/;http://os-sveta-klara.skole.hr/
+Osnovna škola MLADOST;Osnovna škola;21-114-091;0-0;Grad Zagreb;10010  Zagreb;ured@os-mladost-zg.skole.hr;http://www.os-mladost-zg.skole.hr/;http://www.os-mladost-zg.skole.hr/
+Osnovna škola Stjepana Bencekovića;Osnovna škola;21-114-092;0-0;Grad Zagreb;10436  Horvati;ured@os-sbencekovica-horvati.skole.hr;http://os-sbencekovica.hr/;http://os-sbencekovica.hr/
+OSNOVNA ŠKOLA ODRA;Osnovna škola;21-114-093;0-0;Grad Zagreb;10020  Zagreb;ured@os-odra-zg.skole.hr;www.os-odra.com;www.os-odra.com
+Osnovna škola Većeslava Holjevca;Osnovna škola;21-114-094;0-0;Grad Zagreb;10020  Zagreb;os-zagreb-094@os-vholjevca-zg.skole.hr;http://www.os-vholjevca-zg.skole.hr/;http://www.os-vholjevca-zg.skole.hr/
+Osnovna škola OTOK;Osnovna škola;21-114-095;0-0;Grad Zagreb;10010  Zagreb;otok@os-otok-zg.skole.hr;NA;www.os-otok-zg.skole.hr
+OSNOVNA ŠKOLA FRANA GALOVIĆA;Osnovna škola;21-114-096;0-0;Grad Zagreb;10010  Zagreb;ured@os-fgalovica-zg.skole.hr;www.os-fgalovica-zg.skole.hr;www.os-fgalovica-zg.skole.hr
+Prva katolička osnovna škola u Gradu Zagrebu;Osnovna škola;21-114-097;0-0;Grad Zagreb;10000  Zagreb;ured@prva-katolicka-zg.skole.hr;www.katolickaskola.com;www.katolickaskola.com
+OSNOVNA ŠKOLA VUGROVEC-KAŠINA;Osnovna škola;21-114-105;0-0;Grad Zagreb;10362  Kašina;ured@os-vugrovec-kasina.skole.hr;www.os-vugrovec-kasina.skole.hr;www.os-vugrovec-kasina.skole.hr
+OSNOVNA ŠKOLA IVANA GRANĐE;Osnovna škola;21-114-106;0-0;Grad Zagreb;10360  Soblinec;os-igrandje@os-igrandje-soblinec.skole.hr;NA;www.os-igrandje-soblinec.skole.hr
+Osnovna škola SESVETE;Osnovna škola;21-114-109;0-0;Grad Zagreb;10360  Sesvete;os-sesvete@os-sesvete-zg.skole.hr;www.os-sesvete.hr;www.os-sesvete.hr
+Osnovna škola Sesvetski Kraljevec;Osnovna škola;21-114-110;0-0;Grad Zagreb;10361  Sesvetski Kraljevec;ured@os-sesvetski-kraljevec.skole.hr;http://www.os-sesvetski-kraljevec.skole.hr/;http://www.os-sesvetski-kraljevec.skole.hr/
+Osnovna škola Iver;Osnovna škola;21-114-111;0-0;Grad Zagreb;10361  Sesvetski Kraljevec;ured@os-iver.skole.hr , osiversesvete@gmail.com;www.os-iver.skole.hr;www.os-iver.skole.hr
+Osnovna škola Ružičnjak;Osnovna škola;21-114-112;0-0;Grad Zagreb;10000  Zagreb;ured@os-ruzicnjak-zg.skole.hr;NA;www.os-ruzicnjak-zg.skole.hr
+"Osnovna škola ""Lotrščak""";Osnovna škola;21-114-113;0-0;Grad Zagreb;10000  Zagreb; ured@os-lotrscak-zg.skole.hr;http://os-lotrscak.hr/;http://os-lotrscak.hr/
+CENTAR ZA ODGOJ  I OBRAZOVANJE GOLJAK;Osnovna škola;21-114-114;0-0;Grad Zagreb;10000  Zagreb;centargoljak@centar-odgojiobrazovanje-goljak.skole.hr;www.coogoljak.hr;www.coogoljak.hr
+CENTAR ZA AUTIZAM;Osnovna škola;21-114-115;0-0;Grad Zagreb;10000  Zagreb;ured@centar-autizam-zg.skole.hr;http://centarzaautizam.hr/;http://centarzaautizam.hr/
+OSNOVNA ŠKOLA NAD LIPOM;Osnovna škola;21-114-116;0-0;Grad Zagreb;10000  Zagreb;os-nad-lipom@os-nad-lipom-zg.skole.hr;NA;www.os-nad-lipom-zg.skole.hr
+Poliklinika za rehabilitaciju slušanja i govora SUVAG;Osnovna škola;21-114-117;0-0;Grad Zagreb;10000  Zagreb;ured@poliklinika-suvag-zg.skole.hr;www.suvag.hr;www.suvag.hr
+Waldorfska škola u Zagrebu;Osnovna škola;21-114-124;0-0;Grad Zagreb;10020  Zagreb;ravnatelj@waldorfska-skola.com , tajnistvo@waldorfska-skola.com;NA;https://www.waldorfska-skola.com/hr
+Osnovna škola Brestje;Osnovna škola;21-114-132;0-0;Grad Zagreb;10360  Sesvete;os-brestje@os-brestje-zg.skole.hr;NA;www.os-brestje-zg.skole.hr
+OSNOVNA ŠKOLA BOROVJE;Osnovna škola;21-114-133;0-0;Grad Zagreb;10000  Zagreb;ured@os-borovje-zg.skole.hr;http://os-borovje-zg.skole.hr/;http://os-borovje-zg.skole.hr/
+OSNOVNA ŠKOLA REMETE;Osnovna škola;21-114-134;0-0;Grad Zagreb;10000  Zagreb;filomena.horvatic@skole.hr , strucna-sluzba@os-remete-zg.skole.hr , ana.hojanic@skole.hr , milena.pesorda@skole.hr , ana.maric4@skole.hr , ured@os-remete-zg.skole.hr;www.os-remete-zg.skole.hr;www.os-remete-zg.skole.hr
+Osnovna škola Špansko Oranice;Osnovna škola;21-114-135;0-0;Grad Zagreb;10000  Zagreb;admin@os-spansko-oranice-zg.skole.hr , skola@os-spansko-oranice-zg.skole.hr;www.os-spansko-oranice-zg.skole.hr;www.os-spansko-oranice-zg.skole.hr
+Osnovna škola Sesvetska Sela;Osnovna škola;21-114-136;0-0;Grad Zagreb;10360  Sesvete;skola@os-sesvetska-sela-zg.skole.hr;http://os-sesvetska-sela-zg.skole.hr/;http://os-sesvetska-sela-zg.skole.hr/

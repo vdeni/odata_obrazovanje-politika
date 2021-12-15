@@ -1,0 +1,70 @@
+---
+output:
+    html_document:
+        code_folding: hide
+        toc: true
+        toc_float: true
+        theme: flatly
+        highlight: zenburn
+title: 'Procjena povezanosti zaposlenih u odgojno-obrazovnom sustavu s političkim strankama'
+---
+
+```{r setup, message=F}
+library(here)
+
+knitr::opts_chunk$set(echo = T,
+                      message = F,
+                      include = T,
+                      out.width = '90%',
+                      fig.align = 'center',
+                      dpi = 200,
+                      python.reticulate = F)
+```
+
+
+Izvorna ideja bila je pokušati scrapeati imena i prezimena osoba zaposlenih
+unutar ustanova u odgojno-obrazovnom sustavu pa iskoristiti taj popis za
+pokušaj procjene udjela zaposlenih koji su povezani s političkim strankama.
+Međutim, pokazalo se da je scrapeanje popisa zaposlenih u hrvatskim osnovnim
+(pa, pretpostavljam, i srednjim) školama podosta zahtjevno. To se, međutim,
+pokazalo znatno zahtjevnijim nego što se na prvu činilo.
+
+Za scrapeanje sam pokušao koristiti paket `scrapy` za programski jezik
+*Python*, u kombinaciji s paketom `classla` za pokušaj identificiranja osobnih
+imena (eng. *named entity recognition*). Pritom sam naišao na neke probleme, zbog
+kojih sam odustao od tog pristupa.
+
+Web stranice hrvatskih osnovnih škola imaju dosta sličan layout i strukturu.
+Zbog toga sam mogao uzeti osnovne URL-ove škola i na njih dodati
+`/skola/djelatnici` te tako izravno pristupiti stranici s popisom djelatnika
+(bez da spider za scrape treba pretraživati cijelu stranicu). Ipak, sve škole
+nemaju popis djelatnika na toj stranici. Osim toga, struktura i organizacija
+popisa razlikuju se od škole do škole. Zbog toga je bilo potrebno nešto čišćenja
+podataka, ali samo po sebi se nije pokazalo jako problematičnim.
+
+Veći problem predstavlja preciznost `classla` algoritma za prepoznavanje
+osobnih imena. Algoritam je, uz stvarna osobna imena, (npr. `Ivan Horvat`)
+zahvatio i tekst koji se ne odnosi na osobna imena osoba (npr. `Webmail`).
+Također, u nekim slučajevima je, uz ime i prezime, zahvatio i radno mjesto
+zaposlenika (npr. `Ivan Horvat Kuhar`). Osim toga, neke škole imena zaposlenika
+zapisuju u formatu `ime prezime`, a neke u formatu `prezime ime`.
+
+Zbog svega toga, automatizirano prikupljanje podataka o zaposlenicima nije
+jednostavno, a kvaliteta podatka koji jesu prikupljeni je narušena. Stoga,
+odlučio sam izabrati slučajan uzorak škola, ručno popisati zaposlenike navedene
+na njihovim stranicama, te na temelju tog popisa dobiti procjenu udjela
+zaposlenih koji su povezani s političkim strankama. Uz to, pokušat ću
+pročistiti podatke dobivene automatiziranim prikupljanjem, napraviti model koji
+u obzir uzima preciznost `classla` algoritma za prepoznavanje osobnih imena, te
+dobiti procjenu udjela zaposlenih koji su povezani s političkim strankama
+koristeći i taj model.
+
+# Slučajno uzorkovanje škola
+
+**NAPOMENA**: U ovom trenu radim samo s osnovnim školama.
+
+Slučajan uzorak osnovnih škola dobio sam koristeći `Python` i popis osnovnih
+škola scrapean iz [baze](http://mzos.hr/dbApp/pregled.aspx?appName=OS)
+Ministarstva znanosti i obrazovanja (datum posljednje modifikacije datoteke je
+`r file.mtime(here('data', 'obrazovne-ustanove_popis_scrape',
+'popis_osnovne-skole_scrape.csv'))`).
