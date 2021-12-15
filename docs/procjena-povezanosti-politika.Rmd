@@ -11,6 +11,9 @@ title: 'Procjena povezanosti zaposlenih u odgojno-obrazovnom sustavu s političk
 
 ```{r setup, message=F}
 library(here)
+library(dplyr)
+library(magrittr)
+library(readr)
 
 knitr::opts_chunk$set(echo = T,
                       message = F,
@@ -63,7 +66,7 @@ koristeći i taj model.
 
 **NAPOMENA**: U ovom trenu radim samo s osnovnim školama.
 
-Slučajan uzorak osnovnih škola dobio sam koristeći `Python` i popis osnovnih
+Slučajan uzorak osnovnih škola dobio sam koristeći `R` i popis osnovnih
 škola scrapean iz [baze](http://mzos.hr/dbApp/pregled.aspx?appName=OS)
 Ministarstva znanosti i obrazovanja (datum posljednje modifikacije datoteke je
 `r file.mtime(here('data', 'obrazovne-ustanove_popis_scrape',
