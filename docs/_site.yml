@@ -1,0 +1,14 @@
+navbar:
+  title: ''
+  left:
+    - text: 'Početna stranica'
+      icon: fa-home
+      href: index.html
+    - text: 'Izvještaji'
+      menu:
+        - text: 'Spolna struktura osoba na rukovodećim pozicijama'
+          href: spol-rukovodeci.html
+output:
+  html_document:
+    theme: flatly
+    highlight: zenburn

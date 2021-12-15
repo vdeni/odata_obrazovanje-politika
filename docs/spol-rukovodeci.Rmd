@@ -6,13 +6,8 @@ output:
         toc_float: true
         theme: flatly
         highlight: zenburn
-        css: custom.css
 title: 'Spolna struktura čelnih osoba u hrvatskom obrazovnom sustavu'
 ---
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap');
-</style>
 
 ```{r setup, message = F}
 library(here)
@@ -57,17 +52,17 @@ Podaci korišteni u analizi preuzeti su 02. studenog 2021., u 13:48.
 
 ```{r load-data, message = F}
 d_osnovne <- readr::read_csv2(here::here('data',
-                                         'obrazovne-ustanove_popis',
+                                         'obrazovne-ustanove_popis_datagov',
                                          'popis_osnovne-skole.csv')) %>%
     janitor::clean_names(.)
 
 d_srednje <- read_csv2(here('data',
-                            'obrazovne-ustanove_popis',
+                            'obrazovne-ustanove_popis_datagov',
                             'popis_srednje-skole.csv')) %>%
     janitor::clean_names(.)
 
 d_visoko <- read_csv2(here('data',
-                           'obrazovne-ustanove_popis',
+                           'obrazovne-ustanove_popis_datagov',
                            'popis_visoko-obrazovanje.csv')) %>%
     janitor::clean_names(.)
 
@@ -214,7 +209,7 @@ podataka (poput informacija na web stranici škole).
 ```{r spoji-spol}
 # >>>>> osnovne skole
 d_osnovne_spol <- readr::read_tsv(here('data',
-                                       'obrazovne-ustanove_popis',
+                                       'obrazovne-ustanove_popis_datagov',
                                        'popis_osnovne-skole_kod-spolova.tsv'))
 
 . <- filter(d_osnovne,
@@ -279,7 +274,7 @@ d_osnovne[d_osnovne$ravnatelj == 'Vranko  Perković' &
 
 # >>>>> srednje skole
 d_srednje_spol <- readr::read_tsv(here('data',
-                                       'obrazovne-ustanove_popis',
+                                       'obrazovne-ustanove_popis_datagov',
                                        'popis_srednje-skole_kod-spolova.tsv'))
 
 . <- filter(d_srednje,
