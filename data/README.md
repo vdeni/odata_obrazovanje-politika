@@ -114,6 +114,29 @@ Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
     - `popis_visoko-obrazovanje_scrape.csv`: popis ustanova iz sustava visokog
     obrazovanja
     - `popis_znanost_scrape.csv`: popis znanstvenih ustanova
+- `2022_zaposlenici_osnovne-skole_uzorak.csv`: ručno prikupljen popis
+    zaposlenika u 100 slučajno odabranih osnovnih škola. *Napomena*:
+    zaposlenici područnih škola (a koji su navedeni na stranicama matičnih
+    škola; ako je moguće utvrditi jesu li zaposleni u matičnoj školi ili
+    područnoj školi. Ako to nije bilo moguće utvrditi, uneseni su u tablicu)
+    te zaposlenici koji su navedeni kao zamjene nisu unošeni u tablicu (ako
+    je na stranici navedeno ime osobe, a u istom redu ime druge osobe u zagradi,
+    pretpostavio zapisao sam ime osobe van zagrada).
+    - `skola_naziv`: naziv osnovne škole kako je navedeno u
+        `obrazovne-ustanove_popis_sample.csv`, ali s usklađenom kapitalizacijom
+        slova (npr. sve u caps locku je prebačeno u standardni zapis u kojem se
+        kapitaliziraju samo početna slova osobnih imena i sl.)
+    - `skola_mjesto`: mjesto u kojem se škola nalazi, kako je navedeno u
+        `obrazovne-ustanove_popis_sample.csv`
+    - `skola_zupanija`: županija u kojoj se škola nalazi, kako je navedeno u
+        `obrazovne-ustanove_popis_sample.csv`
+    - `osoba_ime`: ime zaposlenice ili zaposlenika škole, kako je navedeno
+        na web stranicama škole
+    - `osoba_prezime`: prezime zaposlenice ili zaposlenika škole, kako je
+        navedeno na web stranicama škole. Prezimena s dva ili više članova
+        bilježena su onako kako je zapisano (s crticom ako postoji, bez ako ne).
+    - `osoba_pozicija`: pozicija na kojoj je osoba zaposlena (točan navod sa
+        stranica škole ili procjena, ovisno o danim informacijama)
 
 ## Makefile
 

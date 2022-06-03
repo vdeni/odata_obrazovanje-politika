@@ -2,3 +2,7 @@
 
 scrape/skole_hr/log*
 scrape/skole_hr/data/
+
+data/2022_zaposlenici_osnovne-skole_uzorak.csv
+
+**/**/*gpg
