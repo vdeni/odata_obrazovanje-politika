@@ -121,7 +121,20 @@ Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
     područnoj školi. Ako to nije bilo moguće utvrditi, uneseni su u tablicu)
     te zaposlenici koji su navedeni kao zamjene nisu unošeni u tablicu (ako
     je na stranici navedeno ime osobe, a u istom redu ime druge osobe u zagradi,
-    pretpostavio zapisao sam ime osobe van zagrada).
+    zapisao sam ime osobe van zagrada; isto ako piše nešto iz čega nije jasno tko
+    je kome zamjena, npr. "Ime1 Prezime1 (zamjena: Ime2 Prezime2)").
+
+    Osobe koje rade u više škola zapisane su kod svake škole u kojoj rade.
+
+    Osnovna škola Ružičnjak (Zagreb) isključena jer se, koliko vidim, radi o
+    ustanovi koja je osnovana od strane Crkve ili srodne joj institucije.
+    Katolička škola Ivo Mašina (Zadar) također.
+
+    U osnovnoj školi Sveti Filip i Jakov nekim ljudima nedostaju dijakritički
+    znakovi u prezimenu ili imenu. Jasno vidljivo po tome da ista osoba na
+    jednom mjestu ima dijakritičke znakove u prezimenu, a na drugom ne. Ipak,
+    budući da za većinu prezimena ne znam trebaju li sadržavati dijakritičke
+    znakove ili ne, zabilježeno je onako kako je napisano na webu.
     - `skola_naziv`: naziv osnovne škole kako je navedeno u
         `obrazovne-ustanove_popis_sample.csv`, ali s usklađenom kapitalizacijom
         slova (npr. sve u caps locku je prebačeno u standardni zapis u kojem se
@@ -136,7 +149,11 @@ Linkovi na datoteke koje su dostupne drugdje mogu se naći u sekciji
         navedeno na web stranicama škole. Prezimena s dva ili više članova
         bilježena su onako kako je zapisano (s crticom ako postoji, bez ako ne).
     - `osoba_pozicija`: pozicija na kojoj je osoba zaposlena (točan navod sa
-        stranica škole ili procjena, ovisno o danim informacijama)
+        stranica škole ili procjena, ovisno o danim informacijama). Ako su kod
+        imena osobe navedene dvije pozicije (npr., "kuharica-spremačica"),
+        zabilježena je samo prvonavedena pozicija. Kao "nastanivica_nastavnik"
+        su kategorizirane i osobe koje rade u produženom boravku. Asistenti u
+        nastavi nisu upisivani.
 
 ## Makefile
 
